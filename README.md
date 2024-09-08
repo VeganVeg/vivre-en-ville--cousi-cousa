@@ -1,4 +1,3 @@
-# vivre-en-ville--cousi-cousa
 # Marie-Michelle Ouellet
 # Cousi-Cousa
 ## Membres de l'équipe:
