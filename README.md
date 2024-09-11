@@ -3,7 +3,7 @@
 ## Équipe
 - **William Rathier-Mailly**: Intégrateur, développeur front-end, project owner et scrum master
 - **Dominic Yale**: Intégrateur, développeur front-end, développeur back-end et devOp
-- Gabriel Clerval: Intégrateur, développeur front-end, designer et assurance qualité
+- **Gabriel Clerval**: Intégrateur, développeur front-end, designer et assurance qualité
 
 [Projet Web](https://tim-montmorency.com/timdoc/582-518MO/projet/)
 <br>
