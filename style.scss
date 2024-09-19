@@ -1,2 +1,41 @@
-@use 'variables';
-@use 'mixins';
+//partials variables mixins
+@use '_variables';
+@use '_mixins';
+
+//partials HTML
+@use '_header.scss';
+@use '_body.scss';
+@use '_footer.scss';
+
+body {
+    background-color: $quartz;
+}
+
+
+h1 {
+    font-family: "Inter", sans-serif;
+    font-size: 48px;
+    font-weight: 500;
+    color: $charbon;
+}
+
+h2 {
+    font-family: "Inter", sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    //pas toujours la meme couleur
+}
+
+h3 {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    color: $bleu-ciel;
+}
+
+p {
+    font-family: "Poppins", system-ui;
+    font-size: 22px;
+    font-weight: 400;
+    //pas toujours la meme couleur
+}
