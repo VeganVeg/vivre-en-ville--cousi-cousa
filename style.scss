@@ -1,14 +1,13 @@
 //partials variables mixins
-@use '_variables';
-@use '_mixins';
+@use 'partials-scss/variables';
+@use 'partials-scss/mixins';
+@use 'partials-scss/header.scss';
+@use 'partials-scss/body.scss';
+@use 'partials-scss/footer';
 
-//partials HTML
-@use '_header.scss';
-@use '_body.scss';
-@use '_footer.scss';
-
-body {
-    background-color: $quartz;
+body,
+html {
+    background-color: red;
 }
 
 

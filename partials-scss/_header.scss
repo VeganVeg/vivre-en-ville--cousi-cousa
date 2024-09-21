@@ -1,3 +1,7 @@
 //partials variables mixins
-@use 'variables';
+@use 'partials-scss/variables';
 @use 'mixins';
+
+.navbar-toggler-icon {
+    color: variables.$charbon;
+}

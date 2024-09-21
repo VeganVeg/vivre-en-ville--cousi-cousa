@@ -23,7 +23,6 @@
     <!--swiper end-->
 
     <!--css start-->
-    <link rel="stylesheet" href="style.scss">
     <!--css end-->
 
     <title>Document</title>
@@ -32,10 +31,25 @@
 <body>
 
     <header>
-        <div class="container-fluid">
-            <nav class="navbar ">
-            </nav>
-        </div>
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid">
+
+                <!--hamburger button-->
+                <button class="navbar-toggler border-0" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                    aria-controls="mainNav" aria-expanded="false" aria-label="Affichage/masquage de la navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- BRAND -->
+                <a class="navbar-brand mx-auto" href="index.html"><img src="sources/logo.png" width="110" height="auto"
+                        alt=""></a>
+
+                <!--navigation-->
+                <div id="mainNav" class="collapse navbar-collapse">
+
+                </div>
+            </div>
+        </nav>
     </header>
 
     <main></main>
@@ -47,7 +61,7 @@
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="main.js"></script>
+<script type="" src="main.js"></script>
 <!--script end-->
 
 </html>
