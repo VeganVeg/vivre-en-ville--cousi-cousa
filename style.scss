@@ -1,13 +1,13 @@
 //partials variables mixins
 @use 'partials-scss/variables';
 @use 'partials-scss/mixins';
-@use 'partials-scss/header.scss';
-@use 'partials-scss/body.scss';
+@use 'partials-scss/header';
+@use 'partials-scss/body';
 @use 'partials-scss/footer';
 
 body,
 html {
-    background-color: red;
+    background-color: variables.$quartz;
 }
 
 
@@ -15,7 +15,7 @@ h1 {
     font-family: "Inter", sans-serif;
     font-size: 48px;
     font-weight: 500;
-    color: $charbon;
+    color: variables.$charbon;
 }
 
 h2 {
@@ -29,7 +29,7 @@ h3 {
     font-family: "Noto Sans", sans-serif;
     font-size: 26px;
     font-weight: 600;
-    color: $bleu-ciel;
+    color: variables.$bleu-ciel;
 }
 
 p {

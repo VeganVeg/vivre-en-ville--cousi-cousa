@@ -1,7 +1,73 @@
 //partials variables mixins
-@use 'partials-scss/variables';
+@use 'variables';
 @use 'mixins';
 
-.navbar-toggler-icon {
-    color: variables.$charbon;
+.navbar {
+    background: variables.$charbon;
+    height: 110px;
+}
+
+.navbar-dark {
+    color: red;
+}
+
+.nav-link {
+    font-size: 22px;
+    color: variables.$quartz;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    margin: 0px 13px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: variables.$bleu-ciel;
+}
+
+.navbar-brand {
+    display: flex;
+    line-height: 0.6;
+    color: variables.$quartz;
+    padding: 0 35px;
+}
+
+.navbar-brand:hover {
+    color: variables.$quartz;
+}
+
+.title {
+    font-family: "Poppins", system-ui;
+    font-size: 28px;
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+.subtitle {
+    font-family: 'Noto sans', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: #C8C8C8;
+}
+
+//.nav-item-don {
+//   border: 4px solid variables.$nenuphare;
+//   border-radius: 50px;
+//   padding: 6px 4px;
+//}
+
+.nav-link-don {
+    font-family: "Poppins", system-ui;
+    font-weight: 700;
+    color: variables.$nenuphare;
+    border: 4px solid variables.$nenuphare;
+    border-radius: 50px;
+    width: 190px;
+    padding: 15px 0;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.nav-link-don:hover {
+    background-color: variables.$nenuphare;
+    color: variables.$quartz;
 }
