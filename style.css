@@ -62,6 +62,10 @@
   color: #EFEFEF;
 }
 
+.navbar-collapse {
+  background-color: #303030;
+}
+
 body,
 html {
   background-color: #EFEFEF;
