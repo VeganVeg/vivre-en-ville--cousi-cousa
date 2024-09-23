@@ -4,13 +4,92 @@
 
 .navbar{
     background-color: variables.$charbon;
-    height: 54px;
 }
 
-.navbar-brand{
-    width: 46px;
+.nav-link {
+    color: variables.$quartz;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    margin: 0px 8px;
+    transition: 0.3s;
 }
 
-.navbar-toggler-icon{
-    background-color: #fff;
+.nav-link-don {
+    font-family: "Poppins", system-ui;
+    font-weight: 700;
+    color: variables.$nenuphare;
+    border: 4px solid variables.$nenuphare;
+    border-radius: 50px;
+    width: 155px;
+    padding: 12px 0;
+    text-align: center;
+    transition: 0.3s;
+    margin: none;
+}
+
+.nav-link-don:hover {
+    background-color: variables.$nenuphare;
+    color: variables.$quartz;
+}
+
+.nav-link:hover {
+    color: variables.$bleu-ciel;
+}
+
+@media (min-width: 1400px) {
+    .navbar {
+        height: 110px;
+    }
+
+    .nav-link{
+        font-size: 20px;
+    }
+
+    .nav-link-don {
+        font-family: "Poppins", system-ui;
+        font-weight: 700;
+        color: variables.$nenuphare;
+        border: 4px solid variables.$nenuphare;
+        border-radius: 50px;
+        width: 190px;
+        padding: 15px 0;
+        text-align: center;
+        transition: 0.3s;
+    }
+    
+
+    
+    .navbar-collapse {
+        background-color: variables.$charbon;
+    }
+
+    .navbar-brand {
+        display: flex;
+        line-height: 0.6;
+        color: variables.$quartz;
+        padding: 0 35px;
+    }
+    
+    .navbar-brand:hover {
+        color: variables.$quartz;
+    }
+    
+    .navbar-brand-mobile{
+        padding: 0;
+    }
+    
+    
+    .title {
+        font-family: "Poppins", system-ui;
+        font-size: 28px;
+        font-weight: 700;
+        margin-left: 10px;
+    }
+    
+    .subtitle {
+        font-family: 'Noto sans', sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+        color: #C8C8C8;
+    }
 }

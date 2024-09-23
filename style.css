@@ -1,16 +1,83 @@
 .navbar {
   background-color: #303030;
-  height: 54px;
 }
 
-.navbar-brand {
-  width: 46px;
+.nav-link {
+  color: #EFEFEF;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  margin: 0px 8px;
+  transition: 0.3s;
 }
 
-.navbar-toggler-icon {
-  background-color: #fff;
+.nav-link-don {
+  font-family: "Poppins", system-ui;
+  font-weight: 700;
+  color: #8DC63F;
+  border: 4px solid #8DC63F;
+  border-radius: 50px;
+  width: 155px;
+  padding: 12px 0;
+  text-align: center;
+  transition: 0.3s;
+  margin: none;
 }
 
+.nav-link-don:hover {
+  background-color: #8DC63F;
+  color: #EFEFEF;
+}
+
+.nav-link:hover {
+  color: #0BABDC;
+}
+
+@media (min-width: 1400px) {
+  .navbar {
+    height: 110px;
+  }
+  .nav-link {
+    font-size: 20px;
+  }
+  .nav-link-don {
+    font-family: "Poppins", system-ui;
+    font-weight: 700;
+    color: #8DC63F;
+    border: 4px solid #8DC63F;
+    border-radius: 50px;
+    width: 190px;
+    padding: 15px 0;
+    text-align: center;
+    transition: 0.3s;
+  }
+  .navbar-collapse {
+    background-color: #303030;
+  }
+  .navbar-brand {
+    display: flex;
+    line-height: 0.6;
+    color: #EFEFEF;
+    padding: 0 35px;
+  }
+  .navbar-brand:hover {
+    color: #EFEFEF;
+  }
+  .navbar-brand-mobile {
+    padding: 0;
+  }
+  .title {
+    font-family: "Poppins", system-ui;
+    font-size: 28px;
+    font-weight: 700;
+    margin-left: 10px;
+  }
+  .subtitle {
+    font-family: "Noto sans", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: #C8C8C8;
+  }
+}
 body,
 html {
   background-color: #EFEFEF;
