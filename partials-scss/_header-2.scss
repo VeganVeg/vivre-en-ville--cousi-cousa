@@ -1,3 +1,16 @@
 //partials variables mixins
 @use 'variables';
 @use 'mixins';
+
+.navbar{
+    background-color: variables.$charbon;
+    height: 54px;
+}
+
+.navbar-brand{
+    width: 46px;
+}
+
+.navbar-toggler-icon{
+    background-color: #fff;
+}

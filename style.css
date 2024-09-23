@@ -1,3 +1,16 @@
+.navbar {
+  background-color: #303030;
+  height: 54px;
+}
+
+.navbar-brand {
+  width: 46px;
+}
+
+.navbar-toggler-icon {
+  background-color: #fff;
+}
+
 body,
 html {
   background-color: #EFEFEF;

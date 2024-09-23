@@ -35,9 +35,10 @@
     color: variables.$quartz;
 }
 
-.navbar-brand-mobile {
-    transform: translateX(-25%);
+.navbar-brand-mobile{
+    padding: 0;
 }
+
 
 .title {
     font-family: "Poppins", system-ui;
