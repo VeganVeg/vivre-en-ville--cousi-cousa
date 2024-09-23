@@ -2,7 +2,7 @@
 @use 'variables';
 @use 'mixins';
 
-.navbar{
+.navbar {
     background-color: variables.$charbon;
 }
 
@@ -27,13 +27,13 @@
     margin: none;
 }
 
+.nav-link:hover {
+    color: variables.$bleu-ciel;
+}
+
 .nav-link-don:hover {
     background-color: variables.$nenuphare;
     color: variables.$quartz;
-}
-
-.nav-link:hover {
-    color: variables.$bleu-ciel;
 }
 
 @media (min-width: 1400px) {
@@ -41,7 +41,7 @@
         height: 110px;
     }
 
-    .nav-link{
+    .nav-link {
         font-size: 20px;
     }
 
@@ -56,9 +56,9 @@
         text-align: center;
         transition: 0.3s;
     }
-    
 
-    
+
+
     .navbar-collapse {
         background-color: variables.$charbon;
     }
@@ -69,23 +69,23 @@
         color: variables.$quartz;
         padding: 0 35px;
     }
-    
+
     .navbar-brand:hover {
         color: variables.$quartz;
     }
-    
-    .navbar-brand-mobile{
+
+    .navbar-brand-mobile {
         padding: 0;
     }
-    
-    
+
+
     .title {
         font-family: "Poppins", system-ui;
         font-size: 28px;
         font-weight: 700;
         margin-left: 10px;
     }
-    
+
     .subtitle {
         font-family: 'Noto sans', sans-serif;
         font-size: 15px;

@@ -23,13 +23,13 @@
   margin: none;
 }
 
+.nav-link:hover {
+  color: #0BABDC;
+}
+
 .nav-link-don:hover {
   background-color: #8DC63F;
   color: #EFEFEF;
-}
-
-.nav-link:hover {
-  color: #0BABDC;
 }
 
 @media (min-width: 1400px) {
