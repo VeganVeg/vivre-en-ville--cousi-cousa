@@ -4,7 +4,7 @@
 
 .navbar {
     background: variables.$charbon;
-    height: 110px;
+    height: 65px;
 }
 
 .navbar-dark {
@@ -33,6 +33,10 @@
 
 .navbar-brand:hover {
     color: variables.$quartz;
+}
+
+.navbar-brand-mobile {
+    transform: translateX(-25%);
 }
 
 .title {
