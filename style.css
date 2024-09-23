@@ -66,6 +66,11 @@
   background-color: #303030;
 }
 
+@media (min-width: 1200px) {
+  .navbar {
+    height: 110px;
+  }
+}
 body,
 html {
   background-color: #EFEFEF;

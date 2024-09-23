@@ -75,3 +75,9 @@
 .navbar-collapse {
     background-color: variables.$charbon;
 }
+
+@media (min-width: 1200px) {
+    .navbar {
+        height: 110px;
+    }
+}
