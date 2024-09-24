@@ -121,6 +121,7 @@ footer {
   font-size: 15px;
   color: #EFEFEF;
   font-family: "Poppins", system-ui;
+  text-decoration: none;
 }
 
 .footer-don {
