@@ -6,7 +6,7 @@ footer {
 }
 
 .footer-row {
-    height: 250px;
+    height: 275px;
 }
 
 .footer-contact {
@@ -15,7 +15,21 @@ footer {
     font-weight: 300;
 }
 
+.footer-title {
+    font-size: 22px;
+    color: variables.$quartz;
+    font-family: 'Poppins', system-ui;
+    font-weight: 700;
+    text-align: center;
+    line-height: 0.8;
+}
 
+.footer-subtitle {
+    font-size: 14px;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 500;
+    color: #C8C8C8;
+}
 
 .credit {
     font-size: 14px;
@@ -24,4 +38,10 @@ footer {
     font-family: 'Poppins', system-ui;
     font-weight: 300;
     width: 100vw;
+}
+
+.txt-contact {
+    font-size: 15px;
+    color: variables.$quartz;
+    font-family: 'Poppins', system-ui;
 }
