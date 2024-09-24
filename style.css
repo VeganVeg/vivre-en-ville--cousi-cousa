@@ -78,6 +78,29 @@
     color: #C8C8C8;
   }
 }
+footer {
+  background-color: #303030;
+}
+
+.footer-row {
+  height: 250px;
+}
+
+.footer-contact {
+  color: #EFEFEF;
+  font-family: "Poppins", system-ui;
+  font-weight: 300;
+}
+
+.credit {
+  font-size: 14px;
+  border-top: 2px solid #EFEFEF;
+  color: #EFEFEF;
+  font-family: "Poppins", system-ui;
+  font-weight: 300;
+  width: 100vw;
+}
+
 body,
 html {
   background-color: #EFEFEF;

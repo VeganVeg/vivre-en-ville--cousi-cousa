@@ -1,2 +1,27 @@
 @use 'variables';
 @use 'mixins';
+
+footer {
+    background-color: variables.$charbon;
+}
+
+.footer-row {
+    height: 250px;
+}
+
+.footer-contact {
+    color: variables.$quartz;
+    font-family: 'Poppins', system-ui;
+    font-weight: 300;
+}
+
+
+
+.credit {
+    font-size: 14px;
+    border-top: 2px solid variables.$quartz;
+    color: variables.$quartz;
+    font-family: 'Poppins', system-ui;
+    font-weight: 300;
+    width: 100vw;
+}
