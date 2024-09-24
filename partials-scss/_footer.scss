@@ -57,3 +57,33 @@ footer {
     text-align: center;
     transition: 0.3s;
 }
+
+.bloc {
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50px;
+    margin: 3px;
+    display: grid;
+    place-items: center;
+}
+
+.bloc img {
+    width: 20px;
+    height: 20px;
+}
+
+
+
+@media (min-width: 1400px) {
+    .bloc {
+        width: 35px;
+        height: 35px;
+        margin: 4px;
+    }
+
+    .bloc img {
+        width: 23px;
+        height: 23px;
+    }
+}
