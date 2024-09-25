@@ -71,6 +71,12 @@
     background-color: variables.$charbon;
 }
 
+.navbar-toggler {
+    &:focus {
+        outline: none;
+    }
+}
+
 @media (min-width: 1200px) {
     .navbar {
         height: 110px;
