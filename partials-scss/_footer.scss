@@ -3,17 +3,11 @@
 
 footer {
     background-color: variables.$charbon;
+    overflow-x: hidden;
 }
 
-.footer-row {
-    height: 275px;
-}
 
-.footer-contact {
-    color: variables.$quartz;
-    font-family: 'Poppins', system-ui;
-    font-weight: 300;
-}
+
 
 .footer-title {
     font-size: 22px;
@@ -86,5 +80,39 @@ footer {
     .bloc img {
         width: 23px;
         height: 23px;
+    }
+}
+
+footer {
+    background-color: variables.$charbon;
+    overflow-x: hidden;
+
+    .grid {
+        display: grid;
+        padding: 16px 24px;
+        grid-template-columns: auto auto auto;
+
+        .contact {
+            color: variables.$quartz;
+            font-family: 'Poppins', system-ui;
+            text-decoration: none;
+            font-size: 15px;
+        }
+    }
+
+    .footer__logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .title {
+            font-size: 22px;
+            color: variables.$quartz;
+            font-family: 'Poppins', system-ui;
+            font-weight: 700;
+            text-align: center;
+            line-height: 0.8;
+            margin-top: 8px;
+        }
     }
 }
