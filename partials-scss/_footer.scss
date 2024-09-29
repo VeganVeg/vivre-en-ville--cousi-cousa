@@ -90,7 +90,7 @@ footer {
     .grid {
         display: grid;
         padding: 16px 24px;
-        grid-template-columns: auto auto auto;
+        grid-template-columns: 2fr 2fr;
 
         .contact {
             color: variables.$quartz;
@@ -104,15 +104,30 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
 
-        .title {
+        .footer-title {
             font-size: 22px;
             color: variables.$quartz;
             font-family: 'Poppins', system-ui;
             font-weight: 700;
             text-align: center;
             line-height: 0.8;
-            margin-top: 8px;
+            display: none;
+        }
+    }
+
+    .footer__don{
+        .don{
+            margin: 16px 8px;
+            font-family: "Poppins", system-ui;
+            font-weight: 700;
+            border: 4px solid variables.$nenuphare;
+            border-radius: 50px;
+            width: 155px;
+            padding: 12px 0;
+            text-align: center;
+            color: variables.$nenuphare;
         }
     }
 }
