@@ -68,7 +68,10 @@ footer {
     height: 20px;
 }
 
-
+.don:hover {
+    background-color: variables.$nenuphare;
+    color: variables.$quartz;
+}
 
 @media (min-width: 1400px) {
     .bloc {
@@ -128,6 +131,45 @@ footer {
             padding: 12px 0;
             text-align: center;
             color: variables.$nenuphare;
+            transition: 0.3s;
+            background-color: variables.$charbon;
+            
+            .link__button{
+                text-decoration: none;
+                color: variables.$nenuphare;
+            }
+            .link__button:hover{
+            color: variables.$quartz;
+            }
+        }
+        .don:hover {
+            background-color: variables.$nenuphare;
+            color: variables.$quartz;
+        }
+    }
+    .footer__lien{
+        display: flex;
+        .bloc{
+            width: 30px;
+            height: 30px;
+            background-color: #fff;
+            border-radius: 50px;
+            margin: 3px;
+            place-items: center;
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .test{
+        display: none;
+    }
+    @media (min-width: 1400px) {
+        .grid {
+            display: grid;
+            grid-template-columns: 2fr 2fr 2fr;
+        }
+        .test{
+            display: block;
         }
     }
 }
