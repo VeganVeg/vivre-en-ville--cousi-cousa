@@ -163,22 +163,27 @@ footer {
 }
 footer .grid {
   display: grid;
-  padding: 16px 24px;
+  padding: 24px 16px;
   grid-template-columns: 2fr 2fr;
 }
-footer .grid .contact {
+footer .grid .footer__contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+footer .grid .footer__contact .contact {
   color: #EFEFEF;
   font-family: "Poppins", system-ui;
   text-decoration: none;
   font-size: 15px;
 }
-footer .footer__logo {
+footer .footer__btn {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-footer .footer__logo .footer-title {
+footer .footer__btn .footer__logo .footer-title {
   font-size: 22px;
   color: #EFEFEF;
   font-family: "Poppins", system-ui;
@@ -187,7 +192,7 @@ footer .footer__logo .footer-title {
   line-height: 0.8;
   display: none;
 }
-footer .footer__don .don {
+footer .footer__btn .footer__don .don {
   margin: 16px 8px;
   font-family: "Poppins", system-ui;
   font-weight: 700;
@@ -200,21 +205,21 @@ footer .footer__don .don {
   transition: 0.3s;
   background-color: #303030;
 }
-footer .footer__don .don .link__button {
+footer .footer__btn .footer__don .don .link__button {
   text-decoration: none;
   color: #8DC63F;
 }
-footer .footer__don .don .link__button:hover {
+footer .footer__btn .footer__don .don .link__button:hover {
   color: #EFEFEF;
 }
-footer .footer__don .don:hover {
+footer .footer__btn .footer__don .don:hover {
   background-color: #8DC63F;
   color: #EFEFEF;
 }
-footer .footer__lien {
+footer .footer__btn .footer__lien {
   display: flex;
 }
-footer .footer__lien .bloc {
+footer .footer__btn .footer__lien .bloc {
   width: 30px;
   height: 30px;
   background-color: #fff;
@@ -224,17 +229,65 @@ footer .footer__lien .bloc {
   display: flex;
   justify-content: center;
 }
-footer .test {
+footer .footer__logo__centered {
   display: none;
+  flex-direction: column;
+  align-items: center;
 }
-@media (min-width: 1400px) {
+footer .footer__logo__centered .footer-title {
+  font-size: 22px;
+  color: #EFEFEF;
+  font-family: "Poppins", system-ui;
+  font-weight: 700;
+  text-align: center;
+  line-height: 0.8;
+  display: block;
+  margin-top: 8px;
+}
+@media (min-width: 768px) {
   footer .grid {
     display: grid;
     grid-template-columns: 2fr 2fr 2fr;
   }
-  footer .test {
-    display: block;
+  footer .grid .footer__logo__centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
+  footer .grid .footer__logo__centered .footer-title {
+    font-size: 22px;
+    color: #EFEFEF;
+    font-family: "Poppins", system-ui;
+    font-weight: 700;
+    text-align: center;
+    line-height: 0.8;
+    display: block;
+    margin-top: 8px;
+  }
+  footer .grid .footer__btn .footer__logo {
+    display: none;
+  }
+  footer .grid .footer__btn .footer__don .don {
+    margin: 0 8px;
+  }
+  footer .grid .footer__btn .footer__lien {
+    margin-top: 8px;
+  }
+}
+@media (min-width: 1400px) {
+  footer .footer__btn .footer__lien .bloc {
+    width: 35px;
+    height: 35px;
+  }
+  footer .footer__btn .footer__don .don {
+    width: 190px;
+    padding: 15px 0;
+    font-size: 20px;
+  }
+}
+footer .credit {
+  text-align: center;
 }
 
 body,
