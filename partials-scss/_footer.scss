@@ -6,7 +6,7 @@ footer {
     background-color: variables.$charbon;
     overflow-x: hidden;
 
-    .grid {
+    .grid__footer {
         display: grid;
         padding: 24px 16px;
         grid-template-columns: 2fr 2fr;
@@ -39,6 +39,7 @@ footer {
                 display: none;
             }
         }
+
         .footer__don{
             .don{
                 margin: 16px 8px;
@@ -66,6 +67,7 @@ footer {
                 color: variables.$quartz;
             }
         }
+
         .footer__lien{
             display: flex;
             .bloc{
@@ -85,6 +87,7 @@ footer {
             }
         }
     }
+
     .footer__logo__centered {
         display: none;
         flex-direction:column;
@@ -100,9 +103,10 @@ footer {
             margin-top: 8px;
         }
     }
+
     //format tablette
     @media (min-width: 768px) {
-        .grid {
+        .grid__footer {
             display: grid;
             grid-template-columns: 2fr 2fr 2fr;
             .footer__logo__centered {
@@ -145,8 +149,8 @@ footer {
                 }
             }
         }
-
     }
+
     //format laptop/PC
     @media (min-width: 1400px){
         .footer__btn{
@@ -170,6 +174,7 @@ footer {
             }
         }   
     }
+    
     .credit{
         text-align: center;
         font-size: 14px;
