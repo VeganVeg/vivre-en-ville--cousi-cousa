@@ -8,6 +8,7 @@
 @use "partials-scss/body";
 @use "partials-scss/hero";
 @use "partials-scss/banniere";
+@use 'partials-scss/carrousel';
 body,
 html {
     background-color: variables.$quartz;
