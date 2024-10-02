@@ -1,44 +1,43 @@
 //partials variables mixins
-@use 'partials-scss/variables';
-@use 'partials-scss/mixins';
+@use "partials-scss/variables";
+@use "partials-scss/mixins";
 //partials header footer
-@use 'partials-scss/header-2';
-@use 'partials-scss/footer';
+@use "partials-scss/header-2";
+@use "partials-scss/footer";
 //partials body
-@use 'partials-scss/body';
-@use 'partials-scss/hero';
-@use 'partials-scss/banniere';
+@use "partials-scss/body";
+@use "partials-scss/hero";
+@use "partials-scss/banniere";
 
 body,
 html {
-    background-color: variables.$quartz;
+  background-color: variables.$quartz;
 }
 
-
 h1 {
-    font-family: "Inter", sans-serif;
-    font-size: 48px;
-    font-weight: 500;
-    color: variables.$charbon;
+  font-family: "Inter", sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  color: variables.$charbon;
 }
 
 h2 {
-    font-family: "Inter", sans-serif;
-    font-size: 32px;
-    font-weight: 500;
-    //pas toujours la meme couleur
+  font-family: "Inter", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  //pas toujours la meme couleur
 }
 
 h3 {
-    font-family: "Noto Sans", sans-serif;
-    font-size: 26px;
-    font-weight: 600;
-    color: variables.$bleu-ciel;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  color: variables.$bleu-ciel;
 }
 
 p {
-    font-family: "Poppins", system-ui;
-    font-size: 22px;
-    font-weight: 400;
-    //pas toujours la meme couleur
+  font-family: "Poppins", system-ui;
+  font-size: 22px;
+  font-weight: 400;
+  //pas toujours la meme couleur
 }
