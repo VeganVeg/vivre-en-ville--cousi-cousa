@@ -618,6 +618,11 @@ footer .credit {
   color: #cdf8fd;
   display: none;
 }
+.services__container .services__conseil .img__formation {
+  position: absolute;
+  width: 85px;
+  margin-top: 50px;
+}
 .services__container .services__sensibilisation {
   width: 155px;
   height: 205px;
