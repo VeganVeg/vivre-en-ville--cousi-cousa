@@ -18,6 +18,8 @@
             object-position: 0% 25%;
         }
         .swiper__bg{
+            display: flex;
+            align-items: center;
             position: absolute;
             height: 50px;
             max-height: 20%;
@@ -30,6 +32,7 @@
                 color: variables.$quartz;
                 font-size: 14px;
                 line-height: 1;
+                margin-left: 5px;
             }
         }
     }

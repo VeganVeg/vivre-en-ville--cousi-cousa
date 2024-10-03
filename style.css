@@ -344,6 +344,8 @@ footer .credit {
      object-position: 0% 25%;
 }
 .grid__carrousel .swiper .swiper__bg {
+  display: flex;
+  align-items: center;
   position: absolute;
   height: 50px;
   max-height: 20%;
@@ -357,6 +359,7 @@ footer .credit {
   color: #EFEFEF;
   font-size: 14px;
   line-height: 1;
+  margin-left: 5px;
 }
 @media (min-width: 768px) {
   .grid__carrousel .swiper {
