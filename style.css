@@ -354,6 +354,8 @@ footer .credit {
 }
 .grid__carrousel .swiper .swiper__bg .bg__title {
   font-family: "Inter", sans-serif;
+  color: #EFEFEF;
+  font-size: 15px;
 }
 @media (min-width: 768px) {
   .grid__carrousel .swiper {
@@ -395,8 +397,11 @@ footer .credit {
 
 .about {
   border: 1px solid red;
+<<<<<<< HEAD
   display: flex;
   justify-content: center;
+=======
+>>>>>>> 1e1611682b84c686f2f70b7875175fb7c7add279
 }
 
 body,
