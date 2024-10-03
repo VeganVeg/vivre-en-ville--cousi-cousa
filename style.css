@@ -418,6 +418,8 @@ footer .credit {
 }
 .about__text {
   text-align: center;
+  margin-left: 5vw;
+  margin-right: 5vw;
 }
 
 body,
