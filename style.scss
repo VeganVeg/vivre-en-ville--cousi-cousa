@@ -11,6 +11,7 @@
 @use "partials-scss/carrousel";
 @use "partials-scss/about";
 @use "partials-scss/temoignage";
+@import 'temoignage';
 body,
 html {
     background-color: variables.$quartz;
