@@ -499,12 +499,13 @@ footer .credit {
 }
 .services__container .service {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   padding: 15px;
 }
 .services__container .services__recherche {
-  width: 145px;
-  height: 195px;
+  width: 155px;
+  height: 205px;
   background-color: #303030;
   border-radius: 20px;
   margin: 8px;
@@ -523,8 +524,8 @@ footer .credit {
   color: #EFEFEF;
 }
 .services__container .services__publication {
-  width: 145px;
-  height: 195px;
+  width: 155px;
+  height: 205px;
   background-color: #8DC63F;
   border-radius: 20px;
   margin: 8px;
@@ -543,8 +544,8 @@ footer .credit {
   color: #B2EB65;
 }
 .services__container .services__formation {
-  width: 145px;
-  height: 195px;
+  width: 155px;
+  height: 205px;
   background-color: #0BABDC;
   border-radius: 20px;
   margin: 8px;
@@ -563,8 +564,8 @@ footer .credit {
   color: #6FDDFF;
 }
 .services__container .services__conseil {
-  width: 145px;
-  height: 195px;
+  width: 155px;
+  height: 205px;
   background-color: #8DD5DF;
   border-radius: 20px;
   margin: 8px;
@@ -583,8 +584,8 @@ footer .credit {
   color: #BAF7FF;
 }
 .services__container .services__sensibilisation {
-  width: 145px;
-  height: 195px;
+  width: 155px;
+  height: 205px;
   background-color: #BABABA;
   border-radius: 20px;
   margin: 8px;

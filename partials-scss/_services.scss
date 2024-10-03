@@ -16,12 +16,13 @@
     width: 100%;
     .service{
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
         padding: 15px;
     }
     .services__recherche{
-        width: 145px;
-        height: 195px;
+        width: 155px;
+        height: 205px;
         background-color: variables.$charbon;
         border-radius: 20px;
         margin: 8px;
@@ -40,8 +41,8 @@
         }
     }
     .services__publication{
-        width: 145px;
-        height: 195px;
+        width: 155px;
+        height: 205px;
         background-color: variables.$nenuphare;
         border-radius: 20px;
         margin: 8px;
@@ -60,8 +61,8 @@
         }
     }
     .services__formation{
-        width: 145px;
-        height: 195px;
+        width: 155px;
+        height: 205px;
         background-color: variables.$bleu-ciel;
         border-radius: 20px;
         margin: 8px;
@@ -80,8 +81,8 @@
         }
     }
     .services__conseil{
-        width: 145px;
-        height: 195px;
+        width: 155px;
+        height: 205px;
         background-color: variables.$bleu-matinal;
         border-radius: 20px;
         margin: 8px;
@@ -100,8 +101,8 @@
         }
     }
     .services__sensibilisation{
-        width: 145px;
-        height: 195px;
+        width: 155px;
+        height: 205px;
         background-color: variables.$gris;
         border-radius: 20px;
         margin: 8px;
