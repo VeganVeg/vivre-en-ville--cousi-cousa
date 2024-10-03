@@ -13,11 +13,13 @@
     font-family: 'Inter', sans-serif;
     font-weight: 500;
     margin-bottom: 5px;
+    color: variables.$charbon;
   }
   .about__text{
     font-size: 16px;
     font-family: 'Poppins', system-ui;
     font-weight: 500;
+    color: variables.$charbon;
   }
   @media (min-width: 768px){
     .about__title{
