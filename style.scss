@@ -12,7 +12,8 @@
 @use "partials-scss/about";
 @use 'partials-scss/services';
 @use "partials-scss/don";
-
+@use "partials-scss/temoignage";
+@use "partials-scss/nouvelles";
 body,
 html {
     background-color: variables.$quartz;
@@ -40,37 +41,37 @@ h3 {
 }
 
 p {
-  font-family: "Poppins", system-ui;
-  font-size: 22px;
-  font-weight: 400;
-  //pas toujours la meme couleur
+    font-family: "Poppins", system-ui;
+    font-size: 22px;
+    font-weight: 400;
+    //pas toujours la meme couleur
 }
 
 .next_chapter {
-  padding: 10px;
-  font-size: 30px;
-  width: 20%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    padding: 10px;
+    font-size: 30px;
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 @media (min-width: 768px) {
-  .next_chapter {
-    padding: 10px;
-    font-size: 40px;
-    width: 15%;
-    display: flex;
-    justify-content: space-between;
-  }
+    .next_chapter {
+        padding: 10px;
+        font-size: 40px;
+        width: 15%;
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 @media (min-width: 1400px) {
-  .next_chapter {
-    padding: 10px;
-    font-size: 50px;
-    width: 5%;
-    display: flex;
-    justify-content: space-between;
-  }
+    .next_chapter {
+        padding: 10px;
+        font-size: 50px;
+        width: 5%;
+        display: flex;
+        justify-content: space-between;
+    }
 }
