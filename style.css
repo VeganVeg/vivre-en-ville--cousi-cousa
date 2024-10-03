@@ -669,7 +669,73 @@ footer .credit {
   align-self: center;
   border-radius: 30px;
   background-color: #0BABDC;
-  border: 3px solid #8DD5DF;
+  border-radius: 20px;
+  margin: 8px;
+}
+.services__container .services__formation .formation__title {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  color: #8be4ff;
+  margin-top: 10px;
+}
+.services__container .services__formation .formation__txt {
+  font-size: 14px;
+  line-height: 1.2;
+  text-align: center;
+  font-family: "Poppins", system-ui;
+  color: #8be4ff;
+  display: none;
+}
+.services__container .services__formation .img__formation {
+  position: absolute;
+  width: 85px;
+  margin-top: 50px;
+}
+.services__container .services__conseil {
+  width: 155px;
+  height: 205px;
+  background-color: #8DD5DF;
+  border-radius: 20px;
+  margin: 8px;
+}
+.services__container .services__conseil .conseil__title {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  color: #cdf8fd;
+  margin-top: 5px;
+  line-height: 1.2;
+}
+.services__container .services__conseil .conseil__txt {
+  font-size: 14px;
+  line-height: 1.2;
+  text-align: center;
+  font-family: "Poppins", system-ui;
+  color: #cdf8fd;
+  display: none;
+}
+.services__container .services__sensibilisation {
+  width: 155px;
+  height: 205px;
+  background-color: #BABABA;
+  border-radius: 20px;
+  margin: 8px;
+}
+.services__container .services__sensibilisation .sensibilisation__title {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  color: #EFEFEF;
+  margin-top: 15px;
+}
+.services__container .services__sensibilisation .sensibilisation__txt {
+  font-size: 14px;
+  line-height: 1.2;
+  text-align: center;
+  font-family: "Poppins", system-ui;
+  color: #EFEFEF;
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
