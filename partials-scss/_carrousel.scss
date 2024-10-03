@@ -51,6 +51,20 @@
             }
             .swiper__bg{
                 height: 60px;
+                                .bg__title{
+                    font-family: "Inter", sans-serif;
+                    color: variables.$quartz;
+                    font-size: 18px;
+                    line-height: 1.2;
+                    margin-left: 5px;
+                    .bg__title{
+                        font-family: "Inter", sans-serif;
+                        color: variables.$quartz;
+                        font-size: 18px;
+                        line-height: 1.2;
+                        margin-left: 5px;
+                    }
+                }
             }
         }
     }

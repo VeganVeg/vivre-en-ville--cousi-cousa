@@ -378,6 +378,20 @@ footer .credit {
   .grid__carrousel .swiper .swiper__bg {
     height: 60px;
   }
+  .grid__carrousel .swiper .swiper__bg .bg__title {
+    font-family: "Inter", sans-serif;
+    color: #EFEFEF;
+    font-size: 18px;
+    line-height: 1.2;
+    margin-left: 5px;
+  }
+  .grid__carrousel .swiper .swiper__bg .bg__title .bg__title {
+    font-family: "Inter", sans-serif;
+    color: #EFEFEF;
+    font-size: 18px;
+    line-height: 1.2;
+    margin-left: 5px;
+  }
 }
 @media (min-width: 1400px) {
   .grid__carrousel .swiper {
