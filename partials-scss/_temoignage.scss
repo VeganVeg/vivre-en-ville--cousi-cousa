@@ -1,2 +1,85 @@
 @use 'variables';
 @use 'mixins';
+.temoignages {
+    &__titre {
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: 15px;
+        color: #333;
+    }
+}
+
+.grid__temoignages {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 0 15px;
+}
+
+.temoignage {
+    &__item {
+        text-align: center;
+        padding: 15px 10px;
+        border-bottom: 2px solid #ccc;
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+    &__photo {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin: 0 auto 10px;
+    }
+    &__nom {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: #333;
+    }
+    &__texte {
+        font-size: 14px;
+        line-height: 1.4;
+        color: #666;
+    }
+}
+
+// /tablette/ 
+@media (min-width: 768px) {
+    .temoignages__titre {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    .grid__temoignages {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding: 0 20px;
+    }
+    .temoignage__item {
+        border-bottom: none;
+        border-right: 2px solid #ccc;
+        &:nth-child(3n) {
+            border-right: none;
+        }
+    }
+    .temoignage__photo {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+// /desktop/ 
+@media (min-width: 1400px) {
+    .temoignages__titre {
+        font-size: 24px;
+    }
+    .grid__temoignages {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .temoignage__photo {
+        width: 80px;
+        height: 80px;
+    }
+}
