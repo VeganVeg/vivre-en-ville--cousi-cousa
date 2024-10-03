@@ -590,6 +590,11 @@ footer .credit {
   color: #8be4ff;
   display: none;
 }
+.services__container .services__formation .img__formation {
+  position: absolute;
+  width: 85px;
+  margin-top: 50px;
+}
 .services__container .services__conseil {
   width: 155px;
   height: 205px;
