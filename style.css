@@ -503,6 +503,9 @@ footer .credit {
   align-items: center;
   padding: 15px;
 }
+.services__container .service .title-block {
+  display: none;
+}
 .services__container .services__recherche {
   width: 155px;
   height: 205px;
@@ -522,6 +525,8 @@ footer .credit {
   text-align: center;
   font-family: "Poppins", system-ui;
   color: #EFEFEF;
+  z-index: 3;
+  overflow: hidden;
 }
 .services__container .services__publication {
   width: 155px;
