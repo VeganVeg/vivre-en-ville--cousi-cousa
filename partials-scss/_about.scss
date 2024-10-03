@@ -2,7 +2,16 @@
 @use "mixins";
 
 .about {
-  border: 1px solid red;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+
+  &__title {
+    margin: 10px;
+    padding: 10px;
+  }
+  &__text {
+    text-align: center;
+  }
 }
