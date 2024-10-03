@@ -3,7 +3,7 @@
 }
 
 .nav-link {
-  color: #efefef;
+  color: #EFEFEF;
   font-family: "Inter", sans-serif;
   font-weight: 300;
   margin: 0px 8px;
@@ -13,8 +13,8 @@
 .nav-link-don {
   font-family: "Poppins", system-ui;
   font-weight: 700;
-  color: #8dc63f;
-  border: 4px solid #8dc63f;
+  color: #8DC63F;
+  border: 4px solid #8DC63F;
   border-radius: 50px;
   width: 155px;
   padding: 12px 0;
@@ -23,12 +23,12 @@
 }
 
 .nav-link:hover {
-  color: #0babdc;
+  color: #0BABDC;
 }
 
 .nav-link-don:hover {
-  background-color: #8dc63f;
-  color: #efefef;
+  background-color: #8DC63F;
+  color: #EFEFEF;
 }
 
 @media (min-width: 1400px) {
@@ -41,8 +41,8 @@
   .nav-link-don {
     font-family: "Poppins", system-ui;
     font-weight: 700;
-    color: #8dc63f;
-    border: 4px solid #8dc63f;
+    color: #8DC63F;
+    border: 4px solid #8DC63F;
     border-radius: 50px;
     width: 190px;
     padding: 15px 0;
@@ -55,11 +55,11 @@
   .navbar-brand {
     display: flex;
     line-height: 0.6;
-    color: #efefef;
+    color: #EFEFEF;
     padding: 0 35px;
   }
   .navbar-brand:hover {
-    color: #efefef;
+    color: #EFEFEF;
   }
   .navbar-brand-mobile {
     padding: 0;
@@ -74,7 +74,7 @@
     font-family: "Noto sans", sans-serif;
     font-size: 15px;
     font-weight: 500;
-    color: #c8c8c8;
+    color: #C8C8C8;
   }
 }
 footer {
@@ -92,7 +92,7 @@ footer .grid__footer .footer__contact {
   justify-content: center;
 }
 footer .grid__footer .footer__contact .contact {
-  color: #efefef;
+  color: #EFEFEF;
   font-family: "Poppins", system-ui;
   text-decoration: none;
   font-size: 15px;
@@ -105,7 +105,7 @@ footer .footer__btn {
 }
 footer .footer__btn .footer__logo .footer-title {
   font-size: 22px;
-  color: #efefef;
+  color: #EFEFEF;
   font-family: "Poppins", system-ui;
   font-weight: 700;
   text-align: center;
@@ -116,25 +116,25 @@ footer .footer__btn .footer__don .don {
   margin: 16px 8px;
   font-family: "Poppins", system-ui;
   font-weight: 700;
-  border: 4px solid #8dc63f;
+  border: 4px solid #8DC63F;
   border-radius: 50px;
   width: 155px;
   padding: 12px 0;
   text-align: center;
-  color: #8dc63f;
+  color: #8DC63F;
   transition: 0.3s;
   background-color: #303030;
 }
 footer .footer__btn .footer__don .don .link__button {
   text-decoration: none;
-  color: #8dc63f;
+  color: #8DC63F;
 }
 footer .footer__btn .footer__don .don .link__button:hover {
-  color: #efefef;
+  color: #EFEFEF;
 }
 footer .footer__btn .footer__don .don:hover {
-  background-color: #8dc63f;
-  color: #efefef;
+  background-color: #8DC63F;
+  color: #EFEFEF;
 }
 footer .footer__btn .footer__lien {
   display: flex;
@@ -161,7 +161,7 @@ footer .footer__logo__centered {
 }
 footer .footer__logo__centered .footer-title {
   font-size: 22px;
-  color: #efefef;
+  color: #EFEFEF;
   font-family: "Poppins", system-ui;
   font-weight: 700;
   text-align: center;
@@ -182,7 +182,7 @@ footer .footer__logo__centered .footer-title {
   }
   footer .grid__footer .footer__logo__centered .footer-title {
     font-size: 22px;
-    color: #efefef;
+    color: #EFEFEF;
     font-family: "Poppins", system-ui;
     font-weight: 700;
     text-align: center;
@@ -194,7 +194,7 @@ footer .footer__logo__centered .footer-title {
     font-size: 14px;
     font-family: "Noto Sans", sans-serif;
     font-weight: 500;
-    color: #c8c8c8;
+    color: #C8C8C8;
   }
   footer .grid__footer .footer__btn .footer__logo {
     display: none;
@@ -228,8 +228,8 @@ footer .footer__logo__centered .footer-title {
 footer .credit {
   text-align: center;
   font-size: 14px;
-  border-top: 2px solid #efefef;
-  color: #efefef;
+  border-top: 2px solid #EFEFEF;
+  color: #EFEFEF;
   font-family: "Poppins", system-ui;
   font-weight: 300;
   width: 100vw;
@@ -253,13 +253,13 @@ footer .credit {
   display: flex;
   justify-content: center;
   text-align: center;
-  color: #efefef;
+  color: #EFEFEF;
   font-family: "Poppins", system-ui;
   font-size: 15px;
 }
 .grid__banniere .banniere__txt a {
   text-decoration: none;
-  color: #0babdc;
+  color: #0BABDC;
 }
 .grid__banniere .banniere__btn {
   display: flex;
@@ -270,18 +270,18 @@ footer .credit {
   margin-top: 16px;
   font-family: "Poppins", system-ui;
   font-weight: 400;
-  border: 2px solid #0babdc;
+  border: 2px solid #0BABDC;
   border-radius: 50px;
   width: 155px;
   padding: 12px 0;
   text-align: center;
-  color: #0babdc;
+  color: #0BABDC;
   transition: 0.3s;
   background-color: #303030;
 }
 .grid__banniere .banniere__btn .btn__compris:hover {
-  background-color: #0babdc;
-  color: #efefef;
+  background-color: #0BABDC;
+  color: #EFEFEF;
 }
 
 @media (min-width: 768px) {
@@ -333,15 +333,15 @@ footer .credit {
   width: 100%;
   max-height: 30vh;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 .grid__carrousel .swiper .swiper__img__ordi {
   -o-object-position: 0% 25%;
-  object-position: 0% 25%;
+     object-position: 0% 25%;
 }
 .grid__carrousel .swiper .swiper__img__champ {
   -o-object-position: 0% 25%;
-  object-position: 0% 25%;
+     object-position: 0% 25%;
 }
 .grid__carrousel .swiper .swiper__bg {
   position: absolute;
@@ -354,8 +354,9 @@ footer .credit {
 }
 .grid__carrousel .swiper .swiper__bg .bg__title {
   font-family: "Inter", sans-serif;
-  color: #efefef;
-  font-size: 15px;
+  color: #EFEFEF;
+  font-size: 14px;
+  line-height: 1;
 }
 @media (min-width: 768px) {
   .grid__carrousel .swiper {
@@ -365,11 +366,11 @@ footer .credit {
     width: 100%;
     max-height: 45vh;
     -o-object-fit: cover;
-    object-fit: cover;
+       object-fit: cover;
   }
   .grid__carrousel .swiper .swiper__img__ordi {
     -o-object-position: 0% 25%;
-    object-position: 0% 25%;
+       object-position: 0% 25%;
   }
   .grid__carrousel .swiper .swiper__bg {
     height: 60px;
@@ -383,21 +384,27 @@ footer .credit {
     width: 100%;
     max-height: 55vh;
     -o-object-fit: cover;
-    object-fit: cover;
+       object-fit: cover;
   }
   .grid__carrousel .swiper .swiper__img__ordi {
     -o-object-position: 0% 25%;
-    object-position: 0% 25%;
+       object-position: 0% 25%;
   }
   .grid__carrousel .swiper .swiper__img__champ {
     -o-object-position: 0% 23%;
-    object-position: 0% 23%;
+       object-position: 0% 23%;
   }
+}
+
+.about {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
 }
 
 body,
 html {
-  background-color: #efefef;
+  background-color: #EFEFEF;
 }
 
 h1 {
@@ -417,11 +424,11 @@ h3 {
   font-family: "Noto Sans", sans-serif;
   font-size: 26px;
   font-weight: 600;
-  color: #0babdc;
+  color: #0BABDC;
 }
 
 p {
   font-family: "Poppins", system-ui;
   font-size: 22px;
   font-weight: 400;
-} /*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
