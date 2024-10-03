@@ -406,20 +406,47 @@ footer .credit {
   }
 }
 
-.about {
+.grid__about {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-}
-.about__title {
-  margin: 10px;
-  padding: 10px;
-}
-.about__text {
+  flex-direction: column;
   text-align: center;
-  margin-left: 5vw;
-  margin-right: 5vw;
+  align-items: center;
+  margin: 12px;
+}
+.grid__about .about__title {
+  font-size: 22px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.grid__about .about__text {
+  font-size: 16px;
+  font-family: "Poppins", system-ui;
+  font-weight: 500;
+}
+@media (min-width: 768px) {
+  .grid__about .about__title {
+    font-size: 26px;
+  }
+  .grid__about .about__text {
+    font-size: 20px;
+    max-width: 768px;
+  }
+}
+@media (min-width: 1400px) {
+  .grid__about .about__title {
+    font-size: 36px;
+  }
+  .grid__about .about__text {
+    font-size: 28px;
+    max-width: 1050px;
+  }
+  .grid__about__text {
+    text-align: center;
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
 }
 
 body,
