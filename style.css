@@ -503,7 +503,13 @@ footer .credit {
   align-items: center;
   padding: 15px;
 }
-.services__container .service .title-block {
+.services__container .service:hover {
+  justify-content: center;
+}
+.services__container .service:hover .txt-block {
+  display: block;
+}
+.services__container .service:hover .title-none {
   display: none;
 }
 .services__container .services__recherche {
@@ -515,9 +521,12 @@ footer .credit {
 }
 .services__container .services__recherche .recherche__title {
   font-family: "Inter", sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   text-align: center;
   color: #EFEFEF;
+  margin-top: 10px;
+  line-height: 1.2;
+  display: block;
 }
 .services__container .services__recherche .recherche__txt {
   font-size: 14px;
@@ -525,8 +534,7 @@ footer .credit {
   text-align: center;
   font-family: "Poppins", system-ui;
   color: #EFEFEF;
-  z-index: 3;
-  overflow: hidden;
+  display: none;
 }
 .services__container .services__publication {
   width: 155px;
@@ -537,16 +545,18 @@ footer .credit {
 }
 .services__container .services__publication .publication__title {
   font-family: "Inter", sans-serif;
-  font-weight: 500;
+  font-weight: 700;
   text-align: center;
-  color: #B2EB65;
+  color: #bfff6b;
+  margin-top: 10px;
 }
 .services__container .services__publication .publication__txt {
   font-size: 14px;
   line-height: 1.2;
   text-align: center;
   font-family: "Poppins", system-ui;
-  color: #B2EB65;
+  color: #bfff6b;
+  display: none;
 }
 .services__container .services__formation {
   width: 155px;
@@ -557,16 +567,18 @@ footer .credit {
 }
 .services__container .services__formation .formation__title {
   font-family: "Inter", sans-serif;
-  font-weight: 500;
+  font-weight: 700;
   text-align: center;
-  color: #6FDDFF;
+  color: #8be4ff;
+  margin-top: 10px;
 }
 .services__container .services__formation .formation__txt {
   font-size: 14px;
   line-height: 1.2;
   text-align: center;
   font-family: "Poppins", system-ui;
-  color: #6FDDFF;
+  color: #8be4ff;
+  display: none;
 }
 .services__container .services__conseil {
   width: 155px;
@@ -577,16 +589,19 @@ footer .credit {
 }
 .services__container .services__conseil .conseil__title {
   font-family: "Inter", sans-serif;
-  font-weight: 500;
+  font-weight: 700;
   text-align: center;
-  color: #BAF7FF;
+  color: #cdf8fd;
+  margin-top: 10px;
+  line-height: 1.2;
 }
 .services__container .services__conseil .conseil__txt {
   font-size: 14px;
   line-height: 1.2;
   text-align: center;
   font-family: "Poppins", system-ui;
-  color: #BAF7FF;
+  color: #cdf8fd;
+  display: none;
 }
 .services__container .services__sensibilisation {
   width: 155px;
@@ -597,9 +612,10 @@ footer .credit {
 }
 .services__container .services__sensibilisation .sensibilisation__title {
   font-family: "Inter", sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   text-align: center;
   color: #EFEFEF;
+  margin-top: 15px;
 }
 .services__container .services__sensibilisation .sensibilisation__txt {
   font-size: 14px;
@@ -607,6 +623,7 @@ footer .credit {
   text-align: center;
   font-family: "Poppins", system-ui;
   color: #EFEFEF;
+  display: none;
 }
 
 body,
