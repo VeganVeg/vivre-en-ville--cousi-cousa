@@ -1,8 +1,8 @@
 @use 'variables';
 @use 'mixins';
-
 //format mobile
-.grid__banniere{
+.grid__banniere {
+    display: none;
     display: grid;
     width: 100%;
     background-color: variables.$charbon;
@@ -12,26 +12,26 @@
     position: fixed;
     z-index: 15;
     top: 0;
-    &--none{
+    &--none {
         display: none;
     }
-    .banniere__txt{
+    .banniere__txt {
         display: flex;
         justify-content: center;
         text-align: center;
         color: variables.$quartz;
         font-family: 'Poppins', system-ui;
         font-size: 15px;
-        a{
+        a {
             text-decoration: none;
             color: variables.$bleu-ciel;
         }
     }
-    .banniere__btn{
+    .banniere__btn {
         display: flex;
-        justify-content: center; 
+        justify-content: center;
         align-items: center;
-        .btn__compris{
+        .btn__compris {
             margin-top: 16px;
             font-family: "Poppins", system-ui;
             font-weight: 400;
@@ -51,45 +51,45 @@
     }
 }
 
-    //format tablette
-    @media (min-width: 768px){
-        .grid__banniere{
-            display: flex;
-            padding: 20px 5vw;
-            align-items: center;
-            justify-content: center;
-            &--none{
-                display: none;
-            }
-            .banniere__txt{
-                text-align: left;
-                font-size: 17px;
-                width: 100%;
-                max-width: 720px;
-            }
-            .banniere__btn{
-                .btn__compris{
-                    margin-top: 0px;
-                    margin-left: 3vw;
-                }
+//format tablette
+@media (min-width: 768px) {
+    .grid__banniere {
+        display: flex;
+        padding: 20px 5vw;
+        align-items: center;
+        justify-content: center;
+        &--none {
+            display: none;
+        }
+        .banniere__txt {
+            text-align: left;
+            font-size: 17px;
+            width: 100%;
+            max-width: 720px;
+        }
+        .banniere__btn {
+            .btn__compris {
+                margin-top: 0px;
+                margin-left: 3vw;
             }
         }
     }
+}
 
-    @media (min-width: 1400px){
-        .grid__banniere{
-            padding: 25px 5vw;
-            &--none{
-                display: none;
-            }
-            .banniere__txt{
-                font-size: 18px;
-            }
-            .btn__compris{
-                width: 175px !important;
-                height: 68 !important;
-                    padding: 15px 0;
-                    font-size: 20px;
-            }
+@media (min-width: 1400px) {
+    .grid__banniere {
+        padding: 25px 5vw;
+        &--none {
+            display: none;
+        }
+        .banniere__txt {
+            font-size: 18px;
+        }
+        .btn__compris {
+            width: 175px !important;
+            height: 68 !important;
+            padding: 15px 0;
+            font-size: 20px;
         }
     }
+}
