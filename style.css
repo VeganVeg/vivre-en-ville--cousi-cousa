@@ -393,6 +393,12 @@ footer .credit {
   }
 }
 
+.about {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+}
+
 body,
 html {
   background-color: #EFEFEF;
