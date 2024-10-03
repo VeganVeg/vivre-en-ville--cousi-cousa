@@ -1,10 +1,6 @@
-
-@@ -1,8 +1,39 @@
 @use "variables";
 @use "mixins";
 
-.about {
-  border: 1px solid red;
 .grid__about {
   display: flex;
   justify-content: center;
@@ -18,7 +14,6 @@
     font-weight: 500;
     margin-bottom: 5px;
   }
-<<<<<<< HEAD
   .about__text{
     font-size: 16px;
     font-family: 'Poppins', system-ui;
@@ -41,11 +36,11 @@
       font-size: 28px;
       max-width: 1050px;
     }
-=======
+
   &__text {
     text-align: center;
     margin-left: 5vw;
     margin-right: 5vw;
->>>>>>> 3b18fe1415503ad5b76d440ba689abee8abb8cde
   }
+}
 }
