@@ -536,6 +536,9 @@ footer .credit {
   color: #EFEFEF;
   display: none;
 }
+.services__container .services__recherche .img__microscope {
+  width: 75%;
+}
 .services__container .services__publication {
   width: 155px;
   height: 205px;
