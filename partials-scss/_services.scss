@@ -42,7 +42,7 @@
             font-weight: 700;
             text-align: center;
             color: variables.$quartz;
-            margin-top: 10px;
+            margin-top: 5px;
             line-height: 1.2;
             display: block;
         }
@@ -55,7 +55,9 @@
             display: none;
         }
         .img__microscope{
-            width: 75%;
+            position: absolute;
+            width: 85px;
+           margin-top: 50px;
         }
     }
     .services__publication{
@@ -78,6 +80,11 @@
             font-family: "Poppins", system-ui;
             color: #bfff6b;
             display: none;
+        }
+        .img__publication{
+            position: absolute;
+            width: 85px;
+           margin-top: 50px;
         }
     }
     .services__formation{
@@ -113,7 +120,7 @@
             font-weight: 700;
             text-align: center;
             color: #cdf8fd;
-            margin-top: 10px;
+            margin-top: 5px;
             line-height: 1.2;
         }
         .conseil__txt{
