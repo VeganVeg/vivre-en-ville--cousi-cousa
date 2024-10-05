@@ -541,6 +541,9 @@ footer .credit {
   width: 85px;
   margin-top: 50px;
 }
+.services__container .services__recherche .img__hover {
+  fill: red;
+}
 .services__container .services__publication {
   width: 155px;
   height: 205px;
