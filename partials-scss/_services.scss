@@ -1,6 +1,13 @@
 @use 'variables';
 @use 'mixins';
 
+.services__offerts{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
 .services__title{
     font-size: 22px;
     font-family: "Inter", sans-serif;
@@ -14,6 +21,8 @@
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
+    max-width: 513px;
+
     .service{
         display: flex;
         flex-direction: column;
@@ -41,7 +50,7 @@
             font-family: 'Inter', sans-serif;
             font-weight: 700;
             text-align: center;
-            color: variables.$quartz;
+            color: #E2E2E2;
             margin-top: 5px;
             line-height: 1.2;
             display: block;
@@ -51,7 +60,7 @@
             line-height: 1.2;
             text-align: center;
             font-family: "Poppins", system-ui;
-            color: variables.$quartz;
+            color: #E2E2E2;
             display: none;
         }
         .img__microscope{
@@ -167,6 +176,16 @@
             position: absolute;
             width: 90px;
            margin-top: 50px;
+        }
+    }
+}
+@media (min-width:768px){
+    .services__container{
+        width: 100%;
+        max-width: 600px;
+        .service{
+            width: 165px;
+            height: 215px;
         }
     }
 }

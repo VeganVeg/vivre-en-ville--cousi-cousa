@@ -482,6 +482,13 @@ footer .credit {
   }
 }
 
+.services__offerts {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
 .services__title {
   font-size: 22px;
   font-family: "Inter", sans-serif;
@@ -496,6 +503,7 @@ footer .credit {
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
+  max-width: 513px;
 }
 .services__container .service {
   display: flex;
@@ -523,7 +531,7 @@ footer .credit {
   font-family: "Inter", sans-serif;
   font-weight: 700;
   text-align: center;
-  color: #EFEFEF;
+  color: #E2E2E2;
   margin-top: 5px;
   line-height: 1.2;
   display: block;
@@ -533,7 +541,7 @@ footer .credit {
   line-height: 1.2;
   text-align: center;
   font-family: "Poppins", system-ui;
-  color: #EFEFEF;
+  color: #E2E2E2;
   display: none;
 }
 .services__container .services__recherche .img__microscope {
@@ -651,6 +659,16 @@ footer .credit {
   margin-top: 50px;
 }
 
+@media (min-width: 768px) {
+  .services__container {
+    width: 100%;
+    max-width: 600px;
+  }
+  .services__container .service {
+    width: 165px;
+    height: 215px;
+  }
+}
 .donner {
   border: 3px solid #303030;
   max-width: 65%;
