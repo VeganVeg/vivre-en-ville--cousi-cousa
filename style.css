@@ -645,6 +645,11 @@ footer .credit {
   color: #EFEFEF;
   display: none;
 }
+.services__container .services__sensibilisation .img__sensibilisation {
+  position: absolute;
+  width: 85px;
+  margin-top: 50px;
+}
 
 .donner {
   border: 3px solid #303030;
