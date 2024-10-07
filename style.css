@@ -704,6 +704,11 @@ footer .credit {
   background-color: #0BABDC;
   border: 3px solid #8DD5DF;
 }
+.donner button:hover {
+  background-color: #8DD5DF;
+  border: 3px solid #0BABDC;
+  color: #303030;
+}
 
 @media screen and (min-width: 768px) {
   .donner {
@@ -742,6 +747,11 @@ footer .credit {
     background-color: #0BABDC;
     border: 5px solid #8DD5DF;
   }
+  .donner button:hover {
+    background-color: #8DD5DF;
+    border: 5px solid #0BABDC;
+    color: #303030;
+  }
 }
 @media screen and (min-width: 1400px) {
   .donner {
@@ -778,6 +788,11 @@ footer .credit {
     border-radius: 25px;
     background-color: #0BABDC;
     border: 7px solid #8DD5DF;
+  }
+  .donner button:hover {
+    background-color: #8DD5DF;
+    border: 7px solid #0BABDC;
+    color: #303030;
   }
 }
 .temoignages__titre {

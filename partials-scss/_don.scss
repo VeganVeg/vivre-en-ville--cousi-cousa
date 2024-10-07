@@ -34,6 +34,11 @@
     border-radius: 30px;
     background-color: variables.$bleu-ciel;
     border: 3px solid variables.$bleu-matinal;
+    &:hover {
+      background-color: variables.$bleu-matinal;
+      border: 3px solid variables.$bleu-ciel;
+      color: variables.$charbon;
+    }
   }
 }
 
@@ -72,6 +77,11 @@
       border-radius: 25px;
       background-color: variables.$bleu-ciel;
       border: 5px solid variables.$bleu-matinal;
+      &:hover {
+        background-color: variables.$bleu-matinal;
+        border: 5px solid variables.$bleu-ciel;
+        color: variables.$charbon;
+      }
     }
   }
 }
@@ -110,6 +120,11 @@
       border-radius: 25px;
       background-color: variables.$bleu-ciel;
       border: 7px solid variables.$bleu-matinal;
+      &:hover {
+        background-color: variables.$bleu-matinal;
+        border: 7px solid variables.$bleu-ciel;
+        color: variables.$charbon;
+      }
     }
   }
 }
