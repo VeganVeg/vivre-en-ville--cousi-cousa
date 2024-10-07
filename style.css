@@ -720,8 +720,12 @@ footer .credit {
     width: 140px;
     margin-top: 95px;
   }
+  .services__container .service .img__sensibilisation {
+    width: 145px;
+    margin-top: 95px;
+  }
   .services__container .service .card__txt {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 .donner {
