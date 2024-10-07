@@ -693,7 +693,12 @@ footer .credit {
   margin-bottom: 10px;
   font-weight: bolder;
 }
-.donner button {
+.donner a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+.donner a button {
   margin-top: 10px;
   height: 25px;
   width: 65%;
@@ -704,7 +709,7 @@ footer .credit {
   background-color: #0BABDC;
   border: 3px solid #8DD5DF;
 }
-.donner button:hover {
+.donner a button:hover {
   background-color: #8DD5DF;
   border: 3px solid #0BABDC;
   color: #303030;
