@@ -162,7 +162,7 @@
             font-weight: 700;
             text-align: center;
             color: variables.$quartz;
-            margin-top: 15px;
+            margin-top: 10px;
         }
         .sensibilisation__txt{
             font-size: 14px;
@@ -180,12 +180,68 @@
     }
 }
 @media (min-width:768px){
+    .services__title{
+        font-size: 26px;
+    }
     .services__container{
         width: 100%;
-        max-width: 600px;
+        max-width: 768px;
         .service{
-            width: 165px;
-            height: 215px;
+            width: 204px;
+            height: 280px;
+            margin: 9px;
+            .card__title{
+                font-size: 20px;
+                margin-top: 15px;
+            }
+            .recherche__title{
+                margin-top: 10px;
+            }
+            .conseil__title{
+                margin-top: 10px;
+            }
+            .card__img{
+                width: 115px;
+                margin-top: 70px;
+            }
+            .img__sensibilisation{
+                width: 120px;
+            }
+            .card__txt{
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media (min-width:1400px){
+    .services__title{
+        font-size: 36px;
+    }
+    .services__container{
+        width: 100%;
+        max-width: 1400px;
+        .service{
+            width: 240px;
+            height: 330px;
+            margin: 12px;
+            .card__title{
+                font-size: 24px;
+                margin-top: 20px;
+            }
+            .recherche__title{
+                margin-top: 15px;
+            }
+            .conseil__title{
+                margin-top: 15px;
+            }
+            .card__img{
+                width: 140px;
+                margin-top: 95px;
+            }
+            .card__txt{
+                font-size: 16px;
+            }
         }
     }
 }

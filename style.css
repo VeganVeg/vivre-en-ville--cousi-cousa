@@ -643,7 +643,7 @@ footer .credit {
   font-weight: 700;
   text-align: center;
   color: #EFEFEF;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 .services__container .services__sensibilisation .sensibilisation__txt {
   font-size: 14px;
@@ -660,13 +660,68 @@ footer .credit {
 }
 
 @media (min-width: 768px) {
+  .services__title {
+    font-size: 26px;
+  }
   .services__container {
     width: 100%;
-    max-width: 600px;
+    max-width: 768px;
   }
   .services__container .service {
-    width: 165px;
-    height: 215px;
+    width: 204px;
+    height: 280px;
+    margin: 9px;
+  }
+  .services__container .service .card__title {
+    font-size: 20px;
+    margin-top: 15px;
+  }
+  .services__container .service .recherche__title {
+    margin-top: 10px;
+  }
+  .services__container .service .conseil__title {
+    margin-top: 10px;
+  }
+  .services__container .service .card__img {
+    width: 115px;
+    margin-top: 70px;
+  }
+  .services__container .service .img__sensibilisation {
+    width: 120px;
+  }
+  .services__container .service .card__txt {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1400px) {
+  .services__title {
+    font-size: 36px;
+  }
+  .services__container {
+    width: 100%;
+    max-width: 1400px;
+  }
+  .services__container .service {
+    width: 240px;
+    height: 330px;
+    margin: 12px;
+  }
+  .services__container .service .card__title {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  .services__container .service .recherche__title {
+    margin-top: 15px;
+  }
+  .services__container .service .conseil__title {
+    margin-top: 15px;
+  }
+  .services__container .service .card__img {
+    width: 140px;
+    margin-top: 95px;
+  }
+  .services__container .service .card__txt {
+    font-size: 16px;
   }
 }
 .donner {
