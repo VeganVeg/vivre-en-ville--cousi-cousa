@@ -937,7 +937,7 @@ footer .credit {
   }
   .temoignage__item {
     border-bottom: none;
-    border-right: 2px solid #ccc;
+    border-right: 2px solid #303030;
   }
   .temoignage__item:nth-child(3n) {
     border-right: none;
@@ -980,7 +980,7 @@ footer .credit {
   gap: 15px;
   align-items: center;
   padding: 15px 0;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #303030;
 }
 .nouvelle__item:last-child {
   border-bottom: none;
@@ -1000,6 +1000,7 @@ footer .credit {
   font-size: 16px;
   margin-bottom: 5px;
   color: #333;
+  max-width: 500px;
 }
 .nouvelle__date {
   font-size: 14px;
@@ -1026,10 +1027,19 @@ footer .credit {
 .nouvelle__lien:hover {
   background-color: #0985ab;
 }
+.nouvelle__lien-none {
+  display: none;
+}
 
 @media (min-width: 768px) {
   .grid__nouvelles {
     padding: 0 30px;
+  }
+  .grid__nouvelles .nouvelle__lien {
+    display: none;
+  }
+  .grid__nouvelles .nouvelle__lien-none {
+    display: block;
   }
 }
 @media (min-width: 1400px) {
