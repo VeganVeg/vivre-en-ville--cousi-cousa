@@ -670,9 +670,8 @@ footer .credit {
   }
 }
 .donner {
-  border: 3px solid #303030;
-  max-width: 65%;
-  min-width: 55%;
+  border: 0.5vh solid #303030;
+  width: 80vw;
   height: 25vh;
   display: flex;
   flex-direction: column;
@@ -682,15 +681,16 @@ footer .credit {
   border-radius: 40px;
 }
 .donner h1 {
-  margin-top: 0px;
-  font-size: 16px;
+  margin-top: 0vh;
+  font-size: 1.8vh;
   font-weight: bolder;
   margin-bottom: 2px;
 }
 .donner p {
   color: #0BABDC;
-  font-size: 10px;
-  margin-bottom: 10px;
+  margin-top: 0.5vh;
+  font-size: 1.2vh;
+  margin-bottom: 1vh;
   font-weight: bolder;
 }
 .donner a {
@@ -699,10 +699,11 @@ footer .credit {
   text-decoration: none;
 }
 .donner a button {
-  margin-top: 10px;
-  height: 25px;
-  width: 65%;
-  font-size: 10px;
+  margin-top: 2vh;
+  height: 4vh;
+  width: 55vw;
+  font-size: 1.3vh;
+  font-weight: bold;
   color: white;
   align-self: center;
   border-radius: 30px;
@@ -717,10 +718,9 @@ footer .credit {
 
 @media screen and (min-width: 768px) {
   .donner {
-    border: 3px solid #303030;
-    max-width: 70%;
-    min-width: 55%;
-    height: 30vh;
+    border: 0.5vh solid #303030;
+    width: 70vw;
+    height: 40vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -740,7 +740,12 @@ footer .credit {
     width: 40vw;
     margin-bottom: 10px;
   }
-  .donner button {
+  .donner a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+  }
+  .donner a button {
     margin-top: 10px;
     height: 50px;
     width: 55%;
@@ -752,7 +757,7 @@ footer .credit {
     background-color: #0BABDC;
     border: 5px solid #8DD5DF;
   }
-  .donner button:hover {
+  .donner a button:hover {
     background-color: #8DD5DF;
     border: 5px solid #0BABDC;
     color: #303030;
@@ -783,7 +788,12 @@ footer .credit {
     margin-left: 15%;
     font-weight: 400;
   }
-  .donner button {
+  .donner a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+  }
+  .donner a button {
     height: 70px;
     width: 45%;
     font-size: 25px;
@@ -794,7 +804,7 @@ footer .credit {
     background-color: #0BABDC;
     border: 7px solid #8DD5DF;
   }
-  .donner button:hover {
+  .donner a button:hover {
     background-color: #8DD5DF;
     border: 7px solid #0BABDC;
     color: #303030;
