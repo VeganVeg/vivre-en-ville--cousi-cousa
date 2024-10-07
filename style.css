@@ -731,6 +731,7 @@ footer .credit {
 .donner {
   border: 3px solid #303030;
   width: 85vw;
+  max-width: 85vw;
   height: 270px;
   display: flex;
   flex-direction: column;
@@ -765,33 +766,35 @@ footer .credit {
   margin-top: 2vh;
   height: 40px;
   width: 55vw;
+  max-width: 55vw;
   font-size: 3.2vw;
   font-weight: bold;
-  color: white;
+  color: #0BABDC;
   align-self: center;
   border-radius: 30px;
-  background-color: #0BABDC;
-  border: 3px solid #8DD5DF;
+  background-color: #EFEFEF;
+  border: 3px solid #0BABDC;
   transition: 0.8s;
 }
 .donner a button:hover {
   transition: 0.8s;
-  background-color: #8DD5DF;
-  border: 3px solid #0BABDC;
-  color: #303030;
+  background-color: #0BABDC;
+  border: 3px solid #8DD5DF;
+  color: #EFEFEF;
 }
 
 @media screen and (min-width: 768px) {
   .donner {
     border: 4px solid #303030;
-    width: 60vw;
-    height: 300px;
+    width: 70vw;
+    max-width: 70vw;
+    height: 350px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 50px auto;
     margin-bottom: 80px;
-    padding: 20px;
+    padding: 0px 20px 20px 20px;
     border-radius: 40px;
   }
   .donner h1 {
@@ -800,10 +803,11 @@ footer .credit {
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 2px;
+    max-width: 65%;
   }
   .donner p {
     color: #0BABDC;
-    width: 65%;
+    width: 55%;
     font-size: 1.7vw;
     margin-left: 20px;
     margin-right: 20px;
@@ -815,21 +819,21 @@ footer .credit {
     text-decoration: none;
   }
   .donner a button {
-    margin-top: 20px;
+    margin-top: 30px;
     height: 50px;
-    width: 57%;
+    width: 60%;
     font-size: 13px;
     font-weight: bold;
-    color: white;
+    color: #0BABDC;
     align-self: center;
     border-radius: 25px;
-    background-color: #0BABDC;
-    border: 5px solid #8DD5DF;
+    background-color: #EFEFEF;
+    border: 5px solid #0BABDC;
   }
   .donner a button:hover {
-    background-color: #8DD5DF;
-    border: 5px solid #0BABDC;
-    color: #303030;
+    background-color: #0BABDC;
+    border: 5px solid #8DD5DF;
+    color: #EFEFEF;
   }
 }
 @media screen and (min-width: 1400px) {
@@ -867,16 +871,16 @@ footer .credit {
     width: 45%;
     font-size: 25px;
     font-weight: bold;
-    color: white;
+    color: #0BABDC;
     align-self: center;
     border-radius: 25px;
-    background-color: #0BABDC;
-    border: 7px solid #8DD5DF;
+    background-color: #EFEFEF;
+    border: 7px solid #0BABDC;
   }
   .donner a button:hover {
-    background-color: #8DD5DF;
-    border: 7px solid #0BABDC;
-    color: #303030;
+    background-color: #0BABDC;
+    border: 7px solid #8DD5DF;
+    color: #EFEFEF;
   }
 }
 .temoignages__titre {
