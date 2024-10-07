@@ -726,27 +726,31 @@ footer .credit {
 }
 .donner {
   border: 3px solid #303030;
-  max-width: 65%;
-  min-width: 55%;
-  height: 25vh;
+  width: 85vw;
+  height: 270px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 20px auto;
+  margin-bottom: 60px;
   padding: 20px;
   border-radius: 40px;
 }
 .donner h1 {
   margin-top: 0px;
-  font-size: 16px;
-  font-weight: bolder;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 5vw;
   margin-bottom: 2px;
 }
 .donner p {
   color: #0BABDC;
-  font-size: 10px;
-  margin-bottom: 10px;
-  font-weight: bolder;
+  margin-top: 3px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 3vw;
+  margin-bottom: 13px;
+  font-weight: 600;
 }
 .donner a {
   display: flex;
@@ -754,17 +758,20 @@ footer .credit {
   text-decoration: none;
 }
 .donner a button {
-  margin-top: 10px;
-  height: 25px;
-  width: 65%;
-  font-size: 10px;
+  margin-top: 2vh;
+  height: 40px;
+  width: 55vw;
+  font-size: 3.2vw;
+  font-weight: bold;
   color: white;
   align-self: center;
   border-radius: 30px;
   background-color: #0BABDC;
   border: 3px solid #8DD5DF;
+  transition: 0.8s;
 }
 .donner a button:hover {
+  transition: 0.8s;
   background-color: #8DD5DF;
   border: 3px solid #0BABDC;
   color: #303030;
@@ -772,33 +779,41 @@ footer .credit {
 
 @media screen and (min-width: 768px) {
   .donner {
-    border: 3px solid #303030;
-    max-width: 70%;
-    min-width: 55%;
-    height: 30vh;
+    border: 4px solid #303030;
+    width: 60vw;
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 50px auto;
+    margin-bottom: 80px;
     padding: 20px;
     border-radius: 40px;
   }
   .donner h1 {
     margin-top: 0px;
-    font-size: 25px;
-    width: 40vw;
+    font-size: 3.5vw;
+    margin-left: 20px;
+    margin-right: 20px;
     margin-bottom: 2px;
   }
   .donner p {
     color: #0BABDC;
-    font-size: 13px;
-    width: 40vw;
+    width: 65%;
+    font-size: 1.7vw;
+    margin-left: 20px;
+    margin-right: 20px;
     margin-bottom: 10px;
   }
-  .donner button {
-    margin-top: 10px;
+  .donner a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+  }
+  .donner a button {
+    margin-top: 20px;
     height: 50px;
-    width: 55%;
+    width: 57%;
     font-size: 13px;
     font-weight: bold;
     color: white;
@@ -807,7 +822,7 @@ footer .credit {
     background-color: #0BABDC;
     border: 5px solid #8DD5DF;
   }
-  .donner button:hover {
+  .donner a button:hover {
     background-color: #8DD5DF;
     border: 5px solid #0BABDC;
     color: #303030;
@@ -838,7 +853,12 @@ footer .credit {
     margin-left: 15%;
     font-weight: 400;
   }
-  .donner button {
+  .donner a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+  }
+  .donner a button {
     height: 70px;
     width: 45%;
     font-size: 25px;
@@ -849,7 +869,7 @@ footer .credit {
     background-color: #0BABDC;
     border: 7px solid #8DD5DF;
   }
-  .donner button:hover {
+  .donner a button:hover {
     background-color: #8DD5DF;
     border: 7px solid #0BABDC;
     color: #303030;
