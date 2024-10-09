@@ -392,6 +392,20 @@ footer .credit {
   line-height: 1;
   margin-left: 5px;
 }
+.grid__carrousel .swiper .swiper-pagination-bullet {
+  margin-bottom: 28px;
+}
+.grid__carrousel .swiper .swiper-pagination-bullet-active {
+  background: #0BABDC;
+}
+.grid__carrousel .swiper .swiper-button-prev {
+  color: #303030;
+  display: none;
+}
+.grid__carrousel .swiper .swiper-button-next {
+  color: #303030;
+  display: none;
+}
 @media (min-width: 768px) {
   .grid__carrousel .swiper {
     max-height: 45vh;
@@ -415,6 +429,17 @@ footer .credit {
     font-size: 18px;
     line-height: 1.2;
     margin-left: 15px;
+  }
+  .grid__carrousel .swiper .swiper-pagination-bullet {
+    margin-bottom: 50px;
+  }
+  .grid__carrousel .swiper .swiper-button-prev {
+    color: #303030;
+    display: block;
+  }
+  .grid__carrousel .swiper .swiper-button-next {
+    color: #303030;
+    display: block;
   }
 }
 @media (min-width: 1400px) {

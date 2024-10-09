@@ -35,6 +35,20 @@
                 margin-left: 5px;
             }
         }
+        .swiper-pagination-bullet{
+            margin-bottom: 28px;
+        }
+        .swiper-pagination-bullet-active{
+            background: variables.$bleu-ciel;
+        }
+        .swiper-button-prev{
+            color: variables.$charbon;
+            display: none;
+        }
+        .swiper-button-next{
+            color: variables.$charbon;
+            display: none;
+        }
     }
 
 
@@ -58,6 +72,17 @@
                     line-height: 1.2;
                     margin-left: 15px;
                 }
+            }
+            .swiper-pagination-bullet{
+                margin-bottom: 50px;
+            }
+            .swiper-button-prev{
+                color: variables.$charbon;
+                display: block;
+            }
+            .swiper-button-next{
+                color: variables.$charbon;
+                display: block;
             }
         }
     }
