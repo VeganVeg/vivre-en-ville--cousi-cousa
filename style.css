@@ -520,6 +520,9 @@ footer .credit {
 .services__container .service:hover .title-none {
   display: none;
 }
+.services__container .img__hover {
+  position: absolute;
+}
 .services__container .services__recherche {
   width: 155px;
   height: 205px;

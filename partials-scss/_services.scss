@@ -28,18 +28,19 @@
         flex-direction: column;
         align-items: center;
         padding: 15px;
-
     }
-
-.service:hover{
-    justify-content: center;
-    .txt-block{
-        display: block;
+    .service:hover{
+        justify-content: center;
+        .txt-block{
+            display: block;
+        }
+        .title-none{
+            display: none;
+        }
     }
-    .title-none{
-        display: none;
+    .img__hover{
+        position: absolute;
     }
-}
     .services__recherche{
         width: 155px;
         height: 205px;
