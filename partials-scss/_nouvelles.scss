@@ -136,7 +136,7 @@
 
     .nouvelle__item{
         .nouvelle__esp{
-            padding-left: 10px;
+            padding-left: 50px;
             .esp{
                 font-size: 16px;
                 padding: 12px;
@@ -162,7 +162,7 @@
             }
             &__titre{
                 font-size: 24px;
-                max-width: 900px;
+                max-width: 850px;
             }
             &__date{
                 font-size: 18px;
@@ -180,6 +180,7 @@
     .nouvelle__item{
         .nouvelle__esp{
             padding-left: 0;
+            padding-right: 20px;
             .esp{
                 font-size: 18px;
                 padding: 14px;
