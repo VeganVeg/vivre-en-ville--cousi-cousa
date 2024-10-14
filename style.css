@@ -926,13 +926,11 @@ footer .credit {
 .temoignages__titre {
   text-align: center;
   font-size: 22px;
-  margin-bottom: 6px;
+  margin-bottom: 14px;
   color: #303030;
 }
 
 .grid__temoignages {
-  display: flex;
-  flex-direction: column;
   padding: 0 23px;
   max-width: 530px;
   margin: 0 auto;
@@ -943,61 +941,97 @@ footer .credit {
 }
 .temoignage__photo {
   width: 60px;
-  height: 60px;
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
-  margin: 0 auto 10px;
 }
 .temoignage__nom {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 600;
   color: #303030;
-  margin: 0;
+  margin: 10px 0;
 }
 .temoignage__texte {
   font-family: "Poppins", system-ui;
   font-weight: 400;
   font-size: 14px;
   color: #303030;
-  margin: 0;
+  margin: 0 auto;
   padding: 0 10px;
+  max-width: 450px;
 }
 
 .temoignage__separation {
   width: 100%;
   height: 2px;
   border-radius: 50px;
-  background-color: #333;
+  background-color: #303030;
   margin: 22px 0;
 }
 
 @media (min-width: 768px) {
   .temoignages__titre {
     font-size: 26px;
-    margin-bottom: 8px;
+    margin-bottom: 16px;
   }
   .grid__temoignages {
-    max-width: 751px;
+    max-width: 800px;
     padding: 0 46px;
+    display: grid;
+    grid-template-columns: 1fr 2px 1fr 2px 1fr;
+    justify-items: center;
   }
   .temoignage__photo {
     width: 70px;
-    height: 70px;
+  }
+  .temoignage__nom {
+    font-size: 20px;
+  }
+  .temoignage__texte {
+    font-size: 16px;
+    padding: 0;
+  }
+  .temoignage__separation {
+    height: auto;
+    margin: 0;
+  }
+  .temoignage__item:nth-child(1) {
+    padding-right: 15px;
+  }
+  .temoignage__item:nth-child(3) {
+    padding: 0 15px;
+  }
+  .temoignage__item:nth-child(5) {
+    padding-left: 15px;
   }
 }
 @media (min-width: 1400px) {
   .temoignages__titre {
-    font-size: 24px;
+    font-size: 36px;
+    margin-bottom: 20px;
   }
   .grid__temoignages {
     max-width: 1200px;
     margin: 0 auto;
   }
+  .grid__temoignages .temoignage__item:nth-child(1) {
+    padding-right: 25px;
+  }
+  .grid__temoignages .temoignage__item:nth-child(3) {
+    padding: 0 25px;
+  }
+  .grid__temoignages .temoignage__item:nth-child(5) {
+    padding-left: 25px;
+  }
   .temoignage__photo {
     width: 80px;
-    height: 80px;
+  }
+  .temoignage__nom {
+    font-size: 24px;
+  }
+  .temoignage__texte {
+    font-size: 20px;
   }
 }
 .nouvelles {
