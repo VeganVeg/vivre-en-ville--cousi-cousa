@@ -18,6 +18,7 @@
     padding: 0 23px;
     max-width: 530px;
     margin: 0 auto;
+    margin-top: 5px;
 }
 
 .nouvelle {
@@ -29,7 +30,6 @@
     }
     &__image {
         width: 100px;
-        height: 100px;
         object-fit: cover;
     }
     &__content {
@@ -74,7 +74,7 @@
                 border: 2px solid variables.$bleu-ciel;
                 border-radius: 50px;
                 width: 125px;
-                padding: 6px;
+                padding: 8px;
                 text-align: center;
                 color: variables.$bleu-ciel;
                 transition: 0.3s;
@@ -102,7 +102,7 @@
     .nouvelles{
         &__titre{
             font-size: 26px;
-            margin-bottom: 12px;
+            margin-bottom: 8px;
         }
     }
     .grid__nouvelles {
@@ -111,6 +111,9 @@
         padding: 0 46px;
 
         .nouvelle{
+            &__content{
+                padding-left: 20px;
+            }
             &__lien{
                 display: none;
             }
@@ -125,7 +128,25 @@
                 font-size: 16px;
                 margin-bottom: 0;
             }
+            &__image{
+                width: 120px;
+            }
         }
+    }
+
+    .nouvelle__item{
+        .nouvelle__esp{
+            padding-left: 10px;
+            .esp{
+                font-size: 16px;
+                padding: 12px;
+                width: 145px;
+            }
+        }
+    }
+
+    .nouvelle__separation{
+        margin: 22px 0;
     }
 }
 
@@ -133,11 +154,37 @@
     .nouvelles{
         &__titre{
             font-size: 36px;
-            margin-bottom: 8px;
+            margin-bottom: 12px;
+        }
+        .nouvelle{
+            &__content{
+                padding-left: 30px;
+            }
+            &__titre{
+                font-size: 24px;
+                max-width: 900px;
+            }
+            &__date{
+                font-size: 18px;
+            }
+            &__image{
+                width: 150px;
+            }
         }
     }
     .grid__nouvelles {
         margin: 0 auto;
         max-width: 1400px;
+    }
+
+    .nouvelle__item{
+        .nouvelle__esp{
+            padding-left: 0;
+            .esp{
+                font-size: 18px;
+                padding: 14px;
+                width: 170px;
+            }
+        }
     }
 }
