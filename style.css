@@ -125,13 +125,6 @@ footer .footer__btn .footer__don .don {
   transition: 0.3s;
   background-color: #303030;
 }
-footer .footer__btn .footer__don .don .link__button {
-  text-decoration: none;
-  color: #8DC63F;
-}
-footer .footer__btn .footer__don .don .link__button:hover {
-  color: #EFEFEF;
-}
 footer .footer__btn .footer__don .don:hover {
   background-color: #8DC63F;
   color: #EFEFEF;
@@ -526,7 +519,7 @@ footer .credit {
   font-size: 22px;
   font-family: "Inter", sans-serif;
   font-weight: 500;
-  margin-bottom: 5px;
+  margin-bottom: 6px;
   color: #303030;
   text-align: center;
 }
@@ -701,6 +694,7 @@ footer .credit {
 @media (min-width: 768px) {
   .services__title {
     font-size: 26px;
+    margin-bottom: 8px;
   }
   .services__container {
     width: 100%;
@@ -740,6 +734,7 @@ footer .credit {
 @media (min-width: 1400px) {
   .services__title {
     font-size: 36px;
+    margin-bottom: 12px;
   }
   .services__container {
     width: 100%;
@@ -1011,14 +1006,16 @@ footer .credit {
 }
 .nouvelles__titre {
   text-align: center;
-  font-size: 24px;
-  color: #333;
+  font-size: 22px;
+  font-weight: 500;
+  color: #303030;
+  margin-bottom: 6px;
 }
 
 .grid__nouvelles {
   width: 100%;
   gap: 0;
-  padding: 23px;
+  padding: 0 23px;
   max-width: 530px;
   margin: 0 auto;
 }
@@ -1045,8 +1042,8 @@ footer .credit {
 }
 .nouvelle__titre {
   font-size: 16px;
-  margin-bottom: 5px;
-  color: #333;
+  margin-bottom: 0;
+  color: #303030;
   max-width: 500px;
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -1057,29 +1054,32 @@ footer .credit {
 .nouvelle__date {
   font-size: 14px;
   color: #0BABDC;
-  margin-bottom: 5px;
+  margin-bottom: 9px;
 }
 .nouvelle__texte {
   font-size: 14px;
   color: #666;
 }
-.nouvelle__lien {
-  display: inline-block;
-  padding: 6px 12px;
-  background-color: #0BABDC;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 20px;
-  font-weight: 600;
-  font-size: 12px;
-  transition: background-color 0.3s ease;
-  align-self: start;
-}
-.nouvelle__lien:hover {
-  background-color: #0985ab;
-}
 .nouvelle__lien-none {
   display: none;
+}
+
+.nouvelle__item .nouvelle__esp .esp {
+  font-family: "Poppins", system-ui;
+  font-size: 14px;
+  font-weight: 500;
+  border: 2px solid #0BABDC;
+  border-radius: 50px;
+  width: 125px;
+  padding: 6px;
+  text-align: center;
+  color: #0BABDC;
+  transition: 0.3s;
+  background-color: #EFEFEF;
+}
+.nouvelle__item .nouvelle__esp .esp:hover {
+  background-color: #0BABDC;
+  color: #EFEFEF;
 }
 
 .nouvelle__separation {
@@ -1094,10 +1094,14 @@ footer .credit {
 }
 
 @media (min-width: 768px) {
+  .nouvelles__titre {
+    font-size: 36px;
+    margin-bottom: 12px;
+  }
   .grid__nouvelles {
     margin: 0 auto;
     max-width: 751px;
-    padding: 46px;
+    padding: 0 46px;
   }
   .grid__nouvelles .nouvelle__lien {
     display: none;
@@ -1105,8 +1109,19 @@ footer .credit {
   .grid__nouvelles .nouvelle__lien-none {
     display: block;
   }
+  .grid__nouvelles .nouvelle__titre {
+    font-size: 20px;
+  }
+  .grid__nouvelles .nouvelle__date {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
 }
 @media (min-width: 1400px) {
+  .nouvelles__titre {
+    font-size: 26px;
+    margin-bottom: 8px;
+  }
   .grid__nouvelles {
     margin: 0 auto;
     max-width: 1400px;

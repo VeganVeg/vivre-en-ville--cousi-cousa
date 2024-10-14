@@ -5,15 +5,17 @@
     flex-direction: column;
     &__titre {
         text-align: center;
-        font-size: 24px;
-        color: #333;
+        font-size: 22px;
+        font-weight: 500;
+        color: variables.$charbon;
+        margin-bottom: 6px;
     }
 }
 
 .grid__nouvelles {
     width: 100%;
     gap: 0;
-    padding: 23px;
+    padding: 0 23px;
     max-width: 530px;
     margin: 0 auto;
 }
@@ -38,8 +40,8 @@
     }
     &__titre {
         font-size: 16px;
-        margin-bottom: 5px;
-        color: #333;
+        margin-bottom: 0;
+        color: variables.$charbon;
         max-width: 500px;
         display: -webkit-box;
         -webkit-box-orient: vertical;
@@ -50,29 +52,37 @@
     &__date {
         font-size: 14px;
         color: variables.$bleu-ciel;
-        margin-bottom: 5px;
+        margin-bottom: 9px;
     }
     &__texte {
         font-size: 14px;
         color: #666;
     }
-    &__lien {
-        display: inline-block;
-        padding: 6px 12px;
-        background-color: variables.$bleu-ciel;
-        color: #fff;
-        text-decoration: none;
-        border-radius: 20px;
-        font-weight: 600;
-        font-size: 12px;
-        transition: background-color 0.3s ease;
-        align-self: start;
-        &:hover {
-            background-color: darken(variables.$bleu-ciel, 10%);
-        }
-    }
+
     &__lien-none{
         display: none;
+    }
+}
+
+.nouvelle__item{
+    .nouvelle__esp{
+        .esp{
+                font-family: "Poppins", system-ui;
+                font-size: 14px;
+                font-weight: 500;
+                border: 2px solid variables.$bleu-ciel;
+                border-radius: 50px;
+                width: 125px;
+                padding: 6px;
+                text-align: center;
+                color: variables.$bleu-ciel;
+                transition: 0.3s;
+                background-color: variables.$quartz;
+        }
+        .esp:hover{
+            background-color: variables.$bleu-ciel;
+            color: variables.$quartz;
+        }
     }
 }
 
@@ -87,10 +97,17 @@
 }
 
 @media (min-width: 768px) {
+    .nouvelles{
+        &__titre{
+            font-size: 36px;
+            margin-bottom: 12px;
+        }
+    }
     .grid__nouvelles {
         margin: 0 auto;
         max-width: 751px;
-        padding: 46px;
+        padding: 0 46px;
+
         .nouvelle{
             &__lien{
                 display: none;
@@ -98,11 +115,25 @@
             &__lien-none{
                 display: block;
             }
+            &__titre{
+                font-size: 20px;
+                
+            }
+            &__date{
+                font-size: 16px;
+                margin-bottom: 0;
+            }
         }
     }
 }
 
 @media (min-width: 1400px) {
+    .nouvelles{
+        &__titre{
+            font-size: 26px;
+            margin-bottom: 8px;
+        }
+    }
     .grid__nouvelles {
         margin: 0 auto;
         max-width: 1400px;
