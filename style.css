@@ -1065,6 +1065,7 @@ footer .credit {
 }
 .nouvelle__image {
   width: 100px;
+  height: 100px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -1098,8 +1099,7 @@ footer .credit {
 .nouvelle__lien-none {
   display: none;
 }
-
-.nouvelle__item .nouvelle__esp .esp {
+.nouvelle__esp .esp {
   font-family: "Poppins", system-ui;
   font-size: 14px;
   font-weight: 500;
@@ -1112,7 +1112,7 @@ footer .credit {
   transition: 0.3s;
   background-color: #EFEFEF;
 }
-.nouvelle__item .nouvelle__esp .esp:hover {
+.nouvelle__esp .esp:hover {
   background-color: #0BABDC;
   color: #EFEFEF;
 }
@@ -1125,10 +1125,6 @@ footer .credit {
   margin: 18px 0;
 }
 
-.nouvelle__item-second {
-  padding: 15px 0;
-}
-
 @media (min-width: 768px) {
   .nouvelles__titre {
     font-size: 26px;
@@ -1139,29 +1135,30 @@ footer .credit {
     max-width: 751px;
     padding: 0 46px;
   }
-  .grid__nouvelles .nouvelle__content {
+  .nouvelle__content {
     padding-left: 20px;
   }
-  .grid__nouvelles .nouvelle__lien {
+  .nouvelle__lien {
     display: none;
   }
-  .grid__nouvelles .nouvelle__lien-none {
+  .nouvelle__lien-none {
     display: block;
   }
-  .grid__nouvelles .nouvelle__titre {
+  .nouvelle__titre {
     font-size: 20px;
   }
-  .grid__nouvelles .nouvelle__date {
+  .nouvelle__date {
     font-size: 16px;
     margin-bottom: 0;
   }
-  .grid__nouvelles .nouvelle__image {
+  .nouvelle__image {
     width: 120px;
+    height: 120px;
   }
-  .nouvelle__item .nouvelle__esp {
+  .nouvelle__esp {
     padding-left: 50px;
   }
-  .nouvelle__item .nouvelle__esp .esp {
+  .nouvelle__esp .esp {
     font-size: 16px;
     padding: 12px;
     width: 145px;
@@ -1175,31 +1172,32 @@ footer .credit {
     font-size: 36px;
     margin-bottom: 12px;
   }
-  .nouvelles .nouvelle__content {
+  .nouvelle__content {
     padding-left: 30px;
   }
-  .nouvelles .nouvelle__titre {
+  .nouvelle__titre {
     font-size: 24px;
     max-width: 850px;
   }
-  .nouvelles .nouvelle__date {
+  .nouvelle__date {
     font-size: 18px;
   }
-  .nouvelles .nouvelle__image {
+  .nouvelle__image {
     width: 150px;
+    height: 150px;
+  }
+  .nouvelle__esp {
+    padding-left: 0;
+    padding-right: 20px;
+  }
+  .nouvelle__esp .esp {
+    font-size: 18px;
+    padding: 14px;
+    width: 170px;
   }
   .grid__nouvelles {
     margin: 0 auto;
     max-width: 1400px;
-  }
-  .nouvelle__item .nouvelle__esp {
-    padding-left: 0;
-    padding-right: 20px;
-  }
-  .nouvelle__item .nouvelle__esp .esp {
-    font-size: 18px;
-    padding: 14px;
-    width: 170px;
   }
 }
 body,

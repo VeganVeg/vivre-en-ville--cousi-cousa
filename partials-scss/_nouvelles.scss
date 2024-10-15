@@ -30,6 +30,7 @@
     }
     &__image {
         width: 100px;
+        height: 100px;
         object-fit: cover;
     }
     &__content {
@@ -59,48 +60,42 @@
         font-size: 14px;
         color: #666;
     }
-
-    &__lien-none{
+    &__lien-none {
         display: none;
     }
-}
-
-.nouvelle__item{
-    .nouvelle__esp{
-        .esp{
-                font-family: "Poppins", system-ui;
-                font-size: 14px;
-                font-weight: 500;
-                border: 2px solid variables.$bleu-ciel;
-                border-radius: 50px;
-                width: 125px;
-                padding: 8px;
-                text-align: center;
-                color: variables.$bleu-ciel;
-                transition: 0.3s;
-                background-color: variables.$quartz;
-        }
-        .esp:hover{
-            background-color: variables.$bleu-ciel;
-            color: variables.$quartz;
+    &__btn {}
+    &__esp {
+        .esp {
+            font-family: "Poppins", system-ui;
+            font-size: 14px;
+            font-weight: 500;
+            border: 2px solid variables.$bleu-ciel;
+            border-radius: 50px;
+            width: 125px;
+            padding: 8px;
+            text-align: center;
+            color: variables.$bleu-ciel;
+            transition: 0.3s;
+            background-color: variables.$quartz;
+            &:hover {
+                background-color: variables.$bleu-ciel;
+                color: variables.$quartz;
+            }
         }
     }
 }
 
-.nouvelle__separation{
+.nouvelle__separation {
     width: 100%;
     height: 3px;
     border-radius: 50px;
     background-color: #333;
     margin: 18px 0;
 }
-.nouvelle__item-second{
-    padding: 15px 0;
-}
 
 @media (min-width: 768px) {
-    .nouvelles{
-        &__titre{
+    .nouvelles {
+        &__titre {
             font-size: 26px;
             margin-bottom: 8px;
         }
@@ -109,83 +104,76 @@
         margin: 0 auto;
         max-width: 751px;
         padding: 0 46px;
-
-        .nouvelle{
-            &__content{
-                padding-left: 20px;
-            }
-            &__lien{
-                display: none;
-            }
-            &__lien-none{
-                display: block;
-            }
-            &__titre{
-                font-size: 20px;
-                
-            }
-            &__date{
-                font-size: 16px;
-                margin-bottom: 0;
-            }
-            &__image{
-                width: 120px;
-            }
-        }
     }
-
-    .nouvelle__item{
-        .nouvelle__esp{
+    .nouvelle {
+        &__content {
+            padding-left: 20px;
+        }
+        &__lien {
+            display: none;
+        }
+        &__lien-none {
+            display: block;
+        }
+        &__titre {
+            font-size: 20px;
+        }
+        &__date {
+            font-size: 16px;
+            margin-bottom: 0;
+        }
+        &__image {
+            width: 120px;
+            height: 120px;
+        }
+        &__esp {
             padding-left: 50px;
-            .esp{
+            .esp {
                 font-size: 16px;
                 padding: 12px;
                 width: 145px;
             }
         }
     }
-
-    .nouvelle__separation{
+    .nouvelle__separation {
         margin: 22px 0;
     }
 }
 
 @media (min-width: 1400px) {
-    .nouvelles{
-        &__titre{
+    .nouvelles {
+        &__titre {
             font-size: 36px;
             margin-bottom: 12px;
         }
-        .nouvelle{
-            &__content{
-                padding-left: 30px;
-            }
-            &__titre{
-                font-size: 24px;
-                max-width: 850px;
-            }
-            &__date{
+    }
+    .nouvelle {
+        &__content {
+            padding-left: 30px;
+        }
+        &__titre {
+            font-size: 24px;
+            max-width: 850px;
+        }
+        &__date {
+            font-size: 18px;
+        }
+        &__image {
+            width: 150px;
+            height: 150px;
+        }
+        &__esp {
+            padding-left: 0;
+            padding-right: 20px;
+            .esp {
                 font-size: 18px;
-            }
-            &__image{
-                width: 150px;
+                padding: 14px;
+                width: 170px;
             }
         }
     }
     .grid__nouvelles {
         margin: 0 auto;
         max-width: 1400px;
-    }
-
-    .nouvelle__item{
-        .nouvelle__esp{
-            padding-left: 0;
-            padding-right: 20px;
-            .esp{
-                font-size: 18px;
-                padding: 14px;
-                width: 170px;
-            }
-        }
     }
 }

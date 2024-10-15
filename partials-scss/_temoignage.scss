@@ -42,7 +42,7 @@
     }
 }
 
-.temoignage__separation{
+.temoignage__separation {
     width: 100%;
     height: 2px;
     border-radius: 50px;
@@ -50,7 +50,7 @@
     margin: 22px 0;
 }
 
-// /tablette/ 
+// Tablette
 @media (min-width: 768px) {
     .temoignages__titre {
         font-size: 26px;
@@ -66,32 +66,31 @@
     .temoignage__photo {
         width: 70px;
     }
-    .temoignage__nom{
+    .temoignage__nom {
         font-size: 20px;
     }
-    .temoignage__texte{
+    .temoignage__texte {
         font-size: 16px;
         padding: 0;
     }
-    .temoignage__separation{
+    .temoignage__separation {
         height: auto;
         margin: 0;
     }
-
-    .temoignage__item{
-        &:nth-child(1){
+    .temoignage__item {
+        &:nth-child(1) {
             padding-right: 15px;
         }
-        &:nth-child(3){
+        &:nth-child(3) {
             padding: 0 15px;
         }
-        &:nth-child(5){
+        &:nth-child(5) {
             padding-left: 15px;
         }
     }
 }
 
-// /desktop/ 
+// Desktop
 @media (min-width: 1400px) {
     .temoignages__titre {
         font-size: 36px;
@@ -100,14 +99,14 @@
     .grid__temoignages {
         max-width: 1200px;
         margin: 0 auto;
-        .temoignage__item{
-            &:nth-child(1){
+        .temoignage__item {
+            &:nth-child(1) {
                 padding-right: 25px;
             }
-            &:nth-child(3){
+            &:nth-child(3) {
                 padding: 0 25px;
             }
-            &:nth-child(5){
+            &:nth-child(5) {
                 padding-left: 25px;
             }
         }
@@ -115,12 +114,10 @@
     .temoignage__photo {
         width: 80px;
     }
-    .temoignage__nom{
+    .temoignage__nom {
         font-size: 24px;
     }
-    .temoignage__texte{
+    .temoignage__texte {
         font-size: 20px;
-        
     }
-
 }
