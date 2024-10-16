@@ -87,7 +87,7 @@
 
 .nouvelle__separation {
     width: 100%;
-    height: 3px;
+    height: 2px;
     border-radius: 50px;
     background-color: #333;
     margin: 18px 0;
@@ -175,5 +175,8 @@
     .grid__nouvelles {
         margin: 0 auto;
         max-width: 1400px;
+    }
+    .nouvelle__separation{
+        height: 3px;
     }
 }
