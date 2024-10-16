@@ -786,17 +786,16 @@ footer .credit {
 .donner .donner__title {
   font-size: 22px;
   margin: 0 auto;
-  text-align: left;
   margin-bottom: 6px;
   width: 248px;
 }
 .donner .donner__text {
   font-family: "Noto Sans", sans-serif;
   color: #0BABDC;
-  width: 238px;
+  width: 248px;
   margin: 0 auto;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1.2;
   margin-bottom: 20px;
 }
@@ -833,7 +832,7 @@ footer .credit {
     border-radius: 35px;
   }
   .donner .donner__title {
-    width: 70%;
+    width: 75%;
     font-size: 26px;
     margin: 0;
     margin-left: 10px;
@@ -843,12 +842,15 @@ footer .credit {
     font-size: 16px;
     margin: 0;
     margin-left: 10px;
-    width: 70%;
+    width: 75%;
     margin-bottom: 40px;
+  }
+  .donner a {
+    margin-bottom: 10px;
   }
   .donner a button {
     padding: 10px;
-    width: 60%;
+    width: 70%;
     font-size: 16px;
     font-weight: bold;
     color: #0BABDC;
@@ -865,38 +867,43 @@ footer .credit {
 }
 @media screen and (min-width: 1400px) {
   .donner {
-    width: 800px;
+    width: 1000px;
     border: 3px solid #303030;
     border-radius: 40px;
+    padding: 40px 150px;
   }
   .donner .donner__title {
-    width: auto;
+    width: 700px;
     font-size: 36px;
+    margin: 0;
     margin-bottom: 10px;
   }
   .donner .donner__text {
     font-size: 20px;
+    margin: 0;
     margin-bottom: 70px;
+    width: 60%;
   }
   .donner a {
     display: flex;
     justify-content: center;
     text-decoration: none;
+    margin-bottom: 40px;
   }
   .donner a button {
     width: 700px;
-    height: 70px;
+    padding: 15px;
     font-size: 25px;
     font-weight: bold;
     color: #0BABDC;
     align-self: center;
     border-radius: 50px;
     background-color: #EFEFEF;
-    border: 7px solid #0BABDC;
+    border: 5px solid #0BABDC;
   }
   .donner a button:hover {
     background-color: #0BABDC;
-    border: 7px solid #8DD5DF;
+    border: 5px solid #8DD5DF;
     color: #EFEFEF;
   }
 }
