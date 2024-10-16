@@ -5,8 +5,7 @@
   display: grid;
   justify-content: center;
   border: 2px solid variables.$charbon;
-  width: 300px;
-  height: 270px;
+  width: 315px;
   margin: 0 auto;
   margin-bottom: 60px;
   padding: 20px;
@@ -14,17 +13,17 @@
 
   
   .donner__title{
-  width: 228px;
-    font-size: 20px;
+    width: 248px;
+    font-size: 22px;
     margin: 0 auto;
     align-items: center;
     text-align: left;
-    height: 80px;
+    margin-bottom: 4px;
   }
   .donner__text{
     font-family: "Noto Sans", sans-serif;
     color: variables.$bleu-ciel;
-    width: 228px;
+    width: 248px;
     margin-top: 3px;
     margin: 0 auto;
     font-size: 14px;
@@ -40,7 +39,7 @@
       height: 40px;
       width: 55vw;
       max-width: 55vw;
-      font-size: 3.2vw;
+      font-size: 14px;
       font-weight: bold;
       color: variables.$bleu-ciel;
       align-self: center;
@@ -58,25 +57,12 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .donner {
-    border: 4px solid variables.$charbon;
-    width: 70vw;
-    max-width: 70vw;
-    height: 350px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 50px auto;
-    margin-bottom: 80px;
-    padding: 0px 20px 20px 20px;
-    border-radius: 40px;
+    border: 3px solid variables.$charbon;
+    width: 600px;
+    padding: 20px;
     h1 {
-      margin-top: 0px;
-      font-size: 3.5vw;
-      margin-left: 20px;
-      margin-right: 20px;
-      margin-bottom: 2px;
     }
     p {
       color: variables.$bleu-ciel;
