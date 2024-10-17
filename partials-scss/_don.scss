@@ -12,7 +12,6 @@
   padding: 20px;
   border-radius: 30px;
 
-  
   .donner__title{
     font-size: 22px;
     margin: 0 auto;
@@ -34,7 +33,10 @@
     justify-content: center;
     text-decoration: none;
     margin-bottom: 6px;
-    
+    .heart{
+      width: 18px;
+      fill: variables.$bleu-ciel;
+    }
     button {
       font-family: "Poppins", system-ui;
       width: 200px;
@@ -52,10 +54,20 @@
         background-color: variables.$bleu-ciel;
         border: 3px solid variables.$bleu-matinal;
         color: variables.$quartz;
+        .heart{
+          path{
+            fill: variables.$quartz;
+          }
+        }
       }
       .heart{
-        width: 18px;
-        
+        path{
+          transition: fill 0.5s;
+          fill: variables.$bleu-ciel;
+        }
+        path:hover{
+          fill: variables.$quartz;
+        } 
       }
     }
   }
@@ -84,6 +96,9 @@
     }
     a {
       margin-bottom: 10px;
+      .heart{
+        width: 20px;
+      }
       button {
         padding: 10px;
         width: 70%;
@@ -128,6 +143,9 @@
       justify-content: center;
       text-decoration: none;
       margin-bottom: 35px;
+      .heart{
+        width: 24px;
+      }
       button {
         width: 700px;
         padding: 15px;

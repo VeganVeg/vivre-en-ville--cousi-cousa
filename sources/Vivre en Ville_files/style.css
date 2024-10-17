@@ -821,10 +821,6 @@ footer .credit {
   text-decoration: none;
   margin-bottom: 6px;
 }
-.donner a .heart {
-  width: 18px;
-  fill: #0BABDC;
-}
 .donner a button {
   font-family: "Poppins", system-ui;
   width: 200px;
@@ -844,8 +840,8 @@ footer .credit {
   border: 3px solid #8DD5DF;
   color: #EFEFEF;
 }
-.donner a button:hover .heart path {
-  fill: #EFEFEF;
+.donner a button .heart {
+  width: 18px;
 }
 .donner a button .heart path {
   transition: fill 0.5s;
@@ -878,9 +874,6 @@ footer .credit {
   }
   .donner a {
     margin-bottom: 10px;
-  }
-  .donner a .heart {
-    width: 20px;
   }
   .donner a button {
     padding: 10px;
@@ -923,9 +916,6 @@ footer .credit {
     justify-content: center;
     text-decoration: none;
     margin-bottom: 35px;
-  }
-  .donner a .heart {
-    width: 24px;
   }
   .donner a button {
     width: 700px;
