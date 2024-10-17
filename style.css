@@ -840,6 +840,9 @@ footer .credit {
   border: 3px solid #8DD5DF;
   color: #EFEFEF;
 }
+.donner a button .heart {
+  width: 18px;
+}
 
 @media (min-width: 768px) {
   .donner {
