@@ -372,16 +372,13 @@ footer .credit {
 .grid__carrousel .swiper .swiper__img {
   width: 100%;
   max-height: 30vh;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .grid__carrousel .swiper .swiper__img__ordi {
-  -o-object-position: 0% 25%;
-     object-position: 0% 25%;
+  object-position: 0% 25%;
 }
 .grid__carrousel .swiper .swiper__img__champ {
-  -o-object-position: 0% 25%;
-     object-position: 0% 25%;
+  object-position: 0% 25%;
 }
 .grid__carrousel .swiper .swiper__bg {
   display: flex;
@@ -422,12 +419,10 @@ footer .credit {
   .grid__carrousel .swiper .swiper__img {
     width: 100%;
     max-height: 45vh;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .grid__carrousel .swiper .swiper__img__ordi {
-    -o-object-position: 0% 25%;
-       object-position: 0% 25%;
+    object-position: 0% 25%;
   }
   .grid__carrousel .swiper .swiper__bg {
     height: 60px;
@@ -458,16 +453,13 @@ footer .credit {
   .grid__carrousel .swiper .swiper__img {
     width: 100%;
     max-height: 60vh;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .grid__carrousel .swiper .swiper__img__ordi {
-    -o-object-position: 0% 25%;
-       object-position: 0% 25%;
+    object-position: 0% 25%;
   }
   .grid__carrousel .swiper .swiper__img__champ {
-    -o-object-position: 0% 23%;
-       object-position: 0% 23%;
+    object-position: 0% 23%;
   }
 }
 
@@ -963,8 +955,7 @@ footer .credit {
 .temoignage__photo {
   width: 60px;
   border-radius: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .temoignage__nom {
   font-family: "Inter", sans-serif;
@@ -1090,8 +1081,7 @@ footer .credit {
 .nouvelle__image {
   width: 100px;
   height: 100px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .nouvelle__content {
   display: flex;
