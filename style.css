@@ -203,6 +203,19 @@ footer .footer__logo__centered .footer-title {
   }
 }
 @media (min-width: 1400px) {
+  footer .grid__footer {
+    margin: 30px 0;
+  }
+  footer .grid__footer .footer__logo__centered a img {
+    width: 110px;
+  }
+  footer .grid__footer .footer__logo__centered .footer-title {
+    font-size: 26px;
+    line-height: 0.7;
+  }
+  footer .grid__footer .footer__logo__centered .footer-title .footer-subtitle {
+    font-size: 16px;
+  }
   footer .footer__btn .footer__lien .bloc {
     width: 35px;
     height: 35px;
@@ -786,7 +799,7 @@ footer .credit {
 .donner .donner__title {
   font-size: 22px;
   margin: 0 auto;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
   width: 248px;
 }
 .donner .donner__text {
@@ -803,6 +816,7 @@ footer .credit {
   display: flex;
   justify-content: center;
   text-decoration: none;
+  margin-bottom: 6px;
 }
 .donner a button {
   font-family: "Poppins", system-ui;
@@ -881,14 +895,14 @@ footer .credit {
   .donner .donner__text {
     font-size: 20px;
     margin: 0;
-    margin-bottom: 70px;
+    margin-bottom: 75px;
     width: 60%;
   }
   .donner a {
     display: flex;
     justify-content: center;
     text-decoration: none;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
   }
   .donner a button {
     width: 700px;
