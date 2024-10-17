@@ -216,6 +216,9 @@ footer .footer__logo__centered .footer-title {
   footer .grid__footer .footer__logo__centered .footer-title .footer-subtitle {
     font-size: 16px;
   }
+  footer .grid__footer .footer__contact .contact {
+    font-size: 18px;
+  }
   footer .footer__btn .footer__lien .bloc {
     width: 35px;
     height: 35px;
