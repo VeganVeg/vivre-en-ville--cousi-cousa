@@ -1217,6 +1217,18 @@ footer .credit {
     height: 3px;
   }
 }
+.grid__hero {
+  display: flex;
+}
+.grid__hero .content__hero {
+  padding: 20px;
+  margin: 0 auto;
+}
+.grid__hero .content__hero .title__hero {
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+}
+
 body,
 html {
   background-color: #EFEFEF;

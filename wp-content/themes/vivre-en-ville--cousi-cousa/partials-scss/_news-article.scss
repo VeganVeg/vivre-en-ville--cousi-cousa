@@ -1,0 +1,18 @@
+@use 'variables';
+@use 'mixins';
+
+.grid__hero {
+    display: flex;
+
+
+    .content__hero {
+        padding: 20px;
+
+        margin: 0 auto;
+
+        .title__hero {
+            font-size: 16px;
+            font-family: 'Inter', sans-serif;
+        }
+    }
+}

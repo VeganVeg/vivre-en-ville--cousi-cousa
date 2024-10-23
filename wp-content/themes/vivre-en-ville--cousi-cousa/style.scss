@@ -2,7 +2,7 @@
 @use "partials-scss/variables";
 @use "partials-scss/mixins";
 //partials header footer
-@use "partials-scss/header-2";
+@use "partials-scss/header";
 @use "partials-scss/footer";
 //partials body
 @use "partials-scss/body";
@@ -14,6 +14,8 @@
 @use "partials-scss/don";
 @use "partials-scss/temoignage";
 @use "partials-scss/nouvelles";
+@use "partials-scss/news-article";
+
 body,
 html {
     background-color: variables.$quartz;
