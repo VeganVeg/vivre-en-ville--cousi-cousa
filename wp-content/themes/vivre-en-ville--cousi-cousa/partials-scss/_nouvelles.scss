@@ -1,8 +1,10 @@
 @use 'variables';
 @use 'mixins';
+
 .nouvelles {
     display: flex;
     flex-direction: column;
+
     &__titre {
         text-align: center;
         font-size: 22px;
@@ -23,22 +25,26 @@
 
 .nouvelle {
     width: 100%;
+
     &__item {
         display: grid;
         grid-template-columns: auto 1fr auto;
         align-items: center;
     }
+
     &__image {
         width: 100px;
         height: 100px;
         object-fit: cover;
     }
+
     &__content {
         display: flex;
         flex-direction: column;
         justify-content: center;
         padding-left: 15px;
     }
+
     &__titre {
         font-size: 16px;
         margin-bottom: 0;
@@ -51,19 +57,22 @@
         text-overflow: ellipsis;
         font-family: 'Inter', sans-serif;
     }
+
     &__date {
         font-size: 14px;
         color: variables.$bleu-ciel;
         margin-bottom: 9px;
     }
+
     &__texte {
         font-size: 14px;
         color: #666;
     }
+
     &__lien-none {
         display: none;
     }
-    &__btn {}
+
     &__esp {
         .esp {
             font-family: "Poppins", system-ui;
@@ -77,6 +86,7 @@
             color: variables.$bleu-ciel;
             transition: 0.3s;
             background-color: variables.$quartz;
+
             &:hover {
                 background-color: variables.$bleu-ciel;
                 color: variables.$quartz;
@@ -89,7 +99,7 @@
     width: 100%;
     height: 2px;
     border-radius: 50px;
-    background-color: #333;
+    background-color: variables.$charbon;
     margin: 18px 0;
 }
 
@@ -100,34 +110,43 @@
             margin-bottom: 8px;
         }
     }
+
     .grid__nouvelles {
         margin: 0 auto;
         max-width: 751px;
         padding: 0 46px;
     }
+
     .nouvelle {
         &__content {
             padding-left: 20px;
         }
+
         &__lien {
             display: none;
         }
+
         &__lien-none {
             display: block;
         }
+
         &__titre {
             font-size: 20px;
         }
+
         &__date {
             font-size: 16px;
             margin-bottom: 0;
         }
+
         &__image {
             width: 120px;
             height: 120px;
         }
+
         &__esp {
             padding-left: 50px;
+
             .esp {
                 font-size: 16px;
                 padding: 12px;
@@ -135,6 +154,7 @@
             }
         }
     }
+
     .nouvelle__separation {
         margin: 22px 0;
     }
@@ -147,24 +167,30 @@
             margin-bottom: 12px;
         }
     }
+
     .nouvelle {
         &__content {
             padding-left: 30px;
         }
+
         &__titre {
             font-size: 24px;
             max-width: 850px;
         }
+
         &__date {
             font-size: 18px;
         }
+
         &__image {
             width: 150px;
             height: 150px;
         }
+
         &__esp {
             padding-left: 0;
             padding-right: 20px;
+
             .esp {
                 font-size: 18px;
                 padding: 14px;
@@ -172,11 +198,13 @@
             }
         }
     }
+
     .grid__nouvelles {
         margin: 0 auto;
         max-width: 1400px;
     }
-    .nouvelle__separation{
+
+    .nouvelle__separation {
         height: 3px;
     }
 }
