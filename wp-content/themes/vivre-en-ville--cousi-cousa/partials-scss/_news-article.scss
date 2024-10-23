@@ -1,9 +1,11 @@
 @use 'variables';
 @use 'mixins';
 
-.grid__hero {
+.container__hero {
     display: flex;
     height: 25vh;
+    margin-bottom: 40px;
+    box-shadow: 0px -13px 20px 20px variables.$charbon;
 
     .content__hero {
         padding: 15px;
@@ -60,6 +62,43 @@
 
             .date__hero {
                 font-size: 20px;
+            }
+        }
+    }
+}
+
+.container__content {
+    .para {
+        margin: 0 20px;
+    }
+
+    .p1 {
+        font-size: 14px;
+        font-weight: 500;
+
+        span {
+            font-weight: 700;
+        }
+    }
+
+    .para__subtitle {
+        font-size: 14px;
+        font-weight: 700;
+        color: variables.$charbon;
+        font-family: 'Poppins', system-ui;
+        margin-bottom: 8px;
+    }
+
+    .p2 {
+        font-size: 14px;
+        font-weight: 500;
+
+        a {
+            color: variables.$bleu-ciel;
+            text-decoration: none;
+
+            a:hover {
+                color: variables.$quartz;
             }
         }
     }
