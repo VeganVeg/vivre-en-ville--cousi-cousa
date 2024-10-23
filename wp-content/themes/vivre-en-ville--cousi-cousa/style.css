@@ -1219,14 +1219,57 @@ footer .credit {
 }
 .grid__hero {
   display: flex;
+  height: 25vh;
 }
 .grid__hero .content__hero {
-  padding: 20px;
+  padding: 15px;
+  width: 50%;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 .grid__hero .content__hero .title__hero {
   font-size: 16px;
   font-family: "Inter", sans-serif;
+  font-weight: 600;
+  margin: 0;
+}
+.grid__hero .content__hero .date__hero {
+  font-family: "Poppins", system-ui;
+  font-size: 14px;
+  color: #0BABDC;
+  margin: 0;
+}
+.grid__hero .img__hero {
+  width: 50%;
+  object-fit: cover;
+}
+@media (min-width: 768px) {
+  .grid__hero .content__hero {
+    padding: 20px;
+  }
+  .grid__hero .content__hero .title__hero {
+    font-size: 20px;
+  }
+  .grid__hero .content__hero .date__hero {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1400px) {
+  .grid__hero {
+    height: 60vh;
+  }
+  .grid__hero .content__hero {
+    padding: 0 60px;
+  }
+  .grid__hero .content__hero .title__hero {
+    font-size: 36px;
+    font-weight: 500;
+  }
+  .grid__hero .content__hero .date__hero {
+    font-size: 20px;
+  }
 }
 
 body,

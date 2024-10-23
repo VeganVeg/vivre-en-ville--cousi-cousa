@@ -3,16 +3,64 @@
 
 .grid__hero {
     display: flex;
-
+    height: 25vh;
 
     .content__hero {
-        padding: 20px;
-
+        padding: 15px;
+        width: 50%;
         margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
 
         .title__hero {
             font-size: 16px;
             font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        .date__hero {
+            font-family: 'Poppins', system-ui;
+            font-size: 14px;
+            color: #0BABDC;
+            margin: 0;
+        }
+    }
+
+    .img__hero {
+        width: 50%;
+        object-fit: cover;
+    }
+
+    @media (min-width: 768px) {
+        .content__hero {
+            padding: 20px;
+
+            .title__hero {
+                font-size: 20px;
+            }
+
+            .date__hero {
+                font-size: 16px;
+            }
+        }
+    }
+
+    @media (min-width: 1400px) {
+        height: 60vh;
+
+        .content__hero {
+            padding: 0 60px;
+
+            .title__hero {
+                font-size: 36px;
+                font-weight: 500;
+            }
+
+            .date__hero {
+                font-size: 20px;
+            }
         }
     }
 }
