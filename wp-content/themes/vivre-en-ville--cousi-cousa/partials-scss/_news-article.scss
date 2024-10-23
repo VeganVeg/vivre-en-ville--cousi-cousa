@@ -97,8 +97,8 @@
             color: variables.$bleu-ciel;
             text-decoration: none;
 
-            a:hover {
-                color: variables.$quartz;
+            a::after {
+                background-image: url(wp-content/themes/vivre-en-ville--cousi-cousa/sources/icons/external-link.png);
             }
         }
     }

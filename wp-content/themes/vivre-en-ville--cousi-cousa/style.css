@@ -1299,8 +1299,8 @@ footer .credit {
   color: #0BABDC;
   text-decoration: none;
 }
-.container__content .p2 a a:hover {
-  color: #EFEFEF;
+.container__content .p2 a a::after {
+  background-image: url(wp-content/themes/vivre-en-ville--cousi-cousa/sources/icons/external-link.png);
 }
 
 body,
