@@ -1,4 +1,4 @@
-## Marie-Michelle Ouellet
+## Vivre en Ville
 ## Cousi-Cousa
 ## Équipe
 - **William Rathier Mailly**: Intégrateur, développeur front-end, project owner et scrum master
