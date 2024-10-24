@@ -1407,6 +1407,43 @@ footer .credit {
 }
 
 body,
+html,
+main {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.error__container {
+  margin: 25% auto;
+  text-align: center;
+}
+.error__container h1 {
+  font-size: 50px;
+  color: #303030;
+  font-weight: 900;
+}
+.error__container h2 {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #303030;
+  font-weight: 700;
+}
+.error__container .logo-error {
+  color: #8DC63F;
+}
+
+@media (min-width: 768px) {
+  .error {
+    background-color: blue;
+    height: 600px;
+  }
+}
+body,
 html {
   background-color: #EFEFEF;
 }
