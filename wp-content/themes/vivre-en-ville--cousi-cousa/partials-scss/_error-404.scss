@@ -2,11 +2,7 @@
 @use "variables";
 @use "mixins";
 
-body,
-html,
-main {
-  height: 100%;
-}
+
 
 body {
   display: flex;
@@ -16,11 +12,13 @@ body {
 .error__container {
   margin: 25% auto;
   text-align: center;
+
   h1 {
     font-size: 50px;
     color: variables.$charbon;
     font-weight: 900;
   }
+
   h2 {
     font-size: 20px;
     margin-top: 20px;
@@ -28,6 +26,7 @@ body {
     color: variables.$charbon;
     font-weight: 700;
   }
+
   .logo-error {
     color: variables.$nenuphare;
   }
