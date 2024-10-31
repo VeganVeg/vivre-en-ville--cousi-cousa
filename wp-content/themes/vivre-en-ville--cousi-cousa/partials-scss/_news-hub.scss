@@ -1,0 +1,431 @@
+@use 'variables';
+@use 'mixins';
+
+.container__hero {
+    display: flex;
+    height: 25vh;
+    margin-bottom: 40px;
+    box-shadow: 0px -13px 20px 20px variables.$charbon;
+
+    .content__hero__news {
+        padding: 15px;
+        width: 50%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        .title__hero {
+            font-size: 16px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        .date__hero {
+            font-family: 'Poppins', system-ui;
+            font-size: 14px;
+            color: #0BABDC;
+            margin: 0;
+        }
+    }
+
+    .img__hero {
+        width: 50%;
+        object-fit: cover;
+    }
+
+    @media (min-width: 768px) {
+        .content__hero__news {
+            padding: 20px;
+
+            .title__hero {
+                font-size: 20px;
+            }
+
+            .date__hero {
+                font-size: 16px;
+            }
+        }
+    }
+
+    @media (min-width: 1400px) {
+        height: 60vh;
+        margin-bottom: 50px;
+
+        .content__hero__newshub {
+            padding: 0 60px;
+
+            .title__hero {
+                font-size: 36px;
+                font-weight: 500;
+            }
+
+            .date__hero {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+.container__content {
+    .para {
+        margin: 0 20px;
+        color: variables.$charbon;
+    }
+
+    .p1 {
+        font-size: 14px;
+        font-weight: 500;
+
+        span {
+            font-weight: 700;
+        }
+    }
+
+    .para__subtitle {
+        font-size: 14px;
+        font-weight: 700;
+        color: variables.$charbon;
+        font-family: 'Poppins', system-ui;
+        margin-bottom: 8px;
+    }
+
+    .p2 {
+        font-size: 14px;
+        font-weight: 500;
+
+        a {
+            color: variables.$bleu-ciel;
+            text-decoration: none;
+        }
+
+        a::after {
+            content: '';
+            background-image: url("/wp-content/themes/vivre-en-ville--cousi-cousa/sources/icons/external-link.png");
+            background-size: cover;
+            width: 14px;
+            height: 14px;
+            display: inline-block;
+        }
+    }
+
+    .p3 {
+        font-size: 14px;
+        font-weight: 500;
+        margin: 20px;
+    }
+
+    .p4 {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .p5 {
+        font-size: 14px;
+        font-weight: 500;
+        margin-top: 20px;
+
+        span {
+            font-weight: 700;
+        }
+    }
+
+    .p6 {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .p7 {
+        font-size: 14px;
+        font-weight: 500;
+        margin: 20px;
+
+        a {
+            color: variables.$bleu-ciel;
+            text-decoration: none;
+        }
+
+        a::after {
+            content: '';
+            background-image: url("/wp-content/themes/vivre-en-ville--cousi-cousa/sources/icons/external-link.png");
+            background-size: cover;
+            width: 14px;
+            height: 14px;
+            display: inline-block;
+        }
+    }
+
+    .news__list {
+        padding: 0 20px;
+
+        .list__item {
+            margin-bottom: 10px;
+
+            p {
+                font-size: 14px;
+                font-weight: 500;
+            }
+        }
+
+        .list__item::marker {
+            color: variables.$bleu-ciel;
+        }
+
+        .list__item:last-child {
+            margin: 0;
+        }
+    }
+
+    .p8 {
+        font-size: 14px;
+        font-weight: 500;
+        margin: 20px;
+    }
+
+    .p9 {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .p10 {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .renseignement {
+        margin-bottom: 40px;
+
+        .rens__nom {
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .rens__poste {
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .rens__info {
+            font-size: 14px;
+            font-weight: 500;
+
+            a {
+                color: variables.$bleu-ciel;
+                text-decoration: none;
+            }
+        }
+    }
+
+    @media (min-width: 768px) {
+        .para {
+            font-size: 16px;
+            margin: 0 28px;
+        }
+
+        .para__subtitle {
+            margin-bottom: 12px;
+            font-size: 16px;
+        }
+
+        .p5 {
+            margin-top: 28px;
+        }
+
+        .p3,
+        .p7,
+        .p8 {
+            margin: 28px;
+        }
+
+        .p2,
+        .p7 {
+            a::after {
+                content: '';
+                background-image: url("/wp-content/themes/vivre-en-ville--cousi-cousa/sources/icons/external-link.png");
+                background-size: cover;
+                width: 16px;
+                height: 16px;
+                display: inline-block;
+            }
+        }
+
+        .news__list {
+            padding: 0 24px;
+
+            .list__item {
+                margin-bottom: 15px;
+
+                p {
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        .renseignement {
+            margin-bottom: 50px;
+
+            .rens__nom {
+                font-size: 16px;
+                font-weight: 500;
+            }
+
+            .rens__poste {
+                font-size: 16px;
+                font-weight: 500;
+            }
+
+            .rens__info {
+                font-size: 16px;
+                font-weight: 500;
+            }
+        }
+    }
+
+    @media (min-width: 1400px) {
+        .para {
+            font-size: 20px;
+            margin: 0 32px;
+        }
+
+        .para__subtitle {
+            margin-bottom: 14px;
+            font-size: 20px;
+        }
+
+        .p5 {
+            margin-top: 32px;
+        }
+
+        .p3,
+        .p7,
+        .p8 {
+            margin: 32px;
+        }
+
+        .p2,
+        .p7 {
+            a::after {
+                content: '';
+                background-image: url("/wp-content/themes/vivre-en-ville--cousi-cousa/sources/icons/external-link.png");
+                background-size: cover;
+                width: 20px;
+                height: 20px;
+                display: inline-block;
+            }
+        }
+
+        .news__list {
+            padding: 0 28px;
+
+            .list__item {
+                margin-bottom: 20px;
+
+                p {
+                    font-size: 20px;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        .renseignement {
+            margin-bottom: 50px;
+
+            .rens__nom {
+                font-size: 20px;
+                font-weight: 500;
+            }
+
+            .rens__poste {
+                font-size: 20px;
+                font-weight: 500;
+            }
+
+            .rens__info {
+                font-size: 20px;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+
+
+.article__btn {
+    padding: 0 23px;
+    display: flex;
+    margin-bottom: 40px;
+    justify-content: space-between;
+
+    .prec__btn {
+        font-family: "Poppins", system-ui;
+        font-size: 14px;
+        font-weight: 500;
+        border: 2px solid #0BABDC;
+        border-radius: 50px;
+        width: 105px;
+        padding: 8px;
+        text-align: center;
+        color: #0BABDC;
+        transition: 0.3s;
+        background-color: #EFEFEF;
+
+        &:hover {
+            background-color: variables.$bleu-ciel;
+            color: variables.$quartz;
+        }
+    }
+
+    @media (min-width:768px) {
+        margin-bottom: 50px;
+        padding: 0 35px;
+
+        .prec__btn {
+            font-size: 16px;
+            padding: 12px;
+            width: 125px;
+        }
+    }
+
+    @media (min-width: 1400px) {
+        margin-bottom: 60px;
+        padding: 0 45px;
+
+        .prec__btn {
+            font-size: 18px;
+            padding: 14px;
+            width: 150px;
+        }
+
+    }
+}
+
+
+
+.grid__articles {
+    width: 100%;
+    gap: 0;
+    padding: 0 23px;
+    max-width: 530px;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 45px;
+}
+
+@media (min-width: 768px) {
+    .grid__articles {
+        margin: 0 auto;
+        max-width: 751px;
+        padding: 0 46px;
+        margin-bottom: 60px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .grid__articles {
+        margin: 0 auto;
+        max-width: 1400px;
+        margin-bottom: 90px;
+    }
+}
