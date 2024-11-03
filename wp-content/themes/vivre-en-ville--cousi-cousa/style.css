@@ -1571,6 +1571,428 @@ footer .credit {
     margin-bottom: 90px;
   }
 }
+.container__hero {
+  display: flex;
+  height: 25vh;
+  margin-bottom: 40px;
+  box-shadow: 0px -13px 20px 20px #303030;
+}
+.container__hero .content__hero__newshub {
+  padding: 15px;
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.container__hero .content__hero__newshub .title__hero {
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  margin: 0;
+}
+.container__hero .content__hero__newshub .date__hero {
+  font-family: "Poppins", system-ui;
+  font-size: 14px;
+  color: #0BABDC;
+  margin: 0;
+}
+.container__hero .img__hero {
+  width: 50%;
+  object-fit: cover;
+}
+@media (min-width: 768px) {
+  .container__hero .content__hero__newshub {
+    padding: 20px;
+    align-items: center;
+  }
+  .container__hero .content__hero__newshub .title__hero {
+    font-size: 20px;
+  }
+  .container__hero .content__hero__newshub .date__hero {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1400px) {
+  .container__hero {
+    height: 60vh;
+    margin-bottom: 50px;
+  }
+  .container__hero .content__hero__newshub {
+    padding: 0 60px;
+  }
+  .container__hero .content__hero__newshub .title__hero {
+    font-size: 36px;
+    font-weight: 500;
+  }
+  .container__hero .content__hero__newshub .date__hero {
+    font-size: 20px;
+  }
+}
+
+.container__content .para {
+  margin: 0 20px;
+  color: #303030;
+}
+.container__content .p1 {
+  font-size: 14px;
+  font-weight: 500;
+}
+.container__content .p1 span {
+  font-weight: 700;
+}
+.container__content .para__subtitle {
+  font-size: 14px;
+  font-weight: 700;
+  color: #303030;
+  font-family: "Poppins", system-ui;
+  margin-bottom: 8px;
+}
+.container__content .p2 {
+  font-size: 14px;
+  font-weight: 500;
+}
+.container__content .p2 a {
+  color: #0BABDC;
+  text-decoration: none;
+}
+.container__content .p2 a::after {
+  content: "";
+  background-image: url("/wp-content/themes/vivre-en-ville--cousi-cousa/sources/icons/external-link.png");
+  background-size: cover;
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+}
+.container__content .p3 {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 20px;
+}
+.container__content .p4 {
+  font-size: 14px;
+  font-weight: 500;
+}
+.container__content .p5 {
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+.container__content .p5 span {
+  font-weight: 700;
+}
+.container__content .p6 {
+  font-size: 14px;
+  font-weight: 500;
+}
+.container__content .p7 {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 20px;
+}
+.container__content .p7 a {
+  color: #0BABDC;
+  text-decoration: none;
+}
+.container__content .p7 a::after {
+  content: "";
+  background-image: url("/wp-content/themes/vivre-en-ville--cousi-cousa/sources/icons/external-link.png");
+  background-size: cover;
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+}
+.container__content .news__list {
+  padding: 0 20px;
+}
+.container__content .news__list .list__item {
+  margin-bottom: 10px;
+}
+.container__content .news__list .list__item p {
+  font-size: 14px;
+  font-weight: 500;
+}
+.container__content .news__list .list__item::marker {
+  color: #0BABDC;
+}
+.container__content .news__list .list__item:last-child {
+  margin: 0;
+}
+.container__content .p8 {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 20px;
+}
+.container__content .p9 {
+  font-size: 14px;
+  font-weight: 500;
+}
+.container__content .p10 {
+  font-size: 14px;
+  font-weight: 500;
+}
+.container__content .renseignement {
+  margin-bottom: 40px;
+}
+.container__content .renseignement .rens__nom {
+  font-size: 14px;
+  font-weight: 500;
+}
+.container__content .renseignement .rens__poste {
+  font-size: 14px;
+  font-weight: 500;
+}
+.container__content .renseignement .rens__info {
+  font-size: 14px;
+  font-weight: 500;
+}
+.container__content .renseignement .rens__info a {
+  color: #0BABDC;
+  text-decoration: none;
+}
+@media (min-width: 768px) {
+  .container__content .para {
+    font-size: 16px;
+    margin: 0 28px;
+  }
+  .container__content .para__subtitle {
+    margin-bottom: 12px;
+    font-size: 16px;
+  }
+  .container__content .p5 {
+    margin-top: 28px;
+  }
+  .container__content .p3,
+  .container__content .p7,
+  .container__content .p8 {
+    margin: 28px;
+  }
+  .container__content .p2 a::after,
+  .container__content .p7 a::after {
+    content: "";
+    background-image: url("/wp-content/themes/vivre-en-ville--cousi-cousa/sources/icons/external-link.png");
+    background-size: cover;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+  }
+  .container__content .news__list {
+    padding: 0 24px;
+  }
+  .container__content .news__list .list__item {
+    margin-bottom: 15px;
+  }
+  .container__content .news__list .list__item p {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .container__content .renseignement {
+    margin-bottom: 50px;
+  }
+  .container__content .renseignement .rens__nom {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .container__content .renseignement .rens__poste {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .container__content .renseignement .rens__info {
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+@media (min-width: 1400px) {
+  .container__content .para {
+    font-size: 20px;
+    margin: 0 32px;
+  }
+  .container__content .para__subtitle {
+    margin-bottom: 14px;
+    font-size: 20px;
+  }
+  .container__content .p5 {
+    margin-top: 32px;
+  }
+  .container__content .p3,
+  .container__content .p7,
+  .container__content .p8 {
+    margin: 32px;
+  }
+  .container__content .p2 a::after,
+  .container__content .p7 a::after {
+    content: "";
+    background-image: url("/wp-content/themes/vivre-en-ville--cousi-cousa/sources/icons/external-link.png");
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+  }
+  .container__content .news__list {
+    padding: 0 28px;
+  }
+  .container__content .news__list .list__item {
+    margin-bottom: 20px;
+  }
+  .container__content .news__list .list__item p {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .container__content .renseignement {
+    margin-bottom: 50px;
+  }
+  .container__content .renseignement .rens__nom {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .container__content .renseignement .rens__poste {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .container__content .renseignement .rens__info {
+    font-size: 20px;
+    font-weight: 500;
+  }
+}
+
+.article__btn {
+  padding: 0 23px;
+  display: flex;
+  margin-bottom: 40px;
+  justify-content: space-between;
+}
+.article__btn .prec__btn {
+  font-family: "Poppins", system-ui;
+  font-size: 14px;
+  font-weight: 500;
+  border: 2px solid #0BABDC;
+  border-radius: 50px;
+  width: 105px;
+  padding: 8px;
+  text-align: center;
+  color: #0BABDC;
+  transition: 0.3s;
+  background-color: #EFEFEF;
+}
+.article__btn .prec__btn:hover {
+  background-color: #0BABDC;
+  color: #EFEFEF;
+}
+@media (min-width: 768px) {
+  .article__btn {
+    margin-bottom: 50px;
+    padding: 0 35px;
+  }
+  .article__btn .prec__btn {
+    font-size: 16px;
+    padding: 12px;
+    width: 125px;
+  }
+}
+@media (min-width: 1400px) {
+  .article__btn {
+    margin-bottom: 60px;
+    padding: 0 45px;
+  }
+  .article__btn .prec__btn {
+    font-size: 18px;
+    padding: 14px;
+    width: 150px;
+  }
+}
+
+.grid__articles {
+  width: 100%;
+  gap: 0;
+  padding: 0 23px;
+  max-width: 530px;
+  margin: 0 auto;
+  margin-top: 5px;
+  margin-bottom: 45px;
+}
+
+@media (min-width: 768px) {
+  .grid__articles {
+    margin: 0 auto;
+    max-width: 751px;
+    padding: 0 46px;
+    margin-bottom: 60px;
+  }
+}
+@media (min-width: 1400px) {
+  .grid__articles {
+    margin: 0 auto;
+    max-width: 1400px;
+    margin-bottom: 90px;
+  }
+}
+.grid__nouvelles__newshub {
+  width: 100%;
+  gap: 0;
+  padding: 0 23px;
+  max-width: 530px;
+  margin: 0 auto;
+  margin-top: 5px;
+  margin-bottom: 45px;
+}
+
+.nouvelle {
+  width: 100%;
+}
+.nouvelle__item__newshub {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+}
+
+.plus__container {
+  display: flex;
+  justify-content: center;
+}
+.plus__container .plus__articles {
+  font-family: "Poppins", system-ui;
+  font-size: 14px;
+  font-weight: 500;
+  border: 2px solid #0BABDC;
+  border-radius: 50px;
+  width: 165px;
+  padding: 8px;
+  text-align: center;
+  color: #0BABDC;
+  transition: 0.3s;
+  background-color: #EFEFEF;
+  margin-top: 45px;
+}
+.plus__container .plus__articles:hover {
+  background-color: #0BABDC;
+  color: #EFEFEF;
+}
+
+@media (min-width: 768px) {
+  .grid__nouvelles__newshub {
+    margin: 0 auto;
+    max-width: 751px;
+    padding: 0 46px;
+    margin-bottom: 60px;
+  }
+  .plus__container .plus__articles {
+    width: 190px;
+    font-size: 16px;
+    padding: 12px;
+  }
+}
+@media (min-width: 1400px) {
+  .grid__nouvelles__newshub {
+    margin: 0 auto;
+    max-width: 1400px;
+    margin-bottom: 90px;
+  }
+  .plus__container .plus__articles {
+    width: 215px;
+    font-size: 18px;
+    padding: 14px;
+  }
+}
 body {
   display: flex;
   flex-direction: column;

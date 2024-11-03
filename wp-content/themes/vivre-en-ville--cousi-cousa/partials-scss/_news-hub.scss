@@ -7,7 +7,7 @@
     margin-bottom: 40px;
     box-shadow: 0px -13px 20px 20px variables.$charbon;
 
-    .content__hero__news {
+    .content__hero__newshub {
         padding: 15px;
         width: 50%;
         margin: 0 auto;
@@ -36,8 +36,9 @@
     }
 
     @media (min-width: 768px) {
-        .content__hero__news {
+        .content__hero__newshub {
             padding: 20px;
+            align-items: center;
 
             .title__hero {
                 font-size: 20px;
@@ -427,5 +428,84 @@
         margin: 0 auto;
         max-width: 1400px;
         margin-bottom: 90px;
+    }
+}
+
+
+.grid__nouvelles__newshub {
+    width: 100%;
+    gap: 0;
+    padding: 0 23px;
+    max-width: 530px;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 45px;
+}
+
+.nouvelle {
+    width: 100%;
+
+    &__item__newshub {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        align-items: center;
+    }
+}
+
+.plus__container {
+    display: flex;
+    justify-content: center;
+
+    .plus__articles {
+        font-family: "Poppins", system-ui;
+        font-size: 14px;
+        font-weight: 500;
+        border: 2px solid variables.$bleu-ciel;
+        border-radius: 50px;
+        width: 165px;
+        padding: 8px;
+        text-align: center;
+        color: variables.$bleu-ciel;
+        transition: 0.3s;
+        background-color: variables.$quartz;
+        margin-top: 45px;
+
+        &:hover {
+            background-color: variables.$bleu-ciel;
+            color: variables.$quartz;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .grid__nouvelles__newshub {
+        margin: 0 auto;
+        max-width: 751px;
+        padding: 0 46px;
+        margin-bottom: 60px;
+    }
+
+    .plus__container {
+        .plus__articles {
+            width: 190px;
+            font-size: 16px;
+            padding: 12px;
+        }
+    }
+}
+
+@media (min-width: 1400px) {
+    .grid__nouvelles__newshub {
+        margin: 0 auto;
+        max-width: 1400px;
+        margin-bottom: 90px;
+    }
+
+    .plus__container {
+        .plus__articles {
+            width: 215px;
+            font-size: 18px;
+            padding: 14px;
+        }
     }
 }
