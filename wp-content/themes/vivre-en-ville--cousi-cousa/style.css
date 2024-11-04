@@ -372,13 +372,16 @@ footer .credit {
 .grid__carrousel .swiper .swiper__img {
   width: 100%;
   max-height: 30vh;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .grid__carrousel .swiper .swiper__img__ordi {
-  object-position: 0% 25%;
+  -o-object-position: 0% 25%;
+     object-position: 0% 25%;
 }
 .grid__carrousel .swiper .swiper__img__champ {
-  object-position: 0% 25%;
+  -o-object-position: 0% 25%;
+     object-position: 0% 25%;
 }
 .grid__carrousel .swiper .swiper__bg {
   display: flex;
@@ -419,10 +422,12 @@ footer .credit {
   .grid__carrousel .swiper .swiper__img {
     width: 100%;
     max-height: 45vh;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .grid__carrousel .swiper .swiper__img__ordi {
-    object-position: 0% 25%;
+    -o-object-position: 0% 25%;
+       object-position: 0% 25%;
   }
   .grid__carrousel .swiper .swiper__bg {
     height: 60px;
@@ -453,13 +458,16 @@ footer .credit {
   .grid__carrousel .swiper .swiper__img {
     width: 100%;
     max-height: 60vh;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .grid__carrousel .swiper .swiper__img__ordi {
-    object-position: 0% 25%;
+    -o-object-position: 0% 25%;
+       object-position: 0% 25%;
   }
   .grid__carrousel .swiper .swiper__img__champ {
-    object-position: 0% 23%;
+    -o-object-position: 0% 23%;
+       object-position: 0% 23%;
   }
 }
 
@@ -955,7 +963,8 @@ footer .credit {
 .temoignage__photo {
   width: 60px;
   border-radius: 50%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .temoignage__nom {
   font-family: "Inter", sans-serif;
@@ -1081,7 +1090,8 @@ footer .credit {
 .nouvelle__image {
   width: 100px;
   height: 100px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .nouvelle__content {
   display: flex;
@@ -1245,7 +1255,8 @@ footer .credit {
 }
 .container__hero .img__hero {
   width: 50%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (min-width: 768px) {
   .container__hero .content__hero {
@@ -1599,7 +1610,8 @@ footer .credit {
 }
 .container__hero .img__hero {
   width: 50%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (min-width: 768px) {
   .container__hero .content__hero__newshub {
@@ -1993,13 +2005,15 @@ footer .credit {
     padding: 14px;
   }
 }
-body {
-  display: flex;
-  flex-direction: column;
+main {
+  height: 100%;
 }
 
-.error__container {
-  margin: 25% auto;
+.error {
+  margin-top: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   text-align: center;
 }
 .error__container h1 {
@@ -2009,21 +2023,36 @@ body {
 }
 .error__container h2 {
   font-size: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 20px;
   color: #303030;
   font-weight: 700;
 }
 .error__container .logo-error {
   color: #8DC63F;
 }
-
 @media (min-width: 768px) {
   .error {
-    background-color: blue;
-    height: 600px;
+    margin-top: 15%;
+  }
+  .error__container h1 {
+    font-size: 70px;
+  }
+  .error__container h2 {
+    font-size: 40px;
   }
 }
+@media (min-width: 1400px) {
+  .error {
+    margin-top: 5%;
+  }
+  .error__container h1 {
+    font-size: 85px;
+  }
+  .error__container h2 {
+    font-size: 55px;
+  }
+}
+
 body,
 html {
   background-color: #EFEFEF;
