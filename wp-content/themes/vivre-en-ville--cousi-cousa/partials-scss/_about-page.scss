@@ -1,0 +1,59 @@
+@use "variables";
+@use "mixins";
+
+.a-propos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: start;
+  h1 {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 15px;
+    font-size: 20px;
+    font-weight: 700;
+    color: variables.$nenuphare;
+  }
+  img {
+    border: 1px solid variables.$charbon;
+    margin: 10px;
+    align-self: center;
+    width: 90%;
+  }
+  h2 {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+    color: variables.$bleu-ciel;
+  }
+  p {
+    font-size: 10px;
+  }
+  .mission {
+    margin: 15px;
+  }
+  .next__chapter {
+    margin-top: 5px;
+  }
+  .approche {
+    margin: 15px;
+    li {
+      font-size: 10px;
+      margin-left: 0;
+      font-family: "Poppins", system-ui;
+      margin: 3px;
+      position: relative;
+      &::after {
+        content: "▢";
+        position: absolute;
+        left: -15px;
+        top: 0;
+        color: variables.$bleu-ciel;
+      }
+    }
+    ul {
+      padding: 10px;
+      list-style-type: none;
+    }
+  }
+}
