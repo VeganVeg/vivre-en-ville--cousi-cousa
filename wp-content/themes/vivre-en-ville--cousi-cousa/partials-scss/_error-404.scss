@@ -2,39 +2,56 @@
 @use "variables";
 @use "mixins";
 
+main {
+  height: 100%;
+}
 
-
-body {
+.error {
+  margin-top: 20%;
   display: flex;
-  flex-direction: column;
-}
-
-.error__container {
-  margin: 25% auto;
+  flex-direction: row;
+  justify-content: center;
   text-align: center;
+  &__container {
+    h1 {
+      font-size: 50px;
+      color: variables.$charbon;
+      font-weight: 900;
+    }
 
-  h1 {
-    font-size: 50px;
-    color: variables.$charbon;
-    font-weight: 900;
+    h2 {
+      font-size: 20px;
+      margin: 20px;
+      color: variables.$charbon;
+      font-weight: 700;
+    }
+
+    .logo-error {
+      color: variables.$nenuphare;
+    }
   }
 
-  h2 {
-    font-size: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    color: variables.$charbon;
-    font-weight: 700;
+  @media (min-width: 768px) {
+    margin-top: 15%;
+    &__container {
+      h1 {
+        font-size: 70px;
+      }
+      h2 {
+        font-size: 40px;
+      }
+    }
   }
 
-  .logo-error {
-    color: variables.$nenuphare;
-  }
-}
-
-@media (min-width: 768px) {
-  .error {
-    background-color: blue;
-    height: 600px;
+  @media (min-width: 1400px) {
+    margin-top: 5%;
+    &__container {
+      h1 {
+        font-size: 85px;
+      }
+      h2 {
+        font-size: 55px;
+      }
+    }
   }
 }
