@@ -373,13 +373,16 @@ footer .credit {
 .grid__carrousel .swiper .swiper__img {
   width: 100%;
   max-height: 30vh;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .grid__carrousel .swiper .swiper__img__ordi {
-  object-position: 0% 25%;
+  -o-object-position: 0% 25%;
+     object-position: 0% 25%;
 }
 .grid__carrousel .swiper .swiper__img__champ {
-  object-position: 0% 25%;
+  -o-object-position: 0% 25%;
+     object-position: 0% 25%;
 }
 .grid__carrousel .swiper .swiper__bg {
   display: flex;
@@ -420,10 +423,12 @@ footer .credit {
   .grid__carrousel .swiper .swiper__img {
     width: 100%;
     max-height: 45vh;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .grid__carrousel .swiper .swiper__img__ordi {
-    object-position: 0% 25%;
+    -o-object-position: 0% 25%;
+       object-position: 0% 25%;
   }
   .grid__carrousel .swiper .swiper__bg {
     height: 60px;
@@ -454,13 +459,16 @@ footer .credit {
   .grid__carrousel .swiper .swiper__img {
     width: 100%;
     max-height: 60vh;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .grid__carrousel .swiper .swiper__img__ordi {
-    object-position: 0% 25%;
+    -o-object-position: 0% 25%;
+       object-position: 0% 25%;
   }
   .grid__carrousel .swiper .swiper__img__champ {
-    object-position: 0% 23%;
+    -o-object-position: 0% 23%;
+       object-position: 0% 23%;
   }
 }
 
@@ -956,7 +964,8 @@ footer .credit {
 .temoignage__photo {
   width: 60px;
   border-radius: 50%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .temoignage__nom {
   font-family: "Inter", sans-serif;
@@ -1082,7 +1091,8 @@ footer .credit {
 .nouvelle__image {
   width: 100px;
   height: 100px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .nouvelle__content {
   display: flex;
@@ -1246,7 +1256,8 @@ footer .credit {
 }
 .container__hero .img__hero {
   width: 50%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (min-width: 768px) {
   .container__hero .content__hero {
@@ -1600,7 +1611,8 @@ footer .credit {
 }
 .container__hero .img__hero {
   width: 50%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (min-width: 768px) {
   .container__hero .content__hero__newshub {
@@ -2099,6 +2111,126 @@ main {
   list-style-type: none;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
+  color: #303030;
+  background-color: #EFEFEF;
+}
+
+main {
+  flex: 1 0 auto;
+  padding-top: 80px;
+}
+
+.contact-section {
+  padding: 60px 0 120px;
+  background-color: #EFEFEF;
+}
+.contact-section h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #303030;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.contact-section h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #0BABDC;
+  margin-bottom: 20px;
+}
+.contact-section .list-unstyled li {
+  margin-bottom: 10px;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  color: #303030;
+}
+.contact-section .list-unstyled a {
+  color: #8DD5DF;
+  text-decoration: none;
+}
+.contact-section .list-unstyled a:hover {
+  color: #8DC63F;
+}
+.contact-section .form-label {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  color: #303030;
+}
+.contact-section .form-control {
+  border-color: #BABABA;
+}
+.contact-section .form-control:focus {
+  border-color: #0BABDC;
+  box-shadow: 0 0 0 0.2rem rgba(11, 171, 220, 0.25);
+}
+.contact-section .esp, .contact-section footer .footer__don .don, footer .footer__don .contact-section .don {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border: 2px solid #0BABDC;
+  border-radius: 50px;
+  background-color: #EFEFEF;
+  color: #0BABDC;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+.contact-section .esp:hover, .contact-section footer .footer__don .don:hover, footer .footer__don .contact-section .don:hover {
+  background-color: #0BABDC;
+  color: #EFEFEF;
+}
+
+footer {
+  flex-shrink: 0;
+  margin-top: auto;
+  background-color: #303030;
+  color: #EFEFEF;
+  padding: 20px 0;
+}
+footer .footer__don .don {
+  background-color: #0BABDC;
+  color: #EFEFEF;
+}
+footer .footer__don .don:hover {
+  background-color: #8DC63F;
+  border-color: #8DC63F;
+}
+
+@media (max-width: 768px) {
+  .contact-section h1 {
+    font-size: 2rem;
+  }
+  .contact-section h2 {
+    font-size: 1.5rem;
+  }
+  .contact-section .row {
+    flex-direction: column;
+  }
+  footer .grid__footer {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 768px) {
+  .esp, footer .footer__don .don {
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+}
+@media (min-width: 1400px) {
+  .contact-section .container {
+    max-width: 1200px;
+  }
+  .esp, footer .footer__don .don {
+    font-size: 18px;
+    padding: 14px 28px;
+  }
+}
 body,
 html {
   background-color: #EFEFEF;
