@@ -1,6 +1,5 @@
 @use 'variables';
 @use 'mixins';
-
 body {
     display: flex;
     flex-direction: column;
@@ -17,7 +16,6 @@ main {
 .contact-section {
     padding: 60px 0 120px;
     background-color: variables.$quartz;
-
     h1 {
         font-family: 'Poppins', sans-serif;
         font-size: 2.5rem;
@@ -26,7 +24,6 @@ main {
         text-align: center;
         margin-bottom: 60px;
     }
-
     h2 {
         font-family: 'Poppins', sans-serif;
         font-size: 2rem;
@@ -34,7 +31,6 @@ main {
         color: variables.$bleu-ciel;
         margin-bottom: 20px;
     }
-
     .list-unstyled {
         li {
             margin-bottom: 10px;
@@ -42,32 +38,29 @@ main {
             font-size: 1rem;
             color: variables.$charbon;
         }
-
         a {
             color: variables.$bleu-matinal;
             text-decoration: none;
-
             &:hover {
                 color: variables.$nenuphare;
             }
         }
     }
-
     .form-label {
         font-family: 'Inter', sans-serif;
         font-weight: 500;
         color: variables.$charbon;
+        display: block;
+        margin-bottom: 0.5rem;
     }
-
     .form-control {
         border-color: variables.$gris;
-
         &:focus {
             border-color: variables.$bleu-ciel;
+            outline: 0;
             box-shadow: 0 0 0 0.2rem rgba(variables.$bleu-ciel, 0.25);
         }
     }
-
     .esp {
         font-family: "Poppins", sans-serif;
         font-size: 14px;
@@ -79,7 +72,6 @@ main {
         color: variables.$bleu-ciel;
         cursor: pointer;
         transition: background-color 0.3s, color 0.3s;
-
         &:hover {
             background-color: variables.$bleu-ciel;
             color: variables.$quartz;
@@ -89,15 +81,13 @@ main {
 
 // Responsive design
 @media (max-width: 768px) {
-    .contact-section {
-        h1 {
+    .contact {
+        &__titre {
             font-size: 2rem;
         }
-
         h2 {
             font-size: 1.5rem;
         }
-
         .row {
             flex-direction: column;
         }
@@ -105,19 +95,16 @@ main {
 }
 
 @media (min-width: 768px) {
-    .esp {
+    .contact__bouton {
         font-size: 16px;
         padding: 12px 24px;
     }
 }
 
 @media (min-width: 1400px) {
-    .contact-section {
-        .container {
-            max-width: 1200px;
-        }
+    .contact__container {
+        max-width: 1200px;
     }
-
     .esp {
         font-size: 18px;
         padding: 14px 28px;
