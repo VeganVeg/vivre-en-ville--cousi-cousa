@@ -1,5 +1,6 @@
 @use 'variables';
 @use 'mixins';
+
 body {
     margin: 0;
     padding: 0;
@@ -14,9 +15,11 @@ header {
     left: 0;
     right: 0;
     z-index: 1000;
+
     .navbar {
         margin-bottom: 0;
         padding: 0;
+
         .container-fluid {
             padding-left: 0;
             padding-right: 0;
@@ -33,22 +36,26 @@ main {
     color: variables.$quartz;
     margin-top: -60px;
     padding: 80px 0 60px;
+
     .service-hero-content {
         .row {
             display: flex;
             align-items: center;
         }
+
         .service-title {
             font-family: 'Poppins', sans-serif;
             font-size: 2.5rem;
             font-weight: 700;
             margin-bottom: 20px;
         }
+
         .service-description {
             font-family: 'Inter', sans-serif;
             font-size: 1.2rem;
             margin-bottom: 30px;
         }
+
         .service-icon {
             max-width: 100%;
             height: auto;
@@ -61,6 +68,7 @@ main {
 .service-cta {
     padding: 60px 0;
     background-color: variables.$quartz;
+
     h2 {
         font-family: 'Poppins', sans-serif;
         font-size: 2rem;
@@ -68,6 +76,7 @@ main {
         color: variables.$bleu-ciel;
         margin-bottom: 30px;
     }
+
     p {
         font-family: 'Inter', sans-serif;
         font-size: 1rem;
@@ -87,6 +96,7 @@ main {
     border-radius: 50px;
     text-decoration: none;
     transition: background-color 0.3s, color 0.3s;
+
     &:hover {
         background-color: variables.$bleu-ciel;
         color: variables.$quartz;
@@ -97,6 +107,7 @@ footer {
     background-color: variables.$charbon;
     color: variables.$quartz;
     padding: 20px 0;
+
     .grid__footer {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -105,57 +116,70 @@ footer {
         margin: 0 auto;
         padding: 0 20px;
     }
+
     .footer__contact a {
         display: block;
         color: variables.$quartz;
         text-decoration: none;
         margin-bottom: 10px;
+
         &:hover {
             color: variables.$bleu-matinal;
         }
     }
+
     .footer__logo__centered,
     .footer__logo {
         display: flex;
         align-items: center;
         justify-content: center;
+
         img {
             margin-right: 10px;
         }
+
         .footer-title {
             font-size: 18px;
             font-weight: bold;
+
             .footer-subtitle {
                 font-size: 14px;
                 font-weight: normal;
             }
         }
     }
+
     .footer__btn {
         display: flex;
         flex-direction: column;
         align-items: center;
+
         .footer__don {
             margin-top: 20px;
+
             .don {
                 @extend .esp;
                 background-color: variables.$bleu-ciel;
                 color: variables.$quartz;
+
                 &:hover {
                     background-color: variables.$nenuphare;
                     border-color: variables.$nenuphare;
                 }
             }
         }
+
         .footer__lien {
             display: flex;
             justify-content: center;
             margin-top: 20px;
+
             a {
                 margin: 0 10px;
             }
         }
     }
+
     .credit {
         text-align: center;
         margin-top: 20px;
@@ -166,10 +190,12 @@ footer {
 @media (max-width: 768px) {
     .service-hero {
         text-align: center;
+
         .service-icon {
             margin-top: 30px;
         }
     }
+
     footer {
         .grid__footer {
             grid-template-columns: 1fr;
@@ -185,6 +211,7 @@ footer {
 }
 
 @media (min-width: 1400px) {
+
     .service-hero,
     .service-details,
     .service-projects,
@@ -193,6 +220,7 @@ footer {
             max-width: 1200px;
         }
     }
+
     .esp {
         font-size: 18px;
         padding: 14px 28px;
