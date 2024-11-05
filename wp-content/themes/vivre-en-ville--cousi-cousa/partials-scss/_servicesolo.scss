@@ -27,10 +27,6 @@ header {
     }
 }
 
-main {
-    padding-top: 60px;
-}
-
 .service-hero {
     background-color: variables.$charbon;
     color: variables.$quartz;
@@ -85,7 +81,7 @@ main {
 }
 
 .esp {
-    @include mixins.button-style(variables.$bleu-ciel, variables.$quartz);
+
     display: inline-block;
     margin-top: 20px;
     font-family: "Poppins", sans-serif;
