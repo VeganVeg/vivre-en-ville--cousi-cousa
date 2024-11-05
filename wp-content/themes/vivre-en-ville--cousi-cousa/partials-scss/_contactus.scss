@@ -87,28 +87,6 @@ main {
     }
 }
 
-// Footer styles
-footer {
-    flex-shrink: 0;
-    margin-top: auto;
-    background-color: variables.$charbon;
-    color: variables.$quartz;
-    padding: 20px 0;
-
-    .footer__don {
-        .don {
-            @extend .esp;
-            background-color: variables.$bleu-ciel;
-            color: variables.$quartz;
-
-            &:hover {
-                background-color: variables.$nenuphare;
-                border-color: variables.$nenuphare;
-            }
-        }
-    }
-}
-
 // Responsive design
 @media (max-width: 768px) {
     .contact-section {
@@ -122,12 +100,6 @@ footer {
 
         .row {
             flex-direction: column;
-        }
-    }
-
-    footer {
-        .grid__footer {
-            grid-template-columns: 1fr;
         }
     }
 }
