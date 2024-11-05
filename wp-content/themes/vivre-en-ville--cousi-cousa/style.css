@@ -2266,24 +2266,17 @@ main {
   list-style-type: none;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  font-family: "Inter", sans-serif;
-  color: #303030;
-  background-color: #EFEFEF;
-}
-
-main {
-  flex: 1 0 auto;
-}
-
-.contact-section {
+.contact {
   padding: 60px 0 120px;
   background-color: #EFEFEF;
 }
-.contact-section h1 {
+.contact__container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.contact__titre {
   font-family: "Poppins", sans-serif;
   font-size: 2.5rem;
   font-weight: 700;
@@ -2291,42 +2284,68 @@ main {
   text-align: center;
   margin-bottom: 60px;
 }
-.contact-section h2 {
+.contact__grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+.contact__info, .contact__formulaire {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: 0 15px;
+}
+.contact__sous-titre {
   font-family: "Poppins", sans-serif;
   font-size: 2rem;
   font-weight: 600;
   color: #0BABDC;
   margin-bottom: 20px;
 }
-.contact-section .list-unstyled li {
+.contact__liste {
+  list-style-type: none;
+  padding: 0;
+}
+.contact__item {
   margin-bottom: 10px;
   font-family: "Inter", sans-serif;
   font-size: 1rem;
   color: #303030;
 }
-.contact-section .list-unstyled a {
+.contact__lien {
   color: #8DD5DF;
   text-decoration: none;
 }
-.contact-section .list-unstyled a:hover {
+.contact__lien:hover {
   color: #8DC63F;
 }
-.contact-section .form-label {
+.contact__groupe {
+  margin-bottom: 1rem;
+}
+.contact__label {
   font-family: "Inter", sans-serif;
   font-weight: 500;
   color: #303030;
   display: block;
   margin-bottom: 0.5rem;
 }
-.contact-section .form-control {
-  border-color: #BABABA;
+.contact__input, .contact__textarea {
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #303030;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #BABABA;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
-.contact-section .form-control:focus {
+.contact__input:focus, .contact__textarea:focus {
   border-color: #0BABDC;
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(11, 171, 220, 0.25);
 }
-.contact-section .esp {
+.contact__bouton {
   font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-weight: 600;
@@ -2338,7 +2357,7 @@ main {
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
 }
-.contact-section .esp:hover {
+.contact__bouton:hover {
   background-color: #0BABDC;
   color: #EFEFEF;
 }
@@ -2347,11 +2366,15 @@ main {
   .contact__titre {
     font-size: 2rem;
   }
-  .contact h2 {
+  .contact__sous-titre {
     font-size: 1.5rem;
   }
-  .contact .row {
+  .contact__grid {
     flex-direction: column;
+  }
+  .contact__info, .contact__formulaire {
+    flex: 0 0 100%;
+    max-width: 100%;
   }
 }
 @media (min-width: 768px) {
@@ -2364,7 +2387,7 @@ main {
   .contact__container {
     max-width: 1200px;
   }
-  .esp {
+  .contact__bouton {
     font-size: 18px;
     padding: 14px 28px;
   }
