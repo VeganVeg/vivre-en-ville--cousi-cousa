@@ -1,2 +1,137 @@
 @use 'variables';
 @use 'mixins';
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+    color: variables.$charbon;
+    background-color: variables.$quartz;
+}
+
+main {
+    flex: 1 0 auto;
+    padding-top: 80px;
+}
+
+.contact-section {
+    padding: 60px 0 120px;
+    background-color: variables.$quartz;
+    h1 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: variables.$charbon;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    h2 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 2rem;
+        font-weight: 600;
+        color: variables.$bleu-ciel;
+        margin-bottom: 20px;
+    }
+    .list-unstyled {
+        li {
+            margin-bottom: 10px;
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            color: variables.$charbon;
+        }
+        a {
+            color: variables.$bleu-matinal;
+            text-decoration: none;
+            &:hover {
+                color: variables.$nenuphare;
+            }
+        }
+    }
+    .form-label {
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+        color: variables.$charbon;
+    }
+    .form-control {
+        border-color: variables.$gris;
+        &:focus {
+            border-color: variables.$bleu-ciel;
+            box-shadow: 0 0 0 0.2rem rgba(variables.$bleu-ciel, 0.25);
+        }
+    }
+    .esp {
+        font-family: "Poppins", sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        padding: 10px 20px;
+        border: 2px solid variables.$bleu-ciel;
+        border-radius: 50px;
+        background-color: variables.$quartz;
+        color: variables.$bleu-ciel;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
+        &:hover {
+            background-color: variables.$bleu-ciel;
+            color: variables.$quartz;
+        }
+    }
+}
+
+// Footer styles
+footer {
+    flex-shrink: 0;
+    margin-top: auto;
+    background-color: variables.$charbon;
+    color: variables.$quartz;
+    padding: 20px 0;
+    .footer__don {
+        .don {
+            @extend .esp;
+            background-color: variables.$bleu-ciel;
+            color: variables.$quartz;
+            &:hover {
+                background-color: variables.$nenuphare;
+                border-color: variables.$nenuphare;
+            }
+        }
+    }
+}
+
+// Responsive design
+@media (max-width: 768px) {
+    .contact-section {
+        h1 {
+            font-size: 2rem;
+        }
+        h2 {
+            font-size: 1.5rem;
+        }
+        .row {
+            flex-direction: column;
+        }
+    }
+    footer {
+        .grid__footer {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .esp {
+        font-size: 16px;
+        padding: 12px 24px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .contact-section {
+        .container {
+            max-width: 1200px;
+        }
+    }
+    .esp {
+        font-size: 18px;
+        padding: 14px 28px;
+    }
+}
