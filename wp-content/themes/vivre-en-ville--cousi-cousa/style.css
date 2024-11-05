@@ -2266,17 +2266,17 @@ main {
   list-style-type: none;
 }
 
-.contact {
+.nous-joindre {
   padding: 60px 0 120px;
   background-color: #EFEFEF;
 }
-.contact__container {
+.nous-joindre__container {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
-.contact__titre {
+.nous-joindre__titre {
   font-family: "Poppins", sans-serif;
   font-size: 2.5rem;
   font-weight: 700;
@@ -2284,51 +2284,51 @@ main {
   text-align: center;
   margin-bottom: 60px;
 }
-.contact__grid {
+.nous-joindre__grid {
   display: flex;
   flex-wrap: wrap;
   margin: 0 -15px;
 }
-.contact__info, .contact__formulaire {
+.nous-joindre__info, .nous-joindre__formulaire {
   flex: 0 0 50%;
   max-width: 50%;
   padding: 0 15px;
 }
-.contact__sous-titre {
+.nous-joindre__sous-titre {
   font-family: "Poppins", sans-serif;
   font-size: 2rem;
   font-weight: 600;
   color: #0BABDC;
   margin-bottom: 20px;
 }
-.contact__liste {
+.nous-joindre__liste {
   list-style-type: none;
   padding: 0;
 }
-.contact__item {
+.nous-joindre__item {
   margin-bottom: 10px;
   font-family: "Inter", sans-serif;
   font-size: 1rem;
   color: #303030;
 }
-.contact__lien {
+.nous-joindre__lien {
   color: #8DD5DF;
   text-decoration: none;
 }
-.contact__lien:hover {
+.nous-joindre__lien:hover {
   color: #8DC63F;
 }
-.contact__groupe {
+.nous-joindre__groupe {
   margin-bottom: 1rem;
 }
-.contact__label {
+.nous-joindre__label {
   font-family: "Inter", sans-serif;
   font-weight: 500;
   color: #303030;
   display: block;
   margin-bottom: 0.5rem;
 }
-.contact__input, .contact__textarea {
+.nous-joindre__input, .nous-joindre__textarea {
   width: 100%;
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
@@ -2340,12 +2340,12 @@ main {
   border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
-.contact__input:focus, .contact__textarea:focus {
+.nous-joindre__input:focus, .nous-joindre__textarea:focus {
   border-color: #0BABDC;
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(11, 171, 220, 0.25);
 }
-.contact__bouton {
+.nous-joindre__bouton {
   font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-weight: 600;
@@ -2357,37 +2357,37 @@ main {
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
 }
-.contact__bouton:hover {
+.nous-joindre__bouton:hover {
   background-color: #0BABDC;
   color: #EFEFEF;
 }
 
 @media (max-width: 768px) {
-  .contact__titre {
+  .nous-joindre__titre {
     font-size: 2rem;
   }
-  .contact__sous-titre {
+  .nous-joindre__sous-titre {
     font-size: 1.5rem;
   }
-  .contact__grid {
+  .nous-joindre__grid {
     flex-direction: column;
   }
-  .contact__info, .contact__formulaire {
+  .nous-joindre__info, .nous-joindre__formulaire {
     flex: 0 0 100%;
     max-width: 100%;
   }
 }
 @media (min-width: 768px) {
-  .contact__bouton {
+  .nous-joindre__bouton {
     font-size: 16px;
     padding: 12px 24px;
   }
 }
 @media (min-width: 1400px) {
-  .contact__container {
+  .nous-joindre__container {
     max-width: 1200px;
   }
-  .contact__bouton {
+  .nous-joindre__bouton {
     font-size: 18px;
     padding: 14px 28px;
   }

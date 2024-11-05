@@ -1,6 +1,6 @@
 @use 'variables';
 @use 'mixins';
-.contact {
+.nous-joindre {
     padding: 60px 0 120px;
     background-color: variables.$quartz;
     &__container {
@@ -99,7 +99,7 @@
 }
 
 @media (max-width: 768px) {
-    .contact {
+    .nous-joindre {
         &__titre {
             font-size: 2rem;
         }
@@ -118,17 +118,17 @@
 }
 
 @media (min-width: 768px) {
-    .contact__bouton {
+    .nous-joindre__bouton {
         font-size: 16px;
         padding: 12px 24px;
     }
 }
 
 @media (min-width: 1400px) {
-    .contact__container {
+    .nous-joindre__container {
         max-width: 1200px;
     }
-    .contact__bouton {
+    .nous-joindre__bouton {
         font-size: 18px;
         padding: 14px 28px;
     }
