@@ -2477,16 +2477,6 @@ main {
 }
 .service-section .service-header .service-image {
   max-width: 60px;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 2rem;
-}
-.service-section .service-title {
-  font-size: 1.5rem;
-  margin: 0;
-}
-.service-section .service-image {
-  max-width: 100px;
   height: auto;
 }
 .service-section .service-content .service-subtitle {
@@ -2523,15 +2513,6 @@ main {
     margin-right: 2rem;
   }
   .service-section .service-header .service-image {
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-  .service-section .service-title {
-    font-size: 2rem;
-    text-align: left;
-    margin-right: 2rem;
-  }
-  .service-section .service-image {
     max-width: 50%;
   }
   .service-section .service-content .service-subtitle {
@@ -2552,7 +2533,6 @@ main {
     padding: 2rem;
   }
   .service-section .service-header .service-title {
-  .service-section .service-title {
     font-size: 2.5rem;
   }
   .service-section .service-content .service-subtitle {
@@ -2590,7 +2570,6 @@ main {
 .team .team_profile img {
   width: 15%;
   align-self: flex-end;
-  background-color: red;
 }
 .team .team_profile h3 {
   text-transform: uppercase;
@@ -2607,6 +2586,9 @@ main {
   justify-content: flex-end;
   align-items: center;
 }
+.team .team_profile #first p {
+  display: none;
+}
 .team .team_profile #second {
   padding: 10px;
   margin: 10px;
@@ -2614,6 +2596,9 @@ main {
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
+}
+.team .team_profile #second p {
+  display: none;
 }
 @media (min-width: 768px) {
   .team h1 {
@@ -2665,12 +2650,11 @@ main {
     margin: 35px;
   }
   .team .team_profile img {
-    width: 40%;
+    width: 35%;
   }
   .team .team_profile h3 {
-    font-size: 20px;
-    text-align: center;
-    margin: 8px;
+    font-size: 35px;
+    margin: 10px;
     padding: 10px;
   }
   .team .team_profile #first {
@@ -2678,18 +2662,50 @@ main {
     padding: 20px;
     margin: 10px auto;
     border: 4px solid grey;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
   }
   .team .team_profile #first img {
     align-self: center;
+  }
+  .team .team_profile #first h3 {
+    text-align: center;
+  }
+  .team .team_profile #first p {
+    width: 50%;
+    display: initial;
+    font-size: 18px;
+    text-align: center;
   }
   .team .team_profile #second {
     width: 70%;
     padding: 20px;
     margin: 10px auto;
     border: 4px solid grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
   }
   .team .team_profile #second img {
     align-self: center;
+  }
+  .team .team_profile #second h3 {
+    text-align: center;
+  }
+  .team .team_profile #second p {
+    width: 50%;
+    display: initial;
+    font-size: 18px;
+    text-align: center;
+  }
+  .team .team_profile .capucine-berdah {
+    height: 650px;
+  }
+  .team .team_profile .capucine-berdah img {
+    width: 50%;
   }
 }
 
