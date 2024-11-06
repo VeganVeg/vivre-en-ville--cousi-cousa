@@ -1,0 +1,54 @@
+@use "variables";
+@use "mixins";
+
+.team {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  h1 {
+    align-self: center;
+    margin: 20px;
+    font-size: 25px;
+    color: variables.$nenuphare;
+  }
+  .team_profile {
+    hr {
+      width: 50%;
+      border-radius: 3px;
+      margin: auto;
+      height: 5px;
+      opacity: 1;
+      padding: 0;
+      background-color: variables.$nenuphare;
+      color: variables.$nenuphare;
+    }
+    img {
+      width: 15%;
+      align-self: flex-end;
+      background-color: red;
+    }
+    h3 {
+      text-transform: uppercase;
+      font-size: 10px;
+      text-align: start;
+      margin: 8px;
+      padding: 4px;
+    }
+    #first {
+      padding: 10px;
+      margin: 10px;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    #second {
+      padding: 10px;
+      margin: 10px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+    }
+  }
+}

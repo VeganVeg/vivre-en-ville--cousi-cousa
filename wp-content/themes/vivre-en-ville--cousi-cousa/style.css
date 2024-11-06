@@ -373,13 +373,16 @@ footer .credit {
 .grid__carrousel .swiper .swiper__img {
   width: 100%;
   max-height: 30vh;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .grid__carrousel .swiper .swiper__img__ordi {
-  object-position: 0% 25%;
+  -o-object-position: 0% 25%;
+     object-position: 0% 25%;
 }
 .grid__carrousel .swiper .swiper__img__champ {
-  object-position: 0% 25%;
+  -o-object-position: 0% 25%;
+     object-position: 0% 25%;
 }
 .grid__carrousel .swiper .swiper__bg {
   display: flex;
@@ -420,10 +423,12 @@ footer .credit {
   .grid__carrousel .swiper .swiper__img {
     width: 100%;
     max-height: 45vh;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .grid__carrousel .swiper .swiper__img__ordi {
-    object-position: 0% 25%;
+    -o-object-position: 0% 25%;
+       object-position: 0% 25%;
   }
   .grid__carrousel .swiper .swiper__bg {
     height: 60px;
@@ -454,13 +459,16 @@ footer .credit {
   .grid__carrousel .swiper .swiper__img {
     width: 100%;
     max-height: 60vh;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .grid__carrousel .swiper .swiper__img__ordi {
-    object-position: 0% 25%;
+    -o-object-position: 0% 25%;
+       object-position: 0% 25%;
   }
   .grid__carrousel .swiper .swiper__img__champ {
-    object-position: 0% 23%;
+    -o-object-position: 0% 23%;
+       object-position: 0% 23%;
   }
 }
 
@@ -956,7 +964,8 @@ footer .credit {
 .temoignage__photo {
   width: 60px;
   border-radius: 50%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .temoignage__nom {
   font-family: "Inter", sans-serif;
@@ -1082,7 +1091,8 @@ footer .credit {
 .nouvelle__image {
   width: 100px;
   height: 100px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .nouvelle__content {
   display: flex;
@@ -1246,7 +1256,8 @@ footer .credit {
 }
 .container__hero .img__hero {
   width: 50%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (min-width: 768px) {
   .container__hero .content__hero {
@@ -1600,7 +1611,8 @@ footer .credit {
 }
 .container__hero .img__hero {
   width: 50%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (min-width: 768px) {
   .container__hero .content__hero__newshub {
@@ -2253,6 +2265,66 @@ main {
   padding: 10px;
   list-style-type: none;
 }
+@media (min-width: 768px) {
+  .a-propos h1 {
+    font-size: 35px;
+    margin: 30px;
+  }
+  .a-propos img {
+    width: 70%;
+  }
+  .a-propos h2 {
+    font-size: 30px;
+  }
+  .a-propos p {
+    font-size: 15px;
+  }
+  .a-propos .mission {
+    margin: 30px;
+  }
+  .a-propos .approche {
+    margin: 30px;
+  }
+  .a-propos .approche li {
+    font-size: 15px;
+  }
+  .a-propos .approche li::after {
+    content: "▢";
+    position: absolute;
+    left: -20px;
+    top: 0;
+  }
+}
+@media (min-width: 1400px) {
+  .a-propos h1 {
+    font-size: 45px;
+    margin: 35px;
+  }
+  .a-propos img {
+    width: 50%;
+  }
+  .a-propos h2 {
+    font-size: 40px;
+  }
+  .a-propos p {
+    font-size: 20px;
+  }
+  .a-propos .mission {
+    margin: 40px;
+  }
+  .a-propos .approche {
+    margin: 40px;
+  }
+  .a-propos .approche li {
+    font-size: 18px;
+  }
+  .a-propos .approche li::after {
+    content: "▢";
+    position: absolute;
+    left: -25px;
+    top: 0;
+  }
+}
 
 .nous-joindre {
   padding: 60px 0 120px;
@@ -2380,6 +2452,56 @@ main {
     padding: 14px 28px;
   }
 }
+.team {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.team h1 {
+  align-self: center;
+  margin: 20px;
+  font-size: 25px;
+  color: #8DC63F;
+}
+.team .team_profile hr {
+  width: 50%;
+  border-radius: 3px;
+  margin: auto;
+  height: 5px;
+  opacity: 1;
+  padding: 0;
+  background-color: #8DC63F;
+  color: #8DC63F;
+}
+.team .team_profile img {
+  width: 15%;
+  align-self: flex-end;
+  background-color: red;
+}
+.team .team_profile h3 {
+  text-transform: uppercase;
+  font-size: 10px;
+  text-align: start;
+  margin: 8px;
+  padding: 4px;
+}
+.team .team_profile #first {
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+}
+.team .team_profile #second {
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
 body,
 html {
   background-color: #EFEFEF;

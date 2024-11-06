@@ -56,4 +56,65 @@
       list-style-type: none;
     }
   }
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 35px;
+      margin: 30px;
+    }
+    img {
+      width: 70%;
+    }
+    h2 {
+      font-size: 30px;
+    }
+    p {
+      font-size: 15px;
+    }
+    .mission {
+      margin: 30px;
+    }
+    .approche {
+      margin: 30px;
+      li {
+        font-size: 15px;
+        &::after {
+          content: "▢";
+          position: absolute;
+          left: -20px;
+          top: 0;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 1400px) {
+    h1 {
+      font-size: 45px;
+      margin: 35px;
+    }
+    img {
+      width: 50%;
+    }
+    h2 {
+      font-size: 40px;
+    }
+    p {
+      font-size: 20px;
+    }
+    .mission {
+      margin: 40px;
+    }
+    .approche {
+      margin: 40px;
+      li {
+        font-size: 18px;
+        &::after {
+          content: "▢";
+          position: absolute;
+          left: -25px;
+          top: 0;
+        }
+      }
+    }
+  }
 }
