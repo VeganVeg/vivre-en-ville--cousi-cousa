@@ -2477,6 +2477,16 @@ main {
 }
 .service-section .service-header .service-image {
   max-width: 60px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.service-section .service-title {
+  font-size: 1.5rem;
+  margin: 0;
+}
+.service-section .service-image {
+  max-width: 100px;
   height: auto;
 }
 .service-section .service-content .service-subtitle {
@@ -2513,6 +2523,15 @@ main {
     margin-right: 2rem;
   }
   .service-section .service-header .service-image {
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .service-section .service-title {
+    font-size: 2rem;
+    text-align: left;
+    margin-right: 2rem;
+  }
+  .service-section .service-image {
     max-width: 50%;
   }
   .service-section .service-content .service-subtitle {
@@ -2533,6 +2552,7 @@ main {
     padding: 2rem;
   }
   .service-section .service-header .service-title {
+  .service-section .service-title {
     font-size: 2.5rem;
   }
   .service-section .service-content .service-subtitle {
@@ -2594,6 +2614,83 @@ main {
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
+}
+@media (min-width: 768px) {
+  .team h1 {
+    font-size: 40px;
+    margin: 30px;
+  }
+  .team .team_profile hr {
+    display: none;
+  }
+  .team .team_profile img {
+    width: 30%;
+  }
+  .team .team_profile h3 {
+    font-size: 15px;
+    text-align: center;
+    margin: 10px;
+    padding: 6px;
+  }
+  .team .team_profile #first {
+    width: 65%;
+    padding: 15px;
+    margin: 15px auto;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    background-color: #BABABA;
+    border: 2px solid grey;
+  }
+  .team .team_profile #first img {
+    align-self: center;
+  }
+  .team .team_profile #second {
+    width: 65%;
+    padding: 15px;
+    margin: 15px auto;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    background-color: #BABABA;
+    border: 2px solid grey;
+  }
+  .team .team_profile #second img {
+    align-self: center;
+  }
+}
+@media (min-width: 1400px) {
+  .team h1 {
+    font-size: 50px;
+    margin: 35px;
+  }
+  .team .team_profile img {
+    width: 40%;
+  }
+  .team .team_profile h3 {
+    font-size: 20px;
+    text-align: center;
+    margin: 8px;
+    padding: 10px;
+  }
+  .team .team_profile #first {
+    width: 70%;
+    padding: 20px;
+    margin: 10px auto;
+    border: 4px solid grey;
+  }
+  .team .team_profile #first img {
+    align-self: center;
+  }
+  .team .team_profile #second {
+    width: 70%;
+    padding: 20px;
+    margin: 10px auto;
+    border: 4px solid grey;
+  }
+  .team .team_profile #second img {
+    align-self: center;
+  }
 }
 
 body,

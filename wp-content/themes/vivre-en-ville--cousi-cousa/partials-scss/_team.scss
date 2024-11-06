@@ -25,7 +25,6 @@
     img {
       width: 15%;
       align-self: flex-end;
-      background-color: red;
     }
     h3 {
       text-transform: uppercase;
@@ -49,6 +48,88 @@
       flex-direction: row;
       justify-content: flex-end;
       align-items: center;
+    }
+  }
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 40px;
+      margin: 30px;
+    }
+    .team_profile {
+      hr {
+        display: none;
+      }
+      img {
+        width: 30%;
+      }
+      h3 {
+        font-size: 15px;
+        text-align: center;
+        margin: 10px;
+        padding: 6px;
+      }
+      #first {
+        width: 65%;
+        padding: 15px;
+        margin: 15px auto;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        background-color: variables.$gris;
+        border: 2px solid grey;
+        img {
+          align-self: center;
+        }
+      }
+      #second {
+        width: 65%;
+        padding: 15px;
+        margin: 15px auto;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        background-color: variables.$gris;
+        border: 2px solid grey;
+        img {
+          align-self: center;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 1400px) {
+    h1 {
+      font-size: 50px;
+      margin: 35px;
+    }
+    .team_profile {
+      img {
+        width: 40%;
+      }
+      h3 {
+        font-size: 20px;
+        text-align: center;
+        margin: 8px;
+        padding: 10px;
+      }
+      #first {
+        width: 70%;
+        padding: 20px;
+        margin: 10px auto;
+        border: 4px solid grey;
+        img {
+          align-self: center;
+        }
+      }
+      #second {
+        width: 70%;
+        padding: 20px;
+        margin: 10px auto;
+        border: 4px solid grey;
+        img {
+          align-self: center;
+        }
+      }
     }
   }
 }
