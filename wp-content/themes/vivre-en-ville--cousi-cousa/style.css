@@ -2219,7 +2219,7 @@ main {
   text-align: center;
   text-transform: uppercase;
   margin: 15px;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 700;
   color: #8DC63F;
 }
@@ -2236,7 +2236,7 @@ main {
   color: #0BABDC;
 }
 .a-propos p {
-  font-size: 10px;
+  font-size: 14px;
 }
 .a-propos .mission {
   margin: 15px;
@@ -2248,7 +2248,7 @@ main {
   margin: 15px;
 }
 .a-propos .approche li {
-  font-size: 10px;
+  font-size: 14px;
   margin-left: 0;
   font-family: "Poppins", system-ui;
   margin: 3px;
@@ -2648,6 +2648,7 @@ main {
 }
 
 .team {
+  font-family: "Inter", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -2657,7 +2658,7 @@ main {
   margin: 20px;
   font-size: 40px;
   color: #8DC63F;
-  font-weight: 800;
+  font-weight: 700;
 }
 .team .team_profile hr {
   width: 50%;
@@ -2791,7 +2792,7 @@ main {
     width: 35%;
   }
   .team .team_profile h3 {
-    font-size: 35px;
+    font-size: 25px;
     margin: 10px;
     padding: 10px;
   }
