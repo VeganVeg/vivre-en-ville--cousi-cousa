@@ -2655,8 +2655,9 @@ main {
 .team h1 {
   align-self: center;
   margin: 20px;
-  font-size: 25px;
+  font-size: 40px;
   color: #8DC63F;
+  font-weight: 800;
 }
 .team .team_profile hr {
   width: 50%;
@@ -2674,10 +2675,11 @@ main {
 }
 .team .team_profile h3 {
   text-transform: uppercase;
-  font-size: 10px;
+  font-size: 13px;
   text-align: start;
   margin: 8px;
   padding: 4px;
+  font-weight: 600;
 }
 .team .team_profile #first {
   padding: 10px;
@@ -2701,10 +2703,20 @@ main {
 .team .team_profile #second p {
   display: none;
 }
+.team .team_profile .w3-button {
+  padding: 8px;
+  background-color: #BABABA;
+  color: #EFEFEF;
+  font-size: 12px;
+  font-weight: 700;
+  border: 3px solid #8DC63F;
+  border-radius: 40px;
+}
 @media (min-width: 768px) {
   .team h1 {
     font-size: 40px;
     margin: 30px;
+    font-weight: 800;
   }
   .team .team_profile hr {
     display: none;
@@ -2717,6 +2729,7 @@ main {
     text-align: center;
     margin: 10px;
     padding: 6px;
+    font-weight: 700;
   }
   .team .team_profile #first {
     width: 65%;
@@ -2744,11 +2757,21 @@ main {
   .team .team_profile #second img {
     align-self: center;
   }
+  .team .team_profile .w3-button {
+    padding: 18px;
+    background-color: #BABABA;
+    color: #EFEFEF;
+    font-size: 17px;
+    font-weight: 800;
+    border: 5px solid #8DC63F;
+    border-radius: 50px;
+  }
 }
 @media (min-width: 1400px) {
   .team h1 {
-    font-size: 50px;
+    font-size: 60px;
     margin: 35px;
+    font-weight: 800;
   }
   .team .team_profile img {
     width: 35%;
@@ -2801,6 +2824,15 @@ main {
     display: initial;
     font-size: 18px;
     text-align: center;
+  }
+  .team .team_profile .w3-button {
+    padding: 20px;
+    background-color: #BABABA;
+    color: #EFEFEF;
+    font-size: 25px;
+    font-weight: 800;
+    border: 5px solid #8DC63F;
+    border-radius: 50px;
   }
 }
 
