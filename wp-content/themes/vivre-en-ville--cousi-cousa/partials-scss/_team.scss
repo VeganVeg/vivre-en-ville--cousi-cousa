@@ -8,8 +8,9 @@
   h1 {
     align-self: center;
     margin: 20px;
-    font-size: 25px;
+    font-size: 40px;
     color: variables.$nenuphare;
+    font-weight: 800;
   }
   .team_profile {
     hr {
@@ -28,10 +29,11 @@
     }
     h3 {
       text-transform: uppercase;
-      font-size: 10px;
+      font-size: 13px;
       text-align: start;
       margin: 8px;
       padding: 4px;
+      font-weight: 600;
     }
     #first {
       padding: 10px;
@@ -40,9 +42,6 @@
       flex-direction: row-reverse;
       justify-content: flex-end;
       align-items: center;
-      p {
-        display: none;
-      }
     }
     #second {
       padding: 10px;
@@ -51,15 +50,36 @@
       flex-direction: row;
       justify-content: flex-end;
       align-items: center;
+    }
+    .w3-container {
+      height: 100%;
       p {
-        display: none;
+        font-size: 15px;
+        display: initial;
       }
     }
+    .w3-button {
+      padding: 8px;
+      background-color: variables.$gris;
+      color: variables.$quartz;
+      font-size: 12px;
+      font-weight: 700;
+      border: 3px solid variables.$nenuphare;
+      border-radius: 40px;
+    }
+    #button-x {
+      border: none;
+      background-color: transparent;
+      color: variables.$charbon;
+      padding: 10px;
+    }
   }
+
   @media (min-width: 768px) {
     h1 {
       font-size: 40px;
       margin: 30px;
+      font-weight: 800;
     }
     .team_profile {
       hr {
@@ -73,6 +93,7 @@
         text-align: center;
         margin: 10px;
         padding: 6px;
+        font-weight: 700;
       }
       #first {
         width: 65%;
@@ -100,13 +121,24 @@
           align-self: center;
         }
       }
+      .w3-button {
+        align-self: center;
+        padding: 18px;
+        background-color: variables.$gris;
+        color: variables.$quartz;
+        font-size: 17px;
+        font-weight: 800;
+        border: 5px solid variables.$nenuphare;
+        border-radius: 50px;
+      }
     }
   }
 
   @media (min-width: 1400px) {
     h1 {
-      font-size: 50px;
+      font-size: 60px;
       margin: 35px;
+      font-weight: 800;
     }
     .team_profile {
       img {
@@ -162,11 +194,17 @@
           text-align: center;
         }
       }
-      .capucine-berdah {
-        height: 650px;
-        img {
-          width: 50%;
-        }
+      .w3-button {
+        padding: 20px;
+        background-color: variables.$gris;
+        color: variables.$quartz;
+        font-size: 25px;
+        font-weight: 800;
+        border: 5px solid variables.$nenuphare;
+        border-radius: 50px;
+      }
+      #button-x {
+        padding: 5px;
       }
     }
   }
