@@ -2479,13 +2479,13 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #000;
+  background-color: #EFEFEF;
 }
 .services__hero .container__hero .content__hero__serviceshub .title__hero {
   font-size: 18px;
   font-family: "Inter", sans-serif;
   font-weight: 600;
-  color: #E2E2E2;
+  color: #303030;
   margin: 0;
 }
 .services__hero .container__hero .img__hero__wrapper {
