@@ -1,4 +1,4 @@
-const burger = document.querySelector('.navbar-toggler-icon')
+const burger = document.querySelector('.navbar-toggler-icon');
 
 burger.addEventListener('mouseenter', () => {
     gsap.to('.navbar-toggler-icon', { scale: 1.1, duration: 0.3 })
@@ -34,12 +34,12 @@ const btn = document.querySelector('.btn__compris');
 
 btn.addEventListener('click', () => {
     banniere.classList.add('grid__banniere--none')
-})
+});
 
-const don = document.querySelector('.btn__don');
+const don = document.querySelector('.btn__don')
 
 don.addEventListener('mouseenter', () => {
     gsap.timeline()
-
-    .from('.btn__don', scale)
+        .to('.heart', { scale: 1.2, duration: 0.3, ease: 'back.in' })
+        .to('.heart', { scale: 1, duration: 0.3 })
 })
