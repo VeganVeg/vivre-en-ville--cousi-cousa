@@ -1,397 +1,549 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--font start-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!--font end-->
 
-  <!--font start-->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet" />
-  <!--font end-->
+    <!--bootstrap start-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!--bootstrap end-->
 
-  <!--bootstrap start-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-  <!--bootstrap end-->
+    <!--swiper start-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!--swiper end-->
 
-  <!--swiper start-->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <!--swiper end-->
+    <!--css start-->
+    <link rel="stylesheet" href="style.css" />
+    <!--css end-->
 
-  <!--css start-->
-  <link rel="stylesheet" href="style.css" />
-  <!--css end-->
+    <title>Vivre en Ville</title>
+  </head>
 
-  <title>Vivre en Ville</title>
-</head>
+  <body>
+    <header>
+      <nav class="navbar navbar-dark navbar-expand-xxl">
+        <div class="container-fluid">
+          <!-- BRAND -->
+          <a
+            class="navbar-brand d-flex navbar-brand-mobile d-block d-xxl-none align-items-center"
+            href="index.html"
+            ><img src="sources/logo/logo.png" width="60" height="auto" alt="" />
+          </a>
 
-<body>
-  <header>
-    <nav class="navbar navbar-dark navbar-expand-xxl">
-      <div class="container-fluid">
-        <!-- BRAND -->
-        <a class="navbar-brand d-flex navbar-brand-mobile d-block d-xxl-none align-items-center" href="index.html"><img
-            src="sources/logo/logo.png" width="60" height="auto" alt="" />
-        </a>
+          <!--hamburger button-->
+          <button
+            class="navbar-toggler border-0 ms-auto"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNav"
+            aria-controls="mainNav"
+            aria-expanded="false"
+            aria-label="Affichage/masquage de la navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-        <!--hamburger button-->
-        <button class="navbar-toggler border-0 ms-auto" data-bs-toggle="collapse" data-bs-target="#mainNav"
-          aria-controls="mainNav" aria-expanded="false" aria-label="Affichage/masquage de la navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+          <!--navigation-->
+          <div id="mainNav" class="collapse navbar-collapse">
+            <ul class="navbar-nav mx-auto align-items-center">
+              <li class="nav-item">
+                <a href="news-hub.html" class="nav-link">Nouvelles</a>
+              </li>
+              <li class="nav-item">
+                <a href="services-hub.html" class="nav-link">Services</a>
+              </li>
+              <li class="nav-item">
+                <a href="about.html" class="nav-link">À propos</a>
+              </li>
+              <li class="nav-item">
+                <a href="contact-us.html" class="nav-link">Nous joindre</a>
+              </li>
 
-        <!--navigation-->
-        <div id="mainNav" class="collapse navbar-collapse">
-          <ul class="navbar-nav mx-auto align-items-center">
-            <li class="nav-item">
-              <a href="news-hub.html" class="nav-link">Nouvelles</a>
+              <li class="nav-item">
+                <a
+                  class="navbar-brand d-flex mx-auto align-items-center d-none d-xxl-flex"
+                  href="index.html"
+                  ><img
+                    src="sources/logo/logo.png"
+                    width="90"
+                    height="auto"
+                    alt=""
+                  />
+                  <div class="title">
+                    VIVRE EN VILLE<br /><span class="subtitle"
+                      >La voie des collectivités viables</span
+                    >
+                  </div>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="team.html" class="nav-link">Équipe</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">FAQ</a>
+              </li>
+              <li class="nav-item nav-item-don">
+                <a
+                  href="https://activites.vivreenville.org/fr/dons/donate/faire-un-don/2946/"
+                  target="_blank"
+                  class="nav-link nav-link-don"
+                  >Faire un don</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">EN</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!--banniere-->
+      <section class="banniere">
+        <div class="grid__banniere">
+          <div class="banniere__txt">
+            <span
+              >Ce site web sert de projet scolaire et n'est en aucun cas le vrai
+              site Vivre en Ville. Pour vous rendre sur le vrai site cliquez sur
+              ce lien :<a clas href="https://vivreenville.org/">
+                https://vivreenville.org/</a
+              ></span
+            >
+          </div>
+
+          <div class="banniere__btn">
+            <button class="btn__compris">J'ai compris</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="news__hero">
+        <div class="container__hero">
+          <div class="content__hero">
+            <h2 class="title__hero">
+              Stratégie québécoise en habitation: Québec reconnaît la crise,
+              mais sous-utilise les outils à sa disposition
+            </h2>
+            <p class="date__hero">22 août 2024</p>
+          </div>
+
+          <img
+            class="img__hero"
+            src="sources/img/strategie_habitation.png"
+            alt=""
+          />
+        </div>
+      </section>
+
+      <section class="news__content">
+        <div class="container__content">
+          <p class="para p1">
+            <span>Québec, le 22 août 2024</span> - Vivre en Ville accueille avec
+            intérêt la Stratégie québécoise en habitation dévoilée cet
+            après-midi par la ministre France-Élaine Duranceau. En déployant une
+            action interministérielle, le gouvernement du Québec reconnaît pour
+            une première fois l'envergure du problème et l'importance de
+            considérer une diversité de facteurs à l'origine de la crise de
+            l'habitation. Cela dit, la cible nationale de mises en chantier et
+            les moyens annoncés témoignent d'une timidité étonnante.
+          </p>
+
+          <div class="next__chapter">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+
+          <h3 class="para para__subtitle">
+            Une cible, mais beaucoup de questions en suspens
+          </h3>
+
+          <p class="para p2">
+            Vivre en Ville salue l'adoption d'une cible nationale de
+            construction d'unités d'habitation, mais comme plusieurs acteurs du
+            milieu de l'habitation, considère que le nombre de 560 000 d'ici
+            2034 est tout à fait insuffisant. Il s'agit de moins de la moitié de
+            la recommandation du
+            <span
+              ><a href="https://habitationetclimat.ca/" target="_blank"
+                >groupe de travail pour l'Habitation et le Climat
+              </a></span
+            >, avec un échéancier plus long. La cible de logements àbut non
+            lucratif apparaît quant à elle en dessous de ce qui serait requis
+            pour rééquilibrer les forces du marché.
+          </p>
+
+          <p class="para p3">
+            De plus, bien que Vivre en Ville apprécie que le gouvernement
+            reconnaisse l'importance de mobiliser les outils d'urbanisme pour
+            faire face à la crise de l'habitation, l'organisation note que la
+            conformité de la planification régionale avec l'objectif national de
+            mise en chantier n'est pas exigée.
+          </p>
+
+          <p class="para p4">
+            Le gouvernement devra certes accompagner les MRC dans l'évaluation
+            des besoins, mais aussi exiger que la planification territoriale
+            s'inscrive en cohérence avec ceux-ci (et avec la cible nationale),
+            sans quoi il demeurera possible de planifier une sous-production de
+            logements. Il faudra reconnaître, le plus rapidement possible, que
+            le gouvernement national a une responsabilité de leadership en
+            habitation qu'il ne peut pas déléguer. Tout le monde qui habite au
+            Québec habite au Québec, et c'est donc l'échelle conséquente pour
+            uniformiser et dynamiser le contexte dans lequel la construction
+            résidentielle a lieu.
+          </p>
+
+          <p class="para p5">
+            « Nous avons enfin une cible de mise en chantier, voilà un pas
+            important qui deviendra assurément un précédent. Bravo! Reste que
+            beaucoup de questions demeurent en suspens. La cible est
+            insuffisante et les moyens pour l'atteindre ne semblent pas être au
+            rendez-vous. On s'en remet beaucoup aux municipalités, qui ont
+            certainement un rôle à jouer, mais des moyens fiscaux et financiers
+            très limités et d'importants défis, en matière d'infrastructures
+            notamment. Les efforts risquent d'être lacunaires et disparates
+            d'une région à l'autre »
+            <span
+              >déclare Christian Savard, directeur général de Vivre en
+              Ville</span
+            >.
+          </p>
+
+          <div class="next__chapter">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+
+          <h3 class="para para__subtitle">Une stratégie multisectorielle</h3>
+
+          <p class="para p6">
+            Vivre en Ville tient néanmoins à souligner qu'un des mérites de la
+            Stratégie est qu'il s'agit d'un véritable plan d'action
+            interministériel, qui dépasse nettement le domaine d'intervention de
+            la Société d'Habitation du Québec (SHQ).
+          </p>
+
+          <p class="para p7">
+            Cette reconnaissance nouvelle de la part du gouvernement est
+            prometteuse et correspond à une des principales prémisses de «
+            <span
+              ><a
+                href="https://carrefour.vivreenville.org/publication/portes-ouvertes?_gl=1*14lyan0*_gcl_au*MTM4MDIzNjY5OS4xNzI1MzAyNjYz*_ga*MjMwNDkzMDg3LjE3MjUwNDU2MDc.*_ga_BJN4N9M05K*MTcyOTcxNjI5Ny4yOC4wLjE3Mjk3MTYyOTcuNjAuMC4w*_ga_49PQ1RHZ3K*MTcyOTcxNjI5Ny40LjAuMTcyOTcxNjI5Ny4wLjAuMA.."
+              >
+                Portes ouvertes: vers une sortie de crise en habitation
+              </a></span
+            >
+            ». Vivre en Ville constate certaines actions liées à chacun des
+            quatre grands chantiers à mener simultanément en habitation:
+          </p>
+
+          <ul class="para news__list">
+            <li class="list__item">
+              <p>
+                Construire plus que la demande, près des emplois, des transports
+                et des services
+              </p>
             </li>
-            <li class="nav-item">
-              <a href="services-hub.html" class="nav-link">Services</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">À propos</a>
+
+            <li class="list__item">
+              <p>Protéger la population des excès du marché immobilier</p>
             </li>
 
-            <li class="nav-item">
-              <a href="#" class="nav-link">Nous joindre</a>
+            <li class="list__item">
+              <p>Construire une abondance de logements à but non lucratif</p>
             </li>
 
-            <li class="nav-item">
-              <a class="navbar-brand d-flex mx-auto align-items-center d-none d-xxl-flex" href="index.html"><img
-                  src="sources/logo/logo.png" width="90" height="auto" alt="" />
-                <div class="title">
-                  VIVRE EN VILLE<br /><span class="subtitle">La voie des collectivités viables</span>
-                </div>
-              </a>
-            </li>
-
-            <li class="nav-item">
-              <a href="#" class="nav-link">Équipe</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">FAQ</a>
-            </li>
-            <li class="nav-item nav-item-don">
-              <a href="https://activites.vivreenville.org/fr/dons/donate/faire-un-don/2946/" target="_blank"
-                class="nav-link nav-link-don">Faire un don</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">EN</a>
+            <li class="list__item">
+              <p>Réapprendre à construire efficacement et durablement</p>
             </li>
           </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
 
-  <main>
-    <!--banniere-->
-    <section class="banniere">
-      <div class="grid__banniere">
-        <div class="banniere__txt">
-          <span>Ce site web sert de projet scolaire et n'est en aucun cas le vrai
-            site Vivre en Ville. Pour vous rendre sur le vrai site cliquez sur
-            ce lien :<a clas href="https://vivreenville.org/">
-              https://vivreenville.org/</a></span>
-        </div>
-
-        <div class="banniere__btn">
-          <button class="btn__compris">J'ai compris</button>
-        </div>
-      </div>
-    </section>
-
-    <section class="news__hero">
-      <div class="container__hero">
-
-        <div class="content__hero">
-          <h2 class="title__hero">Stratégie québécoise en habitation: Québec reconnaît la crise, mais sous-utilise les
-            outils à sa
-            disposition</h2>
-          <p class="date__hero">22 août 2024</p>
-        </div>
-
-        <img class="img__hero" src="sources/img/strategie_habitation.png" alt="">
-      </div>
-    </section>
-
-    <section class="news__content">
-      <div class="container__content">
-        <p class="para p1"><span>Québec, le 22 août 2024</span> - Vivre en Ville accueille avec intérêt la Stratégie
-          québécoise en habitation dévoilée cet après-midi par la ministre France-Élaine Duranceau. En déployant une
-          action interministérielle, le gouvernement du Québec reconnaît pour une première fois l'envergure du problème
-          et l'importance de considérer une diversité de facteurs à l'origine de la crise de l'habitation. Cela dit, la
-          cible nationale de mises en chantier et les moyens annoncés témoignent d'une timidité étonnante.</p>
-
-        <div class="next__chapter">
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-        </div>
-
-        <h3 class="para para__subtitle">Une cible, mais beaucoup de questions en suspens</h3>
-
-        <p class="para p2">Vivre en Ville salue l'adoption d'une cible nationale de construction d'unités d'habitation,
-          mais
-          comme
-          plusieurs acteurs du milieu de l'habitation, considère que le nombre de 560 000 d'ici 2034 est tout à fait
-          insuffisant. Il s'agit de moins de la moitié de la recommandation du <span><a
-              href="https://habitationetclimat.ca/" target="_blank">groupe de
-              travail pour l'Habitation et le Climat </a></span>, avec un échéancier plus long. La cible de logements
-          àbut non lucratif apparaît quant à elle en dessous de ce qui serait requis pour rééquilibrer les forces du
-          marché.</p>
-
-        <p class="para p3">De plus, bien que Vivre en Ville apprécie que le gouvernement reconnaisse l'importance de
-          mobiliser les outils d'urbanisme pour faire face à la crise de l'habitation, l'organisation note que la
-          conformité de la planification régionale avec l'objectif national de mise en chantier n'est pas exigée. </p>
-
-        <p class="para p4">Le gouvernement devra certes accompagner les MRC dans l'évaluation des besoins, mais aussi
-          exiger que la planification territoriale s'inscrive en cohérence avec ceux-ci (et avec la cible nationale),
-          sans quoi il demeurera possible de planifier une sous-production de logements. Il faudra reconnaître, le plus
-          rapidement possible, que le gouvernement national a une responsabilité de leadership en habitation qu'il ne
-          peut pas déléguer. Tout le monde qui habite au Québec habite au Québec, et c'est donc l'échelle conséquente
-          pour uniformiser et dynamiser le contexte dans lequel la construction résidentielle a lieu.</p>
-
-        <p class="para p5">« Nous avons enfin une cible de mise en chantier, voilà un pas important qui deviendra
-          assurément un précédent. Bravo! Reste que beaucoup de questions demeurent en suspens. La cible est
-          insuffisante et les moyens pour l'atteindre ne semblent pas être au rendez-vous. On s'en remet beaucoup aux
-          municipalités, qui ont certainement un rôle à jouer, mais des moyens fiscaux et financiers très limités et
-          d'importants défis, en matière d'infrastructures notamment. Les efforts risquent d'être lacunaires et
-          disparates d'une région à l'autre » <span>déclare Christian Savard, directeur général de Vivre en
-            Ville</span>.</p>
-
-        <div class="next__chapter">
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-        </div>
-
-        <h3 class="para para__subtitle">Une stratégie multisectorielle</h3>
-
-        <p class="para p6">Vivre en Ville tient néanmoins à souligner qu'un des mérites de la Stratégie est qu'il s'agit
-          d'un véritable plan d'action interministériel, qui dépasse nettement le domaine d'intervention de la Société
-          d'Habitation du Québec (SHQ).</p>
-
-        <p class="para p7">Cette reconnaissance nouvelle de la part du gouvernement est prometteuse et correspond à une
-          des principales prémisses de « <span><a
-              href="https://carrefour.vivreenville.org/publication/portes-ouvertes?_gl=1*14lyan0*_gcl_au*MTM4MDIzNjY5OS4xNzI1MzAyNjYz*_ga*MjMwNDkzMDg3LjE3MjUwNDU2MDc.*_ga_BJN4N9M05K*MTcyOTcxNjI5Ny4yOC4wLjE3Mjk3MTYyOTcuNjAuMC4w*_ga_49PQ1RHZ3K*MTcyOTcxNjI5Ny40LjAuMTcyOTcxNjI5Ny4wLjAuMA..">
-              Portes ouvertes: vers une sortie de crise en habitation </a></span> ». Vivre en Ville constate certaines
-          actions liées à chacun des quatre grands
-          chantiers à mener simultanément en habitation:</p>
-
-        <ul class="para news__list">
-          <li class="list__item">
-            <p>Construire plus que la demande, près des emplois, des transports et des services</p>
-          </li>
-
-          <li class="list__item">
-            <p>Protéger la population des excès du marché immobilier</p>
-          </li>
-
-          <li class="list__item">
-            <p>Construire une abondance de logements à but non lucratif</p>
-          </li>
-
-          <li class="list__item">
-            <p>Réapprendre à construire efficacement et durablement</p>
-          </li>
-        </ul>
-
-        <p class="para p8">À titre d'exemple, l'intention de miser sur la modélisation numérique pour accroître la
-          productivité est une mesure porteuse dont le potentiel gagnera à être déployé au cours des prochaines années.
-        </p>
-
-        <p class="para p9">Néanmoins, Vivre en Ville considère que trop peu est fait pour s'attaquer au problème de la
-          spéculation. En effet, les mesures de préservation du parc existant seront insuffisantes sans un registre des
-          loyers et d'autres mesures pour faire appliquer les lois exceptionnelles que nous avons déjà au Québec -
-          celles qui ont historiquement protégé le Québec des crises dévastatrices qui font des ravages dans le Canada
-          anglais, et qui doivent servir de fer de lance pour la préservation du parc existant.</p>
-
-        <div class="next__chapter">
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-        </div>
-
-        <h3 class="para para__subtitle">À propos de Vivre en Ville</h3>
-
-        <p class="para p10">Organisation d’intérêt public, Vivre en Ville contribue, partout au Québec, au développement
-          de collectivités viables, œuvrant tant à l’échelle du bâtiment qu’à celles de la rue, du quartier et de
-          l’agglomération. Par ses actions, Vivre en Ville stimule l’innovation et accompagne les décideurs, les
-          professionnels et les citoyens dans le développement de milieux de vie de qualité, prospères et favorables au
-          bien-être de chacun, dans la recherche de l’intérêt collectif et le respect de la capacité des écosystèmes.
-        </p>
-
-        <div class="next__chapter">
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-        </div>
-
-        <div class="para renseignement">
-          <h3 class="para__subtitle">Renseignement</h3>
-          <p class="rens__nom">Thalie Labonté</p>
-          <p class="rens__poste">Coordonnatrice - Relations stratégiques et communication</p>
-          <p class="rens__info">514-893-7998
-            | <a href="mailto:thalie.labonte@vivreenville.org">thalie.labonte@vivreenville.org</a>
+          <p class="para p8">
+            À titre d'exemple, l'intention de miser sur la modélisation
+            numérique pour accroître la productivité est une mesure porteuse
+            dont le potentiel gagnera à être déployé au cours des prochaines
+            années.
           </p>
-        </div>
-      </div>
-      <div class="article__btn">
-        <div class="article__prec">
-          <a class="" href="">
-            <button class="prec__btn">Précédent</button>
-          </a>
-        </div>
 
-        <div class="article__prec">
-          <a class="" href="">
-            <button class="prec__btn">Suivant</button>
-          </a>
-        </div>
-      </div>
-    </section>
+          <p class="para p9">
+            Néanmoins, Vivre en Ville considère que trop peu est fait pour
+            s'attaquer au problème de la spéculation. En effet, les mesures de
+            préservation du parc existant seront insuffisantes sans un registre
+            des loyers et d'autres mesures pour faire appliquer les lois
+            exceptionnelles que nous avons déjà au Québec - celles qui ont
+            historiquement protégé le Québec des crises dévastatrices qui font
+            des ravages dans le Canada anglais, et qui doivent servir de fer de
+            lance pour la préservation du parc existant.
+          </p>
 
-    <section class="nouvelles">
-      <h2 class="nouvelles__titre">Articles similaire</h2>
-      <div class="grid__articles">
-
-        <div class="nouvelle__item">
-          <img src="sources/img/cout-demolition-maison-mitoyenne 1.png" alt="News image" class="nouvelle__image">
-          <div class="nouvelle__content">
-            <h3 class="nouvelle__titre">Stratégie québécoise en habitation: Québec reconnaît la crise, mais sous-utilise
-              les outils à sa disposition</h3>
-            <p class="nouvelle__date">22 août 2024</p>
-            <div class="nouvelle__esp nouvelle__lien">
-              <a class="link__button" href="news-article.html" target="">
-                <button class="esp">En savoir plus</button></a>
-            </div>
+          <div class="next__chapter">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
           </div>
-          <div class="nouvelle__btn">
-            <div class="nouvelle__esp nouvelle__lien-none">
-              <a class="link__button" href="news-article.html" target="">
-                <button class="esp">En savoir plus</button></a>
-            </div>
-          </div>
-        </div>
 
-        <div class="nouvelle__separation"></div>
+          <h3 class="para para__subtitle">À propos de Vivre en Ville</h3>
 
-        <div class="nouvelle__item">
-          <img src="sources/img/evenement_rentree.png" alt="News image" class="nouvelle__image">
-          <div class="nouvelle__content">
-            <h3 class="nouvelle__titre">Événement de la rentrée 2024</h3>
-            <p class="nouvelle__date">13 août 2024</p>
-            <div class="nouvelle__esp nouvelle__lien">
-              <a class="link__button" href="https://activites.vivreenville.org/fr/dons/donate/faire-un-don/2946/"
-                target="">
-                <button class="esp">En savoir plus</button></a>
-            </div>
+          <p class="para p10">
+            Organisation d’intérêt public, Vivre en Ville contribue, partout au
+            Québec, au développement de collectivités viables, œuvrant tant à
+            l’échelle du bâtiment qu’à celles de la rue, du quartier et de
+            l’agglomération. Par ses actions, Vivre en Ville stimule
+            l’innovation et accompagne les décideurs, les professionnels et les
+            citoyens dans le développement de milieux de vie de qualité,
+            prospères et favorables au bien-être de chacun, dans la recherche de
+            l’intérêt collectif et le respect de la capacité des écosystèmes.
+          </p>
+
+          <div class="next__chapter">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
           </div>
-          <div class="nouvelle__btn">
-            <div class="nouvelle__esp nouvelle__lien-none">
-              <a class="link__button" href="https://activites.vivreenville.org/fr/dons/donate/faire-un-don/2946/"
-                target="">
-                <button class="esp">En savoir plus</button></a>
-            </div>
+
+          <div class="para renseignement">
+            <h3 class="para__subtitle">Renseignement</h3>
+            <p class="rens__nom">Thalie Labonté</p>
+            <p class="rens__poste">
+              Coordonnatrice - Relations stratégiques et communication
+            </p>
+            <p class="rens__info">
+              514-893-7998 |
+              <a href="mailto:thalie.labonte@vivreenville.org"
+                >thalie.labonte@vivreenville.org</a
+              >
+            </p>
           </div>
         </div>
+        <div class="article__btn">
+          <div class="article__prec">
+            <a class="" href="">
+              <button class="prec__btn">Précédent</button>
+            </a>
+          </div>
 
-        <div class="nouvelle__separation"></div>
+          <div class="article__prec">
+            <a class="" href="">
+              <button class="prec__btn">Suivant</button>
+            </a>
+          </div>
+        </div>
+      </section>
 
-        <div class="nouvelle__item">
-          <img src="sources/img/etudeleger.png" alt="News image" class="nouvelle__image">
-          <div class="nouvelle__content">
-            <h3 class="nouvelle__titre">Étude Léger sur le marché résidentiel locatif: Du jamais vu à Montréal - Les
-              données 2024 rappellent
-              l'urgence du besoin de transparence pour le bon fonctionnement du marché résidentiel</h3>
-            <p class="nouvelle__date">22 août 2024</p>
-            <div class="nouvelle__esp nouvelle__lien">
-              <a class="link__button" href="https://activites.vivreenville.org/fr/dons/donate/faire-un-don/2946/"
-                target="">
-                <button class="esp">En savoir plus</button></a>
+      <section class="nouvelles">
+        <h2 class="nouvelles__titre">Articles similaire</h2>
+        <div class="grid__articles">
+          <div class="nouvelle__item">
+            <img
+              src="sources/img/cout-demolition-maison-mitoyenne 1.png"
+              alt="News image"
+              class="nouvelle__image"
+            />
+            <div class="nouvelle__content">
+              <h3 class="nouvelle__titre">
+                Stratégie québécoise en habitation: Québec reconnaît la crise,
+                mais sous-utilise les outils à sa disposition
+              </h3>
+              <p class="nouvelle__date">22 août 2024</p>
+              <div class="nouvelle__esp nouvelle__lien">
+                <a class="link__button" href="news-article.html" target="">
+                  <button class="esp">En savoir plus</button></a
+                >
+              </div>
+            </div>
+            <div class="nouvelle__btn">
+              <div class="nouvelle__esp nouvelle__lien-none">
+                <a class="link__button" href="news-article.html" target="">
+                  <button class="esp">En savoir plus</button></a
+                >
+              </div>
             </div>
           </div>
-          <div class="nouvelle__btn">
-            <div class="nouvelle__esp nouvelle__lien-none">
-              <a class="link__button" href="https://activites.vivreenville.org/fr/dons/donate/faire-un-don/2946/"
-                target="">
-                <button class="esp">En savoir plus</button></a>
+
+          <div class="nouvelle__separation"></div>
+
+          <div class="nouvelle__item">
+            <img
+              src="sources/img/evenement_rentree.png"
+              alt="News image"
+              class="nouvelle__image"
+            />
+            <div class="nouvelle__content">
+              <h3 class="nouvelle__titre">Événement de la rentrée 2024</h3>
+              <p class="nouvelle__date">13 août 2024</p>
+              <div class="nouvelle__esp nouvelle__lien">
+                <a
+                  class="link__button"
+                  href="https://activites.vivreenville.org/fr/dons/donate/faire-un-don/2946/"
+                  target=""
+                >
+                  <button class="esp">En savoir plus</button></a
+                >
+              </div>
+            </div>
+            <div class="nouvelle__btn">
+              <div class="nouvelle__esp nouvelle__lien-none">
+                <a
+                  class="link__button"
+                  href="https://activites.vivreenville.org/fr/dons/donate/faire-un-don/2946/"
+                  target=""
+                >
+                  <button class="esp">En savoir plus</button></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="nouvelle__separation"></div>
+
+          <div class="nouvelle__item">
+            <img
+              src="sources/img/etudeleger.png"
+              alt="News image"
+              class="nouvelle__image"
+            />
+            <div class="nouvelle__content">
+              <h3 class="nouvelle__titre">
+                Étude Léger sur le marché résidentiel locatif: Du jamais vu à
+                Montréal - Les données 2024 rappellent l'urgence du besoin de
+                transparence pour le bon fonctionnement du marché résidentiel
+              </h3>
+              <p class="nouvelle__date">22 août 2024</p>
+              <div class="nouvelle__esp nouvelle__lien">
+                <a
+                  class="link__button"
+                  href="https://activites.vivreenville.org/fr/dons/donate/faire-un-don/2946/"
+                  target=""
+                >
+                  <button class="esp">En savoir plus</button></a
+                >
+              </div>
+            </div>
+            <div class="nouvelle__btn">
+              <div class="nouvelle__esp nouvelle__lien-none">
+                <a
+                  class="link__button"
+                  href="https://activites.vivreenville.org/fr/dons/donate/faire-un-don/2946/"
+                  target=""
+                >
+                  <button class="esp">En savoir plus</button></a
+                >
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
-  </main>
-
-  <footer>
-    <div class="grid__footer">
-      <div class="footer__contact">
-        <a class="contact phone" href="tel:514-394-1125">Téléphone: 514-394-1125</a>
-        <a class="contact email" href="mailto:info@vivreenville.org">Adresse courriel: info@vivreenville.org</a>
-        <a class="contact adress" href="https://maps.app.goo.gl/AJ6X1yxj49Sfpx1Z6">50, rue Ste-Catherine Ouest, bur. 480
-          Montréal (Québec) H2X 3V4</a>
-      </div>
-
-      <div class="footer__logo__centered">
-        <a href="index.html">
-          <img src="sources/logo/logo.png" width="90" height="auto" alt="" />
-        </a>
-        <div class="footer-title">
-          VIVRE EN VILLE<br /><span class="footer-subtitle">
-            La voie des collectivités viables</span>
+    <footer>
+      <div class="grid__footer">
+        <div class="footer__contact">
+          <a class="contact phone" href="tel:514-394-1125"
+            >Téléphone: 514-394-1125</a
+          >
+          <a class="contact email" href="mailto:info@vivreenville.org"
+            >Adresse courriel: info@vivreenville.org</a
+          >
+          <a
+            class="contact adress"
+            href="https://maps.app.goo.gl/AJ6X1yxj49Sfpx1Z6"
+            >50, rue Ste-Catherine Ouest, bur. 480 Montréal (Québec) H2X 3V4</a
+          >
         </div>
-      </div>
 
-      <div class="footer__btn">
-        <div class="footer__logo">
+        <div class="footer__logo__centered">
           <a href="index.html">
-            <img src="sources/logo/logo.png" width="75" height="auto" alt="" />
+            <img src="sources/logo/logo.png" width="90" height="auto" alt="" />
           </a>
           <div class="footer-title">
             VIVRE EN VILLE<br /><span class="footer-subtitle">
-              La voie des collectivités viables</span>
+              La voie des collectivités viables</span
+            >
           </div>
         </div>
 
-        <div class="footer__don">
-          <a class="link__button" href="https://activites.vivreenville.org/fr/dons/donate/faire-un-don/2946/"
-            target="_blank"><button class="don">Faire un don</button></a>
-        </div>
-        <div class="footer__lien">
-          <a href="https://www.facebook.com/vivreenville" class="bloc">
-            <img src="sources/icons/facebook.png" alt="" />
-          </a>
-          <a href="https://www.linkedin.com/company/vivre-en-ville/" class="bloc">
-            <img src="sources/icons/linkedin.png" alt="" />
-          </a>
-          <a href="https://www.instagram.com/reduirenotreempreinte" class="bloc">
-            <img src="sources/icons/instagram.png" alt="" />
-          </a>
-          <a href="https://x.com/VivreenVille" class="bloc">
-            <img src="sources/icons/x.png" alt="" />
-          </a>
-          <a href="https://www.youtube.com/@vivreenville3822" class="bloc">
-            <img src="sources/icons/youtube.png" alt="" />
-          </a>
+        <div class="footer__btn">
+          <div class="footer__logo">
+            <a href="index.html">
+              <img
+                src="sources/logo/logo.png"
+                width="75"
+                height="auto"
+                alt=""
+              />
+            </a>
+            <div class="footer-title">
+              VIVRE EN VILLE<br /><span class="footer-subtitle">
+                La voie des collectivités viables</span
+              >
+            </div>
+          </div>
+
+          <div class="footer__don">
+            <a
+              class="link__button"
+              href="https://activites.vivreenville.org/fr/dons/donate/faire-un-don/2946/"
+              target="_blank"
+              ><button class="don">Faire un don</button></a
+            >
+          </div>
+          <div class="footer__lien">
+            <a href="https://www.facebook.com/vivreenville" class="bloc">
+              <img src="sources/icons/facebook.png" alt="" />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/vivre-en-ville/"
+              class="bloc"
+            >
+              <img src="sources/icons/linkedin.png" alt="" />
+            </a>
+            <a
+              href="https://www.instagram.com/reduirenotreempreinte"
+              class="bloc"
+            >
+              <img src="sources/icons/instagram.png" alt="" />
+            </a>
+            <a href="https://x.com/VivreenVille" class="bloc">
+              <img src="sources/icons/x.png" alt="" />
+            </a>
+            <a href="https://www.youtube.com/@vivreenville3822" class="bloc">
+              <img src="sources/icons/youtube.png" alt="" />
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="credit">©2024, Vivre en Ville, Cousi-Cousa</div>
-  </footer>
-</body>
-<!--script start-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-<script type="text/javascript" src="main.js"></script>
-<!--script end-->
-
+      <div class="credit">©2024, Vivre en Ville, Cousi-Cousa</div>
+    </footer>
+  </body>
+  <!--script start-->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+  <!--script end-->
 </html>
