@@ -35,3 +35,11 @@ const btn = document.querySelector('.btn__compris');
 btn.addEventListener('click', () => {
     banniere.classList.add('grid__banniere--none')
 })
+
+const don = document.querySelector('.btn__don');
+
+don.addEventListener('mouseenter', () => {
+    gsap.timeline()
+
+    .from('.btn__don', scale)
+})
