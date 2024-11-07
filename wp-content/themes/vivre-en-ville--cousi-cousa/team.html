@@ -1,338 +1,281 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--font start-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <!--font end-->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--bootstrap start-->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <!--bootstrap end-->
+  <!--font start-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <!--font end-->
 
-    <!--swiper start-->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <!--swiper end-->
+  <!--bootstrap start-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <!--bootstrap end-->
 
-    <!--css start-->
-    <link rel="stylesheet" href="style.css" />
-    <!--css end-->
+  <!--swiper start-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!--swiper end-->
 
-    <title>Vivre en Ville</title>
-  </head>
+  <!--css start-->
+  <link rel="stylesheet" href="style.css" />
+  <!--css end-->
 
-  <body>
-    <header>
-      <nav class="navbar navbar-dark navbar-expand-xxl">
-        <div class="container-fluid">
-          <!-- BRAND -->
-          <a
-            class="navbar-brand d-flex navbar-brand-mobile d-block d-xxl-none align-items-center"
-            href="index.html"
-            ><img src="sources/logo/logo.png" width="60" height="auto" alt="" />
-          </a>
+  <title>Vivre en Ville</title>
+</head>
 
-          <!--hamburger button-->
-          <button
-            class="navbar-toggler border-0 ms-auto"
-            data-bs-toggle="collapse"
-            data-bs-target="#mainNav"
-            aria-controls="mainNav"
-            aria-expanded="false"
-            aria-label="Affichage/masquage de la navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+<body>
+  <header>
+    <nav class="navbar navbar-dark navbar-expand-xxl">
+      <div class="container-fluid">
+        <!-- BRAND -->
+        <a class="navbar-brand d-flex navbar-brand-mobile d-block d-xxl-none align-items-center" href="index.html"><img
+            src="sources/logo/logo.png" width="60" height="auto" alt="" />
+        </a>
 
-          <!--navigation-->
-          <div id="mainNav" class="collapse navbar-collapse">
-            <ul class="navbar-nav mx-auto align-items-center">
-              <li class="nav-item">
-                <a href="news-hub.html" class="nav-link">Nouvelles</a>
-              </li>
-              <li class="nav-item">
-                <a href="services-hub.html" class="nav-link">Services</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">À propos</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">Nous joindre</a>
-              </li>
+        <!--hamburger button-->
+        <button class="navbar-toggler border-0 ms-auto" data-bs-toggle="collapse" data-bs-target="#mainNav"
+          aria-controls="mainNav" aria-expanded="false" aria-label="Affichage/masquage de la navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-              <li class="nav-item">
-                <a
-                  class="navbar-brand d-flex mx-auto align-items-center d-none d-xxl-flex"
-                  href="index.html"
-                  ><img
-                    src="sources/logo/logo.png"
-                    width="90"
-                    height="auto"
-                    alt=""
-                  />
-                  <div class="title">
-                    VIVRE EN VILLE<br /><span class="subtitle"
-                      >La voie des collectivités viables</span
-                    >
-                  </div>
-                </a>
-              </li>
+        <!--navigation-->
+        <div id="mainNav" class="collapse navbar-collapse">
+          <ul class="navbar-nav mx-auto align-items-center">
+            <li class="nav-item">
+              <a href="news-hub.html" class="nav-link">Nouvelles</a>
+            </li>
+            <li class="nav-item">
+              <a href="services-hub.html" class="nav-link">Services</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">À propos</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact-us.html" class="nav-link">Nous joindre</a>
+            </li>
 
-              <li class="nav-item">
-                <a href="#" class="nav-link">Équipe</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">FAQ</a>
-              </li>
-              <li class="nav-item nav-item-don">
-                <a
-                  href="https://activites.vivreenville.org/fr/dons/donate/faire-un-don/2946/"
-                  target="_blank"
-                  class="nav-link nav-link-don"
-                  >Faire un don</a
-                >
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">EN</a>
-              </li>
-            </ul>
-          </div>
+            <li class="nav-item">
+              <a class="navbar-brand d-flex mx-auto align-items-center d-none d-xxl-flex" href="index.html"><img
+                  src="sources/logo/logo.png" width="90" height="auto" alt="" />
+                <div class="title">
+                  VIVRE EN VILLE<br /><span class="subtitle">La voie des collectivités viables</span>
+                </div>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="team.html" class="nav-link">Équipe</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">FAQ</a>
+            </li>
+            <li class="nav-item nav-item-don">
+              <a href="https://activites.vivreenville.org/fr/dons/donate/faire-un-don/2946/" target="_blank"
+                class="nav-link nav-link-don">Faire un don</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">EN</a>
+            </li>
+          </ul>
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
+  </header>
 
-    <main>
-      <section class="banniere">
-        <div class="grid__banniere">
-          <div class="banniere__txt">
-            <span
-              >Ce site web sert de projet scolaire et n'est en aucun cas le vrai
-              site Vivre en Ville. Pour vous rendre sur le vrai site cliquez sur
-              ce lien :<a clas href="https://vivreenville.org/">
-                https://vivreenville.org/</a
-              ></span
-            >
-          </div>
-
-          <div class="banniere__btn">
-            <button class="btn__compris">J'ai compris</button>
-          </div>
-        </div>
-      </section>
-
-      <section class="team">
-        <h1>Notre Équipe</h1>
-        <div class="team_profile">
-          <div class="alexandre-turgeon" id="first">
-            <p>
-              Alexandre Turgeon est directeur général du Conseil régional de
-              l’environnement – Capitale Nationale et président exécutif du
-              Centre culture et environnement Frédéric Back. Il cumule plus de
-              vingt années d’expérience en urbanisme et environnement, notamment
-              à titre de communicateur sur le thème des collectivités viables et
-              de gestionnaire de projet. À ce titre, il intervient comme
-              conférencier senior pour Vivre en Ville. Il a orchestré la mise en
-              œuvre de projets de démonstration comme la coopérative
-              d’habitation Vivre en Ville et le bâtiment écologique du Centre
-              Culture et Environnement Frédéric Back à Québec.
-            </p>
-            <h3>Alexandre Turgeon - Fondateur et président exécutif</h3>
-
-            <img src="sources/img/profile/alexandr-turgeon.jpg" />
-          </div>
-          <hr />
-          <div class="christian-savard" id="second">
-            <p>
-              Christian Savard est directeur général de Vivre en Ville depuis
-              2006. Son travail et son implication dans le débat public l’ont
-              amené à diriger la rédaction de nombreuses publications (livres,
-              mémoires, études et articles) sur les enjeux de mobilité durable
-              et d’urbanisme. Il est fréquemment sollicité par différentes
-              instances des secteurs privé, public et associatif sur nombre
-              d’enjeux dans le cadre de comités de réflexion ou de l'élaboration
-              de politiques et programmes. Titulaire d’une maîtrise en
-              aménagement du territoire et développement régional, il s’est
-              spécialisé dans les domaines des transports, de l’urbanisme et du
-              design urbain, tout en développant une expertise dans la gestion
-              d’organisations non gouvernementales.
-            </p>
-            <h3>Christian Savard - Directeur général</h3>
-            <img src="sources/img/profile/christian-savard.jpg" />
-          </div>
-          <hr />
-          <div class="jeanne-robin" id="first">
-            <p>
-              Titulaire d'une maîtrise en aménagement du territoire de
-              l'Université Laval, Jeanne Robin a rejoint Vivre en Ville en 2008
-              et en est aujourd'hui directrice principale. Elle est spécialiste
-              en développement urbain durable, et se passionne notamment pour
-              l’action climatique ainsi que les environnements favorables à la
-              santé et à l’équité. Conférencière et formatrice, elle a mené
-              plusieurs projets de sensibilisation et coordonné la rédaction de
-              nombreux guides de bonnes pratiques. Elle possède plus de 20 ans
-              d’expérience en recherche, rédaction, communication,
-              sensibilisation et gestion de projets.
-            </p>
-            <h3>Jeanne Robin - Directrice principale</h3>
-            <img src="sources/img/profile/jeanne-robin.jpg" />
-          </div>
-          <hr />
-          <div class="marie-helene-coll" id="second">
-            <p>
-              Titulaire d'un baccalauréat en Études internationales et d'une
-              maîtrise en géographie appliquée de l'Université Laval,
-              Marie-Hélène Coll a oeuvré pendant neuf ans au sein de Mobilli-T,
-              le Centre de gestion des déplacements du Québec métropolitain,
-              dont trois à titre de directrice générale. Elle a également été
-              secrétaire de l'Association des Centres de gestion des
-              déplacements du Québec. Passionnée par les enjeux de mobilité et
-              de développement urbain durables, elle a rejoint Vivre en Ville en
-              avril 2019 au poste de directrice générale adjointe et travaille
-              notamment sur la gestion administrative de l'organisme et le
-              développement de projets.
-            </p>
-            <h3>Marie-Hélène Coll - Directrice générale adjointe</h3>
-            <img src="sources/img/profile/marie-helene-coll.jpg" />
-          </div>
-          <hr />
-          <div class="adam-mongrain" id="first">
-            <p>
-              Adam Mongrain est Directeur - Habitation à Vivre en Ville. En tant
-              qu'expert et gestionnaire, il a contribué, entre autres, au Groupe
-              de Travail Habitation et Climat; au Laboratoire de solution PORTES
-              pour l'abordabilité et la durabilité en habitation; et au document
-              PORTES OUVERTES - Pour une sortie de crise durable en habitation.
-              Adam est entouré d'une équipe d'expert·es provenant des milieux de
-              la recherche, de la promotion immobilière privée et OBNL, de
-              l'urbanisme et de l'aménagement du territoire, et du mouvement
-              coopératif. Avant de se joindre à Vivre en Ville, Adam a cumulé
-              plus de 10 ans d'expérience en développement logiciel et en
-              gestion de projets. Il travaille aussi à l'institutionnalisation
-              du registre des loyers depuis 2018.
-            </p>
-            <h3>Adam Mongrain - Directeur - Habitation</h3>
-            <img src="sources/img/profile/adam-mongrain.jpg" />
-          </div>
-          <hr />
-          <div class="capucine-berdah" id="second">
-            <p>
-              Titulaire d’une maîtrise en science politique, Capucine a commencé
-              en politique active, en tant qu’attachée politique, avant de
-              devenir responsable des communications pour un organisme
-              communautaire. Très motivée à participer à la construction d'un
-              avenir durable, elle rejoint l’équipe des communications de Vivre
-              en Ville en 2021.
-            </p>
-            <h3>Capucine Berdah - Directrice - Communications</h3>
-            <img src="sources/img/profile/capucine.jpg" />
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <div class="grid__footer">
-        <div class="footer__contact">
-          <a class="contact phone" href="tel:514-394-1125"
-            >Téléphone: 514-394-1125</a
-          >
-          <a class="contact email" href="mailto:info@vivreenville.org"
-            >Adresse courriel: info@vivreenville.org</a
-          >
-          <a
-            class="contact adress"
-            href="https://maps.app.goo.gl/AJ6X1yxj49Sfpx1Z6"
-            >50, rue Ste-Catherine Ouest, bur. 480 Montréal (Québec) H2X 3V4</a
-          >
+  <main>
+    <section class="banniere">
+      <div class="grid__banniere">
+        <div class="banniere__txt">
+          <span>Ce site web sert de projet scolaire et n'est en aucun cas le vrai
+            site Vivre en Ville. Pour vous rendre sur le vrai site cliquez sur
+            ce lien :<a clas href="https://vivreenville.org/">
+              https://vivreenville.org/</a></span>
         </div>
 
-        <div class="footer__logo__centered">
+        <div class="banniere__btn">
+          <button class="btn__compris">J'ai compris</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="team">
+      <h1>Notre Équipe</h1>
+      <div class="team_profile">
+        <div class="alexandre-turgeon" id="first">
+          <p>
+            Alexandre Turgeon est directeur général du Conseil régional de
+            l’environnement – Capitale Nationale et président exécutif du
+            Centre culture et environnement Frédéric Back. Il cumule plus de
+            vingt années d’expérience en urbanisme et environnement, notamment
+            à titre de communicateur sur le thème des collectivités viables et
+            de gestionnaire de projet. À ce titre, il intervient comme
+            conférencier senior pour Vivre en Ville. Il a orchestré la mise en
+            œuvre de projets de démonstration comme la coopérative
+            d’habitation Vivre en Ville et le bâtiment écologique du Centre
+            Culture et Environnement Frédéric Back à Québec.
+          </p>
+          <h3>Alexandre Turgeon - Fondateur et président exécutif</h3>
+
+          <img src="sources/img/profile/alexandr-turgeon.jpg" />
+        </div>
+        <hr />
+        <div class="christian-savard" id="second">
+          <p>
+            Christian Savard est directeur général de Vivre en Ville depuis
+            2006. Son travail et son implication dans le débat public l’ont
+            amené à diriger la rédaction de nombreuses publications (livres,
+            mémoires, études et articles) sur les enjeux de mobilité durable
+            et d’urbanisme. Il est fréquemment sollicité par différentes
+            instances des secteurs privé, public et associatif sur nombre
+            d’enjeux dans le cadre de comités de réflexion ou de l'élaboration
+            de politiques et programmes. Titulaire d’une maîtrise en
+            aménagement du territoire et développement régional, il s’est
+            spécialisé dans les domaines des transports, de l’urbanisme et du
+            design urbain, tout en développant une expertise dans la gestion
+            d’organisations non gouvernementales.
+          </p>
+          <h3>Christian Savard - Directeur général</h3>
+          <img src="sources/img/profile/christian-savard.jpg" />
+        </div>
+        <hr />
+        <div class="jeanne-robin" id="first">
+          <p>
+            Titulaire d'une maîtrise en aménagement du territoire de
+            l'Université Laval, Jeanne Robin a rejoint Vivre en Ville en 2008
+            et en est aujourd'hui directrice principale. Elle est spécialiste
+            en développement urbain durable, et se passionne notamment pour
+            l’action climatique ainsi que les environnements favorables à la
+            santé et à l’équité. Conférencière et formatrice, elle a mené
+            plusieurs projets de sensibilisation et coordonné la rédaction de
+            nombreux guides de bonnes pratiques. Elle possède plus de 20 ans
+            d’expérience en recherche, rédaction, communication,
+            sensibilisation et gestion de projets.
+          </p>
+          <h3>Jeanne Robin - Directrice principale</h3>
+          <img src="sources/img/profile/jeanne-robin.jpg" />
+        </div>
+        <hr />
+        <div class="marie-helene-coll" id="second">
+          <p>
+            Titulaire d'un baccalauréat en Études internationales et d'une
+            maîtrise en géographie appliquée de l'Université Laval,
+            Marie-Hélène Coll a oeuvré pendant neuf ans au sein de Mobilli-T,
+            le Centre de gestion des déplacements du Québec métropolitain,
+            dont trois à titre de directrice générale. Elle a également été
+            secrétaire de l'Association des Centres de gestion des
+            déplacements du Québec. Passionnée par les enjeux de mobilité et
+            de développement urbain durables, elle a rejoint Vivre en Ville en
+            avril 2019 au poste de directrice générale adjointe et travaille
+            notamment sur la gestion administrative de l'organisme et le
+            développement de projets.
+          </p>
+          <h3>Marie-Hélène Coll - Directrice générale adjointe</h3>
+          <img src="sources/img/profile/marie-helene-coll.jpg" />
+        </div>
+        <hr />
+        <div class="adam-mongrain" id="first">
+          <p>
+            Adam Mongrain est Directeur - Habitation à Vivre en Ville. En tant
+            qu'expert et gestionnaire, il a contribué, entre autres, au Groupe
+            de Travail Habitation et Climat; au Laboratoire de solution PORTES
+            pour l'abordabilité et la durabilité en habitation; et au document
+            PORTES OUVERTES - Pour une sortie de crise durable en habitation.
+            Adam est entouré d'une équipe d'expert·es provenant des milieux de
+            la recherche, de la promotion immobilière privée et OBNL, de
+            l'urbanisme et de l'aménagement du territoire, et du mouvement
+            coopératif. Avant de se joindre à Vivre en Ville, Adam a cumulé
+            plus de 10 ans d'expérience en développement logiciel et en
+            gestion de projets. Il travaille aussi à l'institutionnalisation
+            du registre des loyers depuis 2018.
+          </p>
+          <h3>Adam Mongrain - Directeur - Habitation</h3>
+          <img src="sources/img/profile/adam-mongrain.jpg" />
+        </div>
+        <hr />
+        <div class="capucine-berdah" id="second">
+          <p>
+            Titulaire d’une maîtrise en science politique, Capucine a commencé
+            en politique active, en tant qu’attachée politique, avant de
+            devenir responsable des communications pour un organisme
+            communautaire. Très motivée à participer à la construction d'un
+            avenir durable, elle rejoint l’équipe des communications de Vivre
+            en Ville en 2021.
+          </p>
+          <h3>Capucine Berdah - Directrice - Communications</h3>
+          <img src="sources/img/profile/capucine.jpg" />
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="grid__footer">
+      <div class="footer__contact">
+        <a class="contact phone" href="tel:514-394-1125">Téléphone: 514-394-1125</a>
+        <a class="contact email" href="mailto:info@vivreenville.org">Adresse courriel: info@vivreenville.org</a>
+        <a class="contact adress" href="https://maps.app.goo.gl/AJ6X1yxj49Sfpx1Z6">50, rue Ste-Catherine Ouest, bur. 480
+          Montréal (Québec) H2X 3V4</a>
+      </div>
+
+      <div class="footer__logo__centered">
+        <a href="index.html">
+          <img src="sources/logo/logo.png" width="90" height="auto" alt="" />
+        </a>
+        <div class="footer-title">
+          VIVRE EN VILLE<br /><span class="footer-subtitle">
+            La voie des collectivités viables</span>
+        </div>
+      </div>
+
+      <div class="footer__btn">
+        <div class="footer__logo">
           <a href="index.html">
-            <img src="sources/logo/logo.png" width="90" height="auto" alt="" />
+            <img src="sources/logo/logo.png" width="75" height="auto" alt="" />
           </a>
           <div class="footer-title">
             VIVRE EN VILLE<br /><span class="footer-subtitle">
-              La voie des collectivités viables</span
-            >
+              La voie des collectivités viables</span>
           </div>
         </div>
 
-        <div class="footer__btn">
-          <div class="footer__logo">
-            <a href="index.html">
-              <img
-                src="sources/logo/logo.png"
-                width="75"
-                height="auto"
-                alt=""
-              />
-            </a>
-            <div class="footer-title">
-              VIVRE EN VILLE<br /><span class="footer-subtitle">
-                La voie des collectivités viables</span
-              >
-            </div>
-          </div>
-
-          <div class="footer__don">
-            <a
-              class="link__button"
-              href="https://activites.vivreenville.org/fr/dons/donate/faire-un-don/2946/"
-              target="_blank"
-              ><button class="don">Faire un don</button></a
-            >
-          </div>
-          <div class="footer__lien">
-            <a href="https://www.facebook.com/vivreenville" class="bloc">
-              <img src="sources/icons/facebook.png" alt="" />
-            </a>
-            <a
-              href="https://www.linkedin.com/company/vivre-en-ville/"
-              class="bloc"
-            >
-              <img src="sources/icons/linkedin.png" alt="" />
-            </a>
-            <a
-              href="https://www.instagram.com/reduirenotreempreinte"
-              class="bloc"
-            >
-              <img src="sources/icons/instagram.png" alt="" />
-            </a>
-            <a href="https://x.com/VivreenVille" class="bloc">
-              <img src="sources/icons/x.png" alt="" />
-            </a>
-            <a href="https://www.youtube.com/@vivreenville3822" class="bloc">
-              <img src="sources/icons/youtube.png" alt="" />
-            </a>
-          </div>
+        <div class="footer__don">
+          <a class="link__button" href="https://activites.vivreenville.org/fr/dons/donate/faire-un-don/2946/"
+            target="_blank"><button class="don">Faire un don</button></a>
+        </div>
+        <div class="footer__lien">
+          <a href="https://www.facebook.com/vivreenville" class="bloc">
+            <img src="sources/icons/facebook.png" alt="" />
+          </a>
+          <a href="https://www.linkedin.com/company/vivre-en-ville/" class="bloc">
+            <img src="sources/icons/linkedin.png" alt="" />
+          </a>
+          <a href="https://www.instagram.com/reduirenotreempreinte" class="bloc">
+            <img src="sources/icons/instagram.png" alt="" />
+          </a>
+          <a href="https://x.com/VivreenVille" class="bloc">
+            <img src="sources/icons/x.png" alt="" />
+          </a>
+          <a href="https://www.youtube.com/@vivreenville3822" class="bloc">
+            <img src="sources/icons/youtube.png" alt="" />
+          </a>
         </div>
       </div>
-      <div class="credit">©2024, Vivre en Ville, Cousi-Cousa</div>
-    </footer>
-  </body>
-  <!--script start-->
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"
-  ></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-  <script type="text/javascript" src="main.js"></script>
-  <!--script end-->
+    </div>
+    <div class="credit">©2024, Vivre en Ville, Cousi-Cousa</div>
+  </footer>
+</body>
+<!--script start-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script type="text/javascript" src="main.js"></script>
+<!--script end-->
+
 </html>
