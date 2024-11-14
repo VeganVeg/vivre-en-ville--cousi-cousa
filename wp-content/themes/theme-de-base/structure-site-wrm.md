@@ -2,9 +2,17 @@
 
 ## TYPE DE CONTENU (POST TYPE)
 
+### page
+
+- acceuil
+
 ## MODÈLE (TEMPLATE)
 
+- acceuil.php
+
 ## COMPOSANTES
+
+###
 
 ### NOM DU PARTIAL
 
