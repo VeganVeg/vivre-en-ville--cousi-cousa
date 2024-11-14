@@ -1,25 +1,38 @@
 # index.html
 
 ## TYPE DE CONTENU (POST TYPE)
+### PAGE
+#### accueil
 
 ## MODÈLE (TEMPLATE)
+### accueil.php
 
 ## COMPOSANTES
 ### NOM DU PARTIAL
+#### partial-news
 ### CHAMPS PERSONNALISÉS
+#### image-article: Image
+#### title-article: Text
+#### date-article: Text
 
-## AUTRES CHAMPS PERSONNALISÉS
+## AUTRES CHAMPS PERSONNALISÉS  
 
 
 # about.html
 
 ## TYPE DE CONTENU (POST TYPE)
+### PAGE
+#### about
 
 ## MODÈLE (TEMPLATE)
+### about.php
 
 ## COMPOSANTES
 ### NOM DU PARTIAL
+#### partial-para
 ### CHAMPS PERSONNALISÉS
+#### title-para: Text
+#### text-para: Text
 
 ## AUTRES CHAMPS PERSONNALISÉS
 
