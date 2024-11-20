@@ -1,0 +1,217 @@
+@use "variables";
+@use "mixins";
+
+.team {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  h1 {
+    align-self: center;
+    margin: 20px;
+    font-size: 40px;
+    color: variables.$nenuphare;
+    font-weight: 700;
+  }
+  .team_profile {
+    hr {
+      width: 50%;
+      border-radius: 3px;
+      margin: auto;
+      height: 5px;
+      opacity: 1;
+      padding: 0;
+      background-color: variables.$nenuphare;
+      color: variables.$nenuphare;
+    }
+    img {
+      width: 15%;
+      align-self: flex-end;
+    }
+    h3 {
+      text-transform: uppercase;
+      font-size: 13px;
+      text-align: start;
+      margin: 8px;
+      padding: 4px;
+      font-weight: 600;
+    }
+    #first {
+      padding: 10px;
+      margin: 10px;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    #second {
+      padding: 10px;
+      margin: 10px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    .w3-container {
+      height: 100%;
+      p {
+        font-size: 15px;
+        display: initial;
+      }
+    }
+    .w3-button {
+      font-family: "Poppins", system-ui;
+      padding: 8px;
+      background-color: transparent;
+      color: variables.$nenuphare;
+      font-size: 12px;
+      font-weight: 700;
+      border: 3px solid variables.$nenuphare;
+      border-radius: 40px;
+      transition: 0.3s;
+      &:hover {
+        transition: 0.3s;
+        color: white !important;
+        background-color: variables.$nenuphare !important;
+      }
+    }
+    #button-x {
+      border: none;
+      background-color: transparent;
+      color: variables.$charbon;
+      padding: 10px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 40px;
+      margin: 30px;
+      font-weight: 800;
+    }
+    .team_profile {
+      hr {
+        display: none;
+      }
+      img {
+        width: 30%;
+      }
+      h3 {
+        font-size: 18px;
+        text-align: center;
+        margin: 10px;
+        padding: 6px;
+        font-weight: 600;
+      }
+      #first {
+        width: 65%;
+        padding: 15px;
+        margin: 15px auto;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        background-color: transparent;
+        border: 2px solid grey;
+        img {
+          align-self: center;
+        }
+      }
+      #second {
+        width: 65%;
+        padding: 15px;
+        margin: 15px auto;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        background-color: transparent;
+        border: 2px solid grey;
+        img {
+          align-self: center;
+        }
+      }
+      .w3-button {
+        align-self: center;
+        padding: 10px;
+        background-color: transparent;
+        color: variables.$nenuphare;
+        font-size: 14px;
+        font-weight: 600;
+        border-radius: 50px;
+      }
+    }
+  }
+
+  @media (min-width: 1400px) {
+    h1 {
+      font-size: 60px;
+      margin: 35px;
+      font-weight: 600;
+    }
+    .team_profile {
+      img {
+        width: 35%;
+      }
+      h3 {
+        font-size: 25px;
+        margin: 10px;
+        padding: 10px;
+      }
+      #first {
+        width: 70%;
+        padding: 20px;
+        margin: 10px auto;
+        border: 4px solid grey;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        align-items: center;
+        img {
+          align-self: center;
+        }
+        h3 {
+          text-align: center;
+        }
+        p {
+          width: 50%;
+          display: initial;
+          font-size: 18px;
+          text-align: center;
+        }
+      }
+
+      #second {
+        width: 70%;
+        padding: 20px;
+        margin: 10px auto;
+        border: 4px solid grey;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        img {
+          align-self: center;
+        }
+        h3 {
+          text-align: center;
+        }
+        p {
+          width: 50%;
+          display: initial;
+          font-size: 18px;
+          text-align: center;
+        }
+      }
+      .w3-button {
+        padding: 10px;
+        background-color: transparent;
+        color: variables.$nenuphare;
+        font-size: 15px;
+        font-weight: 600;
+        border-radius: 50px;
+      }
+      #button-x {
+        padding: 5px;
+      }
+    }
+  }
+}

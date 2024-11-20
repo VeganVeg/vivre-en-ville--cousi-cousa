@@ -1,0 +1,167 @@
+@use "variables";
+@use "mixins";
+
+.donner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 2px solid variables.$charbon;
+  width: 315px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  padding: 20px;
+  border-radius: 30px;
+
+  .donner__title{
+    font-size: 22px;
+    margin: 0 auto;
+    margin-bottom: 4px;
+    width: 248px;
+  }
+  .donner__text{
+    font-family: "Noto Sans", sans-serif;
+    color: variables.$bleu-ciel;
+    width: 248px;
+    margin: 0 auto;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+  a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    margin-bottom: 6px;
+    .heart{
+      width: 18px;
+      fill: variables.$bleu-ciel;
+    }
+    button {
+      font-family: "Poppins", system-ui;
+      width: 200px;
+      font-size: 14px;
+      font-weight: 700;
+      color: variables.$bleu-ciel;
+      align-self: center;
+      border-radius: 50px;
+      background-color: variables.$quartz;
+      border: 3px solid variables.$bleu-ciel;
+      transition: 0.5s;
+      padding: 6px;
+      &:hover {
+        transition: 0.5s;
+        background-color: variables.$bleu-ciel;
+        border: 3px solid variables.$bleu-matinal;
+        color: variables.$quartz;
+        .heart{
+          path{
+            fill: variables.$quartz;
+          }
+        }
+      }
+      .heart{
+        path{
+          transition: fill 0.5s;
+          fill: variables.$bleu-ciel;
+        }
+        path:hover{
+          fill: variables.$quartz;
+        } 
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .donner {
+    border: 3px solid variables.$charbon;
+    width: 500px;
+    padding: 30px;
+    border-radius: 35px;
+
+    .donner__title {
+      width: 75%;
+      font-size: 26px;
+      margin: 0;
+      margin-left: 10px;
+      margin-bottom: 8px;
+    }
+    .donner__text {
+      font-size: 16px;
+      margin: 0;
+      margin-left: 10px;
+      width: 75%;
+      margin-bottom: 40px;
+    }
+    a {
+      margin-bottom: 10px;
+      .heart{
+        width: 20px;
+      }
+      button {
+        padding: 10px;
+        width: 70%;
+        font-size: 16px;
+        font-weight: bold;
+        color: variables.$bleu-ciel;
+        align-self: center;
+        border-radius: 25px;
+        background-color: variables.$quartz;
+        border: 4px solid variables.$bleu-ciel;
+        &:hover {
+          background-color: variables.$bleu-ciel;
+          border: 4px solid variables.$bleu-matinal;
+          color: variables.$quartz;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .donner {
+    width: 1000px;
+    border: 3px solid variables.$charbon; 
+    border-radius: 40px;
+    padding: 40px 150px;
+
+    .donner__title {
+    width: 700px;
+    font-size: 36px;
+    margin: 0;
+    margin-bottom: 10px;
+    }
+    .donner__text {
+      font-size: 20px;
+      margin: 0;
+      margin-bottom: 75px;
+      width: 60%;
+    }
+    a {
+      display: flex;
+      justify-content: center;
+      text-decoration: none;
+      margin-bottom: 35px;
+      .heart{
+        width: 24px;
+      }
+      button {
+        width: 700px;
+        padding: 15px;
+        font-size: 25px;
+        font-weight: bold;
+        color: variables.$bleu-ciel;
+        align-self: center;
+        border-radius: 50px;
+        background-color: variables.$quartz;
+        border: 5px solid variables.$bleu-ciel;
+        &:hover {
+          background-color: variables.$bleu-ciel;
+          border: 5px solid variables.$bleu-matinal;
+          color: variables.$quartz;
+        }
+      }
+    }
+  }
+}

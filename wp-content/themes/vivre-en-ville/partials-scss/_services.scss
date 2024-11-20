@@ -1,0 +1,267 @@
+@use 'variables';
+@use 'mixins';
+
+.services__offerts{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services__title{
+    font-size: 22px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    margin-bottom: 6px;
+    color: #303030;
+    text-align: center;
+}
+.services__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 513px;
+
+    .service{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+    .service:hover{
+        justify-content: center;
+        .txt-block{
+            display: block;
+        }
+        .title-none{
+            display: none;
+        }
+    }
+    .img__hover{
+        position: absolute;
+        width: 22px;
+        margin-top: 158px;
+        margin-left: 109px;
+    }
+    .services__recherche{
+        width: 155px;
+        height: 205px;
+        background-color: variables.$charbon;
+        border-radius: 20px;
+        margin: 8px;
+        .recherche__title{
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            text-align: center;
+            color: #E2E2E2;
+            margin-top: 5px;
+            line-height: 1.2;
+            display: block;
+        }
+        .recherche__txt{
+            font-size: 14px;
+            line-height: 1.2;
+            text-align: center;
+            font-family: "Poppins", system-ui;
+            color: #E2E2E2;
+            display: none;
+        }
+        .img__microscope{
+            position: absolute;
+            width: 85px;
+           margin-top: 50px;
+        }
+    }
+    .services__publication{
+        width: 155px;
+        height: 205px;
+        background-color: variables.$nenuphare;
+        border-radius: 20px;
+        margin: 8px;
+        .publication__title{
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            text-align: center;
+            color: #bfff6b;
+            margin-top: 10px;
+        }
+        .publication__txt{
+            font-size: 14px;
+            line-height: 1.2;
+            text-align: center;
+            font-family: "Poppins", system-ui;
+            color: #bfff6b;
+            display: none;
+        }
+        .img__publication{
+            position: absolute;
+            width: 85px;
+           margin-top: 50px;
+        }
+    }
+    .services__formation{
+        width: 155px;
+        height: 205px;
+        background-color: variables.$bleu-ciel;
+        border-radius: 20px;
+        margin: 8px;
+        .formation__title{
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            text-align: center;
+            color: #8be4ff;
+            margin-top: 10px;
+        }
+        .formation__txt{
+            font-size: 14px;
+            line-height: 1.2;
+            text-align: center;
+            font-family: "Poppins", system-ui;
+            color: #8be4ff;
+            display: none;
+        }
+        .img__formation{
+            position: absolute;
+            width: 85px;
+           margin-top: 50px;
+        }
+    }
+    .services__conseil{
+        width: 155px;
+        height: 205px;
+        background-color: variables.$bleu-matinal;
+        border-radius: 20px;
+        margin: 8px;
+        .conseil__title{
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            text-align: center;
+            color: #cdf8fd;
+            margin-top: 5px;
+            line-height: 1.2;
+        }
+        .conseil__txt{
+            font-size: 14px;
+            line-height: 1.2;
+            text-align: center;
+            font-family: "Poppins", system-ui;
+            color: #cdf8fd;
+            display: none;
+        }
+        .img__conseil{
+            position: absolute;
+            width: 85px;
+           margin-top: 50px;
+        }
+    }
+    .services__sensibilisation{
+        width: 155px;
+        height: 205px;
+        background-color: variables.$gris;
+        border-radius: 20px;
+        margin: 8px;
+        .sensibilisation__title{
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            text-align: center;
+            color: variables.$quartz;
+            margin-top: 10px;
+        }
+        .sensibilisation__txt{
+            font-size: 14px;
+            line-height: 1.2;
+            text-align: center;
+            font-family: "Poppins", system-ui;
+            color: variables.$quartz;
+            display: none;
+        }
+        .img__sensibilisation{
+            position: absolute;
+            width: 90px;
+           margin-top: 50px;
+        }
+    }
+}
+@media (min-width:768px){
+    .services__title{
+        font-size: 26px;
+        margin-bottom: 8px;
+    }
+    .services__container{
+        width: 100%;
+        max-width: 768px;
+        .service{
+            width: 204px;
+            height: 280px;
+            margin: 9px;
+            .card__title{
+                font-size: 20px;
+                margin-top: 15px;
+            }
+            .recherche__title{
+                margin-top: 10px;
+            }
+            .conseil__title{
+                margin-top: 10px;
+            }
+            .card__img{
+                width: 115px;
+                margin-top: 70px;
+            }
+            .img__sensibilisation{
+                width: 120px;
+            }
+            .card__txt{
+                font-size: 16px;
+            }
+            .img__hover{
+                width: 28px;
+                margin-top: 225px;
+                margin-left: 149px;
+            }
+        }
+    }
+}
+
+@media (min-width:1400px){
+    .services__title{
+        font-size: 36px;
+        margin-bottom: 12px;
+    }
+    .services__container{
+        width: 100%;
+        max-width: 1400px;
+        .service{
+            width: 240px;
+            height: 330px;
+            margin: 12px;
+            .card__title{
+                font-size: 24px;
+                margin-top: 20px;
+            }
+            .recherche__title{
+                margin-top: 15px;
+            }
+            .conseil__title{
+                margin-top: 15px;
+            }
+            .card__img{
+                width: 140px;
+                margin-top: 95px;
+            }
+            .img__sensibilisation{
+                width: 145px;
+                margin-top: 95px;
+            }
+            .card__txt{
+                font-size: 20px;
+            }
+            .img__hover{
+                width: 32px;
+                margin-top: 270px;
+                margin-left: 179px;
+            }
+        }
+    }
+}

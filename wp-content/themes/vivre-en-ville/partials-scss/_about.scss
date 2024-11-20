@@ -1,0 +1,57 @@
+@use "variables";
+@use "mixins";
+
+.grid__about {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin: 12px;
+  .about__title{
+    font-size: 22px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    margin-bottom: 6px;
+    color: variables.$charbon;
+  }
+  .about__text{
+    font-size: 16px;
+    font-family: 'Poppins', system-ui;
+    font-weight: 500;
+    color: variables.$charbon;
+  }
+}
+
+@media (min-width: 768px){
+  .grid__about{
+    margin: 18px;
+    .about__title{
+      font-size: 26px;
+      margin-bottom: 8px;
+    }
+    .about__text{
+      font-size: 20px;
+      max-width: 768px;
+    }
+  }
+}
+
+@media (min-width: 1400px){
+  .grid__about{
+    margin: 24px;
+    .about__title{
+      font-size: 36px;
+      margin-bottom: 12px;
+    }
+    .about__text{
+      font-size: 28px;
+      max-width: 1050px;
+    }
+    &__text {
+      text-align: center;
+      margin-left: 5vw;
+      margin-right: 5vw;
+    }
+  }
+}

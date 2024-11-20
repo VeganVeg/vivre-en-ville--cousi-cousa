@@ -1,0 +1,33 @@
+@use "variables";
+@use "mixins";
+
+.next__chapter{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 15px 0;
+    .circle{
+        width: 6px;
+        height: 6px;
+        background-color: black;
+        margin: 5px;
+        border-radius: 50px;
+        background-color: variables.$charbon;
+    }
+}
+@media (min-width: 768px){
+    .next__chapter{
+        margin: 17px 0;
+        .circle{
+            margin: 8px;
+        }
+    }
+}
+@media (min-width: 1400px){
+    .next__chapter{
+        margin: 25px 0;
+        .circle{
+            margin: 10px;
+        }
+    }
+}
