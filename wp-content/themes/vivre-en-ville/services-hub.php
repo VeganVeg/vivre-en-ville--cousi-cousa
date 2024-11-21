@@ -43,7 +43,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
             <h2 class="title__hero">Nos services offerts</h2>
           </div>
 
-          <img class="img__hero" src="sources/img/services.jpg" alt="" />
+          <img class="img__hero" src="<?php bloginfo('template_url'); ?>/sources/img/services.jpg" alt="" />
         </div>
       </section>
 
@@ -58,7 +58,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
               développement de collectivités viables.
             </div>
 
-            <img class="img-hub" src="sources/icons/microscope.png" alt="" />
+            <img class="img-hub" src="<?php bloginfo('template_url'); ?>/sources/icons/microscope.png" alt="" />
           </div>
           <div class="services-hub__btn">
             <a href="service.html">
@@ -75,7 +75,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
               québécois dans leurs projets.
             </div>
 
-            <img class="img-hub" src="sources/icons/news.png" alt="" />
+            <img class="img-hub" src="<?php bloginfo('template_url'); ?>/sources/icons/news.png" alt="" />
           </div>
           <div class="services-hub__btn">
             <a class="" href="">
@@ -92,7 +92,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
               missions sur de nombreux thèmes liés aux collectivités viables.
             </div>
 
-            <img class="img-hub" src="sources/icons/diploma.png" alt="" />
+            <img class="img-hub" src="<?php bloginfo('template_url'); ?>/sources/icons/diploma.png" alt="" />
           </div>
           <div class="services-hub__btn">
             <a class="" href="">
@@ -110,7 +110,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
               d'avant-garde.
             </div>
 
-            <img class="img-hub" src="sources/icons/ampoule.png" alt="" />
+            <img class="img-hub" src="<?php bloginfo('template_url'); ?>/sources/icons/ampoule.png" alt="" />
           </div>
           <div class="services-hub__btn">
             <a class="" href="">
@@ -127,7 +127,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
               vulgarisation.
             </div>
 
-            <img class="img-hub" src="sources/icons/annonce.png" alt="" />
+            <img class="img-hub" src="<?php bloginfo('template_url'); ?>/sources/icons/annonce.png" alt="" />
           </div>
           <div class="services-hub__btn">
             <a class="" href="">
