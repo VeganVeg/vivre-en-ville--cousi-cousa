@@ -314,7 +314,6 @@ footer .credit {
   align-items: center;
 }
 .grid__banniere .banniere__btn .btn__compris {
-  font-size: 16px;
   margin-top: 16px;
   font-family: "Poppins", system-ui;
   font-weight: 400;
@@ -365,7 +364,7 @@ footer .credit {
   }
   .grid__banniere .btn__compris {
     width: 175px !important;
-    height: 68px !important;
+    height: 68 !important;
     padding: 15px 0;
     font-size: 20px;
   }
