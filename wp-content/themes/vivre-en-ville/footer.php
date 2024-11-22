@@ -24,7 +24,7 @@
 
         <div class="footer__logo__centered">
           <a href="index.html">
-            <img src="sources/logo/logo.png" width="90" height="auto" alt="" />
+            <img src="<?php bloginfo('template_url'); ?>/sources/logo/logo.png" width="90" height="auto" alt="" />
           </a>
           <div class="footer-title">
             VIVRE EN VILLE<br/><span class="footer-subtitle">
@@ -37,11 +37,7 @@
           <div class="footer__logo">
             <a href="index.html">
               <img
-                src="sources/logo/logo.png"
-                width="75"
-                height="auto"
-                alt=""
-              />
+                src="<?php bloginfo('template_url'); ?>/sources/logo/logo.png" width="75" height="auto" alt=""/>
             </a>
             <div class="footer-title">
               VIVRE EN VILLE<br /><span class="footer-subtitle">
