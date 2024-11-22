@@ -27,7 +27,7 @@
             <img src="sources/logo/logo.png" width="90" height="auto" alt="" />
           </a>
           <div class="footer-title">
-            VIVRE EN VILLE<br /><span class="footer-subtitle">
+            VIVRE EN VILLE<br/><span class="footer-subtitle">
               La voie des collectivités viables</span
             >
           </div>
