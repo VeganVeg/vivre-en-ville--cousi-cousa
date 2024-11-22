@@ -60,25 +60,25 @@
           </div>
           <div class="footer__lien">
             <a href="https://www.facebook.com/vivreenville" class="bloc">
-              <img src="sources/icons/facebook.png" alt="" />
+              <img src="<?php bloginfo('template_url'); ?>/sources/icons/facebook.png" alt="" />
             </a>
             <a
               href="https://www.linkedin.com/company/vivre-en-ville/"
               class="bloc"
             >
-              <img src="sources/icons/linkedin.png" alt="" />
+              <img src="<?php bloginfo('template_url'); ?>/sources/icons/linkedin.png" alt="" />
             </a>
             <a
               href="https://www.instagram.com/reduirenotreempreinte"
               class="bloc"
             >
-              <img src="sources/icons/instagram.png" alt="" />
+              <img src="<?php bloginfo('template_url'); ?>/sources/icons/instagram.png" alt="" />
             </a>
             <a href="https://x.com/VivreenVille" class="bloc">
-              <img src="sources/icons/x.png" alt="" />
+              <img src="<?php bloginfo('template_url'); ?>/sources/icons/x.png" alt="" />
             </a>
             <a href="https://www.youtube.com/@vivreenville3822" class="bloc">
-              <img src="sources/icons/youtube.png" alt="" />
+              <img src="<?php bloginfo('template_url'); ?>/sources/icons/youtube.png" alt="" />
             </a>
           </div>
         </div>
