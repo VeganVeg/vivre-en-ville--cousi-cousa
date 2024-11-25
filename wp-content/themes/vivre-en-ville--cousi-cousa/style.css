@@ -2843,6 +2843,7 @@ main {
 body,
 html {
   background-color: #EFEFEF;
+  margin: 0px !important;
 }
 
 h1 {
