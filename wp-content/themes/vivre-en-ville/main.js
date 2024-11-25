@@ -8,6 +8,23 @@ burger.addEventListener('mouseleave', () => {
     gsap.to('.navbar-toggler-icon', { scale: 1, duration: 0.3 })
 })
 
+
+const banniere = document.querySelector('.grid__banniere');
+const btn = document.querySelector('.btn__compris');
+
+btn.addEventListener('click', () => {
+    banniere.classList.add('grid__banniere--none')
+});
+
+const don = document.querySelector('.btn__don')
+
+don.addEventListener('mouseenter', () => {
+    gsap.timeline()
+        .to('.heart', { scale: 1.2, duration: 0.3, ease: 'back.in' })
+        .to('.heart', { scale: 1, duration: 0.3 })
+})
+
+
 const swiper = new Swiper('.swiper', {
     // Optional parameters
     loop: true,
@@ -28,18 +45,3 @@ const swiper = new Swiper('.swiper', {
         el: '.swiper-scrollbar',
     },
 });
-
-const banniere = document.querySelector('.grid__banniere');
-const btn = document.querySelector('.btn__compris');
-
-btn.addEventListener('click', () => {
-    banniere.classList.add('grid__banniere--none')
-});
-
-const don = document.querySelector('.btn__don')
-
-don.addEventListener('mouseenter', () => {
-    gsap.timeline()
-        .to('.heart', { scale: 1.2, duration: 0.3, ease: 'back.in' })
-        .to('.heart', { scale: 1, duration: 0.3 })
-})
