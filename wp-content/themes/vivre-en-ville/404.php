@@ -1,6 +1,7 @@
 <?php
 /**
- * Modèle de la page 404
+ * 	Template Name: Erreur 404
+ * 	Template Post Type: page, post, article
  */
 
 get_header(); // Affiche header.php
