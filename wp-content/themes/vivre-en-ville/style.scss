@@ -1,10 +1,3 @@
-/*
-Theme Name: vivre-en-ville
-Author: Dominic Yale
-Description: Thème de base pour le site web de Vivre en ville
-Version: 1.0
--------------------------------------------------------------- */
-
 //partials variables mixins
 @use "partials-scss/variables";
 @use "partials-scss/mixins";
@@ -33,6 +26,7 @@ Version: 1.0
 body,
 html {
   background-color: variables.$quartz;
+  margin: 0px !important;
 }
 
 h1 {
