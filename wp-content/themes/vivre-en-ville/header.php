@@ -71,7 +71,7 @@
           <a
             class="navbar-brand d-flex navbar-brand-mobile d-block d-xxl-none align-items-center"
             href="index.html"
-            ><img src="sources/logo/logo.png" width="60" height="auto" alt="" />
+            ><img src="<?php bloginfo('template_url'); ?>/sources/logo/logo.png" width="60" height="auto" alt="" />
           </a>
 
           <!--hamburger button-->
@@ -108,7 +108,7 @@
                   class="navbar-brand d-flex mx-auto align-items-center d-none d-xxl-flex"
                   href="index.html"
                   ><img
-                    src="sources/logo/logo.png"
+                    src="<?php bloginfo('template_url'); ?>/sources/logo/logo.png"
                     width="90"
                     height="auto"
                     alt=""
