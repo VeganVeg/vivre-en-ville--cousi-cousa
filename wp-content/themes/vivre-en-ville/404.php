@@ -16,7 +16,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 		
         <section class="error">
         <div class="error__container">
-          <h1><?php post_title() ?></h1>
+          <h1>Erreur 404</h1>
           <h2>
             Mauvais chemin ... je pense que pour
             <span class="logo-error">vivre en ville</span> vous deviez tourner a
