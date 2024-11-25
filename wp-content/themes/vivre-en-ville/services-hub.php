@@ -13,9 +13,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 		<?php if (!is_front_page()) : // Si nous ne sommes PAS sur la page d'accueil ?>
 		<?php endif; ?>
 		
-	
-		
-		<main>
+
       <!--banniere-->
       <section class="banniere">
         <div class="grid__banniere">
@@ -132,8 +130,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
           </div>
         </div>
       </section>
-    </main>
-    
+
 <?php endwhile; // Fermeture de la boucle
 
 else : // Si aucune page n'a été trouvée

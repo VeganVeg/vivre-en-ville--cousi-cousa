@@ -11,10 +11,9 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 	while ( have_posts() ) : the_post(); 
 ?>
 
-	<article>
 		<?php if (!is_front_page()) : // Si nous ne sommes PAS sur la page d'accueil ?>
 		<?php endif; ?>
-		<main>
+
 		<section class="nous-joindre">
             <div class="nous-joindre__container">
                 <h1 class="nous-joindre__titre">Nous Joindre</h1>
@@ -48,9 +47,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                 </div>
             </div>
         </section>
-		</main>
 
-	</article>
 <?php endwhile; // Fermeture de la boucle
 
 else : // Si aucune page n'a été trouvée
