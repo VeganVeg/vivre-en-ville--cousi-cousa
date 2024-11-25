@@ -33,6 +33,9 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <!--swiper end-->
+    
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+
 
 <title>
 	<?php bloginfo('name'); // Affiche le nom du blog ?> | 
