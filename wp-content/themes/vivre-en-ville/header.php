@@ -128,9 +128,9 @@
 		      	wp_nav_menu( array( 
               'theme_location' => 'right-menu',
               'depth' => 1,
-              'container' => 'div',
-              'container_class' => 'collapse navbar-collapse',
-              'container_id' => 'mainNav',
+              'container' => '',
+              'container_class' => '',
+              'container_id' => '',
               'menu_class' => 'navbar-nav mx-auto align-items-center',
               'list_item_class' => 'nav-item',
               'link_class' => 'nav-link',
