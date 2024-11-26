@@ -62,5 +62,25 @@ function add_style_and_js()  {
 	/* Pour ajoutez un script, copier la ligne précédente et ajuster le chemin de façon relative vers votre nouveau fichier JS */
 }
 
+//Custom menu item and menu link classes using nav filters
+function add_menu_list_item_class($classes, $item, $args) {
+	if (property_exists($args, 'list_item_class')) {
+		$classes[] = $args->list_item_class;
+	}
+	return $classes;
+  }
+  add_filter('nav_menu_css_class', 'add_menu_list_item_class', 1, 3);
+  
+  function add_menu_link_class( $atts, $item, $args ) {
+	if( property_exists($args, 'link_class') ) {
+	  $atts['class'] = $args->link_class;
+	}
+	return $atts;
+  }
+
+  /* Appel de la fonction en ajoutant le filter*/
+  add_filter( 'nav_menu_link_attributes', 'add_menu_link_class', 1, 3 );
+
+
 /* Appel de la fonction ajoutant les styles et scripts */
 add_action('wp_enqueue_scripts', 'add_style_and_js'); 
