@@ -93,7 +93,15 @@
 
             <?php 
 			// Affiche un menu si dans le tableau de bord un menu a été défini dans cet emplacement
-			wp_nav_menu( array( 'theme_location' => 'main-menu' ) );
+			wp_nav_menu( array( 
+        'theme_location' => 'main-menu',
+        'depth' => 1,
+        'container' => 'div',
+        'container_class' => 'collapse navbar-collapse',
+        'container_id' => 'mainNav',
+        'menu_class' => 'navbar-nav mx-auto align-items-center',
+         
+        ) );
 		?>
 
               <li class="nav-item">
