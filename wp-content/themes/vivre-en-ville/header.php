@@ -65,6 +65,8 @@
 		
 
 	<nav class="navbar navbar-dark navbar-expand-xxl">
+
+
 		<div class="container-fluid">
           <!-- BRAND -->
           <a
@@ -88,10 +90,12 @@
           <!--navigation-->
           <div id="mainNav" class="collapse navbar-collapse">
             <ul class="navbar-nav mx-auto align-items-center">
+
             <?php 
 			// Affiche un menu si dans le tableau de bord un menu a été défini dans cet emplacement
 			wp_nav_menu( array( 'theme_location' => 'main-menu' ) );
 		?>
+
               <li class="nav-item">
                 <a href="news-hub.html" class="nav-link">Nouvelles</a>
               </li>
@@ -101,7 +105,7 @@
               <li class="nav-item">
                 <a href="about.html" class="nav-link">À propos</a>
               </li>
-
+              
               <li class="nav-item">
                 <a href="contact-us.html" class="nav-link">Nous joindre</a>
               </li>
