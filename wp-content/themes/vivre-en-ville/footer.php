@@ -97,11 +97,6 @@
 	 Vous pouvez la déplacer si désiré, mais garder là. */
 ?>
 
-<?php
-  wp_nav_menu( array( 'theme_location' => 'footer' ) );
-?>
-
-
 
 </body>
 
