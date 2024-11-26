@@ -98,7 +98,7 @@
             <?php 
 			// Affiche un menu si dans le tableau de bord un menu a été défini dans cet emplacement
 		      	wp_nav_menu( array( 
-              'theme_location' => 'main-menu',
+              'theme_location' => 'left-menu',
               'depth' => 1,
               'container' => 'div',
               'container_class' => 'collapse navbar-collapse',
@@ -117,12 +117,25 @@
                     alt=""
                   />
                   <div class="title">
-                    VIVRE EN VILLE<br /><span class="subtitle"
-                      >La voie des collectivités viables</span
-                    >
+                    VIVRE EN VILLE<br /><span class="subtitle">
+                      La voie des collectivités viables</span>
                   </div>
                 </a>
               </li>
+
+              <?php 
+			// Affiche un menu si dans le tableau de bord un menu a été défini dans cet emplacement
+		      	wp_nav_menu( array( 
+              'theme_location' => 'right-menu',
+              'depth' => 1,
+              'container' => 'div',
+              'container_class' => 'collapse navbar-collapse',
+              'container_id' => 'mainNav',
+              'menu_class' => 'navbar-nav mx-auto align-items-center',
+              'list_item_class' => 'nav-item',
+              'link_class' => 'nav-link',
+              ) );
+		        ?>
 
               <li class="nav-item">
                 <a href="team.html" class="nav-link">Équipe</a>
