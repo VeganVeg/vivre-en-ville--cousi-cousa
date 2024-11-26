@@ -136,10 +136,6 @@
               'link_class' => 'nav-link',
               ) );
 		        ?>
-
-              <li class="nav-item">
-                <a href="team.html" class="nav-link">Équipe</a>
-              </li>
               <li class="nav-item">
                 <a href="#" class="nav-link">FAQ</a>
               </li>
