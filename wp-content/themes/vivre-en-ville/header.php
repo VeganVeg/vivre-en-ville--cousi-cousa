@@ -136,9 +136,6 @@
               'link_class' => 'nav-link',
               ) );
 		        ?>
-              <li class="nav-item">
-                <a href="#" class="nav-link">FAQ</a>
-              </li>
               <li class="nav-item nav-item-don">
                 <a
                   href="https://activites.vivreenville.org/fr/dons/donate/faire-un-don/2946/"
