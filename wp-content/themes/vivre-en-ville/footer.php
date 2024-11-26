@@ -98,7 +98,7 @@
 ?>
 
 <?php
-  wp_nav_menu( array( 'theme_location' => 'main-menu' ) );
+  wp_nav_menu( array( 'theme_location' => 'footer' ) );
 ?>
 
 
