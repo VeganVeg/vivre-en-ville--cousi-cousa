@@ -89,7 +89,19 @@ function add_custom_html_to_center_of_menu($items, $args) {
         $middle_index = count($menu_items) / 2;
 
         // The custom HTML content you want to add
-        $custom_html = '<li class="custom-center-html"><a href="#">Custom HTML Content in the Center</a></li>';
+        $custom_html = '<li class="nav-item">
+                <a class="navbar-brand d-flex mx-auto align-items-center d-none d-xxl-flex" href="index.html"><img
+                    src="<?php bloginfo('template_url'); ?>/sources/logo/logo.png"
+                    width="90"
+                    height="auto"
+                    alt=""
+                  />
+                  <div class="title">
+                    VIVRE EN VILLE<br /><span class="subtitle">
+                      La voie des collectivités viables</span>
+                  </div>
+                </a>
+              </li>';
 
         // Insert the custom HTML at the middle point
         array_splice($menu_items, $middle_index, 0, $custom_html);
