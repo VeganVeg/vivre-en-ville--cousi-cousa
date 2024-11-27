@@ -82,7 +82,7 @@ function add_menu_list_item_class($classes, $item, $args) {
 
   function add_custom_html_to_nav_menu($items, $args) {
     // Check the menu location if needed
-    if ($args->theme_location == 'primary') {
+    if ($args->theme_location == 'left-menu') {
         // Insert custom HTML between the menu items
         $custom_html = '<li class="custom-html"><a href="#">Custom HTML Content</a></li>';
         $items = str_replace('</li>', '</li>' . $custom_html, $items);
