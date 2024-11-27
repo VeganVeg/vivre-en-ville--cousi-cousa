@@ -91,7 +91,7 @@ function add_custom_html_to_center_of_menu($items, $args) {
         // The custom HTML content you want to add
         $custom_html = '<li class="nav-item">
                 <a class="navbar-brand d-flex mx-auto align-items-center d-none d-xxl-flex" href="index.html"><img
-                    src="<?php bloginfo('template_url'); ?>/sources/logo/logo.png"
+                    src="<?php bloginfo(''); ?>/sources/logo/logo.png"
                     width="90"
                     height="auto"
                     alt=""
