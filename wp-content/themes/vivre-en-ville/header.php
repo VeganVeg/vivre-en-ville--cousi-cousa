@@ -123,19 +123,6 @@
                 </a>
               </li>
 
-              <?php 
-			// Affiche un menu si dans le tableau de bord un menu a été défini dans cet emplacement
-		      	wp_nav_menu( array( 
-              'theme_location' => 'right-menu',
-              'depth' => 1,
-              'container' => '',
-              'container_class' => '',
-              'container_id' => '',
-              'menu_class' => 'navbar-nav mx-auto align-items-center',
-              'list_item_class' => 'nav-item',
-              'link_class' => 'nav-link',
-              ) );
-		        ?>
               <li class="nav-item nav-item-don">
                 <a
                   href="https://activites.vivreenville.org/fr/dons/donate/faire-un-don/2946/"

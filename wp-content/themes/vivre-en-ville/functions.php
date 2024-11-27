@@ -79,6 +79,21 @@ function add_menu_list_item_class($classes, $item, $args) {
 	return $atts;
   }
 
+
+  function add_custom_html_to_nav_menu($items, $args) {
+    // Check the menu location if needed
+    if ($args->theme_location == 'primary') {
+        // Insert custom HTML between the menu items
+        $custom_html = '<li class="custom-html"><a href="#">Custom HTML Content</a></li>';
+        $items = str_replace('</li>', '</li>' . $custom_html, $items);
+    }
+    
+    return $items;
+}
+
+
+add_filter('wp_nav_menu_items', 'add_custom_html_to_nav_menu', 10, 2);
+
   /* Appel de la fonction en ajoutant le filter*/
   add_filter( 'nav_menu_link_attributes', 'add_menu_link_class', 1, 3 );
 
