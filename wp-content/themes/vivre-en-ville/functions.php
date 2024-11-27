@@ -80,19 +80,30 @@ function add_menu_list_item_class($classes, $item, $args) {
   }
 
 
-  function add_custom_html_to_nav_menu($items, $args) {
-    // Check the menu location if needed
+function add_custom_html_to_center_of_menu($items, $args) {
     if ($args->theme_location == 'left-menu') {
-        // Insert custom HTML between the menu items
-        $custom_html = '<li class="custom-html"><a href="#">Custom HTML Content</a></li>';
-        $items = str_replace('</li>', '</li>' . $custom_html, $items);
+        // Convert the menu items string into an array of <li> elements
+        $menu_items = explode('</li>', $items);
+
+        // Find the middle point (half of the total items)
+        $middle_index = count($menu_items) / 2;
+
+        // The custom HTML content you want to add
+        $custom_html = '<li class="custom-center-html"><a href="#">Custom HTML Content in the Center</a></li>';
+
+        // Insert the custom HTML at the middle point
+        array_splice($menu_items, $middle_index, 0, $custom_html);
+
+        // Rebuild the menu string and return it
+        $items = implode('</li>', $menu_items);
     }
     
     return $items;
 }
 
 
-add_filter('wp_nav_menu_items', 'add_custom_html_to_nav_menu', 10, 2);
+add_filter('wp_nav_menu_items', 'add_custom_html_to_center_of_menu', 10, 2);
+
 
   /* Appel de la fonction en ajoutant le filter*/
   add_filter( 'nav_menu_link_attributes', 'add_menu_link_class', 1, 3 );
