@@ -88,8 +88,7 @@
           </button>
 
           <!--navigation-->
-          <div id="mainNav" class="collapse navbar-collapse">
-            <ul class="navbar-nav mx-auto align-items-center">
+          
 
             <li class="nav-item">
                 <a href="news-hub.html" class="nav-link">Nouvelles</a>
@@ -134,8 +133,8 @@
               <li class="nav-item">
                 <a href="#" class="nav-link">EN</a>
               </li>
-            </ul>
-          </div>
+            
+          
         </div>
 	</nav>
 
