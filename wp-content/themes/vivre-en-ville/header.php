@@ -100,9 +100,9 @@
 		      	wp_nav_menu( array( 
               'theme_location' => 'left-menu',
               'depth' => 1,
-              'container' => 'div',
-              'container_class' => 'collapse navbar-collapse',
-              'container_id' => 'mainNav',
+              'container' => false,
+              'container_class' => false,
+              'container_id' => false,
               'menu_class' => 'navbar-nav mx-auto align-items-center',
               'list_item_class' => 'nav-item',
               'link_class' => 'nav-link',
