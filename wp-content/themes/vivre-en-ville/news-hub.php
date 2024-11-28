@@ -20,7 +20,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
             <h2 class="title__hero">Les nouvelles et les actualités</h2>
           </div>
 
-          <img class="img__hero" src="<?php bloginfo('template_url'); ?> /sources/img/nouvelles.jpg" alt="" />
+          <img class="img__hero" src="<?php bloginfo('template_url'); ?>/sources/img/nouvelles.jpg" alt="" />
         </div>
       </section>
 
@@ -29,7 +29,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
         <div class="grid__nouvelles__newshub">
           <div class="nouvelle__item__newshub">
             <img
-              src="<?php bloginfo('template_url'); ?> /sources/img/cout-demolition-maison-mitoyenne 1.png"
+              src="<?php bloginfo('template_url'); ?>/sources/img/cout-demolition-maison-mitoyenne 1.png"
               alt="News image"
               class="nouvelle__image"
             />
