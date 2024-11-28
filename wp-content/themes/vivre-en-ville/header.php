@@ -147,6 +147,7 @@
             </ul>
           </div>
         </div>
+        <?php the_field('libelle_du_bouton_en_savoir_plus'); ?>
 	</nav>
 
 	<?php 
