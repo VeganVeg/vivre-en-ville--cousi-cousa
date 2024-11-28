@@ -91,10 +91,6 @@
           <div id="mainNav" class="collapse navbar-collapse">
             <ul class="navbar-nav mx-auto align-items-center">
 
-            <li class="nav-item">
-                <a href="news-hub.html" class="nav-link">Nouvelles</a>
-            </li>
-
             <?php 
 			// Affiche un menu si dans le tableau de bord un menu a été défini dans cet emplacement
 		      	wp_nav_menu( array( 
