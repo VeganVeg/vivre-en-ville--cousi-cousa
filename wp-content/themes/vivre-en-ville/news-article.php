@@ -19,8 +19,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
         <div class="container__hero">
           <div class="content__hero">
             <h2 class="title__hero">
-              Stratégie québécoise en habitation: Québec reconnaît la crise,
-              mais sous-utilise les outils à sa disposition
+              <?php the_title() ?>
             </h2>
             <p class="date__hero">22 août 2024</p>
           </div>
@@ -36,14 +35,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
       <section class="news__content">
         <div class="container__content">
           <p class="para p1">
-            <span>Québec, le 22 août 2024</span> - Vivre en Ville accueille avec
-            intérêt la Stratégie québécoise en habitation dévoilée cet
-            après-midi par la ministre France-Élaine Duranceau. En déployant une
-            action interministérielle, le gouvernement du Québec reconnaît pour
-            une première fois l'envergure du problème et l'importance de
-            considérer une diversité de facteurs à l'origine de la crise de
-            l'habitation. Cela dit, la cible nationale de mises en chantier et
-            les moyens annoncés témoignent d'une timidité étonnante.
+            <?php the_content() ?>
           </p>
 
           <div class="next__chapter">
