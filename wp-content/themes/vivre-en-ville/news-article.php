@@ -39,13 +39,13 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
         <div class="article__btn">
           <div class="article__prec">
             <a class="" href="">
-              <button class="prec__btn">SAlut<?php the_field("libelle_du_bouton_article_precedent")?></button>
+              <button class="prec__btn"><?php the_field("libelle_du_bouton_article_precedent");?></button>
             </a>
           </div>
 
           <div class="article__prec">
             <a class="" href="">
-              <button class="prec__btn">Bye<?php the_field("libelle_du_bouton_article_suivant")?></button>
+              <button class="prec__btn"><?php the_field("libelle_du_bouton_article_suivant");?></button>
             </a>
           </div>
         </div>
