@@ -32,9 +32,24 @@ const swiper = new Swiper('.swiper', {
 const banniere = document.querySelector('.grid__banniere');
 const btn = document.querySelector('.btn__compris');
 
+function updateButton() {
+    const isClicked = localStorage.getItem('buttonState') === 'true';
+
+    if (isClicked) {
+        banniere.classList.add('grid__banniere--none');
+
+    }
+}
+
+
 btn.addEventListener('click', () => {
-    banniere.classList.add('grid__banniere--none')
+    localStorage.setItem('buttonState', 'true')
+
+    updateButton();
 });
+
+
+window.onload = updateButton;
 
 const don = document.querySelector('.btn__don')
 
