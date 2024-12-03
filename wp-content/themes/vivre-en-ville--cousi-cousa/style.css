@@ -1276,39 +1276,34 @@ footer .credit {
   }
 }
 
-.container__content .para {
+.container__content p {
   margin: 0 20px;
   color: #303030;
-}
-.container__content .p1 {
   font-size: 14px;
   font-weight: 500;
 }
-.container__content .p1 span {
+.container__content p span {
   font-weight: 700;
 }
-.container__content .para__subtitle {
-  font-size: 14px;
-  font-weight: 700;
-  color: #303030;
-  font-family: "Poppins", system-ui;
-  margin-bottom: 8px;
-}
-.container__content .p2 {
-  font-size: 14px;
-  font-weight: 500;
-}
-.container__content .p2 a {
+.container__content p a {
   color: #0BABDC;
   text-decoration: none;
 }
-.container__content .p2 a::after {
+.container__content p a::after {
   content: "";
   background-image: url("/wp-content/themes/vivre-en-ville--cousi-cousa/sources/icons/external-link.png");
   background-size: cover;
   width: 14px;
   height: 14px;
   display: inline-block;
+}
+.container__content h3 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #303030;
+  font-family: "Poppins", system-ui;
+  margin-bottom: 8px !important;
+  margin: 0 20px;
 }
 .container__content .p3 {
   font-size: 14px;
@@ -1348,20 +1343,22 @@ footer .credit {
   height: 14px;
   display: inline-block;
 }
-.container__content .news__list {
+.container__content ul {
   padding: 0 20px;
+  margin: 0 20px;
 }
-.container__content .news__list .list__item {
+.container__content ul li {
   margin-bottom: 10px;
 }
-.container__content .news__list .list__item p {
+.container__content ul li p {
   font-size: 14px;
   font-weight: 500;
+  margin: 0;
 }
-.container__content .news__list .list__item::marker {
+.container__content ul li::marker {
   color: #0BABDC;
 }
-.container__content .news__list .list__item:last-child {
+.container__content ul li:last-child {
   margin: 0;
 }
 .container__content .p8 {
@@ -1397,13 +1394,22 @@ footer .credit {
   text-decoration: none;
 }
 @media (min-width: 768px) {
-  .container__content .para {
+  .container__content p {
     font-size: 16px;
     margin: 0 28px;
   }
-  .container__content .para__subtitle {
-    margin-bottom: 12px;
+  .container__content p a::after {
+    content: "";
+    background-image: url("/wp-content/themes/vivre-en-ville--cousi-cousa/sources/icons/external-link.png");
+    background-size: cover;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+  }
+  .container__content h3 {
+    margin-bottom: 12px !important;
     font-size: 16px;
+    margin: 0 28px;
   }
   .container__content .p5 {
     margin-top: 28px;
@@ -1413,22 +1419,14 @@ footer .credit {
   .container__content .p8 {
     margin: 28px;
   }
-  .container__content .p2 a::after,
-  .container__content .p7 a::after {
-    content: "";
-    background-image: url("/wp-content/themes/vivre-en-ville--cousi-cousa/sources/icons/external-link.png");
-    background-size: cover;
-    width: 16px;
-    height: 16px;
-    display: inline-block;
-  }
-  .container__content .news__list {
+  .container__content ul {
     padding: 0 24px;
+    margin: 0 28px;
   }
-  .container__content .news__list .list__item {
+  .container__content ul li {
     margin-bottom: 15px;
   }
-  .container__content .news__list .list__item p {
+  .container__content ul li p {
     font-size: 16px;
     font-weight: 500;
   }
@@ -1449,12 +1447,21 @@ footer .credit {
   }
 }
 @media (min-width: 1400px) {
-  .container__content .para {
+  .container__content p {
     font-size: 20px;
     margin: 0 32px;
   }
-  .container__content .para__subtitle {
-    margin-bottom: 14px;
+  .container__content p a::after {
+    content: "";
+    background-image: url("/wp-content/themes/vivre-en-ville--cousi-cousa/sources/icons/external-link.png");
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+  }
+  .container__content h3 {
+    margin: 0 32px !important;
+    margin-bottom: 14px !important;
     font-size: 20px;
   }
   .container__content .p5 {
@@ -1465,22 +1472,13 @@ footer .credit {
   .container__content .p8 {
     margin: 32px;
   }
-  .container__content .p2 a::after,
-  .container__content .p7 a::after {
-    content: "";
-    background-image: url("/wp-content/themes/vivre-en-ville--cousi-cousa/sources/icons/external-link.png");
-    background-size: cover;
-    width: 20px;
-    height: 20px;
-    display: inline-block;
-  }
-  .container__content .news__list {
+  .container__content ul {
     padding: 0 28px;
   }
-  .container__content .news__list .list__item {
+  .container__content ul li {
     margin-bottom: 20px;
   }
-  .container__content .news__list .list__item p {
+  .container__content ul li p {
     font-size: 20px;
     font-weight: 500;
   }
