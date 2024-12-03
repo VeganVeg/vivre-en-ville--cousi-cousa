@@ -69,31 +69,15 @@
 }
 
 .container__content {
-    .para {
+    p {
         margin: 0 20px;
         color: variables.$charbon;
-    }
-
-    .p1 {
         font-size: 14px;
         font-weight: 500;
 
         span {
             font-weight: 700;
         }
-    }
-
-    .para__subtitle {
-        font-size: 14px;
-        font-weight: 700;
-        color: variables.$charbon;
-        font-family: 'Poppins', system-ui;
-        margin-bottom: 8px;
-    }
-
-    .p2 {
-        font-size: 14px;
-        font-weight: 500;
 
         a {
             color: variables.$bleu-ciel;
@@ -108,6 +92,16 @@
             height: 14px;
             display: inline-block;
         }
+    }
+
+
+    h3 {
+        font-size: 14px;
+        font-weight: 700;
+        color: variables.$charbon;
+        font-family: 'Poppins', system-ui;
+        margin-bottom: 8px !important;
+        margin: 0 20px;
     }
 
     .p3 {
@@ -156,23 +150,25 @@
         }
     }
 
-    .news__list {
+    ul {
         padding: 0 20px;
+        margin: 0 20px;
 
-        .list__item {
+        li {
             margin-bottom: 10px;
 
             p {
                 font-size: 14px;
                 font-weight: 500;
+                margin: 0;
             }
         }
 
-        .list__item::marker {
+        li::marker {
             color: variables.$bleu-ciel;
         }
 
-        .list__item:last-child {
+        li:last-child {
             margin: 0;
         }
     }
@@ -218,14 +214,24 @@
     }
 
     @media (min-width: 768px) {
-        .para {
+        p {
             font-size: 16px;
             margin: 0 28px;
+
+            a::after {
+                content: '';
+                background-image: url("/wp-content/themes/vivre-en-ville--cousi-cousa/sources/icons/external-link.png");
+                background-size: cover;
+                width: 16px;
+                height: 16px;
+                display: inline-block;
+            }
         }
 
-        .para__subtitle {
-            margin-bottom: 12px;
+        h3 {
+            margin-bottom: 12px !important;
             font-size: 16px;
+            margin: 0 28px;
         }
 
         .p5 {
@@ -238,22 +244,13 @@
             margin: 28px;
         }
 
-        .p2,
-        .p7 {
-            a::after {
-                content: '';
-                background-image: url("/wp-content/themes/vivre-en-ville--cousi-cousa/sources/icons/external-link.png");
-                background-size: cover;
-                width: 16px;
-                height: 16px;
-                display: inline-block;
-            }
-        }
 
-        .news__list {
+
+        ul {
             padding: 0 24px;
+            margin: 0 28px;
 
-            .list__item {
+            li {
                 margin-bottom: 15px;
 
                 p {
@@ -284,14 +281,25 @@
     }
 
     @media (min-width: 1400px) {
-        .para {
+        p {
             font-size: 20px;
             margin: 0 32px;
+
+            a::after {
+                content: '';
+                background-image: url("/wp-content/themes/vivre-en-ville--cousi-cousa/sources/icons/external-link.png");
+                background-size: cover;
+                width: 20px;
+                height: 20px;
+                display: inline-block;
+            }
         }
 
-        .para__subtitle {
-            margin-bottom: 14px;
+        h3 {
+            margin: 0 32px !important;
+            margin-bottom: 14px !important;
             font-size: 20px;
+
         }
 
         .p5 {
@@ -304,22 +312,12 @@
             margin: 32px;
         }
 
-        .p2,
-        .p7 {
-            a::after {
-                content: '';
-                background-image: url("/wp-content/themes/vivre-en-ville--cousi-cousa/sources/icons/external-link.png");
-                background-size: cover;
-                width: 20px;
-                height: 20px;
-                display: inline-block;
-            }
-        }
 
-        .news__list {
+
+        ul {
             padding: 0 28px;
 
-            .list__item {
+            li {
                 margin-bottom: 20px;
 
                 p {
