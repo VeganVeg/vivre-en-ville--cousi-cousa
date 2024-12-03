@@ -1357,7 +1357,7 @@ footer .credit {
   margin-bottom: 10px;
 }
 .container__content ul li p {
-  font-size: 14px !important;
+  font-size: 14px;
   font-weight: 500;
   margin: 0;
   font-family: "Poppins", system-ui;
