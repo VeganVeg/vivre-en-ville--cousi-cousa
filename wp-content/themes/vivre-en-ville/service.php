@@ -22,7 +22,6 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                     </div>
                     <div class="img__hero__wrapper">
                         <img class="img__hero" src="sources/img/three-people-talking.jpg" alt="Recherche et innovation">
-						<?php the_post_thumbnail(); ?>
                     </div>
                 </div>
             </section>
