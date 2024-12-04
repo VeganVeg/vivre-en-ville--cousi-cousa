@@ -14,8 +14,6 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 	
 		<?php if (!is_front_page()) : // Si nous ne sommes PAS sur la page d'accueil ?>
 		<?php endif; ?>
-		
-		<?php the_content(); // Contenu principal de la page ?>
 
 		<section class="services__hero">
                 <div class="container__hero">
@@ -36,7 +34,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                         au Québec et à l'international, la rencontre d'experts de domaines variés, la participation à de nombreux colloques et conférences ont permis à son équipe de développer une vision intégrée et des connaissances pointues sur les
                         différents aspects du développement viable des collectivités.
                     </p>
-                    <h4 class="service-list-title">Recherches en cours</h4>
+                    <h3 class="service-list-title">Recherches en cours</h3>
                     <ul class="service-list">
                         <li>Le contrôle de l'étalement urbain</li>
                         <li>L'aménagement de milieux de vie de qualité</li>
@@ -47,16 +45,16 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                         <li>La localisation des activités</li>
                         <li>Les questions sociales et la participation citoyenne, etc.</li>
                     </ul>
-                    <h4 class="service-subtitle">Missions de recherche</h4>
+                    <h3 class="service-subtitle">Missions de recherche</h3>
                     <p class="service-description">
                         L'équipe de Vivre en Ville effectue fréquemment des missions de recherche. Ces dernières sont destinées à étudier des exemples et pratiques ailleurs dans le monde afin d'alimenter la réflexion et de pouvoir transmettre ces connaissances aux acteurs québécois.
                     </p>
-                    <h4 class="service-subtitle">Innover sur le terrain</h4>
+                    <h3 class="service-subtitle">Innover sur le terrain</h3>
                     <p class="service-description">
                         À la fine pointe de la connaissance, Vivre en Ville met ses recherches à profit dans le cadre de projets pilotes afin de stimuler l'émergence de nombreux projets innovants. Inspirées des meilleures pratiques, nos idées prennent vie en partenariat avec
                         des acteurs motivés.
                     </p>
-                    <h4 class="service-list-title">Nos projets pilotes</h4>
+                    <h3 class="service-list-title">Nos projets pilotes</h3>
                     <ul class="service-list">
                         <li>Végétalisation du Centre culture et environnement Frédéric Back</li>
                         <li>Verdir un milieu de vie : Cœur vaillant</li>
