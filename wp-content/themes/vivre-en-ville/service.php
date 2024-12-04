@@ -15,7 +15,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 		<?php if (!is_front_page()) : // Si nous ne sommes PAS sur la page d'accueil ?>
 		<?php endif; ?>
 
-		<section class="services__hero">
+			<section class="services__hero">
                 <div class="container__hero">
                     <div class="content__hero__serviceshub">
                         <h2 class="title__hero"><?php the_title() ?></h2>
