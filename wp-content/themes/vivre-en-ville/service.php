@@ -30,7 +30,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                 <div class="service-content">
 					<?php the_content() ?>
                     
-                    <p class="service-description">
+                    <p class="">
                         Pour diffuser auprès des intervenants québécois les meilleurs exemples de développement de collectivités viables, Vivre en Ville mène depuis 20 ans des recherches approfondies dans ce domaine. Une veille scientifique permanente, des missions de recherche
                         au Québec et à l'international, la rencontre d'experts de domaines variés, la participation à de nombreux colloques et conférences ont permis à son équipe de développer une vision intégrée et des connaissances pointues sur les
                         différents aspects du développement viable des collectivités.
