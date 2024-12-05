@@ -1,7 +1,7 @@
 <?php 
 /**
  * 	Template Name: Équipe
- * 	Template Post Type: page, post, article
+ * 	Template Post Type: page, post, article, membre
  */
 
 get_header(); // Affiche header.php
