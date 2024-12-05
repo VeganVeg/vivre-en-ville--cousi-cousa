@@ -1,7 +1,7 @@
 <?php 
 /**
  * 	Template Name: Tous les services
- * 	Template Post Type: page, post, article
+ * 	Template Post Type: page, post, article, service
  */
 
 get_header(); // Affiche header.php
@@ -43,24 +43,31 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 
       <section class="services-hub__list">
         <div class="services-hub__container">
+          <?php 
+            $service = new WP_Query('post_type=service');
+            while ($service->have_posts()) : $service->the_post();
+            ?>
           <div class="services__bloc recherche-hub__bloc">
             <div class="services-hub__title recherche-hub__title">
-              Recherche et innovation
+              <?php the_title()?>
             </div>
             <div class="services-hub__txt recherche-hub__txt">
-              Explorer, diffuser et expérimenter les meilleures pratiques de
-              développement de collectivités viables.
+              <?php the_content()?>
             </div>
 
-            <img class="img-hub" src="<?php bloginfo('template_url'); ?>/sources/icons/microscope.png" alt="" />
+            <?php the_post_thumbnail(array('class' => 'img-hub')) ?>
           </div>
           <div class="services-hub__btn">
             <a href="service.html">
               <button class="btn">En savoir plus</button>
             </a>
           </div>
+          <?php
+            endwhile;
+            wp_reset_postdata();
+          ?>
 
-          <div class="services__bloc publication-hub__bloc">
+          <!--<div class="services__bloc publication-hub__bloc">
             <div class="services-hub__title publication-hub__title">
               Publication
             </div>
@@ -69,7 +76,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
               québécois dans leurs projets.
             </div>
 
-            <img class="img-hub" src="<?php bloginfo('template_url'); ?>/sources/icons/news.png" alt="" />
+            
           </div>
           <div class="services-hub__btn">
             <a class="" href="">
@@ -86,7 +93,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
               missions sur de nombreux thèmes liés aux collectivités viables.
             </div>
 
-            <img class="img-hub" src="<?php bloginfo('template_url'); ?>/sources/icons/diploma.png" alt="" />
+            
           </div>
           <div class="services-hub__btn">
             <a class="" href="">
@@ -104,7 +111,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
               d'avant-garde.
             </div>
 
-            <img class="img-hub" src="<?php bloginfo('template_url'); ?>/sources/icons/ampoule.png" alt="" />
+            
           </div>
           <div class="services-hub__btn">
             <a class="" href="">
@@ -121,13 +128,13 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
               vulgarisation.
             </div>
 
-            <img class="img-hub" src="<?php bloginfo('template_url'); ?>/sources/icons/annonce.png" alt="" />
+            
           </div>
           <div class="services-hub__btn">
             <a class="" href="">
               <button class="btn">En savoir plus</button>
             </a>
-          </div>
+          </div>-->
         </div>
       </section>
 
