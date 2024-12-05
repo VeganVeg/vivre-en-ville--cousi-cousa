@@ -21,7 +21,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                         <h2 class="title__hero"><?php the_title() ?></h2>
                     </div>
                     <div class="img__hero__wrapper">
-                        <img class="img__hero" src="sources/img/three-people-talking.jpg" alt="Recherche et innovation">
+                        <img class="img__hero" src="sources/img/innovation.png" alt="Recherche et innovation">
                     </div>
                 </div>
             </section>
