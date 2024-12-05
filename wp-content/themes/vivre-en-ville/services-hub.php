@@ -47,11 +47,11 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
             $service = new WP_Query('post_type=service');
             while ($service->have_posts()) : $service->the_post();
             ?>
-          <div class="services__bloc recherche-hub__bloc">
-            <div class="services-hub__title recherche-hub__title">
+          <div class="services__bloc <?php the_field('choix_de_classe')?>-hub__bloc">
+            <div class="services-hub__title <?php the_field('choix_de_classe')?>-hub__title">
               <?php the_title()?>
             </div>
-            <div class="services-hub__txt recherche-hub__txt">
+            <div class="services-hub__txt <?php the_field('choix_de_classe')?>-hub__txt">
               <?php the_content()?>
             </div>
 
