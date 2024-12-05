@@ -2024,6 +2024,11 @@ main {
 .error__container .logo-error {
   color: #8DC63F;
 }
+.error__container .gif-404 img {
+  margin: 25px;
+  width: 50%;
+  height: 50%;
+}
 @media (min-width: 768px) {
   .error {
     margin-top: 15%;
@@ -2033,6 +2038,11 @@ main {
   }
   .error__container h2 {
     font-size: 40px;
+  }
+  .error__container .gif-404 img {
+    margin: 10px;
+    width: 30%;
+    height: 30%;
   }
 }
 @media (min-width: 1400px) {
