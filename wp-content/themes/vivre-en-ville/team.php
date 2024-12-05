@@ -1,7 +1,7 @@
 <?php 
 /**
  * 	Template Name: Équipe
- * 	Template Post Type: page, post, article, membre,
+ * 	Template Post Type: page, post, article,
  */
 
 get_header(); // Affiche header.php
@@ -35,7 +35,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
       </section>
 
       <section class="team">
-        <h1>Notre Équipe</h1>
+        <h1><?php the_title(); ?></h1>
         <div class="team_profile">
           <?php 
             $membre = new WP_Query('post_type=membre');
