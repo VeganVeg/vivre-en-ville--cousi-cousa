@@ -18,6 +18,7 @@
     border: 1px solid variables.$charbon;
     margin: 10px;
     align-self: center;
+    height: 100%;
     width: 90%;
   }
   h2 {
@@ -30,12 +31,6 @@
     font-size: 14px;
   }
   .mission {
-    margin: 15px;
-  }
-  .next__chapter {
-    margin-top: 5px;
-  }
-  .approche {
     margin: 15px;
     li {
       font-size: 14px;
@@ -56,6 +51,10 @@
       list-style-type: none;
     }
   }
+  .next__chapter {
+    margin-top: 5px;
+  }
+
   @media (min-width: 768px) {
     h1 {
       font-size: 35px;
@@ -93,6 +92,7 @@
       margin: 35px;
     }
     img {
+      height: 50%;
       width: 50%;
     }
     h2 {
