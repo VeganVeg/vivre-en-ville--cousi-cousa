@@ -1858,6 +1858,7 @@ main {
 }
 .services__bloc .img-hub,
 .services__bloc .size-img-hub {
+  height: 50px;
   width: 50px;
 }
 @media (min-width: 768px) {
@@ -1875,6 +1876,7 @@ main {
   }
   .services__bloc .img-hub,
   .services__bloc .size-img-hub {
+    height: 60px;
     width: 60px;
   }
 }
@@ -1893,6 +1895,7 @@ main {
   }
   .services__bloc .img-hub,
   .services__bloc .size-img-hub {
+    height: 70px;
     width: 70px;
   }
 }
