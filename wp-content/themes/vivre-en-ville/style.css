@@ -379,13 +379,16 @@ footer .credit {
 .grid__carrousel .swiper .swiper__img {
   width: 100%;
   max-height: 30vh;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .grid__carrousel .swiper .swiper__img__ordi {
-  object-position: 0% 25%;
+  -o-object-position: 0% 25%;
+     object-position: 0% 25%;
 }
 .grid__carrousel .swiper .swiper__img__champ {
-  object-position: 0% 25%;
+  -o-object-position: 0% 25%;
+     object-position: 0% 25%;
 }
 .grid__carrousel .swiper .swiper__bg {
   display: flex;
@@ -426,10 +429,12 @@ footer .credit {
   .grid__carrousel .swiper .swiper__img {
     width: 100%;
     max-height: 45vh;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .grid__carrousel .swiper .swiper__img__ordi {
-    object-position: 0% 25%;
+    -o-object-position: 0% 25%;
+       object-position: 0% 25%;
   }
   .grid__carrousel .swiper .swiper__bg {
     height: 60px;
@@ -460,13 +465,16 @@ footer .credit {
   .grid__carrousel .swiper .swiper__img {
     width: 100%;
     max-height: 60vh;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .grid__carrousel .swiper .swiper__img__ordi {
-    object-position: 0% 25%;
+    -o-object-position: 0% 25%;
+       object-position: 0% 25%;
   }
   .grid__carrousel .swiper .swiper__img__champ {
-    object-position: 0% 23%;
+    -o-object-position: 0% 23%;
+       object-position: 0% 23%;
   }
 }
 
@@ -962,7 +970,8 @@ footer .credit {
 .temoignage__photo {
   width: 60px;
   border-radius: 50%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .temoignage__nom {
   font-family: "Inter", sans-serif;
@@ -1088,7 +1097,8 @@ footer .credit {
 .nouvelle__image {
   width: 100px;
   height: 100px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .nouvelle__content {
   display: flex;
@@ -1252,7 +1262,8 @@ footer .credit {
 }
 .container__hero .img__hero {
   width: 50%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (min-width: 768px) {
   .container__hero .content__hero {
@@ -1605,7 +1616,8 @@ footer .credit {
 }
 .container__hero .img__hero {
   width: 50%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (min-width: 768px) {
   .container__hero .content__hero__newshub {
@@ -2494,7 +2506,8 @@ main {
   width: 100%;
   height: 100%;
   max-width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (min-width: 768px) {
   .services__hero .container__hero {
@@ -2660,6 +2673,8 @@ main {
   color: #8DC63F;
 }
 .team .team_profile img {
+  -o-object-fit: contain;
+     object-fit: contain;
   width: 15%;
   align-self: flex-end;
 }
