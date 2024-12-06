@@ -44,17 +44,17 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
           <div class="<?php the_field('name')?>" id="<?php the_field('id_choice')?>">
             <div class="w3-container">
               <button
-                onclick="document.getElementById('id01').style.display='block'"
+                onclick="document.getElementById('<?php the_field('choix_du_id') ?>').style.display='block'"
                 class="w3-button"
               >
                 En savoir Plus
               </button>
 
-              <div id="id01" class="w3-modal">
+              <div id="<?php the_field('choix_du_id') ?>" class="w3-modal">
                 <div class="w3-modal-content w3-animate-zoom">
                   <div class="w3-container">
                     <span
-                      onclick="document.getElementById('id01').style.display='none'"
+                      onclick="document.getElementById('<?php the_field('choix_du_id') ?>').style.display='none'"
                       class="w3-button w3-display-topright"
                       id="button-x"
                       >&times;</span
