@@ -2285,13 +2285,13 @@ main {
     font-size: 30px;
   }
   .a-propos p {
-    font-size: 15px;
+    font-size: 16px;
   }
   .a-propos .mission {
     margin: 30px;
   }
   .a-propos .mission li {
-    font-size: 15px;
+    font-size: 16px;
   }
   .a-propos .mission li::after {
     content: "▢";
