@@ -286,12 +286,12 @@ footer .credit {
   display: none;
   width: 100%;
   background-color: #303030;
-  border-bottom-right-radius: 15px;
-  border-bottom-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
   padding: 20px 30px;
   position: fixed;
   z-index: 15;
-  bottom: -15%;
+  bottom: -30%;
 }
 .grid__banniere--none {
   display: none;

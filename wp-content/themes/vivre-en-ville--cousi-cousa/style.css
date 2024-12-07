@@ -291,7 +291,7 @@ footer .credit {
   padding: 20px 30px;
   position: fixed;
   z-index: 15;
-  bottom: -15%;
+  bottom: -30%;
 }
 .grid__banniere--none {
   display: none;
