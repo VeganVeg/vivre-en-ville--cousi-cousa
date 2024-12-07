@@ -37,8 +37,14 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
       <section class="team">
         <h1><?php the_title(); ?></h1>
         <div class="team_profile">
-          <?php 
-            $membre = new WP_Query('post_type=membre');
+          <?php
+            $arguments = array(
+              'post_type' => 'membre',
+              'order' => 'ASC',
+              'orderby' => 'date'
+            );
+
+            $membre = new WP_Query($arguments);
             while ($membre->have_posts()) : $membre->the_post();
           ?>
           <div class="<?php the_field('name')?>" id="<?php the_field('id_choice')?>">
