@@ -2290,13 +2290,10 @@ main {
   .a-propos .mission {
     margin: 30px;
   }
-  .a-propos .approche {
-    margin: 30px;
-  }
-  .a-propos .approche li {
+  .a-propos .mission li {
     font-size: 15px;
   }
-  .a-propos .approche li::after {
+  .a-propos .mission li::after {
     content: "▢";
     position: absolute;
     left: -20px;
@@ -2320,14 +2317,12 @@ main {
   }
   .a-propos .mission {
     margin: 40px;
-  }
-  .a-propos .approche {
     margin: 40px;
   }
-  .a-propos .approche li {
+  .a-propos .mission li {
     font-size: 18px;
   }
-  .a-propos .approche li::after {
+  .a-propos .mission li::after {
     content: "▢";
     position: absolute;
     left: -25px;
