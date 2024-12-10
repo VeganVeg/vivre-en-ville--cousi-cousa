@@ -61,7 +61,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
               class="nouvelle__image"
             />
             <div class="nouvelle__content">
-              <h3 class="">Événement de la rentrée 2024</h3>
+              <h3 class="nouvelle__titre">Événement de la rentrée 2024</h3>
               <p class="nouvelle__date">13 août 2024</p>
               <div class="nouvelle__esp nouvelle__lien">
                 <a
@@ -95,7 +95,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
               class="nouvelle__image"
             />
             <div class="nouvelle__content">
-              <h3 class="">
+              <h3 class="nouvelle__titre">
                 Étude Léger sur le marché résidentiel locatif: Du jamais vu à
                 Montréal - Les données 2024 rappellent l'urgence du besoin de
                 transparence pour le bon fonctionnement du marché résidentiel
@@ -130,7 +130,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
             <img
               src="<?php bloginfo('template_url'); ?>/sources/img/tramway.png" alt="News image" class="nouvelle__image"/>
             <div class="nouvelle__content">
-              <h3 class="">
+              <h3 class="nouvelle__titre">
                 Entente avec CDPQ sur le tramway de Québec: un pas important
                 vers la réalisation du projet
               </h3>
