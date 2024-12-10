@@ -1955,6 +1955,29 @@ footer .credit {
   grid-template-columns: auto 1fr auto;
   align-items: center;
 }
+.nouvelle__item__newshub .nouvelle__content h3 {
+  font-size: 16px;
+  margin-bottom: 0;
+  margin-top: 0;
+  color: #303030;
+  max-width: 500px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: "Inter", sans-serif;
+}
+@media (min-width: 768px) {
+  .nouvelle__item__newshub .nouvelle__content h3 {
+    font-size: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .nouvelle__item__newshub .nouvelle__content h3 {
+    font-size: 24px;
+  }
+}
 
 .plus__container {
   display: flex;
