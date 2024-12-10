@@ -37,8 +37,8 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
               class="nouvelle__image"/>
             <div class="nouvelle__content">
 
-              <h3 class=""><?php the_title() ?></h3>
-              <p class=""><?php the_content() ?></p>
+              <h3><?php the_title() ?></h3>
+              <p><?php the_content() ?></p>
               <div class="nouvelle__esp nouvelle__lien">
                 <a class="link__button" href="news-article.html" target="">
                   <button class="esp">En savoir plus</button></a
