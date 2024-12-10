@@ -159,18 +159,13 @@
                 >
               </li>
               <li class="nav-item">
-  <?php 
-  $languages = wpm_get_languages();
-  $current_language = wpm_get_language();
-  foreach ($languages as $code => $language) {
-    if ($code != $current_language) {
-      $url = wpm_translate_current_url($code);
-      echo '<a href="' . esc_url($url) . '" class="nav-link">' . esc_html(strtoupper($code)) . '</a>';
-      break;
-    }
-  }
-  ?>
+  <?php if (wpm_get_language() == 'fr') : ?>
+    <a href="<?php echo wpm_translate_url('', 'en'); ?>" class="nav-link">EN</a>
+  <?php else : ?>
+    <a href="<?php echo wpm_translate_url('', 'fr'); ?>" class="nav-link">FR</a>
+  <?php endif; ?>
 </li>
+
 
 
 
