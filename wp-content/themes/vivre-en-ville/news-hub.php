@@ -26,6 +26,10 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
       <section class="nouvelles">
         
         <div class="grid__nouvelles__newshub">
+        <?php 
+                $nouvelle = new WP_Query('post_type=nouvelle');
+                while ($nouvelle->have_post()) : $nouvelle->the_post();
+              ?>
           <div class="nouvelle__item__newshub">
             <img
               src="<?php bloginfo('template_url'); ?>/sources/img/cout-demolition-maison-mitoyenne 1.png"
@@ -33,21 +37,13 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
               class="nouvelle__image"/>
             <div class="nouvelle__content">
 
-              <?php 
-                $nouvelle = new WP_Query('post_type=nouvelle');
-                while ($nouvelle->have_post()) : $nouvelle->the_post();
-              ?>
               <h3 class=""><?php the_title() ?></h3>
-              <p class="">22 août 2024</p>
+              <p class=""><?php the_content() ?></p>
               <div class="nouvelle__esp nouvelle__lien">
                 <a class="link__button" href="news-article.html" target="">
                   <button class="esp">En savoir plus</button></a
                 >
               </div>
-              <?php 
-              endwhile;
-              wp_reset_postdata();
-              ?>
             </div>
             <div class="nouvelle__btn">
               <div class="nouvelle__esp nouvelle__lien-none">
@@ -57,6 +53,10 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
               </div>
             </div>
           </div>
+          <?php 
+              endwhile;
+              wp_reset_postdata();
+              ?>
 
           <div class="nouvelle__separation"></div>
 
