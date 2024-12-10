@@ -1097,10 +1097,9 @@ footer .credit {
   justify-content: center;
   padding-left: 15px;
 }
-.nouvelle h3 {
+.nouvelle__titre {
   font-size: 16px;
   margin-bottom: 0;
-  margin-top: 0;
   color: #303030;
   max-width: 500px;
   display: -webkit-box;
@@ -1168,7 +1167,7 @@ footer .credit {
   .nouvelle__lien-none {
     display: block;
   }
-  .nouvelle h3 {
+  .nouvelle__titre {
     font-size: 20px;
   }
   .nouvelle__date {
@@ -1200,7 +1199,7 @@ footer .credit {
   .nouvelle__content {
     padding-left: 30px;
   }
-  .nouvelle h3 {
+  .nouvelle__titre {
     font-size: 24px;
     max-width: 850px;
   }

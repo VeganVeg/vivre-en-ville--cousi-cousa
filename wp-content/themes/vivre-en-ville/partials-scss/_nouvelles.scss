@@ -46,10 +46,9 @@
         padding-left: 15px;
     }
 
-    h3 {
+    &__titre {
         font-size: 16px;
         margin-bottom: 0;
-        margin-top: 0;
         color: variables.$charbon;
         max-width: 500px;
         display: -webkit-box;
@@ -133,9 +132,8 @@
             display: block;
         }
 
-        h3 {
+        &__titre {
             font-size: 20px;
-
         }
 
         &__date {
@@ -178,7 +176,7 @@
             padding-left: 30px;
         }
 
-        h3 {
+        &__titre {
             font-size: 24px;
             max-width: 850px;
         }
