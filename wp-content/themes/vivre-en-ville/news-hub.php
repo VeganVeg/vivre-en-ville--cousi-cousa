@@ -36,7 +36,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                 Stratégie québécoise en habitation: Québec reconnaît la crise,
                 mais sous-utilise les outils à sa disposition
               </h3>
-              <p class="nouvelle__date">22 août 2024</p>
+              <p class="">22 août 2024</p>
               <div class="nouvelle__esp nouvelle__lien">
                 <a class="link__button" href="news-article.html" target="">
                   <button class="esp">En savoir plus</button></a
@@ -62,7 +62,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
             />
             <div class="nouvelle__content">
               <h3 class="">Événement de la rentrée 2024</h3>
-              <p class="nouvelle__date">13 août 2024</p>
+              <p class="">13 août 2024</p>
               <div class="nouvelle__esp nouvelle__lien">
                 <a
                   class="link__button"
@@ -100,7 +100,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                 Montréal - Les données 2024 rappellent l'urgence du besoin de
                 transparence pour le bon fonctionnement du marché résidentiel
               </h3>
-              <p class="nouvelle__date">22 août 2024</p>
+              <p class="">22 août 2024</p>
               <div class="nouvelle__esp nouvelle__lien">
                 <a
                   class="link__button"
@@ -134,7 +134,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                 Entente avec CDPQ sur le tramway de Québec: un pas important
                 vers la réalisation du projet
               </h3>
-              <p class="nouvelle__date">9 octobre 2024</p>
+              <p class="">9 octobre 2024</p>
               <div class="nouvelle__esp nouvelle__lien">
                 <a
                   class="link__button"
