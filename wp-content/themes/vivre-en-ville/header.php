@@ -165,6 +165,8 @@
     <a href="<?php echo wpm_translate_url('', 'fr'); ?>" class="nav-link">FR</a>
   <?php endif; ?>
 </li>
+
+
  <!-- <li class="nav-item">
 <a href="#" class="nav-link">EN</a> -->
 </li>
