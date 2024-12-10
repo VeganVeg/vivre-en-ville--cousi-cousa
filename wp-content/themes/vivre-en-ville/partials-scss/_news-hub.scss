@@ -30,10 +30,9 @@
         }
     }
 
-    .img__hero,
     .size-img__hero {
-        width: 50% !important;
-        object-fit: cover !important;
+        width: 50%;
+        object-fit: cover;
     }
 
     @media (min-width: 768px) {
