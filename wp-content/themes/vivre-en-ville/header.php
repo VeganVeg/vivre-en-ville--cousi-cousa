@@ -159,8 +159,16 @@
                 >
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">EN</a>
-              </li>
+    <?php
+    $current_lang = apply_filters('wpml_current_language', null);
+    $switch_lang = ($current_lang == 'fr') ? 'en' : 'fr';
+    $switch_url = apply_filters('wpml_permalink', get_permalink(), $switch_lang);
+    $switch_text = ($current_lang == 'fr') ? 'EN' : 'FR';
+    ?>
+    <a href="<?php echo esc_url($switch_url); ?>" class="nav-link">
+        <?php echo $switch_text; ?>
+    </a>
+</li>
             </ul>
           </div>
         </div>
