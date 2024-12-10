@@ -1606,6 +1606,7 @@ footer .credit {
 .container__hero .size-img__hero,
 .container__hero .img__hero {
   width: 50%;
+  height: 100%;
   object-fit: cover;
 }
 @media (min-width: 768px) {
