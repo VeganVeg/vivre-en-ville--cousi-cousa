@@ -32,16 +32,22 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
               alt="News image"
               class="nouvelle__image"/>
             <div class="nouvelle__content">
-              <h3 class="">
-                Stratégie québécoise en habitation: Québec reconnaît la crise,
-                mais sous-utilise les outils à sa disposition
-              </h3>
+
+              <?php 
+                $nouvelle = new WP_Query('post_type=nouvelle');
+                while ($nouvelle->have_post()) : $nouvelle->the_post();
+              ?>
+              <h3 class=""><?php the_title() ?></h3>
               <p class="">22 août 2024</p>
               <div class="nouvelle__esp nouvelle__lien">
                 <a class="link__button" href="news-article.html" target="">
                   <button class="esp">En savoir plus</button></a
                 >
               </div>
+              <?php 
+              endwhile;
+              wp_reset_postdata();
+              ?>
             </div>
             <div class="nouvelle__btn">
               <div class="nouvelle__esp nouvelle__lien-none">
