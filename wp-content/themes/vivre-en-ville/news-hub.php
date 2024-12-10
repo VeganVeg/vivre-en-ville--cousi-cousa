@@ -32,7 +32,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
               alt="News image"
               class="nouvelle__image"/>
             <div class="nouvelle__content">
-              <h3 class="">
+              <h3 class="nouvelle__titre">
                 Stratégie québécoise en habitation: Québec reconnaît la crise,
                 mais sous-utilise les outils à sa disposition
               </h3>
