@@ -20,7 +20,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
             <h2 class="title__hero"><?php the_title() ?></h2>
           </div>
 
-          <?php the_post_thumbnail(array('class' => 'img__hero')) ?>
+          <?php the_post_thumbnail('full', array('class' => 'img__hero')) ?>
         </div>
       </section>
 
