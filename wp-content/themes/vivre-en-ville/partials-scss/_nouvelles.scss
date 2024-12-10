@@ -46,7 +46,7 @@
         padding-left: 15px;
     }
 
-    &__titre {
+    h3 {
         font-size: 16px;
         margin-bottom: 0;
         color: variables.$charbon;
@@ -132,7 +132,7 @@
             display: block;
         }
 
-        &__titre {
+        h3 {
             font-size: 20px;
         }
 
@@ -176,7 +176,7 @@
             padding-left: 30px;
         }
 
-        &__titre {
+        h3 {
             font-size: 24px;
             max-width: 850px;
         }
