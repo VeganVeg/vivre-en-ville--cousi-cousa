@@ -168,6 +168,9 @@
     <a href="<?php echo esc_url($switch_url); ?>" class="nav-link">
         <?php echo $switch_text; ?>
     </a>
+    <!-- <li class="nav-item">
+<a href="#" class="nav-link">EN</a> -->
+</li>
 </li>
             </ul>
           </div>
