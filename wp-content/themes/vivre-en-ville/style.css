@@ -1973,9 +1973,10 @@ footer .credit {
     font-size: 20px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1400px) {
   .nouvelle__item__newshub .nouvelle__content h3 {
     font-size: 24px;
+    max-width: 850px;
   }
 }
 
