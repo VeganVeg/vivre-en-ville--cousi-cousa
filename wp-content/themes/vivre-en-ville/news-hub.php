@@ -14,10 +14,10 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 	
 		<?php if (!is_front_page()) : // Si nous ne sommes PAS sur la page d'accueil ?>
 		<?php endif; ?>
-		<section class="news__hero">
+		  <section class="news__hero">
         <div class="container__hero">
           <div class="content__hero__newshub">
-            <h2 class="title__hero">Les nouvelles et les actualités</h2>
+            <h2 class="title__hero"><?php the_title() ?></h2>
           </div>
 
           <img class="img__hero" src="<?php bloginfo('template_url'); ?>/sources/img/nouvelles.jpg" alt="" />
@@ -31,8 +31,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
             <img
               src="<?php bloginfo('template_url'); ?>/sources/img/cout-demolition-maison-mitoyenne 1.png"
               alt="News image"
-              class="nouvelle__image"
-            />
+              class="nouvelle__image"/>
             <div class="nouvelle__content">
               <h3 class="nouvelle__titre">
                 Stratégie québécoise en habitation: Québec reconnaît la crise,

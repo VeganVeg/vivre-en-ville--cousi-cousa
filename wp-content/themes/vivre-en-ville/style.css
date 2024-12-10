@@ -1591,7 +1591,7 @@ footer .credit {
   justify-content: center;
   flex-direction: column;
 }
-.container__hero .content__hero__newshub .title__hero {
+.container__hero .content__hero__newshub h2 {
   font-size: 20px;
   font-family: "Inter", sans-serif;
   font-weight: 600;
@@ -1612,7 +1612,7 @@ footer .credit {
     padding: 20px;
     align-items: center;
   }
-  .container__hero .content__hero__newshub .title__hero {
+  .container__hero .content__hero__newshub h2 {
     font-size: 26px;
   }
   .container__hero .content__hero__newshub .date__hero {
@@ -1627,7 +1627,7 @@ footer .credit {
   .container__hero .content__hero__newshub {
     padding: 0 60px;
   }
-  .container__hero .content__hero__newshub .title__hero {
+  .container__hero .content__hero__newshub h2 {
     font-size: 36px;
     font-weight: 500;
   }

@@ -15,7 +15,7 @@
         justify-content: center;
         flex-direction: column;
 
-        .title__hero {
+        h2 {
             font-size: 20px;
             font-family: 'Inter', sans-serif;
             font-weight: 600;
@@ -40,7 +40,7 @@
             padding: 20px;
             align-items: center;
 
-            .title__hero {
+            h2 {
                 font-size: 26px;
             }
 
@@ -57,7 +57,7 @@
         .content__hero__newshub {
             padding: 0 60px;
 
-            .title__hero {
+            h2 {
                 font-size: 36px;
                 font-weight: 500;
             }
