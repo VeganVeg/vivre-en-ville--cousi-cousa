@@ -1603,7 +1603,7 @@ footer .credit {
   color: #0BABDC;
   margin: 0;
 }
-.container__hero .img__hero {
+.container__hero .size-img__hero {
   width: 50%;
   object-fit: cover;
 }
