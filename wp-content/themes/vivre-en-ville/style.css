@@ -1060,7 +1060,7 @@ footer .credit {
   display: flex;
   flex-direction: column;
 }
-.nouvelles__titre {
+.nouvelles h2 {
   text-align: center;
   font-size: 22px;
   font-weight: 500;
