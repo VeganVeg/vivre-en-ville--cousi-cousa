@@ -24,7 +24,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
       </section>
 
       <section class="nouvelles">
-        <?php the_content() ?>
+        
         <div class="grid__nouvelles__newshub">
           <div class="nouvelle__item__newshub">
             <img
