@@ -465,14 +465,34 @@
                 overflow: hidden;
                 text-overflow: ellipsis;
                 font-family: 'Inter', sans-serif;
+            }
 
-                @media (min-width: 768px) {
+            p {
+                font-size: 14px;
+                color: variables.$bleu-ciel;
+                margin-bottom: 9px;
+            }
+
+            @media (min-width: 768px) {
+                h3 {
                     font-size: 20px;
                 }
 
-                @media (min-width: 1400px) {
+                p {
+                    font-size: 16px;
+                    margin-bottom: 0;
+                }
+
+            }
+
+            @media (min-width: 1400px) {
+                h3 {
                     font-size: 24px;
                     max-width: 850px;
+                }
+
+                p {
+                    font-size: 18px;
                 }
             }
         }

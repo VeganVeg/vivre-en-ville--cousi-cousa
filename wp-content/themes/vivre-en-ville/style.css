@@ -1968,15 +1968,27 @@ footer .credit {
   text-overflow: ellipsis;
   font-family: "Inter", sans-serif;
 }
+.nouvelle__item__newshub .nouvelle__content p {
+  font-size: 14px;
+  color: #0BABDC;
+  margin-bottom: 9px;
+}
 @media (min-width: 768px) {
   .nouvelle__item__newshub .nouvelle__content h3 {
     font-size: 20px;
+  }
+  .nouvelle__item__newshub .nouvelle__content p {
+    font-size: 16px;
+    margin-bottom: 0;
   }
 }
 @media (min-width: 1400px) {
   .nouvelle__item__newshub .nouvelle__content h3 {
     font-size: 24px;
     max-width: 850px;
+  }
+  .nouvelle__item__newshub .nouvelle__content p {
+    font-size: 18px;
   }
 }
 
