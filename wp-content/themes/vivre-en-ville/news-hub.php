@@ -1,7 +1,7 @@
 <?php 
 /**
  * 	Template Name: Tous les articles
- * 	Template Post Type: page, post, article, nouvelle
+ * 	Template Post Type: page, post, article
  */
 
 get_header(); // Affiche header.php
@@ -60,7 +60,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 
           <div class="nouvelle__separation"></div>
 
-          <div class="nouvelle__item__newshub">
+      <!--<div class="nouvelle__item__newshub">
             <img
               src="<?php bloginfo('template_url'); ?>/sources/img/evenement_rentree.png"
               alt="News image"
@@ -160,7 +160,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                   <button class="esp">En savoir plus</button></a>
               </div>
             </div>
-          </div>
+          </div>-->
 
           <div class="plus__container">
             <a href="">
