@@ -24,17 +24,14 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
       </section>
 
       <section class="nouvelles">
-        
+        <?php the_content() ?>
         <div class="grid__nouvelles__newshub">
         <?php 
                 $nouvelle = new WP_Query('post_type=nouvelle');
                 while ($nouvelle->have_post()) : $nouvelle->the_post();
               ?>
           <div class="nouvelle__item__newshub">
-            <img
-              src="<?php bloginfo('template_url'); ?>/sources/img/cout-demolition-maison-mitoyenne 1.png"
-              alt="News image"
-              class="nouvelle__image"/>
+          <?php the_post_thumbnail() ?>
             <div class="nouvelle__content">
 
               <h3><?php the_title() ?></h3>

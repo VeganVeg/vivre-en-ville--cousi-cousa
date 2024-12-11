@@ -1955,6 +1955,23 @@ footer .credit {
   grid-template-columns: auto 1fr auto;
   align-items: center;
 }
+.nouvelle__item__newshub img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+@media (min-width: 768px) {
+  .nouvelle__item__newshub img {
+    width: 120px;
+    height: 120px;
+  }
+}
+@media (min-width: 1400px) {
+  .nouvelle__item__newshub img {
+    width: 150px;
+    height: 150px;
+  }
+}
 .nouvelle__item__newshub .nouvelle__content h3 {
   font-size: 16px;
   margin-bottom: 0;
