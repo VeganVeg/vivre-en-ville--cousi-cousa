@@ -24,9 +24,12 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
         </div>
       </section>
 
+    
       <section class="nouvelles">
         <?php the_content() ?>
         <div class="grid__nouvelles__newshub">
+        <div class="nouvelle__separation"></div>
+        <!-- Boucle de tout les articles -->
         <?php 
             $nouvelle = new WP_Query('post_type=nouvelle');
             while ($nouvelle->have_posts()) : $nouvelle->the_post();
@@ -45,17 +48,19 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
               <div class="nouvelle__btn">
                 <div class="nouvelle__esp nouvelle__lien-none">
                   <a class="link__button" href="news-article.html" target="">
+                    <!-- Bouton en savoir plus -->
                     <button class="esp"><?php the_field('libelle_du_bouton_en_savoir_plus')?></button></a
                   >
                 </div>
               </div>
           </div>
+          <div class="nouvelle__separation"></div>
           <?php
             endwhile;
             wp_reset_postdata();
           ?>
 
-          <div class="nouvelle__separation"></div>
+          
 
           <div class="plus__container">
             <a href="">
