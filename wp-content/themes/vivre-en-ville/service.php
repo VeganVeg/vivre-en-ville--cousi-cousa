@@ -33,7 +33,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
             </section>
             <div class="service__btn-wrapper">
                 <a class="service__link" href="#" target="_blank"> <!--service-page.html-->
-                    <button class="service__btn">Suivant</button>
+                    <button class="service__btn"><?php the_field('libelle_du_bouton_en_savoir_plus')?></button>
                 </a>
             </div>
 	

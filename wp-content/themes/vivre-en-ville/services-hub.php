@@ -16,7 +16,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
       <section class="news__hero">
         <div class="container__hero">
           <div class="content__hero__newshub">
-            <h2 class="title__hero">Nos services offerts</h2>
+            <h2 class="title__hero"><?php the_title() ?></h2>
           </div>
 
           <img class="img__hero" src="<?php bloginfo('template_url'); ?>/sources/img/services.jpg" alt="" />
@@ -48,75 +48,6 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
             endwhile;
             wp_reset_postdata();
           ?>
-
-          <!--<div class="services__bloc publication-hub__bloc">
-            <div class="services-hub__title publication-hub__title">
-              Publication
-            </div>
-            <div class="services-hub__txt publication-hub__txt">
-              Des outils pour renforcer l'expertise et inspirer les intervenants
-              québécois dans leurs projets.
-            </div>
-
-            
-          </div>
-          <div class="services-hub__btn">
-            <a class="" href="">
-              <button class="btn">En savoir plus</button>
-            </a>
-          </div>
-
-          <div class="services__bloc formation-hub__bloc">
-            <div class="services-hub__title formation-hub__title">
-              Formation
-            </div>
-            <div class="services-hub__txt formation-hub__txt">
-              Une panoplie de conférences, d'ateliers, de colloques et de
-              missions sur de nombreux thèmes liés aux collectivités viables.
-            </div>
-
-            
-          </div>
-          <div class="services-hub__btn">
-            <a class="" href="">
-              <button class="btn">En savoir plus</button>
-            </a>
-          </div>
-
-          <div class="services__bloc conseil-hub__bloc">
-            <div class="services-hub__title conseil-hub__title">
-              Conseil et accompagnement
-            </div>
-            <div class="services-hub__txt conseil-hub__txt">
-              Notre offre variée permet aux municipalités, organisations
-              publiques, ou entreprises de mettre en œuvre des projets
-              d'avant-garde.
-            </div>
-
-            
-          </div>
-          <div class="services-hub__btn">
-            <a class="" href="">
-              <button class="btn">En savoir plus</button>
-            </a>
-          </div>
-
-          <div class="services__bloc sensibilisation-hub__bloc">
-            <div class="services-hub__title sensibilisation-hub__title">
-              Sensibilisation
-            </div>
-            <div class="services-hub__txt sensibilisation-hub__txt">
-              Une expérience pointue dans la sensibilisation du public et la
-              vulgarisation.
-            </div>
-
-            
-          </div>
-          <div class="services-hub__btn">
-            <a class="" href="">
-              <button class="btn">En savoir plus</button>
-            </a>
-          </div>-->
         </div>
       </section>
 

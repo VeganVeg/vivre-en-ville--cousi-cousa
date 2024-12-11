@@ -68,12 +68,9 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
       <!--à propos-->
       <section class="about">
         <div class="grid__about">
-          <h2 class="about__title">Qui sommes-nous ?</h2>
+          <h2 class="about__title"><?php the_title() ?></h2>
           <div class="about__text">
-            Organisation d'intérêt public , Vivre en Ville contribue, partout au
-            Québec au développement de collectivités viables, oeuvrant tant à
-            l'échelle du bâtiment qu'à celles de la rue, du quartier et de
-            l'agglomération.
+            <?php the_content() ?>
           </div>
         </div>
       </section>
