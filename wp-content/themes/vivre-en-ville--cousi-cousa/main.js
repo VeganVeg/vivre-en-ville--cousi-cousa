@@ -48,6 +48,8 @@ btn.addEventListener('click', () => {
     updateButton();
 });
 
+gsap.fromTo('.grid__banniere', { bottom: '-75%', y: '100%' }, { bottom: 0, y: '0' }, 0.5)
+
 
 window.onload = updateButton;
 

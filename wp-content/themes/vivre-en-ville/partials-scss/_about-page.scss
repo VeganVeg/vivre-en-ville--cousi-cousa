@@ -6,6 +6,7 @@
   flex-direction: column;
   justify-content: center;
   text-align: start;
+
   h1 {
     text-align: center;
     text-transform: uppercase;
@@ -14,6 +15,7 @@
     font-weight: 700;
     color: variables.$nenuphare;
   }
+
   img {
     border: 1px solid variables.$charbon;
     margin: 10px;
@@ -21,23 +23,28 @@
     height: 100%;
     width: 90%;
   }
+
   h2 {
     text-transform: uppercase;
     font-size: 18px;
     font-weight: 600;
     color: variables.$bleu-ciel;
   }
+
   p {
     font-size: 14px;
   }
+
   .mission {
     margin: 15px;
+
     li {
       font-size: 14px;
       margin-left: 0;
       font-family: "Poppins", system-ui;
       margin: 3px;
       position: relative;
+
       &::after {
         content: "▢";
         position: absolute;
@@ -46,11 +53,13 @@
         color: variables.$bleu-ciel;
       }
     }
+
     ul {
       padding: 10px;
       list-style-type: none;
     }
   }
+
   .next__chapter {
     margin-top: 5px;
   }
@@ -60,22 +69,25 @@
       font-size: 35px;
       margin: 30px;
     }
+
     img {
       width: 70%;
     }
+
     h2 {
       font-size: 30px;
     }
+
     p {
-      font-size: 15px;
+      font-size: 16px;
     }
+
     .mission {
       margin: 30px;
-    }
-    .approche {
-      margin: 30px;
+
       li {
-        font-size: 15px;
+        font-size: 16px;
+
         &::after {
           content: "▢";
           position: absolute;
@@ -91,23 +103,28 @@
       font-size: 45px;
       margin: 35px;
     }
+
     img {
       height: 50%;
       width: 50%;
     }
+
     h2 {
       font-size: 40px;
     }
+
     p {
       font-size: 20px;
     }
+
     .mission {
       margin: 40px;
-    }
-    .approche {
+
       margin: 40px;
+
       li {
         font-size: 18px;
+
         &::after {
           content: "▢";
           position: absolute;

@@ -62,6 +62,23 @@
 >
 
 <header>
+
+<!--banniere-->
+<section class="banniere">
+        <div class="grid__banniere">
+          <div class="banniere__txt">
+            <span
+              >Ce site web sert de projet scolaire et n'est en aucun cas le vrai
+              site Vivre en Ville. Pour vous rendre sur le vrai site cliquez sur
+              ce lien :<a href="https://vivreenville.org/">
+                https://vivreenville.org/</a></span>
+          </div>
+
+          <div class="banniere__btn">
+            <button class="btn__compris">J'ai compris</button>
+          </div>
+        </div>
+      </section>
 		
 
 	<nav class="navbar navbar-dark navbar-expand-xxl">
@@ -142,8 +159,20 @@
                 >
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">EN</a>
-              </li>
+  <?php if (wpm_get_language() == 'fr') : ?>
+    <a href="<?php echo wpm_translate_url('', 'en'); ?>" class="nav-link">EN</a>
+  <?php else : ?>
+    <a href="<?php echo wpm_translate_url('', 'fr'); ?>" class="nav-link">FR</a>
+  <?php endif; ?>
+</li>
+
+
+
+
+ <!-- <li class="nav-item">
+<a href="#" class="nav-link">EN</a> -->
+</li>
+
             </ul>
           </div>
         </div>

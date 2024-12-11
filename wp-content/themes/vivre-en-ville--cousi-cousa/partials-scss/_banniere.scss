@@ -1,19 +1,22 @@
 @use 'variables';
 @use 'mixins';
+
 //format mobile
-.grid__banniere{
+.grid__banniere {
     display: none;
     width: 100%;
     background-color: variables.$charbon;
-    border-bottom-right-radius: 15px;
-    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
     padding: 20px 30px;
     position: fixed;
     z-index: 15;
-    top: 0;
+    bottom: -30%;
+
     &--none {
         display: none;
     }
+
     .banniere__txt {
         display: flex;
         justify-content: center;
@@ -21,15 +24,18 @@
         color: variables.$quartz;
         font-family: 'Poppins', system-ui;
         font-size: 15px;
+
         a {
             text-decoration: none;
             color: variables.$bleu-ciel;
         }
     }
+
     .banniere__btn {
         display: flex;
         justify-content: center;
         align-items: center;
+
         .btn__compris {
             margin-top: 16px;
             font-family: "Poppins", system-ui;
@@ -43,6 +49,7 @@
             transition: 0.3s;
             background-color: variables.$charbon;
         }
+
         .btn__compris:hover {
             background-color: variables.$bleu-ciel;
             color: variables.$quartz;
@@ -57,15 +64,18 @@
         padding: 20px 5vw;
         align-items: center;
         justify-content: center;
+
         &--none {
             display: none;
         }
+
         .banniere__txt {
             text-align: left;
             font-size: 17px;
             width: 100%;
             max-width: 720px;
         }
+
         .banniere__btn {
             .btn__compris {
                 margin-top: 0px;
@@ -78,12 +88,15 @@
 @media (min-width: 1400px) {
     .grid__banniere {
         padding: 25px 5vw;
+
         &--none {
             display: none;
         }
+
         .banniere__txt {
             font-size: 18px;
         }
+
         .btn__compris {
             width: 175px !important;
             height: 68 !important;

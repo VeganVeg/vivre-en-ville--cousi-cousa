@@ -14,26 +14,6 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 		<?php if (!is_front_page()) : // Si nous ne sommes PAS sur la page d'accueil ?>
 		<?php endif; ?>
 
-
-		<!--banniere-->
-		<section class="banniere">
-        <div class="grid__banniere">
-          <div class="banniere__txt">
-            <span
-              >Ce site web sert de projet scolaire et n'est en aucun cas le vrai
-              site Vivre en Ville. Pour vous rendre sur le vrai site cliquez sur
-              ce lien :<a clas href="https://vivreenville.org/">
-                https://vivreenville.org/</a
-              ></span
-            >
-          </div>
-
-          <div class="banniere__btn">
-            <button class="btn__compris">J'ai compris</button>
-          </div>
-        </div>
-      </section>
-
       <section class="team">
         <h1><?php the_title(); ?></h1>
         <div class="team_profile">

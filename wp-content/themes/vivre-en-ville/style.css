@@ -286,12 +286,12 @@ footer .credit {
   display: none;
   width: 100%;
   background-color: #303030;
-  border-bottom-right-radius: 15px;
-  border-bottom-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
   padding: 20px 30px;
   position: fixed;
   z-index: 15;
-  top: 0;
+  bottom: -30%;
 }
 .grid__banniere--none {
   display: none;
@@ -379,16 +379,13 @@ footer .credit {
 .grid__carrousel .swiper .swiper__img {
   width: 100%;
   max-height: 30vh;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .grid__carrousel .swiper .swiper__img__ordi {
-  -o-object-position: 0% 25%;
-     object-position: 0% 25%;
+  object-position: 0% 25%;
 }
 .grid__carrousel .swiper .swiper__img__champ {
-  -o-object-position: 0% 25%;
-     object-position: 0% 25%;
+  object-position: 0% 25%;
 }
 .grid__carrousel .swiper .swiper__bg {
   display: flex;
@@ -429,12 +426,10 @@ footer .credit {
   .grid__carrousel .swiper .swiper__img {
     width: 100%;
     max-height: 45vh;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .grid__carrousel .swiper .swiper__img__ordi {
-    -o-object-position: 0% 25%;
-       object-position: 0% 25%;
+    object-position: 0% 25%;
   }
   .grid__carrousel .swiper .swiper__bg {
     height: 60px;
@@ -465,16 +460,13 @@ footer .credit {
   .grid__carrousel .swiper .swiper__img {
     width: 100%;
     max-height: 60vh;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .grid__carrousel .swiper .swiper__img__ordi {
-    -o-object-position: 0% 25%;
-       object-position: 0% 25%;
+    object-position: 0% 25%;
   }
   .grid__carrousel .swiper .swiper__img__champ {
-    -o-object-position: 0% 23%;
-       object-position: 0% 23%;
+    object-position: 0% 23%;
   }
 }
 
@@ -970,8 +962,7 @@ footer .credit {
 .temoignage__photo {
   width: 60px;
   border-radius: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .temoignage__nom {
   font-family: "Inter", sans-serif;
@@ -1069,12 +1060,13 @@ footer .credit {
   display: flex;
   flex-direction: column;
 }
-.nouvelles__titre {
+.nouvelles h2 {
   text-align: center;
   font-size: 22px;
   font-weight: 500;
   color: #303030;
   margin-bottom: 6px;
+  margin-top: 0;
 }
 
 .grid__nouvelles {
@@ -1097,8 +1089,7 @@ footer .credit {
 .nouvelle__image {
   width: 100px;
   height: 100px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .nouvelle__content {
   display: flex;
@@ -1157,9 +1148,10 @@ footer .credit {
 }
 
 @media (min-width: 768px) {
-  .nouvelles__titre {
+  .nouvelles h2 {
     font-size: 26px;
     margin-bottom: 8px;
+    margin-top: 0;
   }
   .grid__nouvelles {
     margin: 0 auto;
@@ -1199,9 +1191,10 @@ footer .credit {
   }
 }
 @media (min-width: 1400px) {
-  .nouvelles__titre {
+  .nouvelles h2 {
     font-size: 36px;
     margin-bottom: 12px;
+    margin-top: 0;
   }
   .nouvelle__content {
     padding-left: 30px;
@@ -1262,8 +1255,7 @@ footer .credit {
 }
 .container__hero .img__hero {
   width: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 @media (min-width: 768px) {
   .container__hero .content__hero {
@@ -1602,7 +1594,7 @@ footer .credit {
   justify-content: center;
   flex-direction: column;
 }
-.container__hero .content__hero__newshub .title__hero {
+.container__hero .content__hero__newshub h2 {
   font-size: 20px;
   font-family: "Inter", sans-serif;
   font-weight: 600;
@@ -1614,17 +1606,18 @@ footer .credit {
   color: #0BABDC;
   margin: 0;
 }
+.container__hero .size-img__hero,
 .container__hero .img__hero {
   width: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  height: 100%;
+  object-fit: cover;
 }
 @media (min-width: 768px) {
   .container__hero .content__hero__newshub {
     padding: 20px;
     align-items: center;
   }
-  .container__hero .content__hero__newshub .title__hero {
+  .container__hero .content__hero__newshub h2 {
     font-size: 26px;
   }
   .container__hero .content__hero__newshub .date__hero {
@@ -1639,7 +1632,7 @@ footer .credit {
   .container__hero .content__hero__newshub {
     padding: 0 60px;
   }
-  .container__hero .content__hero__newshub .title__hero {
+  .container__hero .content__hero__newshub h2 {
     font-size: 36px;
     font-weight: 500;
   }
@@ -1961,6 +1954,59 @@ footer .credit {
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
+}
+.nouvelle__item__newshub img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+@media (min-width: 768px) {
+  .nouvelle__item__newshub img {
+    width: 120px;
+    height: 120px;
+  }
+}
+@media (min-width: 1400px) {
+  .nouvelle__item__newshub img {
+    width: 150px;
+    height: 150px;
+  }
+}
+.nouvelle__item__newshub .nouvelle__content h3 {
+  font-size: 16px;
+  margin-bottom: 0;
+  margin-top: 0;
+  color: #303030;
+  max-width: 500px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: "Inter", sans-serif;
+}
+.nouvelle__item__newshub .nouvelle__content p {
+  font-size: 14px;
+  color: #0BABDC;
+  margin-bottom: 9px;
+}
+@media (min-width: 768px) {
+  .nouvelle__item__newshub .nouvelle__content h3 {
+    font-size: 20px;
+  }
+  .nouvelle__item__newshub .nouvelle__content p {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1400px) {
+  .nouvelle__item__newshub .nouvelle__content h3 {
+    font-size: 24px;
+    max-width: 850px;
+  }
+  .nouvelle__item__newshub .nouvelle__content p {
+    font-size: 18px;
+  }
 }
 
 .plus__container {
@@ -2297,18 +2343,15 @@ main {
     font-size: 30px;
   }
   .a-propos p {
-    font-size: 15px;
+    font-size: 16px;
   }
   .a-propos .mission {
     margin: 30px;
   }
-  .a-propos .approche {
-    margin: 30px;
+  .a-propos .mission li {
+    font-size: 16px;
   }
-  .a-propos .approche li {
-    font-size: 15px;
-  }
-  .a-propos .approche li::after {
+  .a-propos .mission li::after {
     content: "▢";
     position: absolute;
     left: -20px;
@@ -2332,14 +2375,12 @@ main {
   }
   .a-propos .mission {
     margin: 40px;
-  }
-  .a-propos .approche {
     margin: 40px;
   }
-  .a-propos .approche li {
+  .a-propos .mission li {
     font-size: 18px;
   }
-  .a-propos .approche li::after {
+  .a-propos .mission li::after {
     content: "▢";
     position: absolute;
     left: -25px;
@@ -2523,8 +2564,7 @@ main {
   width: 100%;
   height: 100%;
   max-width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 @media (min-width: 768px) {
   .services__hero .container__hero {
@@ -2690,8 +2730,7 @@ main {
   color: #8DC63F;
 }
 .team .team_profile img {
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   width: 15%;
   align-self: flex-end;
 }

@@ -15,7 +15,7 @@
         justify-content: center;
         flex-direction: column;
 
-        .title__hero {
+        h2 {
             font-size: 20px;
             font-family: 'Inter', sans-serif;
             font-weight: 600;
@@ -30,8 +30,10 @@
         }
     }
 
+    .size-img__hero,
     .img__hero {
         width: 50%;
+        height: 100%;
         object-fit: cover;
     }
 
@@ -40,7 +42,7 @@
             padding: 20px;
             align-items: center;
 
-            .title__hero {
+            h2 {
                 font-size: 26px;
             }
 
@@ -57,7 +59,7 @@
         .content__hero__newshub {
             padding: 0 60px;
 
-            .title__hero {
+            h2 {
                 font-size: 36px;
                 font-weight: 500;
             }
@@ -449,6 +451,67 @@
         display: grid;
         grid-template-columns: auto 1fr auto;
         align-items: center;
+
+        img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+
+            @media (min-width: 768px) {
+                width: 120px;
+                height: 120px;
+            }
+
+            @media (min-width:1400px) {
+                width: 150px;
+                height: 150px;
+            }
+        }
+
+        .nouvelle__content {
+            h3 {
+                font-size: 16px;
+                margin-bottom: 0;
+                margin-top: 0;
+                color: variables.$charbon;
+                max-width: 500px;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 3;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                font-family: 'Inter', sans-serif;
+            }
+
+            p {
+                font-size: 14px;
+                color: variables.$bleu-ciel;
+                margin-bottom: 9px;
+            }
+
+            @media (min-width: 768px) {
+                h3 {
+                    font-size: 20px;
+                }
+
+                p {
+                    font-size: 16px;
+                    margin-bottom: 0;
+                }
+
+            }
+
+            @media (min-width: 1400px) {
+                h3 {
+                    font-size: 24px;
+                    max-width: 850px;
+                }
+
+                p {
+                    font-size: 18px;
+                }
+            }
+        }
     }
 }
 
