@@ -47,13 +47,19 @@
           </div>
 
           <div class="footer__don">
-            <a
-              class="link__button"
-              href="https://activites.vivreenville.org/fr/dons/donate/faire-un-don/2946/"
-              target="_blank"
-              ><button class="don">Faire un don</button></a
-            >
-          </div>
+  <a
+    class="link__button"
+    href="<?php echo (wpm_get_language() == 'fr') 
+      ? 'https://activites.vivreenville.org/fr/dons/donate/faire-un-don/2946/' 
+      : 'https://activites.vivreenville.org/en/dons/donate/make-a-donation/2946/'; ?>"
+    target="_blank"
+  >
+    <button class="don">
+      <?php echo (wpm_get_language() == 'fr') ? 'Faire un don' : 'Make a donation'; ?>
+    </button>
+  </a>
+</div>
+
           <div class="footer__lien">
             <a href="https://www.facebook.com/vivreenville" class="bloc">
               <img src="<?php bloginfo('template_url'); ?>/sources/icons/facebook.png" alt="" />
