@@ -591,7 +591,7 @@ footer .credit {
   color: #E2E2E2;
   display: none;
 }
-.services__container .services__recherche .img__recherche {
+.services__container .services__recherche .img__service {
   position: absolute;
   width: 85px;
   margin-top: 50px;
@@ -618,7 +618,7 @@ footer .credit {
   color: #bfff6b;
   display: none;
 }
-.services__container .services__publication .img__publication {
+.services__container .services__publication .img__service {
   position: absolute;
   width: 85px;
   margin-top: 50px;
@@ -645,7 +645,7 @@ footer .credit {
   color: #8be4ff;
   display: none;
 }
-.services__container .services__formation .img__formation {
+.services__container .services__formation .img__service {
   position: absolute;
   width: 85px;
   margin-top: 50px;
@@ -673,7 +673,7 @@ footer .credit {
   color: #cdf8fd;
   display: none;
 }
-.services__container .services__conseil .img__conseil {
+.services__container .services__conseil .img__service {
   position: absolute;
   width: 85px;
   margin-top: 50px;
@@ -700,7 +700,7 @@ footer .credit {
   color: #EFEFEF;
   display: none;
 }
-.services__container .services__sensibilisation .img__sensibilisation {
+.services__container .services__sensibilisation .img__service {
   position: absolute;
   width: 90px;
   margin-top: 50px;
@@ -730,11 +730,11 @@ footer .credit {
   .services__container .service .conseil__title {
     margin-top: 10px;
   }
-  .services__container .service .card__img {
+  .services__container .service .size-card__img {
     width: 115px;
     margin-top: 70px;
   }
-  .services__container .service .img__sensibilisation {
+  .services__container .service .img__service {
     width: 120px;
   }
   .services__container .service .card__txt p {
@@ -770,7 +770,7 @@ footer .credit {
   .services__container .service .conseil__title {
     margin-top: 15px;
   }
-  .services__container .service .card__img {
+  .services__container .service .size-card__img {
     width: 140px;
     margin-top: 95px;
   }
