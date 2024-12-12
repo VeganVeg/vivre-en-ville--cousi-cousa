@@ -93,7 +93,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
             <div class="card__title recherche__title title-none">
               <?php the_title() ?>
             </div>
-            <div class="card__img img__microscope title-none">
+            <div class="card__img img__recherche title-none">
               <?php the_post_thumbnail() ?>
             </div>
             
