@@ -85,37 +85,37 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
       <section class="services__offerts">
         <h2 class="services__title">Nos services offerts</h2>
         <div class="services__container">
-        <?php 
-            $service = new WP_Query('post_type=service');
-            while ($service->have_posts()) : $service->the_post();
+          <?php 
+              $service = new WP_Query('post_type=service');
+              while ($service->have_posts()) : $service->the_post();
+              ?>
+            <div class="service services__<?php the_field('choix_de_classe')?>">
+              <div class="card__title <?php the_field('choix_de_classe')?>__title title-none">
+                <?php the_title() ?>
+              </div>
+              <div class="card__img img__<?php the_field('choix_de_classe')?> title-none">
+                <?php the_post_thumbnail(array('class' => "card__img title-none img__<?php the_field('choix_de_classe')?>")) ?>
+              </div>
+              
+              <!--<img
+                class="card__img img__microscope title-none"
+                src="sources/icons/microscope.png"
+                alt=""
+              /> -->
+              <div class="card__txt <?php the_field('choix_de_classe')?>__txt txt-block">
+                <?php the_content() ?>
+              </div>
+              <img
+                class="img__hover title-none"
+                src="sources/icons/hover_recherche.png"
+                alt=""
+              />
+            </div>
+            <?php
+              endwhile;
+              wp_reset_postdata();
             ?>
-          <div class="service services__recherche">
-            <div class="card__title recherche__title title-none">
-              <?php the_title() ?>
-            </div>
-            <div class="card__img img__microscope title-none">
-              <?php the_post_thumbnail() ?>
-            </div>
-            
-            <!--<img
-              class="card__img img__microscope title-none"
-              src="sources/icons/microscope.png"
-              alt=""
-            /> -->
-            <div class="card__txt recherche__txt txt-block">
-              <?php the_content() ?>
-            </div>
-            <img
-              class="img__hover title-none"
-              src="sources/icons/hover_recherche.png"
-              alt=""
-            />
-          </div>
-          <?php
-            endwhile;
-            wp_reset_postdata();
-          ?>
-          <div class="service services__publication">
+          <!-- <div class="service services__publication">
             <div class="card__title publication__title title-none">
               Publication
             </div>
@@ -191,9 +191,9 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
               class="img__hover title-none"
               src="sources/icons/hover_sensibilisation.png"
               alt=""
-            />
-          </div>
-        </div>
+            /> 
+          </div> -->
+        </div> 
       </section>
 
       <div class="next__chapter">
