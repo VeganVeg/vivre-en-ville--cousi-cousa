@@ -1119,13 +1119,13 @@ footer .credit {
     height: 150px;
   }
 }
-.nouvelle .nouvelle__content {
+.nouvelle__item .nouvelle__content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-left: 15px;
 }
-.nouvelle .nouvelle__content h3 {
+.nouvelle__item .nouvelle__content h3 {
   font-size: 16px;
   margin-bottom: 0;
   color: #303030;
@@ -1137,37 +1137,33 @@ footer .credit {
   text-overflow: ellipsis;
   font-family: "Inter", sans-serif;
 }
-.nouvelle .nouvelle__content p {
+.nouvelle__item .nouvelle__content p {
   font-size: 14px;
   color: #0BABDC;
   margin-bottom: 9px;
 }
 @media (min-width: 768px) {
-  .nouvelle .nouvelle__content h3 {
+  .nouvelle__item .nouvelle__content h3 {
     font-size: 20px;
   }
-  .nouvelle .nouvelle__content p {
+  .nouvelle__item .nouvelle__content p {
     font-size: 16px;
     margin-bottom: 0;
   }
 }
 @media (min-width: 1400px) {
-  .nouvelle .nouvelle__content h3 {
+  .nouvelle__item .nouvelle__content h3 {
     font-size: 24px;
     max-width: 850px;
   }
-  .nouvelle .nouvelle__content p {
+  .nouvelle__item .nouvelle__content p {
     font-size: 18px;
   }
 }
-.nouvelle__texte {
-  font-size: 14px;
-  color: #666;
-}
-.nouvelle__lien-none {
+.nouvelle__item__lien-none {
   display: none;
 }
-.nouvelle__esp .esp {
+.nouvelle__item__esp .esp {
   font-family: "Poppins", system-ui;
   font-size: 14px;
   font-weight: 500;
@@ -1180,7 +1176,7 @@ footer .credit {
   transition: 0.3s;
   background-color: #EFEFEF;
 }
-.nouvelle__esp .esp:hover {
+.nouvelle__item__esp .esp:hover {
   background-color: #0BABDC;
   color: #EFEFEF;
 }
