@@ -132,76 +132,6 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
             endwhile;
             wp_reset_postdata();
           ?>
-
-          <!--<div class="nouvelle__item">
-            <img
-              src="sources/img/evenement_rentree.png"
-              alt="News image"
-              class="nouvelle__image"
-            />
-            <div class="nouvelle__content">
-              <h3 class="nouvelle__titre">Événement de la rentrée 2024</h3>
-              <p class="nouvelle__date">13 août 2024</p>
-              <div class="nouvelle__esp nouvelle__lien">
-                <a
-                  class="link__button"
-                  href="https://activites.vivreenville.org/fr/dons/donate/faire-un-don/2946/"
-                  target=""
-                >
-                  <button class="esp">En savoir plus</button></a
-                >
-              </div>
-            </div>
-            <div class="nouvelle__btn">
-              <div class="nouvelle__esp nouvelle__lien-none">
-                <a
-                  class="link__button"
-                  href="https://activites.vivreenville.org/fr/dons/donate/faire-un-don/2946/"
-                  target=""
-                >
-                  <button class="esp">En savoir plus</button></a
-                >
-              </div>
-            </div>
-          </div>
-
-          <div class="nouvelle__separation"></div>
-
-          <div class="nouvelle__item">
-            <img
-              src="sources/img/etudeleger.png"
-              alt="News image"
-              class="nouvelle__image"
-            />
-            <div class="nouvelle__content">
-              <h3 class="nouvelle__titre">
-                Étude Léger sur le marché résidentiel locatif: Du jamais vu à
-                Montréal - Les données 2024 rappellent l'urgence du besoin de
-                transparence pour le bon fonctionnement du marché résidentiel
-              </h3>
-              <p class="nouvelle__date">22 août 2024</p>
-              <div class="nouvelle__esp nouvelle__lien">
-                <a
-                  class="link__button"
-                  href="https://activites.vivreenville.org/fr/dons/donate/faire-un-don/2946/"
-                  target=""
-                >
-                  <button class="esp">En savoir plus</button></a
-                >
-              </div>
-            </div>
-            <div class="nouvelle__btn">
-              <div class="nouvelle__esp nouvelle__lien-none">
-                <a
-                  class="link__button"
-                  href="https://activites.vivreenville.org/fr/dons/donate/faire-un-don/2946/"
-                  target=""
-                >
-                  <button class="esp">En savoir plus</button></a
-                >
-              </div>
-            </div>
-          </div>-->
         </div>
       </section>
 
@@ -289,6 +219,5 @@ else : // Si aucune page n'a été trouvée
 	get_template_part( 'partials/404' ); // Affiche partials/404.php
 endif;
 
-get_sidebar(); // Affiche le contenu de sidebar.php
 get_footer(); // Affiche footer.php 
 ?>
