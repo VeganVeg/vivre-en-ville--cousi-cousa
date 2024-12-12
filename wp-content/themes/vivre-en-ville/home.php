@@ -237,21 +237,24 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
       <section class="temoignages">
         <h2 class="temoignages__titre"><?php the_field('titre_pour_temoignages') ?></h2>
         <div class="grid__temoignages">
+          <?php 
+            $temoingagne = new WP_Query('post_type=temoignage');
+            while ($temoingagne->have_posts()) : $temoingagne->the_post();
+          ?>
           <div class="temoignage__item">
-            <img
-              class="temoignage__photo"
-              src="sources/img/robertcharlebois.png"
-              alt="Robert Charlebois"
-            />
-            <h3 class="temoignage__nom">Robert Charlebois</h3>
+            <?php the_post_thumbnail(array('class' => 'temoignage__photo')) ?>
+            <h3 class="temoignage__nom"><?php the_title() ?></h3>
             <p class="temoignage__texte">
-              Après avoir visité ce site pour la première fois, j'ai découvert à
-              quel point il était important de rester informé sur les dernières
-              tendances et sur les projets actuels en urbanisme.
+              <?php the_content() ?>
             </p>
           </div>
 
           <div class="temoignage__separation"></div>
+
+          <?php
+            endwhile;
+            wp_reset_postdata();
+          ?>
 
           <div class="temoignage__item">
             <img
