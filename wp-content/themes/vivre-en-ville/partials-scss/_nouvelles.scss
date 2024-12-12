@@ -93,6 +93,27 @@
                 color: variables.$quartz;
             }
         }
+
+        @media (min-width:768px) {
+            padding-left: 50px;
+
+            .esp {
+                font-size: 16px;
+                padding: 12px;
+                width: 145px;
+            }
+        }
+
+        @media (min-width:1400px) {
+            padding-left: 0;
+            padding-right: 20px;
+
+            .esp {
+                font-size: 18px;
+                padding: 14px;
+                width: 170px;
+            }
+        }
     }
 }
 
