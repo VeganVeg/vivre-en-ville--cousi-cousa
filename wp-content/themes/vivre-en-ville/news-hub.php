@@ -40,7 +40,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                 <h3><?php the_title() ?></h3>
                 <p><?php the_date() ?></p>
                 <div class="nouvelle__esp nouvelle__lien">
-                  <a class="link__button" href="news-article.html" target="">
+                  <a class="link__button" href="news-article.html" target="<?php the_permalink() ?>">
                     <button class="esp"><?php the_field('libelle_du_bouton_en_savoir_plus')?></button></a
                   >
                 </div>
