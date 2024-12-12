@@ -52,115 +52,38 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
       </section>
 
       <section class="nouvelles">
-         <!-- Titre de la section affichant qu'il s'agit d'articles similaires -->
-        <h2 class="nouvelles__titre">Articles similaire</h2>
-        <div class="grid__articles">
-            <!-- Premier article similaire -->
+        <h2 class="nouvelles__titre"><?php the_field('titre_actualites') ?></h2>
+        <div class="grid__nouvelles">
+          <!-- Boucle de tout les articles -->
+        <?php 
+            $nouvellehome = new WP_Query('post_type=nouvelle-home');
+            while ($nouvellehome->have_posts()) : $nouvellehome->the_post();
+            ?>
           <div class="nouvelle__item">
-            <img
-              src="sources/img/cout-demolition-maison-mitoyenne 1.png"
-              alt="News image"
-              class="nouvelle__image"
-            />
+            <?php the_post_thumbnail() ?>
             <div class="nouvelle__content">
-               <!-- Titre de l'article -->
-              <h3 class="nouvelle__titre">
-                Stratégie québécoise en habitation: Québec reconnaît la crise,
-                mais sous-utilise les outils à sa disposition
-              </h3>
-               <!-- Titre de l'article -->
-              <p class="nouvelle__date">22 août 2024</p>
+              <h3><?php the_title() ?></h3>
+              <p><?php the_date() ?></p>
               <div class="nouvelle__esp nouvelle__lien">
-                <!-- Lien vers l'article avec un bouton "En savoir plus" -->
-                <a class="link__button" href="news-article.html" target="">
-                  <button class="esp">En savoir plus</button></a
+                <a class="link__button" href="news-article.html" target="<?php the_permalink() ?>">
+                  <button class="esp"><?php the_field('libelle_du_bouton_en_savoir_plus')?></button></a
                 >
               </div>
             </div>
             <div class="nouvelle__btn">
               <div class="nouvelle__esp nouvelle__lien-none">
-                <a class="link__button" href="news-article.html" target="">
-                  <button class="esp">En savoir plus</button></a
+                <a class="link__button" href="news-article.html" target="<?php the_permalink() ?>">
+                  <button class="esp"><?php the_field('libelle_du_bouton_en_savoir_plus')?></button></a
                 >
               </div>
             </div>
           </div>
 
           <div class="nouvelle__separation"></div>
- <!-- Deuxième article similaire -->
-          <div class="nouvelle__item">
-            <img
-              src="sources/img/evenement_rentree.png"
-              alt="News image"
-              class="nouvelle__image"
-            />
-            <div class="nouvelle__content">
-               <!-- Titre de l'article -->
-              <h3 class="nouvelle__titre">Événement de la rentrée 2024</h3>
-               <!-- Date de publication de l'article -->
-              <p class="nouvelle__date">13 août 2024</p>
-              <div class="nouvelle__esp nouvelle__lien">
-                <a
-                  class="link__button"
-                  href="https://activites.vivreenville.org/fr/dons/donate/faire-un-don/2946/"
-                  target=""
-                >
-                <!-- Lien vers l'article avec un bouton "En savoir plus" -->
-                  <button class="esp">En savoir plus</button></a
-                >
-              </div>
-            </div>
-            <div class="nouvelle__btn">
-              <div class="nouvelle__esp nouvelle__lien-none">
-                <a
-                  class="link__button"
-                  href="https://activites.vivreenville.org/fr/dons/donate/faire-un-don/2946/"
-                  target=""
-                >
-                  <button class="esp">En savoir plus</button></a
-                >
-              </div>
-            </div>
-          </div>
-
-          <div class="nouvelle__separation"></div>
-   <!-- Troisième article similaire -->
-          <div class="nouvelle__item">
-            <img
-              src="sources/img/etudeleger.png"
-              alt="News image"
-              class="nouvelle__image"
-            />
-            <div class="nouvelle__content">
-               <!-- Titre de l'article -->
-              <h3 class="nouvelle__titre">
-                Étude Léger sur le marché résidentiel locatif: Du jamais vu à
-                Montréal - Les données 2024 rappellent l'urgence du besoin de
-                transparence pour le bon fonctionnement du marché résidentiel
-              </h3>
-              <p class="nouvelle__date">22 août 2024</p>
-              <div class="nouvelle__esp nouvelle__lien">
-                <a
-                  class="link__button"
-                  href="https://activites.vivreenville.org/fr/dons/donate/faire-un-don/2946/"
-                  target=""
-                >
-                  <button class="esp">En savoir plus</button></a
-                >
-              </div>
-            </div>
-            <div class="nouvelle__btn">
-              <div class="nouvelle__esp nouvelle__lien-none">
-                <a
-                  class="link__button"
-                  href="https://activites.vivreenville.org/fr/dons/donate/faire-un-don/2946/"
-                  target=""
-                >
-                  <button class="esp">En savoir plus</button></a
-                >
-              </div>
-            </div>
-          </div>
+          <?php
+            endwhile;
+            wp_reset_postdata();
+          ?>
         </div>
       </section>
 	
