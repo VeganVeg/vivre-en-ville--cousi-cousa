@@ -1102,30 +1102,18 @@ footer .credit {
   grid-template-columns: auto 1fr auto;
   align-items: center;
 }
-.nouvelle__item img {
+.nouvelle__image {
   width: 100px;
   height: 100px;
   object-fit: cover;
 }
-@media (min-width: 768px) {
-  .nouvelle__item img {
-    width: 120px;
-    height: 120px;
-  }
-}
-@media (min-width: 1400px) {
-  .nouvelle__item img {
-    width: 150px;
-    height: 150px;
-  }
-}
-.nouvelle__item .nouvelle__content {
+.nouvelle__content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-left: 15px;
 }
-.nouvelle__item .nouvelle__content h3 {
+.nouvelle__titre {
   font-size: 16px;
   margin-bottom: 0;
   color: #303030;
@@ -1137,33 +1125,19 @@ footer .credit {
   text-overflow: ellipsis;
   font-family: "Inter", sans-serif;
 }
-.nouvelle__item .nouvelle__content p {
+.nouvelle__date {
   font-size: 14px;
   color: #0BABDC;
   margin-bottom: 9px;
 }
-@media (min-width: 768px) {
-  .nouvelle__item .nouvelle__content h3 {
-    font-size: 20px;
-  }
-  .nouvelle__item .nouvelle__content p {
-    font-size: 16px;
-    margin-bottom: 0;
-  }
+.nouvelle__texte {
+  font-size: 14px;
+  color: #666;
 }
-@media (min-width: 1400px) {
-  .nouvelle__item .nouvelle__content h3 {
-    font-size: 24px;
-    max-width: 850px;
-  }
-  .nouvelle__item .nouvelle__content p {
-    font-size: 18px;
-  }
-}
-.nouvelle__item__lien-none {
+.nouvelle__lien-none {
   display: none;
 }
-.nouvelle__item__esp .esp {
+.nouvelle__esp .esp {
   font-family: "Poppins", system-ui;
   font-size: 14px;
   font-weight: 500;
@@ -1176,7 +1150,7 @@ footer .credit {
   transition: 0.3s;
   background-color: #EFEFEF;
 }
-.nouvelle__item__esp .esp:hover {
+.nouvelle__esp .esp:hover {
   background-color: #0BABDC;
   color: #EFEFEF;
 }
@@ -2015,6 +1989,12 @@ footer .credit {
     height: 150px;
   }
 }
+.nouvelle__item__newshub .nouvelle__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 15px;
+}
 .nouvelle__item__newshub .nouvelle__content h3 {
   font-size: 16px;
   margin-bottom: 0;
@@ -2050,6 +2030,23 @@ footer .credit {
   .nouvelle__item__newshub .nouvelle__content p {
     font-size: 18px;
   }
+}
+.nouvelle__esp .esp {
+  font-family: "Poppins", system-ui;
+  font-size: 14px;
+  font-weight: 500;
+  border: 2px solid #0BABDC;
+  border-radius: 50px;
+  width: 125px;
+  padding: 8px;
+  text-align: center;
+  color: #0BABDC;
+  transition: 0.3s;
+  background-color: #EFEFEF;
+}
+.nouvelle__esp .esp:hover {
+  background-color: #0BABDC;
+  color: #EFEFEF;
 }
 
 .plus__container {

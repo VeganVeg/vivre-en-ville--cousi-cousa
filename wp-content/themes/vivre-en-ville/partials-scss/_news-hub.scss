@@ -469,6 +469,11 @@
         }
 
         .nouvelle__content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 15px;
+
             h3 {
                 font-size: 16px;
                 margin-bottom: 0;
@@ -510,6 +515,27 @@
                 p {
                     font-size: 18px;
                 }
+            }
+        }
+    }
+
+    &__esp {
+        .esp {
+            font-family: "Poppins", system-ui;
+            font-size: 14px;
+            font-weight: 500;
+            border: 2px solid variables.$bleu-ciel;
+            border-radius: 50px;
+            width: 125px;
+            padding: 8px;
+            text-align: center;
+            color: variables.$bleu-ciel;
+            transition: 0.3s;
+            background-color: variables.$quartz;
+
+            &:hover {
+                background-color: variables.$bleu-ciel;
+                color: variables.$quartz;
             }
         }
     }
