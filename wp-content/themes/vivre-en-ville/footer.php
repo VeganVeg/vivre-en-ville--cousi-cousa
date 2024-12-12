@@ -55,7 +55,7 @@
     target="_blank"
   >
     <button class="don">
-      <?php echo (wpm_get_language() == 'fr') ? 'Faire un don' : 'Make a donation'; ?>
+      <?php echo (wpm_get_language() == 'fr') ? 'Faire un don' : 'Donate'; ?>
     </button>
   </a>
 </div>
