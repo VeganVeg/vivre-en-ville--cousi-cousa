@@ -594,6 +594,7 @@ footer .credit {
 .services__container .services__recherche .img__service {
   position: absolute;
   width: 85px;
+  height: 85px;
   margin-top: 50px;
 }
 .services__container .services__publication {
@@ -620,6 +621,7 @@ footer .credit {
 }
 .services__container .services__publication .img__service {
   position: absolute;
+  width: 85px;
   width: 85px;
   margin-top: 50px;
 }
@@ -648,6 +650,7 @@ footer .credit {
 .services__container .services__formation .img__service {
   position: absolute;
   width: 85px;
+  height: 85px;
   margin-top: 50px;
 }
 .services__container .services__conseil {
@@ -676,6 +679,7 @@ footer .credit {
 .services__container .services__conseil .img__service {
   position: absolute;
   width: 85px;
+  height: 85px;
   margin-top: 50px;
 }
 .services__container .services__sensibilisation {
@@ -703,6 +707,7 @@ footer .credit {
 .services__container .services__sensibilisation .img__service {
   position: absolute;
   width: 90px;
+  height: 90px;
   margin-top: 50px;
 }
 
@@ -732,10 +737,12 @@ footer .credit {
   }
   .services__container .service .size-card__img {
     width: 115px;
+    height: 115px;
     margin-top: 70px;
   }
   .services__container .service .img__service {
     width: 120px;
+    height: 120px;
   }
   .services__container .service .card__txt p {
     font-size: 16px;
@@ -772,10 +779,7 @@ footer .credit {
   }
   .services__container .service .size-card__img {
     width: 140px;
-    margin-top: 95px;
-  }
-  .services__container .service .img__sensibilisation {
-    width: 145px;
+    height: 140px;
     margin-top: 95px;
   }
   .services__container .service .card__txt p {
