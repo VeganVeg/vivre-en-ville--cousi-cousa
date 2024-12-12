@@ -153,7 +153,10 @@
               'link_class' => 'nav-link',
               ) );
 		        ?>
-            
+      
+
+
+      <!-- Change le bouton Don en anglais ou francais -->
             <li class="nav-item nav-item-don">
   <a
     href="<?php echo (wpm_get_language() == 'fr') 
