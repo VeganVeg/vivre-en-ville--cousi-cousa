@@ -71,15 +71,16 @@
             	while ($banniere->have_posts()) : $banniere->the_post();
 			  ?>
           <div class="banniere__txt">
-            <p>Ce site web sert de projet scolaire et n'est en aucun cas le vrai
-              site Vivre en Ville. Pour vous rendre sur le vrai site cliquez sur
-              ce lien :<a href="https://vivreenville.org/">
-                https://vivreenville.org/</a></p>
+           <?php the_content() ?>
           </div>
 
           <div class="banniere__btn">
             <button class="btn__compris">J'ai compris</button>
           </div>
+          <?php 
+            endwhile;
+            wp_reset_postdata();
+            ?>
         </div>
       </section>
 		
