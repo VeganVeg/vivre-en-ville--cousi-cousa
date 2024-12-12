@@ -68,13 +68,14 @@
         }
 
         .recherche__txt {
+            line-height: 1.2;
+            text-align: center;
+            font-family: "Poppins", system-ui;
+            color: #E2E2E2;
+            display: none;
+
             p {
                 font-size: 14px;
-                line-height: 1.2;
-                text-align: center;
-                font-family: "Poppins", system-ui;
-                color: #E2E2E2;
-                display: none;
             }
         }
 
@@ -102,18 +103,21 @@
         }
 
         .publication__txt {
-            font-size: 14px;
             line-height: 1.2;
             text-align: center;
             font-family: "Poppins", system-ui;
             color: #bfff6b;
             display: none;
+
+            p {
+                font-size: 14px;
+            }
         }
 
         .img__service {
             position: absolute;
             width: 85px;
-            width: 85px;
+            height: 85px;
             margin-top: 50px;
         }
     }
@@ -134,13 +138,14 @@
         }
 
         .formation__txt {
+            line-height: 1.2;
+            text-align: center;
+            font-family: "Poppins", system-ui;
+            color: #8be4ff;
+            display: none;
+
             p {
                 font-size: 14px;
-                line-height: 1.2;
-                text-align: center;
-                font-family: "Poppins", system-ui;
-                color: #8be4ff;
-                display: none;
             }
         }
 
@@ -169,13 +174,14 @@
         }
 
         .conseil__txt {
+            line-height: 1.2;
+            text-align: center;
+            font-family: "Poppins", system-ui;
+            color: #cdf8fd;
+            display: none;
+
             p {
                 font-size: 14px;
-                line-height: 1.2;
-                text-align: center;
-                font-family: "Poppins", system-ui;
-                color: #cdf8fd;
-                display: none;
             }
         }
 
@@ -203,13 +209,14 @@
         }
 
         .sensibilisation__txt {
+            line-height: 1.2;
+            text-align: center;
+            font-family: "Poppins", system-ui;
+            color: variables.$quartz;
+            display: none;
+
             p {
                 font-size: 14px;
-                line-height: 1.2;
-                text-align: center;
-                font-family: "Poppins", system-ui;
-                color: variables.$quartz;
-                display: none;
             }
         }
 

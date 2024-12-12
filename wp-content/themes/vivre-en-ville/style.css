@@ -583,13 +583,15 @@ footer .credit {
   line-height: 1.2;
   display: block;
 }
-.services__container .services__recherche .recherche__txt p {
-  font-size: 14px;
+.services__container .services__recherche .recherche__txt {
   line-height: 1.2;
   text-align: center;
   font-family: "Poppins", system-ui;
   color: #E2E2E2;
   display: none;
+}
+.services__container .services__recherche .recherche__txt p {
+  font-size: 14px;
 }
 .services__container .services__recherche .img__service {
   position: absolute;
@@ -612,17 +614,19 @@ footer .credit {
   margin-top: 10px;
 }
 .services__container .services__publication .publication__txt {
-  font-size: 14px;
   line-height: 1.2;
   text-align: center;
   font-family: "Poppins", system-ui;
   color: #bfff6b;
   display: none;
 }
+.services__container .services__publication .publication__txt p {
+  font-size: 14px;
+}
 .services__container .services__publication .img__service {
   position: absolute;
   width: 85px;
-  width: 85px;
+  height: 85px;
   margin-top: 50px;
 }
 .services__container .services__formation {
@@ -639,13 +643,15 @@ footer .credit {
   color: #8be4ff;
   margin-top: 10px;
 }
-.services__container .services__formation .formation__txt p {
-  font-size: 14px;
+.services__container .services__formation .formation__txt {
   line-height: 1.2;
   text-align: center;
   font-family: "Poppins", system-ui;
   color: #8be4ff;
   display: none;
+}
+.services__container .services__formation .formation__txt p {
+  font-size: 14px;
 }
 .services__container .services__formation .img__service {
   position: absolute;
@@ -668,13 +674,15 @@ footer .credit {
   margin-top: 5px;
   line-height: 1.2;
 }
-.services__container .services__conseil .conseil__txt p {
-  font-size: 14px;
+.services__container .services__conseil .conseil__txt {
   line-height: 1.2;
   text-align: center;
   font-family: "Poppins", system-ui;
   color: #cdf8fd;
   display: none;
+}
+.services__container .services__conseil .conseil__txt p {
+  font-size: 14px;
 }
 .services__container .services__conseil .img__service {
   position: absolute;
@@ -696,13 +704,15 @@ footer .credit {
   color: #EFEFEF;
   margin-top: 10px;
 }
-.services__container .services__sensibilisation .sensibilisation__txt p {
-  font-size: 14px;
+.services__container .services__sensibilisation .sensibilisation__txt {
   line-height: 1.2;
   text-align: center;
   font-family: "Poppins", system-ui;
   color: #EFEFEF;
   display: none;
+}
+.services__container .services__sensibilisation .sensibilisation__txt p {
+  font-size: 14px;
 }
 .services__container .services__sensibilisation .img__service {
   position: absolute;
