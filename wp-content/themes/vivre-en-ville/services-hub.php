@@ -41,7 +41,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
           </div>
           <div class="services-hub__btn">
             <a href="service.html">
-              <button class="btn">En savoir plus</button>
+              <button class="btn"><?php the_field('libelle_du_bouton_en_savoir_plus')?></button>
             </a>
           </div>
           <?php
