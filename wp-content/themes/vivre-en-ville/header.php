@@ -162,13 +162,20 @@
                   >Faire un don</a
                 >
               </li>
-              <li class="nav-item language-switcher">
-  <?php if (wpm_get_language() == 'fr') : ?>
-    <a href="<?php echo wpm_translate_url('', 'en'); ?>" class="nav-link" title="Switch to English">EN</a>
-  <?php else : ?>
-    <a href="<?php echo wpm_translate_url('', 'fr'); ?>" class="nav-link" title="Passer au français">FR</a>
+              <<li class="nav-item language-switcher">
+  <?php
+  $current_lang = get_locale();
+  if ($current_lang == 'fr_FR') :
+    $switch_url = add_query_arg('lang', 'en', home_url(add_query_arg(NULL, NULL)));
+  ?>
+    <a href="<?php echo esc_url($switch_url); ?>" class="nav-link" title="Switch to English">EN</a>
+  <?php else :
+    $switch_url = add_query_arg('lang', 'fr', home_url(add_query_arg(NULL, NULL)));
+  ?>
+    <a href="<?php echo esc_url($switch_url); ?>" class="nav-link" title="Passer au français">FR</a>
   <?php endif; ?>
 </li>
+
 
 
 

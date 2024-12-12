@@ -79,6 +79,17 @@ function add_menu_list_item_class($classes, $item, $args) {
 	return $atts;
   }
 
+  function switch_language() {
+    if (isset($_GET['lang'])) {
+        $lang = $_GET['lang'];
+        if ($lang == 'fr') {
+            switch_to_locale('fr_FR');
+        } elseif ($lang == 'en') {
+            switch_to_locale('en_US');
+        }
+    }
+}
+add_action('init', 'switch_language');
 
   /* Appel de la fonction en ajoutant le filter*/
   add_filter( 'nav_menu_link_attributes', 'add_menu_link_class', 1, 3 );
