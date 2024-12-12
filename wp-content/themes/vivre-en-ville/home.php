@@ -125,36 +125,38 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
       <section class="nouvelles">
         <h2 class="nouvelles__titre">Les actualités</h2>
         <div class="grid__nouvelles">
+          <!-- Boucle de tout les articles -->
+        <?php 
+            $nouvellehome = new WP_Query('post_type=nouvelle-home');
+            while ($nouvellehome->have_posts()) : $nouvellehome->the_post();
+            ?>
           <div class="nouvelle__item">
-            <img
-              src="sources/img/cout-demolition-maison-mitoyenne 1.png"
-              alt="News image"
-              class="nouvelle__image"
-            />
+            <?php the_post_thumbnail() ?>
             <div class="nouvelle__content">
-              <h3 class="nouvelle__titre">
-                Stratégie québécoise en habitation: Québec reconnaît la crise,
-                mais sous-utilise les outils à sa disposition
-              </h3>
-              <p class="nouvelle__date">22 août 2024</p>
+              <h3><?php the_title() ?></h3>
+              <p><?php the_date() ?></p>
               <div class="nouvelle__esp nouvelle__lien">
                 <a class="link__button" href="news-article.html" target="">
-                  <button class="esp">En savoir plus</button></a
+                  <button class="esp"><?php the_field('libelle_du_bouton_en_savoir_plus')?></button></a
                 >
               </div>
             </div>
             <div class="nouvelle__btn">
               <div class="nouvelle__esp nouvelle__lien-none">
                 <a class="link__button" href="news-article.html" target="">
-                  <button class="esp">En savoir plus</button></a
+                  <button class="esp"><?php the_field('libelle_du_bouton_en_savoir_plus')?></button></a
                 >
               </div>
             </div>
           </div>
 
           <div class="nouvelle__separation"></div>
+          <?php
+            endwhile;
+            wp_reset_postdata();
+          ?>
 
-          <div class="nouvelle__item">
+          <!--<div class="nouvelle__item">
             <img
               src="sources/img/evenement_rentree.png"
               alt="News image"
@@ -222,7 +224,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                 >
               </div>
             </div>
-          </div>
+          </div>-->
         </div>
       </section>
 
