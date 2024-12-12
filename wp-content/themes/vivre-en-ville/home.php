@@ -101,7 +101,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                 alt=""
               /> -->
               <div class="card__txt <?php the_field('choix_de_classe')?>__txt txt-block">
-                <?php the_content() ?>
+                <p><?php the_content()?></p>
               </div>
               <img
                 class="img__hover title-none"
