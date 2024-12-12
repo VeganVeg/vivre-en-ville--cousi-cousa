@@ -24,11 +24,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
             <p class="date__hero"><?php the_date() ?></p>
           </div>
 
-          <img
-            class="img__hero"
-            src="sources/img/strategie_habitation.png"
-            alt=""
-          />
+          <?php the_post_thumbnail(array('class' => 'img__hero')) ?>
         </div>
       </section>
 
