@@ -1171,7 +1171,7 @@ footer .credit {
     padding-right: 20px;
   }
 }
-.nouvelle__btn__esp .link__button .esp {
+.nouvelle__btn__esp .esp {
   font-family: "Poppins", system-ui;
   font-size: 14px;
   font-weight: 500;
@@ -1184,19 +1184,19 @@ footer .credit {
   transition: 0.3s;
   background-color: #EFEFEF;
 }
-.nouvelle__btn__esp .link__button .esp:hover {
+.nouvelle__btn__esp .esp:hover {
   background-color: #0BABDC;
   color: #EFEFEF;
 }
 @media (min-width: 768px) {
-  .nouvelle__btn__esp .link__button .esp {
+  .nouvelle__btn__esp .esp {
     font-size: 16px;
     padding: 12px;
     width: 145px;
   }
 }
 @media (min-width: 1400px) {
-  .nouvelle__btn__esp .link__button .esp .esp {
+  .nouvelle__btn__esp .esp {
     font-size: 18px;
     padding: 14px;
     width: 170px;
@@ -1245,14 +1245,6 @@ footer .credit {
     width: 120px;
     height: 120px;
   }
-  .nouvelle__esp {
-    padding-left: 50px;
-  }
-  .nouvelle__esp .esp {
-    font-size: 16px;
-    padding: 12px;
-    width: 145px;
-  }
   .nouvelle__separation {
     margin: 22px 0;
   }
@@ -1276,15 +1268,6 @@ footer .credit {
   .nouvelle__image {
     width: 150px;
     height: 150px;
-  }
-  .nouvelle__esp {
-    padding-left: 0;
-    padding-right: 20px;
-  }
-  .nouvelle__esp .esp {
-    font-size: 18px;
-    padding: 14px;
-    width: 170px;
   }
   .grid__nouvelles {
     margin: 0 auto;

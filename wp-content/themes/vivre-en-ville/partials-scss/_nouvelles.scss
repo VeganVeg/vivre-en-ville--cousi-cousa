@@ -109,40 +109,39 @@
                 padding-right: 20px;
             }
 
-            .link__button {
-                .esp {
-                    font-family: "Poppins", system-ui;
-                    font-size: 14px;
-                    font-weight: 500;
-                    border: 2px solid variables.$bleu-ciel;
-                    border-radius: 50px;
-                    width: 125px;
-                    padding: 8px;
-                    text-align: center;
-                    color: variables.$bleu-ciel;
-                    transition: 0.3s;
-                    background-color: variables.$quartz;
 
-                    &:hover {
-                        background-color: variables.$bleu-ciel;
-                        color: variables.$quartz;
-                    }
+            .esp {
+                font-family: "Poppins", system-ui;
+                font-size: 14px;
+                font-weight: 500;
+                border: 2px solid variables.$bleu-ciel;
+                border-radius: 50px;
+                width: 125px;
+                padding: 8px;
+                text-align: center;
+                color: variables.$bleu-ciel;
+                transition: 0.3s;
+                background-color: variables.$quartz;
 
-                    @media (min-width:768px) {
-                        font-size: 16px;
-                        padding: 12px;
-                        width: 145px;
-                    }
+                &:hover {
+                    background-color: variables.$bleu-ciel;
+                    color: variables.$quartz;
+                }
 
-                    @media (min-width:1400px) {
-                        .esp {
-                            font-size: 18px;
-                            padding: 14px;
-                            width: 170px;
-                        }
-                    }
+                @media (min-width:768px) {
+                    font-size: 16px;
+                    padding: 12px;
+                    width: 145px;
+                }
+
+                @media (min-width:1400px) {
+
+                    font-size: 18px;
+                    padding: 14px;
+                    width: 170px;
                 }
             }
+
         }
     }
 
@@ -201,16 +200,6 @@
             width: 120px;
             height: 120px;
         }
-
-        &__esp {
-            padding-left: 50px;
-
-            .esp {
-                font-size: 16px;
-                padding: 12px;
-                width: 145px;
-            }
-        }
     }
 
     .nouvelle__separation {
@@ -244,17 +233,6 @@
         &__image {
             width: 150px;
             height: 150px;
-        }
-
-        &__esp {
-            padding-left: 0;
-            padding-right: 20px;
-
-            .esp {
-                font-size: 18px;
-                padding: 14px;
-                width: 170px;
-            }
         }
     }
 
