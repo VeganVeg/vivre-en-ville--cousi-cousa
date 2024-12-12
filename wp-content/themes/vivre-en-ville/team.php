@@ -33,7 +33,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                 onclick="document.getElementById('<?php the_field('choix_du_id') ?>').style.display='block'"
                 class="w3-button"
               >
-                En savoir Plus
+                <?php the_field('libelle_du_bouton_en_savoir_plus') ?>
               </button>
 
               <div id="<?php the_field('choix_du_id') ?>" class="w3-modal">

@@ -83,7 +83,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 
       <!--services-->
       <section class="services__offerts">
-        <h2 class="services__title">Nos services offerts</h2>
+        <h2 class="services__title"><?php the_field('titre_pour_services') ?></h2>
         <div class="services__container">
           <?php 
               $service = new WP_Query('post_type=service');
@@ -123,7 +123,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
       </div>
 
       <section class="nouvelles">
-        <h2 class="nouvelles__titre">Les actualités</h2>
+        <h2 class="nouvelles__titre"><?php the_field('titre_actualites') ?></h2>
         <div class="grid__nouvelles">
           <!-- Boucle de tout les articles -->
         <?php 
@@ -235,7 +235,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
       </div>
 
       <section class="temoignages">
-        <h2 class="temoignages__titre">Qu'en disent nos utilisateurs ?</h2>
+        <h2 class="temoignages__titre"><?php the_field('titre_pour_temoignages') ?></h2>
         <div class="grid__temoignages">
           <div class="temoignage__item">
             <img
