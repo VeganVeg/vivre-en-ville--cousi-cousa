@@ -78,7 +78,7 @@ function add_menu_list_item_class($classes, $item, $args) {
 	}
 	return $atts;
   }
-
+//fonction pour changer la langue du site, fait basculer les langues du sites avec EN, et FR
   function switch_language() {
     if (isset($_GET['lang'])) {
         $lang = $_GET['lang'];

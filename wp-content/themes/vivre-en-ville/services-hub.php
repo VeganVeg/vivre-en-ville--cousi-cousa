@@ -16,27 +16,31 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
       <section class="news__hero">
         <div class="container__hero">
           <div class="content__hero__newshub">
+              <!-- Affiche le titre de l'article ou de la page actuelle -->
             <h2 class="title__hero"><?php the_title() ?></h2>
           </div>
-
+   <!-- Affiche une image à la une pour la section hero -->
           <img class="img__hero" src="<?php bloginfo('template_url'); ?>/sources/img/services.jpg" alt="" />
         </div>
       </section>
 
       <section class="services-hub__list">
         <div class="services-hub__container">
+        <!-- // Création d'une nouvelle requête WP pour récupérer les articles de type 'service' -->
           <?php 
             $service = new WP_Query('post_type=service');
             while ($service->have_posts()) : $service->the_post();
             ?>
           <div class="services__bloc <?php the_field('choix_de_classe')?>-hub__bloc">
+            <!-- Titre du service -->
             <div class="services-hub__title <?php the_field('choix_de_classe')?>-hub__title">
               <?php the_title()?>
             </div>
+            <!-- Contenu du service -->
             <div class="services-hub__txt <?php the_field('choix_de_classe')?>-hub__txt">
               <?php the_content()?>
             </div>
-
+  <!-- Affiche l'image à la une du service -->
             <?php the_post_thumbnail(array('class' => 'img-hub')) ?>
           </div>
           <div class="services-hub__btn">
@@ -46,7 +50,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
           </div>
           <?php
             endwhile;
-            wp_reset_postdata();
+            wp_reset_postdata(); //Réinitialise les données de post
           ?>
         </div>
       </section>
