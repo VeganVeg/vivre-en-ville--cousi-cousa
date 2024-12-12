@@ -377,8 +377,8 @@ footer .credit {
   max-height: 30vh;
 }
 .grid__carrousel .swiper .size-swiper__img {
-  width: 100%;
-  height: auto;
+  width: 100% !important;
+  height: auto !important;
   max-height: 30vh;
   object-fit: cover;
 }

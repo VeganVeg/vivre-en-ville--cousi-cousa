@@ -9,8 +9,8 @@
     max-height: 30vh;
 
     .size-swiper__img {
-      width: 100%;
-      height: auto;
+      width: 100% !important;
+      height: auto !important;
       max-height: 30vh;
       object-fit: cover;
     }
