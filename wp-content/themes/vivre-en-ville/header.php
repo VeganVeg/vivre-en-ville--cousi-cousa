@@ -164,7 +164,7 @@
       : 'https://activites.vivreenville.org/en/dons/donate/make-a-donation/2946/'; ?>" 
     target="_blank" 
     class="nav-link nav-link-don">
-    <?php echo (wpm_get_language() == 'fr') ? 'Faire un don' :  Donate'; ?>
+    <?php echo (wpm_get_language() == 'fr') ? 'Faire un don' : ' Donate'; ?>
   </a>
 </li>
 
