@@ -127,7 +127,7 @@
 		        ?>
 
               <li class="nav-item">
-                <a class="navbar-brand d-flex mx-auto align-items-center d-none d-xxl-flex" href="index.html"><img
+                <a class="navbar-brand d-flex mx-auto align-items-center d-none d-xxl-flex" href="https://cousi-cousa.tim-momo.com/acceuil/"><img
                     src="<?php bloginfo('template_url'); ?>/sources/logo/logo.png"
                     width="90"
                     height="auto"
