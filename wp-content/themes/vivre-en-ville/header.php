@@ -66,12 +66,15 @@
 <!--banniere-->
 <section class="banniere">
         <div class="grid__banniere">
+        <?php  
+				$banniere = new WP_Query('post_type=banniere');
+            	while ($banniere->have_posts()) : $banniere->the_post();
+			  ?>
           <div class="banniere__txt">
-            <span
-              >Ce site web sert de projet scolaire et n'est en aucun cas le vrai
+            <p>Ce site web sert de projet scolaire et n'est en aucun cas le vrai
               site Vivre en Ville. Pour vous rendre sur le vrai site cliquez sur
               ce lien :<a href="https://vivreenville.org/">
-                https://vivreenville.org/</a></span>
+                https://vivreenville.org/</a></p>
           </div>
 
           <div class="banniere__btn">
