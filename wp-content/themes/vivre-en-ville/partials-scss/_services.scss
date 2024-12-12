@@ -68,12 +68,14 @@
         }
 
         .recherche__txt {
-            font-size: 14px;
-            line-height: 1.2;
-            text-align: center;
-            font-family: "Poppins", system-ui;
-            color: #E2E2E2;
-            display: none;
+            p {
+                font-size: 14px;
+                line-height: 1.2;
+                text-align: center;
+                font-family: "Poppins", system-ui;
+                color: #E2E2E2;
+                display: none;
+            }
         }
 
         .img__recherche {
@@ -130,12 +132,14 @@
         }
 
         .formation__txt {
-            font-size: 14px;
-            line-height: 1.2;
-            text-align: center;
-            font-family: "Poppins", system-ui;
-            color: #8be4ff;
-            display: none;
+            p {
+                font-size: 14px;
+                line-height: 1.2;
+                text-align: center;
+                font-family: "Poppins", system-ui;
+                color: #8be4ff;
+                display: none;
+            }
         }
 
         .img__formation {
@@ -162,12 +166,14 @@
         }
 
         .conseil__txt {
-            font-size: 14px;
-            line-height: 1.2;
-            text-align: center;
-            font-family: "Poppins", system-ui;
-            color: #cdf8fd;
-            display: none;
+            p {
+                font-size: 14px;
+                line-height: 1.2;
+                text-align: center;
+                font-family: "Poppins", system-ui;
+                color: #cdf8fd;
+                display: none;
+            }
         }
 
         .img__conseil {
@@ -193,12 +199,14 @@
         }
 
         .sensibilisation__txt {
-            font-size: 14px;
-            line-height: 1.2;
-            text-align: center;
-            font-family: "Poppins", system-ui;
-            color: variables.$quartz;
-            display: none;
+            p {
+                font-size: 14px;
+                line-height: 1.2;
+                text-align: center;
+                font-family: "Poppins", system-ui;
+                color: variables.$quartz;
+                display: none;
+            }
         }
 
         .img__sensibilisation {
@@ -247,7 +255,9 @@
             }
 
             .card__txt {
-                font-size: 16px;
+                p {
+                    font-size: 16px;
+                }
             }
 
             .img__hover {
@@ -298,7 +308,9 @@
             }
 
             .card__txt {
-                font-size: 20px;
+                p {
+                    font-size: 20px;
+                }
             }
 
             .img__hover {

@@ -583,7 +583,7 @@ footer .credit {
   line-height: 1.2;
   display: block;
 }
-.services__container .services__recherche .recherche__txt {
+.services__container .services__recherche .recherche__txt p {
   font-size: 14px;
   line-height: 1.2;
   text-align: center;
@@ -637,7 +637,7 @@ footer .credit {
   color: #8be4ff;
   margin-top: 10px;
 }
-.services__container .services__formation .formation__txt {
+.services__container .services__formation .formation__txt p {
   font-size: 14px;
   line-height: 1.2;
   text-align: center;
@@ -665,7 +665,7 @@ footer .credit {
   margin-top: 5px;
   line-height: 1.2;
 }
-.services__container .services__conseil .conseil__txt {
+.services__container .services__conseil .conseil__txt p {
   font-size: 14px;
   line-height: 1.2;
   text-align: center;
@@ -692,7 +692,7 @@ footer .credit {
   color: #EFEFEF;
   margin-top: 10px;
 }
-.services__container .services__sensibilisation .sensibilisation__txt {
+.services__container .services__sensibilisation .sensibilisation__txt p {
   font-size: 14px;
   line-height: 1.2;
   text-align: center;
@@ -737,7 +737,7 @@ footer .credit {
   .services__container .service .img__sensibilisation {
     width: 120px;
   }
-  .services__container .service .card__txt {
+  .services__container .service .card__txt p {
     font-size: 16px;
   }
   .services__container .service .img__hover {
@@ -778,7 +778,7 @@ footer .credit {
     width: 145px;
     margin-top: 95px;
   }
-  .services__container .service .card__txt {
+  .services__container .service .card__txt p {
     font-size: 20px;
   }
   .services__container .service .img__hover {
