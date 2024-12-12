@@ -359,7 +359,7 @@ footer .credit {
   .grid__banniere--none {
     display: none;
   }
-  .grid__banniere .banniere__txt {
+  .grid__banniere .banniere__txt p {
     font-size: 18px;
   }
   .grid__banniere .btn__compris {
