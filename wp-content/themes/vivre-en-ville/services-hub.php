@@ -30,6 +30,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
           <?php 
             $service = new WP_Query('post_type=service');
             while ($service->have_posts()) : $service->the_post();
+            $post_url = get_permalink();
             ?>
           <div class="services__bloc <?php the_field('choix_de_classe')?>-hub__bloc">
             <!-- Titre du service -->
@@ -44,7 +45,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
             <?php the_post_thumbnail(array('class' => 'img-hub')) ?>
           </div>
           <div class="services-hub__btn">
-            <a href="service.html">
+            <a href="<?php the_permalink() ?>">
               <button class="btn"><?php the_field('libelle_du_bouton_en_savoir_plus')?></button>
             </a>
           </div>
