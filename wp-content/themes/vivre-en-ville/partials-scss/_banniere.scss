@@ -18,19 +18,18 @@
     }
 
     .banniere__txt {
-        p {
-            display: flex;
-            justify-content: center;
-            text-align: center;
-            color: variables.$quartz;
-            font-family: 'Poppins', system-ui;
-            font-size: 15px !important;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        color: variables.$quartz;
+        font-family: 'Poppins', system-ui;
+        font-size: 15px !important;
 
-            a {
-                text-decoration: none;
-                color: variables.$bleu-ciel;
-            }
+        a {
+            text-decoration: none;
+            color: variables.$bleu-ciel;
         }
+
     }
 
     .banniere__btn {
@@ -72,12 +71,10 @@
         }
 
         .banniere__txt {
-            p {
-                text-align: left;
-                font-size: 17px !important;
-                width: 100%;
-                max-width: 720px;
-            }
+            text-align: left;
+            font-size: 17px !important;
+            width: 100%;
+            max-width: 720px;
         }
 
         .banniere__btn {
@@ -98,9 +95,7 @@
         }
 
         .banniere__txt {
-            p {
-                font-size: 18px !important;
-            }
+            font-size: 18px !important;
         }
 
         .btn__compris {

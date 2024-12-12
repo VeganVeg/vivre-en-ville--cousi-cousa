@@ -296,7 +296,7 @@ footer .credit {
 .grid__banniere--none {
   display: none;
 }
-.grid__banniere .banniere__txt p {
+.grid__banniere .banniere__txt {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -304,7 +304,7 @@ footer .credit {
   font-family: "Poppins", system-ui;
   font-size: 15px !important;
 }
-.grid__banniere .banniere__txt p a {
+.grid__banniere .banniere__txt a {
   text-decoration: none;
   color: #0BABDC;
 }
@@ -341,7 +341,7 @@ footer .credit {
   .grid__banniere--none {
     display: none;
   }
-  .grid__banniere .banniere__txt p {
+  .grid__banniere .banniere__txt {
     text-align: left;
     font-size: 17px !important;
     width: 100%;
@@ -359,7 +359,7 @@ footer .credit {
   .grid__banniere--none {
     display: none;
   }
-  .grid__banniere .banniere__txt p {
+  .grid__banniere .banniere__txt {
     font-size: 18px !important;
   }
   .grid__banniere .btn__compris {
