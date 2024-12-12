@@ -31,47 +31,71 @@
         display: grid;
         grid-template-columns: auto 1fr auto;
         align-items: center;
-    }
 
-    &__image {
-        width: 100px;
-        height: 100px;
-        object-fit: cover;
-    }
+        img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
 
-    &__content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding-left: 15px;
-    }
+            @media (min-width: 768px) {
+                width: 120px;
+                height: 120px;
+            }
 
-    &__titre {
-        font-size: 16px;
-        margin-bottom: 0;
-        color: variables.$charbon;
-        max-width: 500px;
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: 3;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        font-family: 'Inter', sans-serif;
-    }
+            @media (min-width:1400px) {
+                width: 150px;
+                height: 150px;
+            }
+        }
 
-    &__date {
-        font-size: 14px;
-        color: variables.$bleu-ciel;
-        margin-bottom: 9px;
-    }
+        .nouvelle__content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 15px;
 
-    &__texte {
-        font-size: 14px;
-        color: #666;
-    }
+            h3 {
+                font-size: 16px;
+                margin-bottom: 0;
+                color: variables.$charbon;
+                max-width: 500px;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 3;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                font-family: 'Inter', sans-serif;
+            }
 
-    &__lien-none {
-        display: none;
+            p {
+                font-size: 14px;
+                color: variables.$bleu-ciel;
+                margin-bottom: 9px;
+            }
+
+            @media (min-width: 768px) {
+                h3 {
+                    font-size: 20px;
+                }
+
+                p {
+                    font-size: 16px;
+                    margin-bottom: 0;
+                }
+
+            }
+
+            @media (min-width: 1400px) {
+                h3 {
+                    font-size: 24px;
+                    max-width: 850px;
+                }
+
+                p {
+                    font-size: 18px;
+                }
+            }
+        }
     }
 
     &__esp {
@@ -114,6 +138,10 @@
                 width: 170px;
             }
         }
+    }
+
+    &__lien-none {
+        display: none;
     }
 }
 
