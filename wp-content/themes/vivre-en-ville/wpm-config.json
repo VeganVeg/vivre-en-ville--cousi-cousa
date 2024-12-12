@@ -1,0 +1,10 @@
+{
+  "post_types": {
+    "service": {},
+    "banniere": {},
+    "don": {},
+    "membre": {},
+    "nouvelle": {},
+    "temoignage": {}
+  }
+}
