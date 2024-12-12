@@ -22,7 +22,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                 while ($swiper->have_posts()) : $swiper->the_post();
               ?>
               <div class="swiper-slide">
-                <div class="swiper__img swiper__img__<?php the_field("choix_de_classe")?>"><?php the_post_thumbnail() ?></div>
+                <div class="swiper__img__<?php the_field("choix_de_classe")?>"><?php the_post_thumbnail(array('class' => 'swiper__img')) ?></div>
                 <div class="swiper__bg">
                   <div class="bg__title">
                     <?php the_title() ?>
