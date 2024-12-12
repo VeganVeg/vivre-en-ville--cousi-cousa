@@ -93,9 +93,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
               <div class="card__title <?php the_field('choix_de_classe')?>__title title-none">
                 <?php the_title() ?>
               </div>
-              <div class="card__img img__<?php the_field('choix_de_classe')?> title-none">
                 <?php the_post_thumbnail(array('class' => "card__img title-none img__<?php the_field('choix_de_classe')?>")) ?>
-              </div>
               
               <!--<img
                 class="card__img img__microscope title-none"
