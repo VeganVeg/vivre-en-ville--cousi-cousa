@@ -23,11 +23,10 @@ Version: 1.0
   color: #8DC63F;
   border: 4px solid #8DC63F;
   border-radius: 50px;
-  width: 155px;
+  width: 220px;
   padding: 12px 0;
   text-align: center;
   transition: 0.3s;
-  white-space: nowrap;
 }
 
 .nav-link:hover {
@@ -1161,7 +1160,7 @@ footer .credit {
     font-size: 18px;
   }
 }
-.nouvelle__esp .esp {
+.nouvelle__btn__esp .esp {
   font-family: "Poppins", system-ui;
   font-size: 14px;
   font-weight: 500;
@@ -1174,26 +1173,26 @@ footer .credit {
   transition: 0.3s;
   background-color: #EFEFEF;
 }
-.nouvelle__esp .esp:hover {
+.nouvelle__btn__esp .esp:hover {
   background-color: #0BABDC;
   color: #EFEFEF;
 }
 @media (min-width: 768px) {
-  .nouvelle__esp {
+  .nouvelle__btn__esp {
     padding-left: 50px;
   }
-  .nouvelle__esp .esp {
+  .nouvelle__btn__esp .esp {
     font-size: 16px;
     padding: 12px;
     width: 145px;
   }
 }
 @media (min-width: 1400px) {
-  .nouvelle__esp {
+  .nouvelle__btn__esp {
     padding-left: 0;
     padding-right: 20px;
   }
-  .nouvelle__esp .esp {
+  .nouvelle__btn__esp .esp {
     font-size: 18px;
     padding: 14px;
     width: 170px;
