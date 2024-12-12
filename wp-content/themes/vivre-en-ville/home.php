@@ -85,18 +85,25 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
       <section class="services__offerts">
         <h2 class="services__title">Nos services offerts</h2>
         <div class="services__container">
+        <?php 
+            $service = new WP_Query('post_type=service');
+            while ($service->have_posts()) : $service->the_post();
+            ?>
           <div class="service services__recherche">
             <div class="card__title recherche__title title-none">
-              Recherche et innovation
+              <?php the_title() ?>
             </div>
-            <img
+            <div class="card__img img__microscope title-none">
+              <?php the_post_thumbnail() ?>
+            </div>
+            
+            <!--<img
               class="card__img img__microscope title-none"
               src="sources/icons/microscope.png"
               alt=""
-            />
+            /> -->
             <div class="card__txt recherche__txt txt-block">
-              Explorer, diffuser et expérimenter les meilleures pratiques de
-              développement de collectivités viables.
+              <?php the_content() ?>
             </div>
             <img
               class="img__hover title-none"
@@ -104,7 +111,10 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
               alt=""
             />
           </div>
-
+          <?php
+            endwhile;
+            wp_reset_postdata();
+          ?>
           <div class="service services__publication">
             <div class="card__title publication__title title-none">
               Publication
