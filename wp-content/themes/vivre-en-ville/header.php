@@ -162,13 +162,14 @@
                   >Faire un don</a
                 >
               </li>
-              <li class="nav-item">
+              <li class="nav-item language-switcher">
   <?php if (wpm_get_language() == 'fr') : ?>
-    <a href="<?php echo wpm_translate_url('', 'en'); ?>" class="nav-link">EN</a>
+    <a href="<?php echo wpm_translate_url('', 'en'); ?>" class="nav-link" title="Switch to English">EN</a>
   <?php else : ?>
-    <a href="<?php echo wpm_translate_url('', 'fr'); ?>" class="nav-link">FR</a>
+    <a href="<?php echo wpm_translate_url('', 'fr'); ?>" class="nav-link" title="Passer au français">FR</a>
   <?php endif; ?>
 </li>
+
 
 
 
