@@ -255,35 +255,6 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
             endwhile;
             wp_reset_postdata();
           ?>
-
-          <div class="temoignage__item">
-            <img
-              class="temoignage__photo"
-              src="sources/img/king.png"
-              alt="Le king des kings"
-            />
-            <h3 class="temoignage__nom">Le king des kings</h3>
-            <p class="temoignage__texte">
-              Vivre en Ville est selon moi un des meilleurs sites web pour être
-              en mesure d’améliorer sa qualité de vie.
-            </p>
-          </div>
-
-          <div class="temoignage__separation"></div>
-
-          <div class="temoignage__item">
-            <img
-              class="temoignage__photo"
-              src="sources/img/jack.png"
-              alt="Jack-Jack"
-            />
-            <h3 class="temoignage__nom">Jack-Jack</h3>
-            <p class="temoignage__texte">
-              J'ai beaucoup appris sur les différentes façons d'améliorer la
-              qualité de vie dans les villes. Ce site est une excellente
-              ressource.
-            </p>
-          </div>
         </div>
       </section>
 
