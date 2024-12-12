@@ -302,7 +302,7 @@ footer .credit {
   text-align: center;
   color: #EFEFEF;
   font-family: "Poppins", system-ui;
-  font-size: 15px;
+  font-size: 15px !important;
 }
 .grid__banniere .banniere__txt p a {
   text-decoration: none;
@@ -343,7 +343,7 @@ footer .credit {
   }
   .grid__banniere .banniere__txt p {
     text-align: left;
-    font-size: 17px;
+    font-size: 17px !important;
     width: 100%;
     max-width: 720px;
   }
@@ -360,7 +360,7 @@ footer .credit {
     display: none;
   }
   .grid__banniere .banniere__txt p {
-    font-size: 18px;
+    font-size: 18px !important;
   }
   .grid__banniere .btn__compris {
     width: 175px !important;
