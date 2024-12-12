@@ -154,15 +154,18 @@
               ) );
 		        ?>
             
-              <li class="nav-item nav-item-don">
-                <a
-                  href="https://activites.vivreenville.org/fr/dons/donate/faire-un-don/2946/"
-                  target="_blank"
-                  class="nav-link nav-link-don"
-                  >Faire un don</a
-                >
-              </li>
-              <<li class="nav-item language-switcher">
+            <li class="nav-item nav-item-don">
+  <a
+    href="<?php echo (wpm_get_language() == 'fr') 
+      ? 'https://activites.vivreenville.org/fr/dons/donate/faire-un-don/2946/' 
+      : 'https://activites.vivreenville.org/en/dons/donate/make-a-donation/2946/'; ?>" 
+    target="_blank" 
+    class="nav-link nav-link-don">
+    <?php echo (wpm_get_language() == 'fr') ? 'Faire un don' : 'Make a Donation'; ?>
+  </a>
+</li>
+
+              <li class="nav-item language-switcher">
   <?php
   $current_lang = get_locale();
   if ($current_lang == 'fr_FR') :
