@@ -17,46 +17,23 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
         <div class="grid__carrousel">
           <div class="swiper">
             <div class="swiper-wrapper">
+              <?php 
+                $swiper = new WP_Query('post_type=swiper');
+                while ($swiper->have_posts()) : $swiper->the_post();
+              ?>
               <div class="swiper-slide">
-                <img
-                  class="swiper__img swiper__img__prog"
-                  src="sources/img/proganuelle.png"
-                  alt=""
-                />
+                <div class="swiper__img swiper__img__<?php the_field("choix_de_classe")?>"><?php the_post_thumbnail() ?></div>
                 <div class="swiper__bg">
                   <div class="bg__title">
-                    LA PROGRAMMATION ANNUELLE 2024-2025 EST LÀ!
+                    <?php the_title() ?>
                   </div>
                 </div>
               </div>
-
-              <div class="swiper-slide">
-                <img
-                  class="swiper__img swiper__img__champ"
-                  src="sources/img/Visuel_FDDN.jpg"
-                />
-                <div class="swiper__bg">
-                  <div class="bg__title">
-                    La nouvelle plateforme de diffusion des contenus et des
-                    outils de Vivre en Ville
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <img
-                  class="swiper__img swiper__img__ordi"
-                  src="sources/img/carrefour-3.png"
-                  alt=""
-                />
-                <div class="swiper__bg">
-                  <div class="bg__title">
-                    Plusieurs plans, une même conversation
-                  </div>
-                </div>
-              </div>
+              <?php
+              endwhile;
+              wp_reset_postdata();
+            ?>
             </div>
-
             <div class="swiper-pagination"></div>
 
             <div class="swiper-button-prev"></div>
